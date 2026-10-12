@@ -49,13 +49,13 @@ GitHub 是技能的分发来源；`skills` 是安装工具，Forge 本身不需�
 
 ### 方式一：用 skills 从 GitHub 安装
 
-推荐只安装主技能：
+希望主技能与五个独立命令都可用时，推荐一次安装全部六个技能：
 
 ```sh
-npx skills@latest add ChengYueCode/Fogre --skill forge
+npx skills@latest add ChengYueCode/Fogre --skill '*'
 ```
 
-按安装器提示选择目标 Agent 和安装范围。先查看可安装技能：
+全部技能不等于全部 Agent：按需要选择目标 Agent 和安装范围。只装主技能将 `'*'` 换成 `forge`，但不会自动安装五个独立入口。先查看可安装技能：
 
 ```sh
 npx skills@latest add ChengYueCode/Fogre --list
@@ -64,7 +64,7 @@ npx skills@latest add ChengYueCode/Fogre --list
 默认安装到当前项目；跨项目使用可以增加 `--global`。例如，明确安装到 Codex 的用户级范围：
 
 ```sh
-npx skills@latest add ChengYueCode/Fogre --skill forge --agent codex --global
+npx skills@latest add ChengYueCode/Fogre --skill '*' --agent codex --global
 ```
 
 仓库当前的主技能路径是 `skill/forge/`。也可直接指定该目录：
@@ -83,7 +83,7 @@ npx skills@latest add https://github.com/ChengYueCode/Fogre/tree/main/skill/forg
 请从 https://github.com/ChengYueCode/Fogre 为当前 Agent 安装 Forge 学习技能。
 
 先阅读仓库 README，确认主技能 skill/forge/SKILL.md 的 name 是 forge。
-只安装主技能，不需要安装全部单项入口。
+请安装主技能 forge 与五个 forge-* 独立入口，共六个。
 优先使用 npx skills@latest add 的方式；根据当前宿主选择正确的安装范围和位置。
 如果需要选择项目级还是用户级，先说明选择，并按我的偏好处理。
 若该方式不可用，使用当前宿主支持的 GitHub 技能安装方式，
@@ -343,7 +343,7 @@ Agent 在新建或接收标准学习目录后登记主题。默认索引是当�
 
 ## 单项技能入口
 
-仅安装主技能即可用 `/forge` 选择上述单项能力。希望在宿主中直接按能力调用时，可选安装独立入口：
+仅安装主技能即可用 `/forge` 选择上述单项能力，但不会自动注册五个独立命令。希望直接调用独立技能时，选择安装对应入口，或使用开头的全部安装命令：
 
 | 入口 | 适用场景 |
 | --- | --- |

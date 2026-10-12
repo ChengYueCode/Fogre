@@ -1,22 +1,36 @@
 # 从 GitHub 安装技能、升级与可选 CLI 使用
 
-Forge 的日常入口是在 Agent 会话中调用技能。完整技能自带参考、脚本与资源，Agent 可以直接调用安装目录中的工具，无需用户先安装全局 CLI。工具执行需要 Node.js ≥20；没有运行时第三方依赖。npm 分发当前已在 Windows 验证，其他系统与宿主的支持范围以实际测试为准。
+Forge 的日常入口是在 Agent 会话中调用技能。完整技能自带参考、脚本与资源，Agent 可以直接调用安装目录中的工具，无需用户先安装全局 CLI。工具执行需要 Node.js ≥20；没有运行时第三方依赖。源码与 npm 分发已有 Windows/Linux、Node 20/24 的 CI 验证；安装目录与真实宿主加载分别核对。
+
+## 安装时到底叫什么
+
+| 名称 | 用在哪里 |
+| --- | --- |
+| `ChengYueCode/Fogre` | GitHub 下载来源；仓库名为 Fogre |
+| `forge` | 主技能名、`--skill` 参数与目录名；会话入口为 `/forge` |
+| `forge-organize` 等五个 `forge-*` 名称 | 独立技能名；对应 `/forge-organize` 等入口 |
+| `skills` | 由 npm/npx 运行的通用技能安装器，不是 Forge 的 CLI 包 |
+| `forge-learning-local@0.1.0` | 当前本地 npm CLI 包身份，安装后终端命令为 `forge`；未发布到 npm registry |
+
+主技能内含所有能力规则，但没有嵌套五个独立技能目录。只安装 `forge` 不会自动登记另五个命令。npm 包含六个目录也不等于它们已进入 Agent 的扫描目录。
 
 ## 优先：从 GitHub 安装技能
 
 Forge 以 GitHub 技能目录分发即可，不要求先发布自己的 npm 包。仓库地址为 https://github.com/ChengYueCode/Fogre，采用 MIT 许可证，主分支为 main。
 
 ```sh
-npx skills@latest add ChengYueCode/Fogre --skill forge
+npx skills@latest add ChengYueCode/Fogre --skill '*'
 ```
 
-按提示选择目标 Agent 与范围，默认当前项目；增加 `--global` 可安装到用户级。明确指定 Codex 的例子：
+推荐一次安装全部六个技能；默认当前项目，增加 `--global` 可安装到用户级。目标 Agent 决定写入位置，全部技能不等于全部 Agent。明确指定 Codex 的例子：
 
 ```sh
-npx skills@latest add ChengYueCode/Fogre --skill forge --agent codex --global
+npx skills@latest add ChengYueCode/Fogre --skill '*' --agent codex --global
 ```
 
-主技能的仓库路径为 `skill/forge/`；直接指定目录可避免误选其他位置的历史副本：
+只装主技能用 `--skill forge`；只装整理入口用 `--skill forge-organize`。
+
+主技能的仓库路径为 `skill/forge/`；直接指定该目录只会安装主技能：
 
 ```sh
 npx skills@latest add https://github.com/ChengYueCode/Fogre/tree/main/skill/forge --skill forge
@@ -24,7 +38,7 @@ npx skills@latest add https://github.com/ChengYueCode/Fogre/tree/main/skill/forg
 
 运行 npx 需要 Node.js/npm 与网络。安装规则、范围与支持的 Agent 以 [Skills 官方文档](https://github.com/vercel-labs/skills#install-a-skill) 为准；不能把工具支持某个 Agent 当作 Forge 已在该宿主完成学习验收。
 
-也可以让 AI 按 [README 的安装提示词](../README.md#开始使用) 读取仓库并安装。优先使用 Skills；不可用时使用当前宿主支持的 GitHub 技能安装方式，选取完整 `skill/forge/` 目录。已有同名技能时检查实际目录和版本，不能盲目覆盖或另建副本。
+也可以让 AI 按 [README 的安装提示词](../README.md#开始使用) 读取仓库并安装。优先使用 Skills；不可用时使用当前宿主支持的 GitHub 技能安装方式，逐一安装所选技能的完整目录：主技能来自 `skill/forge/`，独立入口来自同级的 `skill/forge-*/`。安装全部六个时不能只复制主技能。已有同名技能时检查实际目录和版本，不能盲目覆盖或另建副本。
 
 宿主的加载与刷新方式以其实际要求为准。安装关键文件完整、工具环境可用、宿主能发现并实际调用是分别核对的步骤。完整功能仍需文件读写和命令权限；只复制 SKILL.md 不构成完整技能安装。
 
@@ -64,7 +78,7 @@ npx skills@latest add ./skill/forge --skill forge
 取得源码后，在项目根目录执行。使用默认用户级 Codex 技能目录的 Windows PowerShell 示例：
 
 ```powershell
-node ./bin/forge.mjs install-skill --target "$env:USERPROFILE/.codex/skills/forge"
+node ./bin/forge.mjs install-skill --target "$env:USERPROFILE/.agents/skills/forge"
 ```
 
 该入口直接使用源码包的安装器，无需 `npm pack` 或全局 npm 安装。它复制完整技能目录，不自动配置宿主或安装 Node.js。`--target` 指向宿主技能根目录的直接子目录；其他宿主或自定义配置请换成实际加载位置。
@@ -84,7 +98,7 @@ Agent 根据请求核对材料、教学并按需生成产物、保存记录和�
 使用源码自带安装器安装独立入口同样无需全局 CLI，例如：
 
 ```powershell
-node ./bin/forge.mjs install-skill --target "$env:USERPROFILE/.codex/skills/forge-question" --skill forge-question
+node ./bin/forge.mjs install-skill --target "$env:USERPROFILE/.agents/skills/forge-question" --skill forge-question
 ```
 
 通过主技能 `/forge` 也能选择单项能力，不必安装所有独立入口。宿主确认发现后才使用对应调用名。GitHub 分发后的入口安装可用 `npx skills@latest add ChengYueCode/Fogre --skill forge-question`。
@@ -93,22 +107,78 @@ node ./bin/forge.mjs install-skill --target "$env:USERPROFILE/.codex/skills/forg
 
 以下方式面向希望手动调用命令、维护档案或验证工具的用户，不是日常在 Agent 中使用技能的前置步骤。示例中的 `forge install-skill` 也可以替换为项目根目录的 `node ./bin/forge.mjs install-skill`。
 
-当前正式包名和 registry 发布地址待定。先从源码运行 `npm pack` 得到 tgz；以下版本对应当前本地准备包：
+当前没有 Forge 的 npm registry 发布版本。`npx skills` 路径可以直接从 GitHub 安装技能；下面是独立的 Forge CLI 本地包路径，不能把包名当成已经发布的 registry 地址。
+
+在完整源码目录执行 `npm pack` 得到 tgz，再安装：
 
 ```sh
+npm pack
 npm install -g ./forge-learning-local-0.1.0.tgz
 forge help
 ```
 
-Windows PowerShell 下，使用用户级 `.codex/skills` 根目录的 Codex 宿主示例：
+这个 npm 包包含全部六个技能目录，但 npm 安装本身只安装 CLI，不写 Agent 的技能目录，没有自动注册入口的 postinstall。
+
+Windows PowerShell 下，只安装主技能到用户级 Codex 技能根目录：
 
 ```powershell
-forge install-skill --target "$env:USERPROFILE/.codex/skills/forge"
+forge install-skill --target "$env:USERPROFILE/.agents/skills/forge"
 ```
 
 `$env:USERPROFILE` 展开为当前用户目录；若配置了自定义根目录，替换为配置值。
 
-`--target` 可以是绝对路径或相对当前工作目录的路径，必须指向宿主技能根目录的直接子目录（如 `.codex/skills/forge`），不是整个技能根目录。不要使用 vendor/forge 等多层嵌套布局，以免递归扫描器发现暂存或备份。安装器不会猜测宿主。上面的用户目录示例展开后是绝对路径；使用相对路径时以当前工作目录为基准，仍需核对目标是宿主实际加载的位置。通过源码入口直接运行时，目标必须在当前源码包目录之外。将生成目录交给你的 AI 宿主加载，宿主若支持 `/forge` 可按此名称调用。
+想通过这个 npm CLI 一次安装六个入口，可在 PowerShell 显式执行：
+
+```powershell
+$forgeSkillRoot = "$env:USERPROFILE/.agents/skills"
+'forge', 'forge-organize', 'forge-question', 'forge-review', 'forge-review-plan', 'forge-insights' | ForEach-Object {
+  forge install-skill --target "$forgeSkillRoot/$_" --skill $_
+}
+```
+
+这段调用现有的单技能安装器六次，不是 npm 自动安装。Claude Code 将根目录换成 `$env:USERPROFILE/.claude/skills`；其他宿主用实际支持的目录。已有目录默认拒绝覆盖，需要核对后显式升级。本地 tgz 安装及显式复制六个入口已实测；npm registry 发布仍未执行。
+
+
+`--target` 可以是绝对路径或相对当前工作目录的路径，必须指向宿主技能根目录的直接子目录（如 `.agents/skills/forge`），不是整个技能根目录。不要使用 vendor/forge 等多层嵌套布局，以免递归扫描器发现暂存或备份。安装器不会猜测宿主。上面的用户目录示例展开后是绝对路径；使用相对路径时以当前工作目录为基准，仍需核对目标是宿主实际加载的位置。通过源码入口直接运行时，目标必须在当前源码包目录之外。将生成目录交给你的 AI 宿主加载，宿主若支持 `/forge` 可按此名称调用。
+
+## 安装目录与发现检查
+
+Skills 安装器 1.7.2 的目录映射及本次隔离安装结果如下。项目级仅对相应工作区可见；用户级用于该用户的多个项目。自定义配置或其他工具按其实际支持的目录核对。
+
+| 目标 Agent | 项目级目录 | 用户级目录 |
+| --- | --- | --- |
+| Codex | `.agents/skills/` | `~/.agents/skills/` |
+| Claude Code | `.claude/skills/` | `~/.claude/skills/` |
+| Cursor | `.agents/skills/` | `~/.cursor/skills/` |
+| OpenCode | `.agents/skills/` | `~/.config/opencode/skills/` |
+
+依据：[Skills 安装器的目录映射](https://github.com/vercel-labs/skills#supported-agents)、[OpenAI 的技能发现说明](https://learn.chatgpt.com/docs/build-skills#where-codex-loads-local-skills)、[Claude Code 的加载位置](https://code.claude.com/docs/en/skills#choose-where-skills-load)。这些目录与安装器版本有关，升级时核对其实际输出。
+
+以 Codex 项目级完整安装为例：
+
+```text
+当前项目/
+└── .agents/skills/
+    ├── forge/SKILL.md
+    ├── forge-organize/SKILL.md
+    ├── forge-question/SKILL.md
+    ├── forge-review/SKILL.md
+    ├── forge-review-plan/SKILL.md
+    └── forge-insights/SKILL.md
+```
+
+六个目录并列，每个都有自己的 `name`、LICENSE 和随包参考；需要本地工具的入口还携带 scripts/assets。`forge-question` 是纯会话入口，没有运行脚本。五个独立技能不藏在 `forge` 的子目录里，也不依赖兄弟目录。
+
+仓库里的 `skill/` 和 npm 安装目录里的 `node_modules/forge-learning-local/skill/` 是分发源。下载源码或安装 npm 包，不代表这些位置自动成为宿主加载位置；复制、链接或导入到宿主支持的目录后，才检查宿主是否发现。
+
+安装完成后：
+
+1. 核对安装器输出的目标 Agent、范围和目录，检查要用的每个入口都有 `SKILL.md`，其中 `name` 与技能名一致。
+2. 用 `npx skills@latest list --agent codex` 查看项目安装记录；用户级安装增加 `--global`，其他宿主替换 agent 参数。Skills 的列表不等于 Agent 自己的加载结果。
+3. 按工具要求刷新或重新打开当前项目，在工具自己的技能/命令列表确认六个入口。找不到时先核对工作区、目录和配置，而不是仅更换调用前缀。
+4. 实际调用一个入口并给出所需材料，确认按该能力响应；需要存档时再核对文件读回。
+
+2026-10-12，使用 Skills 1.7.2 对 Codex、Claude Code、Cursor、OpenCode 的安装目标进行隔离安装：主技能模式只落盘 forge；全部模式在共同根目录及 Claude Code 根目录各出现六个正确身份，Skills 的 Codex/Claude Code 列表各返回六个入口。本地 npm 包经真实安装，再显式复制六个入口，五个带工具入口的模型验证及构建均通过，纯会话入口没有运行脚本。这证明目录和随包资源可用，不等于四个宿主都已完成菜单发现与真实调用验收。
 
 ## 单项入口与安装检查
 
@@ -119,8 +189,8 @@ forge install-skill --target "$env:USERPROFILE/.codex/skills/forge"
 除主技能外，包内还带五个由 `skill/forge/references/` 唯一正文生成的单项入口：`forge-question`（只用提问检查解释/推理）、`forge-review`（集中复核作答）、`forge-review-plan`（预算内复习安排）、`forge-insights`（洞见与速查汇总）、`forge-organize`（只整理材料生成学习产物）。每个入口都是独立技能目录，自包含先读能力规则、随附参考与（多数情况下的）CLI 和资产副本，单独安装即可被宿主独立发现：
 
 ```powershell
-forge install-skill --target "$env:USERPROFILE/.codex/skills/forge-question" --skill forge-question
-forge install-skill --target "$env:USERPROFILE/.codex/skills/forge-review" --skill forge-review
+forge install-skill --target "$env:USERPROFILE/.agents/skills/forge-question" --skill forge-question
+forge install-skill --target "$env:USERPROFILE/.agents/skills/forge-review" --skill forge-review
 ```
 
 省略 `--skill` 时安装主技能 forge。升级校验按目标目录内 `SKILL.md` 的 `name:` 与 `.forge-install.json` 记录的身份进行：主技能与各入口是彼此独立的技能身份，不能互相覆盖。每个安装件都会写入 `.forge-install.json`（所装技能与包版本）；同一宿主根目录下若存在其他 forge 系安装件的版本与本次不同，或另一目录已暴露相同技能身份（例如改名前遗留的旧目录），安装器会在返回 JSON 的 `versionMismatches` / `identityCollisions` 中如实报告——安装本身成功，但混合版本不会被静默处理，请按报告对齐或清理。生成入口不是权威版本：修改规则只能改 `skill/forge/references/`（或主技能 `SKILL.md`），再运行 `node scripts/build-entries.mjs` 重新生成。
@@ -130,7 +200,7 @@ forge install-skill --target "$env:USERPROFILE/.codex/skills/forge-review" --ski
 场景：你想手动打开随包概率教学示例，体验页面和自动存档；它不是已有学习成果。
 
 ```powershell
-forge build "$env:USERPROFILE/.codex/skills/forge/assets/probability.json" --out ./learning/probability --svg
+forge build "$env:USERPROFILE/.agents/skills/forge/assets/probability.json" --out ./learning/probability --svg
 forge library register --topic probability --out ./learning/probability
 forge serve --out ./learning/probability --port 0
 ```
@@ -161,7 +231,7 @@ npm exec --package /absolute/path/forge-learning-local-0.1.0.tgz -- forge help
 更新 CLI 不会自动更新宿主里复制的技能。安装器默认拒绝已有目标；显式升级：
 
 ```powershell
-forge install-skill --target "$env:USERPROFILE/.codex/skills/forge" --upgrade
+forge install-skill --target "$env:USERPROFILE/.agents/skills/forge" --upgrade
 ```
 
 目标必须含普通 `SKILL.md` 且其技能名与本次安装的身份一致（主技能与各入口彼此独立）。旧目录完整保存在技能根目录外的 `.forge-install-work/<技能名>-<标识>/backup` 路径，返回 JSON 给出实际备份位置。新的文件先复制到临时目录，再替换目标；替换失败时尝试恢复旧目录，恢复失败则报告保留的备份路径。安装器解析祖先目录的符号链接，拒绝目标技能目录本身为符号链接、文件系统根目录以及与当前 npm 包重叠的目标。安装暂存和备份位于宿主技能根目录外，避免发现重复技能；该目录需可写，并与目标在同一文件系统，否则替换会失败并尝试恢复。
