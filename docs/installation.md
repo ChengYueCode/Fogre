@@ -19,10 +19,18 @@ Forge 的日常入口是在 Agent 会话中调用技能。完整技能自带参�
 Forge 以 GitHub 技能目录分发即可，不要求先发布自己的 npm 包。仓库地址为 https://github.com/ChengYueCode/Fogre，采用 MIT 许可证，主分支为 main。
 
 ```sh
+npx skills@latest add ChengYueCode/Fogre
+```
+
+在普通交互终端中，菜单会发现六个技能，并以可展开的 **Forge Skills** 分组展示。用方向键移动、空格勾选、回车确认；推荐选择 **Select All** 安装六个入口，再选择目标 Agent 和安装范围。默认当前项目，增加 `--global` 可安装到用户级。
+
+想直接选择全部技能、跳过技能选择菜单，可用：
+
+```sh
 npx skills@latest add ChengYueCode/Fogre --skill '*'
 ```
 
-推荐一次安装全部六个技能；默认当前项目，增加 `--global` 可安装到用户级。目标 Agent 决定写入位置，全部技能不等于全部 Agent。明确指定 Codex 的例子：
+目标 Agent 决定写入位置，全部技能不等于全部 Agent。明确指定 Codex 的例子：
 
 ```sh
 npx skills@latest add ChengYueCode/Fogre --skill '*' --agent codex --global
@@ -71,7 +79,11 @@ npx skills@latest add ./skill/forge --skill forge
 
 2026-10-11 使用 Skills 1.7.2，在隔离的干净发布目录发现主技能及五个单项入口，并在临时项目以 `--agent codex --copy --yes` 安装主技能。完整文件与工具执行另行核对；这不是 GitHub 下载或真实宿主运行时调用的证据。
 
-当前工作区包含 `.scratch/` 历史技能副本。对整个工作区根目录扫描已实测发现多余技能并选中旧版 Forge 描述；发布时须排除内部历史文件，或用明确技能路径安装。不要把当前工作区原样作为公开仓库。
+仓库根目录的 `.claude-plugin/plugin.json` 明确列出六个分发目录，并提供 `Forge Skills` 菜单分组；使用仓库根目录安装时，Skills 按这份清单发现技能。内部历史副本与发布临时文件仍须排除在公开分发之外。
+
+菜单分组是安装器的展示方式。实际安装后，六个技能仍在目标 Agent 的技能根目录下并列放置，不会把五个独立入口藏在 `forge` 里面。若从 Agent 自动化环境执行，Skills 可能自动确认选项而不显示交互菜单；要手动勾选，请在自己的交互终端运行上面的默认命令。
+
+2026-10-12 使用 Skills 1.7.2，在隔离临时目录对干净发布源码运行无筛选参数的安装命令，实际显示 `Found 6 skills`、`Select All (0/6)` 与可展开的 `Forge Skills` 分组及全部六个入口；在菜单阶段取消，未写入用户技能目录。
 
 ## 备用：使用源码自带安装器
 

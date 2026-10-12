@@ -96,7 +96,7 @@ function decodeZip(data) {
 test('explicit public allowlist ships six entries, preserves literals and excludes internal/runtime files', async t => {
   const { source, output } = await fixture(t);
   const publicNames = ['CONTRIBUTING.md', 'CHANGELOG.md', 'GLOSSARY.md', 'AGENTS.md', 'SECURITY.md', 'THIRD_PARTY.md', 'NOTICE', '.gitignore', '.gitattributes',
-    '.github/workflows/ci.yml', 'bin/forge.mjs', 'scripts/helper.mjs', 'tests/literals.test.mjs',
+    '.github/workflows/ci.yml', '.claude-plugin/plugin.json', 'bin/forge.mjs', 'scripts/helper.mjs', 'tests/literals.test.mjs',
     'docs/github-introduction.md', 'docs/forge-methods.md', 'docs/skill-architecture.md', 'docs/skill-acceptance.md', 'docs/open-source.md', 'docs/release-checklist.md', 'docs/support.md',
     'docs/agents/issue-tracker.md', 'docs/adr/0001-decision.md', 'docs/assets/forge-preview.jpg',
     'examples/probability/README.md', 'examples/probability/state.json', 'skill/forge/assets/中文.txt'];

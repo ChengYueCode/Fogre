@@ -84,6 +84,11 @@ test('real npm tarball installs a runnable CLI and complete standalone skill', a
     const packResult = JSON.parse(run([npm, 'pack', '--json', '--pack-destination', temp]));
     const pack = Array.isArray(packResult) ? packResult[0] : Object.values(packResult)[0];
     const files = pack.files.map(file => file.path);
+    assert.ok(files.includes('.claude-plugin/plugin.json'), 'npm distribution preserves the grouped skill catalog');
+    const catalog = JSON.parse(await fs.readFile(path.join(root, '.claude-plugin/plugin.json'), 'utf8'));
+    assert.equal(catalog.name, 'forge-skills');
+    assert.deepEqual([...catalog.skills].sort(), ['forge', 'forge-organize', 'forge-question', 'forge-review', 'forge-review-plan', 'forge-insights'].map(name => `./skill/${name}`).sort());
+    for (const directory of catalog.skills) assert.ok(files.includes(`${directory.slice(2)}/SKILL.md`), 'every menu entry ships with its real skill');
     assert.ok(files.includes('skill/forge/SKILL.md'));
     assert.ok(files.includes('skill/forge/assets/viewer.html'));
     for (const entry of ['forge-question', 'forge-review', 'forge-review-plan', 'forge-insights', 'forge-organize']) {
@@ -91,7 +96,7 @@ test('real npm tarball installs a runnable CLI and complete standalone skill', a
     }
     assert.ok(files.includes('bin/forge.mjs'));
     assert.ok(files.includes('docs/skill-architecture.md'), 'linked architecture documentation must ship in the package');
-    assert.ok(files.every(file => /^(package\.json|README\.md|CONTRIBUTING\.md|CHANGELOG\.md|GLOSSARY\.md|SECURITY\.md|THIRD_PARTY\.md|LICENSE|bin\/|scripts\/install-skill\.mjs|skill\/|docs\/(installation|skill-architecture|open-source|skill-acceptance|support|release-checklist|forge-methods|github-introduction)\.md)/.test(file)));
+    assert.ok(files.every(file => /^(package\.json|README\.md|CONTRIBUTING\.md|CHANGELOG\.md|GLOSSARY\.md|SECURITY\.md|THIRD_PARTY\.md|LICENSE|\.claude-plugin\/plugin\.json$|bin\/|scripts\/install-skill\.mjs|skill\/|docs\/(installation|skill-architecture|open-source|skill-acceptance|support|release-checklist|forge-methods|github-introduction)\.md)/.test(file)));
     assert.ok(files.every(file => !/(^|\/)(debug\.log|\.scratch|\.env|state\.v1\.backup\.json)(\/|$)/.test(file)), 'private files never ship');
     const prefix = path.join(temp, 'npm prefix');
     run([npm, 'install', '--global', '--prefix', prefix, '--ignore-scripts', '--no-audit', '--no-fund', path.join(temp, pack.filename)], temp);

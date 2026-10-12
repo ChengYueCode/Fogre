@@ -1,0 +1,17 @@
+{
+  "name": "forge-skills",
+  "version": "0.1.0",
+  "description": "Forge 中文学习技能：完整学习旅程与五个独立能力入口。",
+  "author": { "name": "ChengYueCode" },
+  "homepage": "https://github.com/ChengYueCode/Fogre",
+  "repository": "https://github.com/ChengYueCode/Fogre",
+  "license": "MIT",
+  "skills": [
+    "./skill/forge",
+    "./skill/forge-organize",
+    "./skill/forge-question",
+    "./skill/forge-review",
+    "./skill/forge-review-plan",
+    "./skill/forge-insights"
+  ]
+}

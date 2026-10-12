@@ -49,13 +49,13 @@ GitHub 是技能的分发来源；`skills` 是安装工具，Forge 本身不需�
 
 ### 方式一：用 skills 从 GitHub 安装
 
-希望主技能与五个独立命令都可用时，推荐一次安装全部六个技能：
+在终端运行以下命令，打开技能选择菜单：
 
 ```sh
-npx skills@latest add ChengYueCode/Fogre --skill '*'
+npx skills@latest add ChengYueCode/Fogre
 ```
 
-全部技能不等于全部 Agent：按需要选择目标 Agent 和安装范围。只装主技能将 `'*'` 换成 `forge`，但不会自动安装五个独立入口。先查看可安装技能：
+展开 **Forge Skills** 可看到主技能与五个独立技能。用空格勾选、回车确认；推荐选择 **Select All** 安装六个入口，再按需要选择目标 Agent 和安装范围。只装主技能可仅勾选 `forge`，或增加 `--skill forge`，但不会自动安装五个独立入口。增加 `--skill '*'` 可直接选择全部技能、跳过技能选择菜单。先查看可安装技能：
 
 ```sh
 npx skills@latest add ChengYueCode/Fogre --list

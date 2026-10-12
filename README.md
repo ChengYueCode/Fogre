@@ -16,13 +16,25 @@
 
 Forge 是安装在 AI 助手里的学习技能。需要助手支持技能加载、文件读写和命令执行；生成学习页和保存档案还需要 Node.js 20 及以上。环境问题见[安装指南](docs/installation.md)。
 
-**第一步：安装主技能和五个独立技能（推荐）。** 在终端运行：
+**第一步：选择要安装的技能。** 在终端运行：
 
 ```sh
-npx skills@latest add ChengYueCode/Fogre --skill '*'
+npx skills@latest add ChengYueCode/Fogre
 ```
 
-这是通过 npm 运行 Skills 安装器，从 GitHub 安装全部六个技能。默认安装到当前项目，增加 `--global` 可安装到用户级；目标 Agent 决定实际目录。它不会默认给所有 Agent 都安装。
+这是通过 npm 运行 Skills 安装器，从 GitHub 读取技能。在普通交互终端中，安装菜单会显示一个可展开的 **Forge Skills** 分组，里面有六个入口：
+
+```text
+Forge Skills
+├── forge
+├── forge-organize
+├── forge-question
+├── forge-review
+├── forge-review-plan
+└── forge-insights
+```
+
+用方向键移动、空格勾选、回车确认；推荐选择 **Select All**，一次安装六个入口。随后选择目标 Agent 和安装范围。默认安装到当前项目，增加 `--global` 可安装到用户级。安装到哪些 Agent，以你的选择为准。
 
 也可以请你的 AI 助手安装：
 
@@ -32,7 +44,7 @@ npx skills@latest add ChengYueCode/Fogre --skill '*'
 
 安装技能时用不带 `/` 的名字：主技能是 `forge`，独立技能例如 `forge-organize`；`ChengYueCode/Fogre` 是下载来源。
 
-只想安装主技能时，将上面命令的 `'*'` 换成 `forge`。这会安装 `/forge` 所需的全部能力规则，**不会自动安装 `/forge-organize` 等独立入口**。
+只想安装主技能时，在菜单中仅勾选 `forge`，或在命令后加 `--skill forge`。这会安装 `/forge` 所需的全部能力规则，**不会自动安装 `/forge-organize` 等独立入口**。
 
 如果你说的是 `npm install -g` 安装 Forge CLI，目前可使用本地包 `forge-learning-local`；npm 包内含六个技能，但还需显式复制到 Agent 的技能目录。完整步骤见[npm CLI 安装](docs/installation.md#可选安装本地-cli-包)，当前尚未发布到 npm registry。
 
@@ -53,11 +65,11 @@ npx skills@latest add ChengYueCode/Fogre --skill '*'
 
 如果已经有资料，也可以直接输入：`/forge 把我提供的笔记整理成学习页和思维导图，保留疑问，今天先不提问。` 如果已有学习记录，把目录或档案交给它，请它读回进度后继续。
 
-**主技能包含下面的全部能力，但只提供 `/forge` 这个入口。** 要直接调用 `/forge-organize` 等独立命令，需要安装对应独立技能；上面推荐的安装方式已包含它们。
+**主技能包含下面的全部能力，但只提供 `/forge` 这个入口。** 要直接调用 `/forge-organize` 等独立命令，需要安装对应独立技能；在安装菜单选择全部六个即可。
 
 ## 独立技能怎么用
 
-五个独立技能可以分别安装，也可以一次全部安装。只装某一个时，将安装命令的 `'*'` 换成对应技能名，例如 `forge-organize`。安装并加载后，用 `/技能名` 加上请求，并提供材料或已有档案。
+五个独立技能可以分别安装，也可以一次全部安装。只装某一个时，在菜单中勾选它，或在安装命令后加 `--skill forge-organize` 等对应名称。安装并加载后，用 `/技能名` 加上请求，并提供材料或已有档案。
 
 | 独立技能 | 你需要提供什么、可以怎样说 | 你会得到什么 |
 | --- | --- | --- |
