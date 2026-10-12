@@ -842,7 +842,10 @@ test('lock cleanup cannot delete a successor and unknown owners remain protected
   await withArchiveLock(dir, async () => {
     const owner = readJson(lockPath);
     assert.ok(owner.token && owner.token !== 'successor');
-    fs.unlinkSync(lockPath);
+    // A Windows/Node 20 open file can remain delete-pending after unlink,
+    // preventing immediate recreation. Rename the held inode away so this
+    // injection actually installs a different successor at the same path.
+    fs.renameSync(lockPath, path.join(dir, '.former-lock'));
     fs.writeFileSync(lockPath, successor);
   });
   assert.equal(readFile(lockPath), successor, 'former owner does not remove successor token/file');
