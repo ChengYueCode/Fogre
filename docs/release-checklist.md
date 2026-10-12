@@ -40,4 +40,4 @@ npm run verify:release -- --verify dist/release-candidate
 
 ## 本次交付状态
 
-2026-10-12：本地首发准备已完成：已初始化 Git、整理公开文档及排除规则、配置 CI 和反馈模板，并提供经过测试的干净发布快照/ZIP/清单生成工具。已确认仓库 ChengYueCode/Fogre，使用 MIT 许可证与 ChengYueCode 版权署名；上传和远程验证按对应 commit 记录。最新本地检查见[验收说明](skill-acceptance.md)；真实远程安装、CI 和宿主调用以实际发布后的证据为准。
+2026-10-12：仓库 [ChengYueCode/Fogre](https://github.com/ChengYueCode/Fogre) 已公开上传，使用 MIT 许可证与 ChengYueCode 版权署名。已整理公开文档、排除规则、CI 与反馈模板，并提供经过测试的干净发布快照/ZIP/清单工具。远程主技能安装和随包工具 smoke 已完成，完整宿主学习调用仍未验收。CI 状态以仓库 Actions 的对应 commit 为准；本地检查见[验收说明](skill-acceptance.md)。未发布 npm、未改动用户个人技能安装。

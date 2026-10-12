@@ -10,6 +10,8 @@ forge 是一个供 AI Agent 调用的中文学习技能。安装后，在 Agent 
 
 > 项目采用 MIT 许可证，GitHub 仓库为 [ChengYueCode/Fogre](https://github.com/ChengYueCode/Fogre)。GitHub 技能安装不要求 Forge 发布到 npm。完整产物与存档能力需要 Agent 具备文件读写、命令执行权限，以及 Node.js ≥20 的运行环境。只有对话能力的 Agent 无法完成本地工具交付；不同宿主的发现和调用方式以其实际支持为准。
 
+[![Verify Forge](https://github.com/ChengYueCode/Fogre/actions/workflows/ci.yml/badge.svg)](https://github.com/ChengYueCode/Fogre/actions/workflows/ci.yml) · [MIT](LICENSE)
+
 ## 目录
 
 - [适合用来做什么](#适合用来做什么)
@@ -107,7 +109,7 @@ npx skills@latest add ./skill/forge --skill forge
 
 主技能与五个单项入口均在 `skill/` 下。请不要对包含内部 `.scratch/` 历史副本的整个工作区直接安装：根目录递归发现可能选中旧技能。
 
-从干净的发布目录发现六个入口，以及通过 Skills 安装完整主技能的本地路径已验证；GitHub 发布后的下载、更新与真实宿主调用仍需分别核对。项目自带安装器和可选全局 CLI 的使用见[安装指南](docs/installation.md)。
+干净发布目录可发现六个入口；Skills 1.7.2 已从真实 GitHub 仓库和明确目录路径隔离安装完整主技能，随包 CLI 的模型验证与产物构建通过。远程更新及真实宿主完整学习调用仍需分别核对。项目自带安装器和可选全局 CLI 的使用见[安装指南](docs/installation.md)。
 
 ## 直接在 Agent 中开始
 
