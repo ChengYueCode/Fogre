@@ -8,6 +8,7 @@ import { fileURLToPath } from 'node:url';
 import { spawnSync } from 'node:child_process';
 import { createEmberServer } from '../skill/forge/scripts/lib/server.mjs';
 import { buildArtifacts } from '../skill/forge/scripts/lib/build.mjs';
+import { registerTopic } from '../skill/forge/scripts/lib/library.mjs';
 
 const repo = fileURLToPath(new URL('../', import.meta.url));
 const source = path.join(repo, 'skill/forge');
@@ -116,10 +117,29 @@ test('junction aliases and another installed Forge skill cannot bypass output pr
   const alias = path.join(root, 'alias');
   fs.symlinkSync(skill, alias, process.platform === 'win32' ? 'junction' : 'dir');
   assert.match(run(['build', 'input.json', '--out', path.join(alias, 'new-output')], workspace, false), /不能位于 Forge 技能目录内/);
+  const dangling = path.join(root, 'dangling alias');
+  fs.symlinkSync(path.join(skill, 'missing-target'), dangling, process.platform === 'win32' ? 'junction' : 'dir');
+  assert.match(run(['build', 'input.json', '--out', path.join(dangling, 'new-output')], workspace, false), /不可解析/);
+  assert.ok(!fs.existsSync(path.join(skill, 'missing-target')));
   const sibling = path.join(root, 'forge-insights'); fs.mkdirSync(sibling);
   fs.writeFileSync(path.join(sibling, 'SKILL.md'), '---\nname: forge-insights\n---\n');
   assert.match(run(['build', 'input.json', '--out', path.join(sibling, 'new-output')], workspace, false), /不能位于 Forge 技能目录内/);
   assert.throws(() => buildArtifacts({ modelPath: path.join(workspace, 'input.json'), outDir: path.join(skill, 'new-output') }), /不能位于 Forge 技能目录内/);
   assert.throws(() => createEmberServer({ dir: workspace, statePath: path.join(skill, 'state.json') }), /不能位于 Forge 技能目录内/);
   assert.ok(!fs.existsSync(path.join(skill, 'new-output')));
+});
+
+test('registration refuses a legacy archive inside a skill even when the catalog is outside', async t => {
+  const { root, workspace, run } = setup(t);
+  run(['build', 'input.json', '--out', 'existing']);
+  const legacy = path.join(root, 'legacy forge');
+  fs.mkdirSync(legacy);
+  fs.writeFileSync(path.join(legacy, 'SKILL.md'), '---\nname: forge\n---\n');
+  fs.cpSync(path.join(workspace, 'existing'), path.join(legacy, 'learning'), { recursive: true });
+  const before = tree(legacy);
+  const catalog = path.join(workspace, 'new-catalog/index.json');
+  assert.match(run(['library', 'register', '--topic', 'legacy', '--out', path.join(legacy, 'learning'), '--catalog', catalog], workspace, false), /不能位于 Forge 技能目录内/);
+  await assert.rejects(registerTopic(catalog, 'legacy', path.join(legacy, 'learning'), () => {}), /不能位于 Forge 技能目录内/);
+  assert.deepEqual(tree(legacy), before);
+  assert.ok(!fs.existsSync(path.dirname(catalog)), 'registration fails before creating a catalog directory or lock');
 });

@@ -16,11 +16,17 @@ function within(root, candidate) {
 function canonical(file) {
   let ancestor = file;
   const suffix = [];
-  while (!fs.existsSync(ancestor)) {
-    const parent = path.dirname(ancestor);
-    if (parent === ancestor) break;
-    suffix.unshift(path.basename(ancestor));
-    ancestor = parent;
+  for (;;) {
+    try { fs.lstatSync(ancestor); break; }
+    catch (error) {
+      // A dangling link exists lexically and must fail realpath, rather than
+      // masquerading as an ordinary not-yet-created output directory.
+      if (error.code !== 'ENOENT') throw error;
+      const parent = path.dirname(ancestor);
+      if (parent === ancestor) throw error;
+      suffix.unshift(path.basename(ancestor));
+      ancestor = parent;
+    }
   }
   return path.join(fs.realpathSync(ancestor), ...suffix);
 }

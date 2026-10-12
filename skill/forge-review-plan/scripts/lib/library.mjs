@@ -97,7 +97,7 @@ function readTopic(file, entry, reader, at, roundId) {
 export async function registerTopic(file, id, directory, reader) {
   assertLearningOutput(file, '--catalog');
   topicId(id);
-  const out = canonicalDir(path.resolve(directory));
+  const out = canonicalDir(assertLearningOutput(directory, '--out'));
   // Read before taking the catalog lock; registration never writes the topic.
   const modelId = readJson(path.join(out, 'model.json')).id;
   const entry = {

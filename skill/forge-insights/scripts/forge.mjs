@@ -1176,6 +1176,7 @@ async function main() {
   }
   if (command === 'library' && ['register', 'remove'].includes(rest[0])) {
     assertLearningOutput(catalogPath(flags.catalog), '--catalog');
+    if (rest[0] === 'register' && flags.out !== undefined) assertLearningOutput(flags.out, '--out');
   }
   switch (command) {
     case 'library':
