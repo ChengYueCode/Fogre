@@ -22,10 +22,14 @@ Forge 是安装在 AI 助手里的学习技能。需要助手支持技能加载�
 请从 https://github.com/ChengYueCode/Fogre 安装 forge 主技能，检查运行环境，并告诉我如何加载使用。已有同名技能时，请先核对现有安装。
 ```
 
-**第二步：确认安装并加载后，告诉它你想学什么。** 例如：
+**第二步：确认安装并加载后，在你使用的工具里选择 `forge` 技能，再告诉它你想学什么。**
+
+调用方式由工具决定：[Claude Code](https://code.claude.com/docs/en/skills) 使用 `/forge`；[Codex CLI / IDE](https://learn.chatgpt.com/docs/build-skills#how-chatgpt-and-codex-use-skills) 可用 `/skills` 选择，或输入 `$` 选择 `forge`。其他工具按其技能菜单或调用提示操作。
+
+选择技能后，输入你的学习目标。例如：
 
 ```text
-$forge 我想学概率，请用生活中的例子带我入门。
+我想学概率，请用生活中的例子带我入门。
 ```
 
 后续像平常聊天一样交流：不懂时让它换个例子，想整理资料时把材料交给它，结束前请它保存进度。下次在原工作区请它查找已有记录，再继续学习。

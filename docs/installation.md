@@ -28,6 +28,18 @@ npx skills@latest add https://github.com/ChengYueCode/Fogre/tree/main/skill/forg
 
 宿主的加载与刷新方式以其实际要求为准。安装关键文件完整、工具环境可用、宿主能发现并实际调用是分别核对的步骤。完整功能仍需文件读写和命令权限；只复制 SKILL.md 不构成完整技能安装。
 
+### 安装后怎样调用
+
+技能名是 `forge`，调用前缀由你使用的工具决定。先选择技能，再填写自然语言学习目标：
+
+| 工具 | 调用方式 |
+| --- | --- |
+| Claude Code | `/forge 我想学概率，请用生活中的例子带我入门。` |
+| Codex CLI / IDE | 用 `/skills` 选择 `forge`，或以 `$forge` 提及技能，再写学习目标 |
+| 其他支持技能的工具 | 按该工具的技能菜单或调用说明选择 `forge` |
+
+依据：[Claude Code 官方技能文档](https://code.claude.com/docs/en/skills)、[OpenAI 官方技能文档](https://learn.chatgpt.com/docs/build-skills#how-chatgpt-and-codex-use-skills)。本文后续 `$forge` 示例使用 Codex 风格；在其他工具里保留学习请求正文，并换成该工具的调用方式。这些调用写在 AI 会话里。
+
 ### 发布前本地试装与验证边界
 
 在源码根目录，可以只扫描真实技能集合或直接安装主技能：
