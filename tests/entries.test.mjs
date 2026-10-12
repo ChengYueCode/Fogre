@@ -73,6 +73,16 @@ test('each entry is self-contained with its declared pieces and a matching uniqu
     seen.add(frontmatter.match(/^name: (.+)$/m)[1]);
     assert.match(frontmatter, /^description: .{40,}/m, 'the description must carry routing triggers');
     assert.ok(fs.existsSync(path.join(SKILL, name, 'references')), 'rules must be available for progressive reading');
+    const requiredRules = {
+      'forge-question': ['socratic-questioning-standalone.md'],
+      'forge-review': ['tutor-review.md', 'evidence-and-review.md'],
+      'forge-review-plan': ['review-plan.md'],
+      'forge-insights': ['insight-notes.md'],
+      'forge-organize': ['source-grounded-teaching.md', 'artifacts.md'],
+    };
+    for (const file of requiredRules[name]) {
+      assert.ok(text.includes(`](references/${file}`), `${name} must route to its actual capability rules`);
+    }
     const ui = fs.readFileSync(path.join(SKILL, name, 'agents', 'openai.yaml'), 'utf8');
     const prompt = JSON.parse(ui.match(/^  default_prompt: (.+)$/m)[1]);
     assert.ok(prompt.startsWith(`/${name} `), 'UI invocation must address this independent entry');
@@ -90,7 +100,9 @@ test('each entry is self-contained with its declared pieces and a matching uniqu
   for (const name of ['forge-organize', 'forge-review']) {
     const references = fs.readdirSync(path.join(SKILL, name, 'references'));
     assert.ok(references.includes('archive-recovery.md'), 'standalone failure recovery remains available');
+    assert.ok(references.includes('artifact-rebuild.md'), 'standalone rebuild contracts remain available');
     assert.ok(!references.includes('phase-delivery.md'), 'single-capability dependencies do not pull in full teaching journeys');
+    assert.ok(!references.includes('phase-two-delivery.md'), 'single-capability dependencies do not pull in the second full journey');
     assert.ok(!references.includes('module-routing.md'), 'single capabilities do not need the complete router');
   }
   assert.ok(fs.existsSync(path.join(SKILL, 'forge-organize', 'references', 'learning-registration.md')));

@@ -133,7 +133,7 @@
 - 概念 ID 全局唯一；不能是 `__proto__`、`constructor`、`prototype` 这类原型污染键或空串。
 - `relations[]` 的 `from`、`to` 必须指向存在的概念；`type` 只能是 `prerequisite`、`cause`、`contrast`、`application`；`label` 在生成图中可见，建议填写。
 - `prompts[]` 的 `conceptId` 必须存在；`kind` 只能是 `recall`、`explain`、`apply`、`compare`；`question`、`answer` 必填，`criteria` 是字符串数组。
-- `prompts[].teaching`（可选）是作者问题的教学字段对象；各字段可省略：`purpose` 为 `explanation`/`variation`/`transfer`，`objective` 为非空成果文本，`prerequisites` 为不重复且存在的概念 ID 数组（可为空），`misconceptions` 与 `hints` 为非空字符串数组（每项非空，提示按顺序显示）。省略或空对象保持旧题行为；判定标准仍用 `criteria`。现场教学的练习选择与帮助保存由主入口按本次范围读取教学规则；定义这些作者字段本身不启动教学。
+- `prompts[].teaching`（可选）是作者问题的教学字段对象；各字段可省略：`purpose` 为 `explanation`/`variation`/`transfer`，`objective` 为非空成果文本，`prerequisites` 为不重复且存在的概念 ID 数组（可为空），`misconceptions` 与 `hints` 为非空字符串数组（每项非空，提示按顺序显示）。省略或空对象保持旧题行为；判定标准仍用 `criteria`。本段只定义作者字段；需要现场教学时先说明范围变化，再由已加载的教学入口选择练习并保存协助来源。
 - `interactions[]`（可选）是只读教学组件；当前支持 `kind: "comparison"`（并排对照两个对象）、`kind: "step-through"`（分步推演并保存可恢复位置）与 `kind: "parameter"`（只运行预置规则 `ratio`/`product`/`bayes-frequency` 的参数实验），其它 kind 报 `E_SCHEMA`“尚不支持”。省略或空数组不改变模型指纹。学习者的推演位置存在档案的可选 `interactionPositions` 里。字段、校验码、读模型与页面行为见 [teaching-interactions.md](teaching-interactions.md)。
 - 父子引用必须构成连通的、无环的树；这是内容层级（包含）语义。`prerequisite` 等跨分支关系表达的是另一层含义，不参与父子环检测，也不会因为“父同时是前置”就被判为环——请分别按各自含义校验。
 - `sources[]` 每项要求 `id` + `title`；`limitations[]` 是字符串数组。
@@ -276,28 +276,7 @@ node <skill-dir>/scripts/forge.mjs restore --out ./learning/probability --backup
 
 ### build 的输出与幂等性
 
-`build` 每次写出：
-
-- `index.html`：所有 CSS、JS、模型数据和当前状态都内联，可离线双击打开，无网络依赖。
-- `model.json`：规范化的模型副本，默认写到 `--out` 目录；如果输入模型与输出路径相同（例如对已生成的 `model.json` 再构建），它会原地重写，所以不要把它当作不可变原件。
-- `state.json`：当前状态；默认读取已存在的 state.json，按稳定 ID 协调模型变化并保留学习者修订与真实作答。
-- `map.excalidraw`：真实 Excalidraw v2 场景，可用编辑器打开继续编辑。传 `--scene <文件>`
-  时，`<文件>` 既是读入的已有场景，也是构建后写回的场景路径；构建不会自动把该文件复制或
-  另写为 `<out>/map.excalidraw`。要让标准路径更新，先把原生编辑器下载的场景复制或另存为
-  `<out>/map.excalidraw`，再省略 `--scene` 或用 `--scene <out>/map.excalidraw`。
-- `map.svg`：仅在传 `--svg` 时生成，供快速查看或嵌入。
-
-`quality.json` 与上面这些产物分开：它是作者侧的内容质检记录，由 `quality-write` 写入，`build` 只读取并把质检视图放进学习页载荷，永远不会改写它。质检不进入学习者档案，不改变掌握度。因为 `quality-write` 不重建页面，写入质检后要重跑 `build <out>/model.json --out <out>` 并刷新或重新打开新版页面，学习页才会显示质检结论；重建按稳定 ID 续接并保留已有学习档案与导图编辑。
-
-Excalidraw 场景和页面图谱是两层产物：场景通过稳定的 `customData.ember.conceptId` /
-`relationId` 与模型、题目互相定位，具体位置、绑定和图形文字编辑保留在场景里；学习页的
-概念标题、解释和关系语义仍以 `model.json` 与 `state.json` 的当前内容为准。只改原生图形
-文字不会自动回写这些语义字段；需要同步页面标题或关系名称时，要更新模型或页面内的标题
-修订后重新构建。
-
-重复 `build` 不会新增任何 attempt；`state.json` 只在模型语义变化或出现冲突时推进 revision，没有变化的构建保持稳定，所以重建页面可以随时做。若已有 `state.json` 属于另一个 `modelId`，`build` 会停止并要求显式处理，而不是把两份学习记录混在一起。
-
-`build` 会打印一行 JSON 摘要（`html`、`model`、`state`、`scene`、`svg`、`warnings`），把 `warnings` 如实转述给学习者。
+完整输出、导图路径、质检显示与状态幂等规则见[既有产物重建](artifact-rebuild.md)。新建与重建使用同一组构建合同。
 
 ### 复习计划（review-plan）
 
