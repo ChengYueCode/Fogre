@@ -99,7 +99,7 @@ const ENTRIES = [
       result: '先核对材料再生成或重建产物，并登记标准学习目录；不强制诊断，初始掌握度保持未知。',
     },
     bodies: ['source-grounded-teaching.md', 'artifacts.md'],
-    references: ['content-quality.md', 'learning-library.md'],
+    references: ['content-quality.md', 'learning-registration.md'],
     boundary: null,
     cli: true,
   },

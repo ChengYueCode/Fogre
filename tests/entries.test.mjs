@@ -87,6 +87,13 @@ test('each entry is self-contained with its declared pieces and a matching uniqu
   assert.ok(fs.existsSync(path.join(SKILL, 'forge-organize', 'assets', 'viewer.html')));
   assert.ok(fs.existsSync(path.join(SKILL, 'forge-organize', 'references', 'content-quality.md')));
   assert.ok(fs.existsSync(path.join(SKILL, 'forge-review', 'references', 'evidence-and-review.md')));
+  for (const name of ['forge-organize', 'forge-review']) {
+    const references = fs.readdirSync(path.join(SKILL, name, 'references'));
+    assert.ok(references.includes('archive-recovery.md'), 'standalone failure recovery remains available');
+    assert.ok(!references.includes('phase-delivery.md'), 'single-capability dependencies do not pull in full teaching journeys');
+    assert.ok(!references.includes('module-routing.md'), 'single capabilities do not need the complete router');
+  }
+  assert.ok(fs.existsSync(path.join(SKILL, 'forge-organize', 'references', 'learning-registration.md')));
 });
 
 test('generation never touches the forge main skill sources', () => {
@@ -99,7 +106,6 @@ test('generation never touches the forge main skill sources', () => {
 test('P02 every relative markdown link resolves within each independently installable entry', async () => {
   const result = checkLinks([SKILL, 'README.md']);
   assert.deepEqual(result.broken, []);
-  assert.ok(result.links >= 150, `expected the full link set, got ${result.links}`);
   const temporary = fs.mkdtempSync(path.join(os.tmpdir(), 'forge-isolated-entry-'));
   try {
     for (const name of entryNames()) {

@@ -136,7 +136,7 @@
 - 概念 ID 全局唯一；不能是 `__proto__`、`constructor`、`prototype` 这类原型污染键或空串。
 - `relations[]` 的 `from`、`to` 必须指向存在的概念；`type` 只能是 `prerequisite`、`cause`、`contrast`、`application`；`label` 在生成图中可见，建议填写。
 - `prompts[]` 的 `conceptId` 必须存在；`kind` 只能是 `recall`、`explain`、`apply`、`compare`；`question`、`answer` 必填，`criteria` 是字符串数组。
-- `prompts[].teaching`（可选）是作者问题的教学字段对象；各字段可省略：`purpose` 为 `explanation`/`variation`/`transfer`，`objective` 为非空成果文本，`prerequisites` 为不重复且存在的概念 ID 数组（可为空），`misconceptions` 与 `hints` 为非空字符串数组（每项非空，提示按顺序显示）。省略或空对象保持旧题行为；判定标准仍用 `criteria`。练习选择与帮助保存见[递进练习与帮助](progressive-practice.md)。
+- `prompts[].teaching`（可选）是作者问题的教学字段对象；各字段可省略：`purpose` 为 `explanation`/`variation`/`transfer`，`objective` 为非空成果文本，`prerequisites` 为不重复且存在的概念 ID 数组（可为空），`misconceptions` 与 `hints` 为非空字符串数组（每项非空，提示按顺序显示）。省略或空对象保持旧题行为；判定标准仍用 `criteria`。现场教学的练习选择与帮助保存由主入口按本次范围读取教学规则；定义这些作者字段本身不启动教学。
 - `interactions[]`（可选）是只读教学组件；当前支持 `kind: "comparison"`（并排对照两个对象）、`kind: "step-through"`（分步推演并保存可恢复位置）与 `kind: "parameter"`（只运行预置规则 `ratio`/`product`/`bayes-frequency` 的参数实验），其它 kind 报 `E_SCHEMA`“尚不支持”。省略或空数组不改变模型指纹。学习者的推演位置存在档案的可选 `interactionPositions` 里。字段、校验码、读模型与页面行为见 [teaching-interactions.md](teaching-interactions.md)。
 - 父子引用必须构成连通的、无环的树；这是内容层级（包含）语义。`prerequisite` 等跨分支关系表达的是另一层含义，不参与父子环检测，也不会因为“父同时是前置”就被判为环——请分别按各自含义校验。
 - `sources[]` 每项要求 `id` + `title`；`limitations[]` 是字符串数组。
@@ -149,7 +149,7 @@ schema 之外的多余字段会被保留在 `model.json` 里，但生成页与�
 
 ## 2. 状态与证据
 
-新建或接收标准学习目录后，按[学习档案入口](learning-library.md)登记目录，使后续会话能够发现主题；学习记录继续由该目录的档案维护。
+新建或接收标准学习目录后，按[学习目录登记](learning-registration.md)登记目录，使后续会话能够发现主题；学习记录继续由该目录的档案维护。
 
 状态由 CLI 与学习页维护，不要手写完整状态文件。学习档案（`state.json`）格式版本为 `schemaVersion: 2`；版本 1 的旧档会被新版工具在读取时显式迁移（见下文“旧档升级、备份与恢复”）。下面的结构只是字段形状示例（schema-only），不是可直接导入的样例状态；真实教学样例来自 `assets/probability.json`，由 `build` 生成到学习目录。
 
