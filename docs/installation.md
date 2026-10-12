@@ -30,15 +30,21 @@ npx skills@latest add https://github.com/ChengYueCode/Fogre/tree/main/skill/forg
 
 ### 安装后怎样调用
 
-技能名是 `forge`，调用前缀由你使用的工具决定。先选择技能，再填写自然语言学习目标：
+安装并加载后，在 AI 会话中使用 `/技能名 + 请求`。主技能例如：
 
-| 工具 | 调用方式 |
-| --- | --- |
-| Claude Code | `/forge 我想学概率，请用生活中的例子带我入门。` |
-| Codex CLI / IDE | 用 `/skills` 选择 `forge`，或以 `$forge` 提及技能，再写学习目标 |
-| 其他支持技能的工具 | 按该工具的技能菜单或调用说明选择 `forge` |
+```text
+/forge 我想学概率，请用生活中的例子带我入门。
+```
 
-依据：[Claude Code 官方技能文档](https://code.claude.com/docs/en/skills)、[OpenAI 官方技能文档](https://learn.chatgpt.com/docs/build-skills#how-chatgpt-and-codex-use-skills)。本文后续 `$forge` 示例使用 Codex 风格；在其他工具里保留学习请求正文，并换成该工具的调用方式。这些调用写在 AI 会话里。
+独立技能例如，先提供材料，再输入：
+
+```text
+/forge-organize 请把我提供的笔记整理成学习页和可编辑导图。
+```
+
+其余入口为 `/forge-question`、`/forge-review`、`/forge-review-plan`、`/forge-insights`，分别用于提问检查、复核已有作答、安排复习与汇总已有记录。只安装主技能也能用自然语言选择这些能力；独立入口可分别安装。
+
+这些调用写在 AI 会话里。安装命令的 `--skill` 参数仍使用不带 `/` 的技能名，例如 `--skill forge-organize`。
 
 ### 发布前本地试装与验证边界
 
@@ -68,7 +74,7 @@ node ./bin/forge.mjs install-skill --target "$env:USERPROFILE/.codex/skills/forg
 场景：你能读简单代码，希望用真实练习检验二分查找的边界判断。
 
 ```text
-$forge 带我学习二分查找，目标是独立解释循环不变式，并判断边界是否正确。
+/forge 带我学习二分查找，目标是独立解释循环不变式，并判断边界是否正确。
 ```
 
 Agent 根据请求核对材料、教学并按需生成产物、保存记录和打开学习页；用户不需要先手动运行构建或服务命令。完整行为需要宿主提供文件读写和命令执行能力，权限或环境不足时按实际阻塞说明。
@@ -81,7 +87,7 @@ Agent 根据请求核对材料、教学并按需生成产物、保存记录和�
 node ./bin/forge.mjs install-skill --target "$env:USERPROFILE/.codex/skills/forge-question" --skill forge-question
 ```
 
-通过主技能 `$forge` 也能选择单项能力，不必安装所有独立入口。宿主确认发现后才使用对应调用名。GitHub 分发后的入口安装可用 `npx skills@latest add ChengYueCode/Fogre --skill forge-question`。
+通过主技能 `/forge` 也能选择单项能力，不必安装所有独立入口。宿主确认发现后才使用对应调用名。GitHub 分发后的入口安装可用 `npx skills@latest add ChengYueCode/Fogre --skill forge-question`。
 
 ## 可选：安装本地 CLI 包
 
@@ -102,7 +108,7 @@ forge install-skill --target "$env:USERPROFILE/.codex/skills/forge"
 
 `$env:USERPROFILE` 展开为当前用户目录；若配置了自定义根目录，替换为配置值。
 
-`--target` 可以是绝对路径或相对当前工作目录的路径，必须指向宿主技能根目录的直接子目录（如 `.codex/skills/forge`），不是整个技能根目录。不要使用 vendor/forge 等多层嵌套布局，以免递归扫描器发现暂存或备份。安装器不会猜测宿主。上面的用户目录示例展开后是绝对路径；使用相对路径时以当前工作目录为基准，仍需核对目标是宿主实际加载的位置。通过源码入口直接运行时，目标必须在当前源码包目录之外。将生成目录交给你的 AI 宿主加载，宿主若支持 `$forge` 可按此名称调用。
+`--target` 可以是绝对路径或相对当前工作目录的路径，必须指向宿主技能根目录的直接子目录（如 `.codex/skills/forge`），不是整个技能根目录。不要使用 vendor/forge 等多层嵌套布局，以免递归扫描器发现暂存或备份。安装器不会猜测宿主。上面的用户目录示例展开后是绝对路径；使用相对路径时以当前工作目录为基准，仍需核对目标是宿主实际加载的位置。通过源码入口直接运行时，目标必须在当前源码包目录之外。将生成目录交给你的 AI 宿主加载，宿主若支持 `/forge` 可按此名称调用。
 
 ## 单项入口与安装检查
 
@@ -129,7 +135,7 @@ forge library register --topic probability --out ./learning/probability
 forge serve --out ./learning/probability --port 0
 ```
 
-示例打开后，在已加载技能的会话中输入 `$forge 接着 learning/probability 里的档案学习，先查看当前任务。`；没有创建学习轮次时，Agent 如实说明并按你的目标开始学习。使用自己的材料或目标时，参考[场景与使用示例](../skill/forge/references/usage-examples.md)。路径相对会话工作目录解析，跨目录会话提供可读目录或索引。两种保存方式见本文[保存与反馈交接](#保存与反馈交接)。
+示例打开后，在已加载技能的会话中输入 `/forge 接着 learning/probability 里的档案学习，先查看当前任务。`；没有创建学习轮次时，Agent 如实说明并按你的目标开始学习。使用自己的材料或目标时，参考[场景与使用示例](../skill/forge/references/usage-examples.md)。路径相对会话工作目录解析，跨目录会话提供可读目录或索引。两种保存方式见本文[保存与反馈交接](#保存与反馈交接)。
 
 项目本地安装：
 
@@ -187,7 +193,7 @@ npm uninstall -g forge-learning-local
 场景：你换了一个会话，想找回之前已登记的主题，但不记得目录名称。
 
 ```text
-$forge 查看当前工作区已登记的主题，告诉我各自的目标、暂停位置和待复习情况，让我选一个继续。
+/forge 查看当前工作区已登记的主题，告诉我各自的目标、暂停位置和待复习情况，让我选一个继续。
 ```
 
 需要手动维护时，使用以下命令。场景：已有标准学习目录 `learning/probability`，希望登记后从新进程读回；`resume` 只读取，不开始或切换轮次。

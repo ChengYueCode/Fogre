@@ -1,6 +1,6 @@
 ---
 name: forge-review
-description: 复核学习者已提交的真实作答：固定复核范围，逐项说明正确部分、具体误解、核对依据与修补，并把结果写回学习档案。当用户想「检查我的作答」「复核这批答案」「集中批改本轮回答」时使用；「安排今天复习什么」用 forge-review-plan；完整学习旅程用 forge 主技能（$forge）。
+description: 复核学习者已提交的真实作答：固定复核范围，逐项说明正确部分、具体误解、核对依据与修补，并把结果写回学习档案。当用户想「检查我的作答」「复核这批答案」「集中批改本轮回答」时使用；「安排今天复习什么」用 forge-review-plan；完整学习旅程用 forge 主技能（/forge）。
 metadata:
   short-description: 集中复核作答
 ---
@@ -17,7 +17,7 @@ metadata:
 **场景**：learning/binary-search 中已有本轮作答，你想集中核对并留下反馈。
 
 ```text
-$forge-review 检查 learning/binary-search 本轮已提交作答，说明正确部分、误解和依据，保存逐项反馈。
+/forge-review 检查 learning/binary-search 本轮已提交作答，说明正确部分、误解和依据，保存逐项反馈。
 ```
 
 **预期处理**：固定复核范围、核对真实原答并读回反馈；原答保留，缺依据或内容失效的项保持待处理。
