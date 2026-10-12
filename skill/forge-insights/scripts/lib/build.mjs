@@ -3,6 +3,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 import { EmberError, CODES } from './errors.mjs';
+import { assertLearningOutput } from './output-paths.mjs';
 import {
   atomicWrite,
   fileExists,
@@ -245,13 +246,13 @@ function readExistingScene(filePath) {
  * malformed model/state/scene leaves any previous build untouched.
  */
 export function buildArtifacts(options) {
-  const outDir = options.outDir;
-  if (!outDir) throw new EmberError(CODES.USAGE, 'build 需要 --out <输出目录>');
+  if (!options.outDir) throw new EmberError(CODES.USAGE, 'build 需要 --out <输出目录>');
+  const outDir = assertLearningOutput(options.outDir, '--out');
   const modelPath = options.modelPath;
   if (!modelPath) throw new EmberError(CODES.USAGE, 'build 需要模型文件路径');
 
-  const statePath = archivePathFor(options.statePath ?? path.join(outDir, DEFAULT_OUT_FILES.state));
-  const scenePath = options.scenePath ?? path.join(outDir, DEFAULT_OUT_FILES.scene);
+  const statePath = archivePathFor(assertLearningOutput(options.statePath ?? path.join(outDir, DEFAULT_OUT_FILES.state), '--state'));
+  const scenePath = assertLearningOutput(options.scenePath ?? path.join(outDir, DEFAULT_OUT_FILES.scene), '--scene');
   const viewerPath = options.viewerPath;
   if (!viewerPath) throw new EmberError(CODES.USAGE, 'build 缺少学习页模板路径（脚本内部错误）');
 

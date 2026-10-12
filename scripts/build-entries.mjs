@@ -130,7 +130,7 @@ function referenceDependencies(markdown) {
 
 function entryReferences(def) {
   const files = new Set();
-  const pending = [...def.bodies, ...def.references];
+  const pending = [...def.bodies, ...def.references, ...(def.cli ? ['output-paths.md'] : [])];
   while (pending.length) {
     const file = pending.pop();
     if (files.has(file)) continue;
@@ -190,7 +190,7 @@ function buildSkillMd(def) {
   parts.push('');
   parts.push('1. 按下方能力规则的顺序读取先读文件，在第一次回复里说明本次范围。后续只沿当前分支读取参考。');
   if (def.cli) {
-    parts.push('2. 命令使用本目录自带的 CLI：`node <本目录>/scripts/forge.mjs <命令>`，先用 `help` 查看当前命令；学习数据写在学习者指定的目录，不写入技能目录。');
+    parts.push('2. 命令使用本目录自带的 CLI：`node <本目录>/scripts/forge.mjs <命令>`，先用 `help` 查看当前命令；按[输出位置与保存合同](references/output-paths.md)确认执行工作目录与明确的学习路径，数据不写入技能目录。');
   } else {
     parts.push('2. 本能力是纯会话能力：无需 Node.js 或本地脚本，不创建文件、不宣称归档或推进掌握；学习者请求持久保存时说明范围变化，确认 forge 主技能已安装并加载后再进入模型与任务准备步骤。');
   }

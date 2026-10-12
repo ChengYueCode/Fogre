@@ -8,6 +8,7 @@ import os from 'node:os';
 import { randomUUID } from 'node:crypto';
 
 import { EmberError, CODES, isRecord } from './errors.mjs';
+import { assertLearningOutput } from './output-paths.mjs';
 import { atomicWrite, fileExists, nowIso, parseJson, stableStringify } from './io.mjs';
 import { normalizeState } from './state.mjs';
 
@@ -260,6 +261,7 @@ export function writeArchiveState(statePath, state, { wasV1 = false, rawText = n
  * on-disk archive can be compared by any auditor.
  */
 export function restoreArchiveBackup({ statePath, model, backupPath }) {
+  assertLearningOutput(statePath, '--state');
   const resolved = backupPath ?? path.join(path.dirname(statePath), V1_BACKUP_NAME);
   if (!fileExists(resolved)) {
     throw new EmberError(CODES.IO, `没有找到可恢复的旧档副本 ${resolved}；只有升级前才会创建该副本`);

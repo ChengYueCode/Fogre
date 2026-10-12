@@ -252,6 +252,8 @@ forge install-skill --target "$env:USERPROFILE/.agents/skills/forge" --upgrade
 
 学习档案应放在自己的 `learning/<主题>/`，升级不操作这些目录。不要在技能目录内保存学习数据。
 
+这里的 `learning/<主题>/` 是 Agent 选择目录时的建议，CLI 本身要求显式 `--out`，没有自动主题目录默认值。所有相对路径参数以执行命令时的工作目录为基准；推荐让 Agent 确认位置后传绝对路径。默认索引相对该工作目录为 `learning/learning-index.json`，不会因 `--out` 指向别处而自动跟随；需要时显式传 `--catalog`。学习写入命令会拒绝技能目录内的输出，完整参数语义见[输出位置与保存合同](../skill/forge/references/output-paths.md)。
+
 ## 卸载与命令冲突
 
 通过 Skills 安装的技能使用它的移除命令，例如 `npx skills@latest remove forge`，并核对实际安装范围。下面的 npm 卸载只针对可选 CLI 包，不是 Skills 技能卸载方式。

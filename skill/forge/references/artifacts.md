@@ -213,6 +213,8 @@ schema 之外的多余字段会被保留在 `model.json` 里，但生成页与�
 
 全部命令通过技能包内唯一入口 `scripts/forge.mjs` 调用。脚本位置由技能包决定，不需要 `cd` 进技能目录；用 `node <skill-dir>/scripts/forge.mjs help` 查看当前可用选项，路径参数相对于当前工作目录。
 
+调用前按[输出位置与保存合同](output-paths.md)确认实际目录与参数含义；学习输出禁止写入 Forge 技能目录，目录建议不等于脚本自动默认值。
+
 ```bash
 # 校验模型（不写文件）
 node <skill-dir>/scripts/forge.mjs validate ./learning/probability/model.json

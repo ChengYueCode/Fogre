@@ -3,6 +3,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { EmberError, CODES, isRecord } from './errors.mjs';
+import { assertLearningOutput } from './output-paths.mjs';
 import { atomicWrite, nowIso, readJson, stableStringify } from './io.mjs';
 import { withArchiveLock } from './archive.mjs';
 
@@ -94,6 +95,7 @@ function readTopic(file, entry, reader, at, roundId) {
 }
 
 export async function registerTopic(file, id, directory, reader) {
+  assertLearningOutput(file, '--catalog');
   topicId(id);
   const out = canonicalDir(path.resolve(directory));
   // Read before taking the catalog lock; registration never writes the topic.
@@ -159,6 +161,7 @@ export function resumeTopic(file, id, reader, at, roundId) {
 }
 
 export async function removeTopic(file, id) {
+  assertLearningOutput(file, '--catalog');
   topicId(id);
   // Missing catalogs remain missing; read commands and no-op removal create nothing.
   const initial = readCatalog(file);

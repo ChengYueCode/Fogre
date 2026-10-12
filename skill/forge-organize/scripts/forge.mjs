@@ -1,11 +1,12 @@
 #!/usr/bin/env node
-// forge unified CLI. Every path is resolved from this file so the installed
-// skill can live anywhere and be invoked without changing the learner's cwd.
+// Resource paths are relative to this skill. User-supplied paths are relative
+// to the command's cwd, so calling an installed skill does not relocate data.
 import path from 'node:path';
 import process from 'node:process';
 import { fileURLToPath } from 'node:url';
 
 import { EmberError, CODES, isRecord } from './lib/errors.mjs';
+import { assertLearningOutput } from './lib/output-paths.mjs';
 import { atomicWrite, fileExists, nowIso, readJson, stableStringify } from './lib/io.mjs';
 import { archiveLockDirs, archivePathFor, readArchive, restoreArchiveBackup, withArchiveLock, writeArchiveState } from './lib/archive.mjs';
 import { modelToJson, normalizeModel } from './lib/model.mjs';
@@ -64,6 +65,10 @@ const HELP = `forge · 锻造 — 学习产物与复习循环
 
 用法：node <skill-dir>/scripts/forge.mjs <命令> [参数]
 脚本位置由技能包决定；不需要 cd 进技能目录，学习数据放在你自己的工作区。
+所有相对路径参数按执行命令时的工作目录解析，绝对路径原样定位。
+需要学习目录的命令必须给 --out；不会自动创建 learning/<主题>。
+学习输出、外置档案/导图、导出文件和索引均不得写入 Forge 技能目录。
+import 的 --state 是导入输入；其他支持 --state 的命令用它指定档案位置。
 
 命令：
   library register --topic <稳定ID> --out <学习目录> [--catalog <索引JSON>]
@@ -1155,6 +1160,23 @@ async function main() {
   const { positional, flags } = parseArgs(process.argv.slice(2));
   const command = positional[0];
   const rest = positional.slice(1);
+  // Validate destinations before creating locks, directories or files.
+  // Read-only inputs remain available for recovery and export.
+  const outputs = {
+    build: ['out', 'state', 'scene'], serve: ['out', 'state'],
+    submit: ['out', 'state'], practice: ['out', 'state'], correction: ['out', 'state'],
+    'correction-record': ['out', 'state'], review: ['out', 'state'], assess: ['out', 'state'],
+    evidence: ['out', 'state'], round: ['out', 'state'], interaction: ['out', 'state'],
+    'review-start': ['out', 'state'], 'review-item': ['out', 'state'],
+    import: ['out'], restore: ['out', 'state'], 'quality-write': ['out'],
+    export: ['to'], 'quality-template': ['to'],
+  };
+  for (const flag of outputs[command] ?? []) {
+    if (flags[flag] !== undefined) assertLearningOutput(flags[flag], `--${flag}`);
+  }
+  if (command === 'library' && ['register', 'remove'].includes(rest[0])) {
+    assertLearningOutput(catalogPath(flags.catalog), '--catalog');
+  }
   switch (command) {
     case 'library':
       await cmdLibrary(flags, rest);

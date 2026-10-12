@@ -3,6 +3,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 
 import { EmberError, CODES, isRecord } from './errors.mjs';
+import { assertLearningOutput } from './output-paths.mjs';
 import { fileExists, nowIso, parseJson, readJson } from './io.mjs';
 import { modelToJson, normalizeModel } from './model.mjs';
 import { archiveLockDirs, archivePathFor, readArchive, withArchiveLock, writeArchiveState } from './archive.mjs';
@@ -160,10 +161,10 @@ function parseAction(pathname) {
 export function createEmberServer(options) {
   const dir = options.dir;
   if (!dir) throw new EmberError(CODES.USAGE, 'serve 需要 --out <输出目录>');
-  const outDir = path.resolve(dir);
+  const outDir = assertLearningOutput(dir, '--out');
   const bound = { host: options.host ?? '127.0.0.1', port: options.port ?? 0 };
   const modelPath = options.modelPath ?? path.join(outDir, DEFAULT_OUT_FILES.model);
-  const statePath = archivePathFor(options.statePath ?? path.join(outDir, DEFAULT_OUT_FILES.state));
+  const statePath = archivePathFor(assertLearningOutput(options.statePath ?? path.join(outDir, DEFAULT_OUT_FILES.state), '--state'));
   const now = options.now ?? nowIso;
 
   function readModel() {

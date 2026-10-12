@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import { EmberError, CODES } from './errors.mjs';
+import { assertLearningOutput } from './output-paths.mjs';
 
 export function readJson(filePath) {
   let raw;
@@ -48,6 +49,7 @@ export function shortHash(text, length = 12) {
 
 // Write via a temp file + atomic rename so readers never see partial JSON.
 export function atomicWrite(filePath, content) {
+  assertLearningOutput(filePath);
   const dir = path.dirname(filePath);
   fs.mkdirSync(dir, { recursive: true });
   const tmp = path.join(dir, `.${path.basename(filePath)}.${process.pid}.${Date.now()}.tmp`);
