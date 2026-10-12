@@ -16,6 +16,8 @@
 
 根目录 `.claude-plugin/plugin.json` 以 `forge-skills` 为插件名，显式列出六个 `./skill/forge*` 目录。Skills 据此发现技能，并在交互选择菜单显示可展开的 `Forge Skills` 分组；插件名不会改变技能身份或安装目录名。清单随源码发布包及 npm 包分发，增加或移除入口时必须同步维护。
 
+六个入口均携带自己的 `SKILL.md`、能力参考与 `agents/openai.yaml`，UI 提示和会话示例使用对应的 `/技能名`。单项入口及其 UI 配置由同一个生成器维护；定位随附资源时使用实际加载的技能目录，不依赖源码路径或兄弟安装件。真实 npm 包测试对六个入口分别隔离安装，比较全部分发文件、检查本地参考，并对五个带工具的入口运行 CLI 校验与页面/导图构建；纯会话的 `forge-question` 不携带 scripts/assets。
+
 默认仓库安装命令让用户在菜单中选择；`--skill forge` 只选择主技能，`--skill '*'` 直接选择全部六个。目标 Agent 与项目级/用户级范围决定实际加载位置；复制安装时，同一 Agent 的六个入口在其技能根目录下并列，完整资源随各入口携带。推荐位置与实测边界见[安装目录与发现检查](installation.md#安装目录与发现检查)。
 
 npm 包 `forge-learning-local` 虽含全部六个分发目录，`npm install` 只安装 CLI。自带 `install-skill` 一次显式复制一个技能；要放置六个入口需逐一调用，不能把 node_modules 中的分发目录视为已被宿主发现。

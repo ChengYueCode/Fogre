@@ -73,6 +73,10 @@ test('each entry is self-contained with its declared pieces and a matching uniqu
     seen.add(frontmatter.match(/^name: (.+)$/m)[1]);
     assert.match(frontmatter, /^description: .{40,}/m, 'the description must carry routing triggers');
     assert.ok(fs.existsSync(path.join(SKILL, name, 'references')), 'rules must be available for progressive reading');
+    const ui = fs.readFileSync(path.join(SKILL, name, 'agents', 'openai.yaml'), 'utf8');
+    const prompt = JSON.parse(ui.match(/^  default_prompt: (.+)$/m)[1]);
+    assert.ok(prompt.startsWith(`/${name} `), 'UI invocation must address this independent entry');
+    assert.ok(text.includes(prompt), 'UI prompt must match an actual entry example');
   }
   // Declared pieces per the phase-2 spec table.
   assert.deepEqual(fs.readdirSync(path.join(SKILL, 'forge-question', 'references')), ['socratic-questioning-standalone.md']);

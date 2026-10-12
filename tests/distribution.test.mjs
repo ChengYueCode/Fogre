@@ -6,6 +6,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { spawnSync } from 'node:child_process';
 import { installSkill } from '../scripts/install-skill.mjs';
+import { checkLinks } from '../scripts/check-links.mjs';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
 const bin = path.join(root, 'bin/forge.mjs');
@@ -76,7 +77,7 @@ test('installer rejects broad, foreign, aliased and locked targets', async () =>
   } finally { await fs.rm(temp, { recursive: true, force: true }); }
 });
 
-test('real npm tarball installs a runnable CLI and complete standalone skill', async () => {
+test('real npm tarball installs a runnable CLI and all six complete independent skills', async () => {
   assert.ok(process.env.npm_execpath, 'Run via npm run test:distribution or npm test to supply npm_execpath');
   const temp = await temporary('forge-npm-');
   try {
@@ -128,6 +129,39 @@ test('real npm tarball installs a runnable CLI and complete standalone skill', a
     run([installedBin, 'validate', path.join(skill, 'assets/probability.json')], temp);
     run([installedBin, 'build', path.join(skill, 'assets/probability.json'), '--out', path.join(temp, 'artifacts')], temp);
     await fs.access(path.join(temp, 'artifacts/state.json'));
+    const installedPackage = path.dirname(path.dirname(installedBin));
+    const installedCatalog = JSON.parse(await fs.readFile(path.join(installedPackage, '.claude-plugin/plugin.json'), 'utf8'));
+    assert.deepEqual(installedCatalog, catalog, 'installed npm catalog matches the repository menu');
+    for (const directory of installedCatalog.skills) {
+      const name = path.basename(directory);
+      const hostRoot = path.join(temp, `isolated-${name}`, 'skills');
+      const target = path.join(hostRoot, name);
+      const result = JSON.parse(run([installedBin, 'install-skill', '--target', target, '--skill', name], temp));
+      assert.equal(result.skill, name);
+      assert.deepEqual(await fs.readdir(hostRoot), [name], 'each capability is tested without main or sibling skills');
+      const markdown = await fs.readFile(path.join(target, 'SKILL.md'), 'utf8');
+      assert.match(markdown, new RegExp(`^name: ${name}$`, 'm'));
+      assert.deepEqual(checkLinks([target]).broken, [], 'installed references resolve locally');
+      const ui = await fs.readFile(path.join(target, 'agents/openai.yaml'), 'utf8');
+      assert.ok(JSON.parse(ui.match(/^  default_prompt: (.+)$/m)[1]).startsWith(`/${name} `));
+      // Compare every distributed file, including scripts, assets and UI metadata.
+      const source = path.join(installedPackage, directory);
+      for (const file of files.filter(file => file.startsWith(`skill/${name}/`))) {
+        const relative = file.slice(`skill/${name}/`.length);
+        assert.deepEqual(await fs.readFile(path.join(target, relative)), await fs.readFile(path.join(source, relative)), `${name}/${relative} must survive installation intact`);
+      }
+      if (name === 'forge-question') {
+        await assert.rejects(fs.access(path.join(target, 'scripts')));
+        await assert.rejects(fs.access(path.join(target, 'assets')));
+      } else {
+        const entryCli = path.join(target, 'scripts/forge.mjs');
+        run([entryCli, 'help'], temp);
+        run([entryCli, 'validate', path.join(target, 'assets/probability.json')], temp);
+        const output = path.join(temp, `isolated-${name}`, 'learning');
+        run([entryCli, 'build', path.join(target, 'assets/probability.json'), '--out', output, '--svg'], temp);
+        for (const artifact of ['index.html', 'state.json', 'map.excalidraw', 'map.svg']) await fs.access(path.join(output, artifact));
+      }
+    }
   } finally { await fs.rm(temp, { recursive: true, force: true }); }
 });
 
