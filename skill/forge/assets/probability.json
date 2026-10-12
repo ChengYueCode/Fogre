@@ -1,0 +1,202 @@
+{
+  "schemaVersion": 1,
+  "id": "probability-basics",
+  "title": "条件概率与贝叶斯更新",
+  "goal": "能用先验、检测特性和自然频率解释并计算阳性预测值，并说清先验如何改变结论。",
+  "summary": "从一个假想的医学筛查例子出发，理解条件概率、先验、检测特性与后验概率，并用自然频率树解释阳性预测值。",
+  "activity": "bayes-frequency",
+  "concepts": [
+    {
+      "id": "conditional-probability",
+      "title": "条件概率",
+      "parentId": null,
+      "difficulty": 1,
+      "explanation": "条件概率 P(A|B) 表示：在已知 B 发生的前提下，A 发生的概率。它把样本空间缩小到 B 之内，再计算 A 在其中的占比。",
+      "example": "一副扑克牌里已知抽到红牌，抽到红桃的概率是 13/26 = 1/2。",
+      "misconception": "把 P(A|B) 与 P(B|A) 当成同一个数。"
+    },
+    {
+      "id": "prior",
+      "title": "先验概率",
+      "parentId": "conditional-probability",
+      "difficulty": 1,
+      "explanation": "先验是在看到新证据之前，对某个假设的信念或人群基础比例。在筛查问题里，先验通常就是患病率。",
+      "example": "某病在人群中的患病率为 1%，这就是检测前患病的先验概率。",
+      "misconception": "忽略基础率，把一次检测结果当成全部证据。"
+    },
+    {
+      "id": "sensitivity-specificity",
+      "title": "灵敏度与特异度",
+      "parentId": "conditional-probability",
+      "difficulty": 2,
+      "explanation": "灵敏度是有病者被检测为阳性的比例；特异度是无病者被检测为阴性的比例。本教学模型把它们当作固定、已知的检测特性，不随人群患病率改变；这不是说真实检测在所有人身上都无偏。",
+      "example": "灵敏度 90% 表示 100 名病人中约 90 人会被检出阳性；特异度 95% 表示 100 名健康人中约 95 人会被判为阴性。",
+      "misconception": "把灵敏度或特异度当作阳性预测值。"
+    },
+    {
+      "id": "ppv",
+      "title": "阳性预测值",
+      "parentId": "conditional-probability",
+      "difficulty": 3,
+      "explanation": "阳性预测值 PPV 是检测阳性的人群中真正患病的比例，即 P(患病|阳性)。它由先验和检测特性共同决定，不能只靠检测准确率得到。",
+      "example": "患病率 1%、灵敏度 90%、特异度 95% 时，1000 人的期望计数是 9 名真阳性和 49.5 名假阳性，PPV = 9/58.5 ≈ 15.4%（这是期望值，画布上的格子会取整成整数）。",
+      "misconception": "认为检测准确率就是阳性预测值。"
+    },
+    {
+      "id": "bayes-update",
+      "title": "贝叶斯更新",
+      "parentId": "ppv",
+      "difficulty": 3,
+      "explanation": "贝叶斯更新把先验概率与似然相乘，再用全概率归一化，得到后验概率。似然就是：在患病和不患病两种情况下，看到当前证据的概率。",
+      "example": "1% 的先验在阳性结果后更新为约 15.4% 的后验，说明证据把信念提高了很多，但绝对水平仍不算高。",
+      "misconception": "只更新一半证据，或者忘记用全概率做分母。"
+    },
+    {
+      "id": "base-rate-neglect",
+      "title": "基础率谬误",
+      "parentId": "ppv",
+      "difficulty": 2,
+      "explanation": "基础率谬误指忽视人群的基础比例，只根据具体、生动的个案信息判断概率。它会让低患病率下的阳性结果被严重高估。",
+      "example": "看到阳性就认为大概率得病，却没有先看这种病在人群中究竟有多常见。",
+      "misconception": "用个案的细节描述替代基础率。"
+    },
+    {
+      "id": "natural-frequencies",
+      "title": "自然频率树",
+      "parentId": "bayes-update",
+      "difficulty": 2,
+      "explanation": "自然频率树用具体人数代替抽象概率：先取一个总人数，按患病与否分成两支，再按检测结果分成四格，最后直接数出真阳性和假阳性。",
+      "example": "1000 人中期望 10 人患病、990 人健康；真阳性期望 9、假阳性期望 49.5，后验（PPV）= 9/58.5 ≈ 15.4%；画布把不足一格的期望计数取整。",
+      "misconception": "以为频率树只是另一种公式，而不是同一件事的具体计数。"
+    },
+    {
+      "id": "screening-decision",
+      "title": "后验概率的解读",
+      "parentId": "conditional-probability",
+      "difficulty": 3,
+      "explanation": "后验概率是看到新证据后更新的信念，例如 P(患病|阳性) 把先验与似然结合。它回答“在这个结果下假设有多可信”，是统计上的更新结果，不是针对个人的诊断结论，也不等于检测本身的准确率。",
+      "example": "在先验 1%、灵敏度 90%、特异度 95% 的假设下，阳性后的后验约为 15.4%：期望计数是 9 个真阳性与 49.5 个假阳性，所以 9/58.5 ≈ 15.4%。",
+      "misconception": "把后验概率当成固定的诊断结论，或丢掉先验只看阳性结果。"
+    }
+  ],
+  "relations": [
+    { "id": "rel-prior-bayes", "from": "prior", "to": "bayes-update", "type": "prerequisite", "label": "先验是更新的起点" },
+    { "id": "rel-sens-ppv", "from": "sensitivity-specificity", "to": "ppv", "type": "cause", "label": "检测特性影响阳性预测值" },
+    { "id": "rel-prior-ppv", "from": "prior", "to": "ppv", "type": "cause", "label": "先验改变阳性预测值" },
+    { "id": "rel-baserate-bayes", "from": "base-rate-neglect", "to": "bayes-update", "type": "contrast", "label": "忽视基础率 vs 正确加权" },
+    { "id": "rel-freq-bayes", "from": "natural-frequencies", "to": "bayes-update", "type": "application", "label": "用计数实现贝叶斯更新" },
+    { "id": "rel-prior-screening", "from": "prior", "to": "screening-decision", "type": "application", "label": "先验是后验更新的起点" },
+    { "id": "rel-ppv-screening", "from": "ppv", "to": "screening-decision", "type": "prerequisite", "label": "阳性预测值即阳性后的后验" },
+    { "id": "rel-sens-freq", "from": "sensitivity-specificity", "to": "natural-frequencies", "type": "application", "label": "把灵敏度和特异度放进频率树" }
+  ],
+  "prompts": [
+    {
+      "id": "p-cond-def",
+      "conceptId": "conditional-probability",
+      "kind": "recall",
+      "question": "条件概率 P(A|B) 的样本空间是什么？",
+      "answer": "把原来的样本空间缩小到 B 之内，再计算 A 在 B 中所占的比例。",
+      "criteria": ["样本空间缩小到 B", "分母是 B 的概率或 B 内的结果数", "不是把 A、B 反过来"]
+    },
+    {
+      "id": "p-ppv-def",
+      "conceptId": "ppv",
+      "kind": "recall",
+      "question": "阳性预测值回答的是一个什么问题？",
+      "answer": "在所有检测为阳性的人里，真正患病的比例。",
+      "criteria": ["分母是全部检测阳性的人", "分子是真患病的人", "明确它是条件概率 P(患病|阳性)"]
+    },
+    {
+      "id": "p-prior-effect",
+      "conceptId": "prior",
+      "kind": "explain",
+      "question": "同样的检测，为什么患病率越低，阳性预测值越低？请用自己的话解释。",
+      "answer": "低患病率意味着大量健康人进入检测，即使特异度很高，假阳性的绝对人数仍可能超过真阳性，于是阳性里真患病的比例下降。",
+      "criteria": ["提到假阳性人数随健康人基数增大", "提到分子真阳性人数变小", "把变化归因于分母而不是检测本身变差"]
+    },
+    {
+      "id": "p-apply-ppv",
+      "conceptId": "bayes-update",
+      "kind": "apply",
+      "question": "假设 1000 人中患病率为 2%，灵敏度 90%，特异度 95%。请算出真阳性、假阳性人数和阳性预测值，并写出步骤。",
+      "answer": "患病约 20 人，真阳性 20×90%=18 人；健康约 980 人，假阳性 980×5%=49 人；PPV=18/(18+49)≈26.9%。",
+      "criteria": ["真阳性 18", "假阳性 49", "PPV 用真阳性除以全部阳性", "结果约 26.9%"]
+    },
+    {
+      "id": "p-compare-denom",
+      "conceptId": "sensitivity-specificity",
+      "kind": "compare",
+      "question": "灵敏度和阳性预测值分别以什么为分母？",
+      "answer": "灵敏度以真正患病的人为分母；阳性预测值以所有检测呈阳性的人为分母。",
+      "criteria": ["灵敏度分母是患者", "阳性预测值分母是阳性者", "指出两者方向不同"]
+    },
+    {
+      "id": "p-freq-tree",
+      "conceptId": "natural-frequencies",
+      "kind": "apply",
+      "question": "用自然频率树重新计算：1000 人，患病率 1%，灵敏度 90%，特异度 95%。写出四格人数，并估计阳性预测值。",
+      "answer": "1000 人的期望计数：患病 10 人，真阳性 9 人、假阴性 1 人；健康 990 人，假阳性 49.5 人、真阴性 940.5 人；后验（PPV）=9/58.5≈15.4%。这些是期望值，画布格子会取整。",
+      "criteria": ["总人数 1000", "真阳性期望 9", "假阳性期望 49.5", "后验约 15.4%", "区分期望计数与取整格子"]
+    },
+    {
+      "id": "p-baserate",
+      "conceptId": "base-rate-neglect",
+      "kind": "explain",
+      "question": "基础率谬误在筛查场景里会如何误导判断？举一个你自己的例子。",
+      "answer": "它让人只看阳性这个具体结果，忽略疾病本身在人群中很罕见，从而把阳性后的患病概率估计得远高于真实的后验概率。",
+      "criteria": ["点明忽略基础率", "联系到高估阳性后的患病概率", "给出一个具体情境"]
+    },
+    {
+      "id": "p-screening",
+      "conceptId": "screening-decision",
+      "kind": "compare",
+      "question": "同一个阳性证据，为什么在先验 1% 和先验 2% 的人群里得到的后验不同？请比较先验与似然对后验的更新作用。",
+      "answer": "阳性通过似然把后验推向更高，但后验水平由先验与似然共同决定。先验 1% 时假阳性期望 49.5、后验约 15.4%；先验 2% 时假阳性期望 49、后验约 26.9%。所以同一证据在不同先验下更新后的落点不同。",
+      "criteria": ["指出证据通过似然更新后验", "比较不同先验下后验不同", "区分先验与似然各自的作用", "不把后验说成临床诊断建议"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "src-bayes-1763",
+      "title": "Bayes, T. (1763). An Essay towards solving a Problem in the Doctrine of Chances. Philosophical Transactions of the Royal Society of London, 53, 370–418.",
+      "note": "贝叶斯推理的早期文献，用先验与证据得到后验。",
+      "kind": "primary-source",
+      "url": "https://doi.org/10.1098/rstl.1763.0053"
+    },
+    {
+      "id": "src-tversky-kahneman-1974",
+      "title": "Tversky, A. & Kahneman, D. (1974). Judgment under Uncertainty: Heuristics and Biases. Science, 185(4157), 1124–1131.",
+      "note": "关于基础率忽视的经典实验证据，本页对比概念的依据。",
+      "kind": "primary-source",
+      "url": "https://doi.org/10.1126/science.185.4157.1124"
+    },
+    {
+      "id": "src-gigerenzer-1995",
+      "title": "Gigerenzer, G. & Hoffrage, U. (1995). How to improve Bayesian reasoning without instruction: Frequency formats. Psychological Review, 102(4), 684–704.",
+      "note": "自然频率格式能帮助人们完成贝叶斯推理，本页的频率树演示据此设计。",
+      "kind": "primary-source",
+      "url": "https://doi.org/10.1037/0033-295X.102.4.684"
+    },
+    {
+      "id": "src-screening-synthetic",
+      "title": "forge 教学示例：假设的医学筛查数字",
+      "note": "患病率、灵敏度和特异度均为便于计算的假设值，不对应任何真实疾病或检测，只用于演示条件概率与贝叶斯更新。",
+      "kind": "synthetic-teaching-material"
+    }
+  ],
+  "conceptSources": {
+    "conditional-probability": ["src-screening-synthetic"],
+    "prior": ["src-tversky-kahneman-1974", "src-screening-synthetic"],
+    "sensitivity-specificity": ["src-screening-synthetic"],
+    "ppv": ["src-gigerenzer-1995", "src-screening-synthetic"],
+    "bayes-update": ["src-bayes-1763", "src-gigerenzer-1995"],
+    "base-rate-neglect": ["src-tversky-kahneman-1974"],
+    "natural-frequencies": ["src-gigerenzer-1995"],
+    "screening-decision": ["src-screening-synthetic", "src-tversky-kahneman-1974"]
+  },
+  "limitations": [
+    "所有数值都是教学假设，不能用于真实医疗判断。",
+    "交互演示只覆盖理想的单次二分类检测；本模型把灵敏度与特异度视为固定的检测特性，没有假设两次检测相互独立，也不声称它们对所有人都无偏。",
+    "自然频率与概率公式在理想假设下等价；真实数据可能存在分层、选择偏倚与检测误差。"
+  ]
+}

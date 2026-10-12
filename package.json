@@ -1,0 +1,25 @@
+{
+  "name": "forge-learning-local",
+  "version": "0.1.0",
+  "private": true,
+  "description": "forge · 锻造：核对材料、检验真实作答，生成学习产物与可查找、可续接的本地学习档案",
+  "type": "module",
+  "license": "MIT",
+  "author": "ChengYueCode",
+  "repository": { "type": "git", "url": "https://github.com/ChengYueCode/Fogre.git" },
+  "bugs": { "url": "https://github.com/ChengYueCode/Fogre/issues" },
+  "homepage": "https://github.com/ChengYueCode/Fogre#readme",
+  "engines": { "node": ">=20" },
+  "bin": { "forge": "bin/forge.mjs" },
+  "files": ["bin/", "scripts/install-skill.mjs", "skill/*/SKILL.md", "skill/*/references/*.md", "skill/*/assets/*.html", "skill/*/assets/*.json", "skill/*/scripts/**/*.mjs", "skill/*/agents/*.yaml", "skill/*/LICENSE", "skill/*/NOTICE", "docs/installation.md", "docs/skill-architecture.md", "docs/open-source.md", "docs/skill-acceptance.md", "docs/support.md", "docs/release-checklist.md", "docs/forge-methods.md", "docs/github-introduction.md", "SECURITY.md", "THIRD_PARTY.md", "GLOSSARY.md", "CONTRIBUTING.md", "CHANGELOG.md"],
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "test:distribution": "node --test tests/distribution.test.mjs",
+    "build:entries": "node scripts/build-entries.mjs",
+    "check:links": "node scripts/check-links.mjs",
+    "prepare:release": "node scripts/prepare-release.mjs",
+    "verify:release": "node scripts/prepare-release.mjs",
+    "check:package": "npm pack --dry-run --json",
+    "prepack": "npm run build:entries"
+  }
+}

@@ -1,0 +1,330 @@
+[
+  {
+    "name": "bayes-screening",
+    "model": {
+      "schemaVersion": 1,
+      "id": "bayes-screening",
+      "title": "筛查阳性到底意味着什么：用频率理解贝叶斯",
+      "goal": "能改变患病率、灵敏度与假阳性率，观察阳性预测值的变化，并用贝叶斯公式解释结果。",
+      "summary": "把一次筛查的先验患病率、检测灵敏度与假阳性率放进同一人群计数，观察阳性者中真患病的比例如何随条件变化。",
+      "concepts": [
+        {
+          "id": "probability-basics",
+          "title": "概率与条件概率",
+          "parentId": null,
+          "difficulty": 1,
+          "explanation": "概率是 0 到 1 之间的数，表示某件事发生的相对可能性；条件概率把范围限定在一个子群里，分母变成这个子群的大小。",
+          "example": "在一万人里看阳性者，分母就是阳性人数，而不是全部人数。",
+          "misconception": "把两个方向的条件概率混为一谈，忽略条件不同时分母也不同。"
+        },
+        {
+          "id": "prior",
+          "title": "先验患病率",
+          "parentId": "probability-basics",
+          "difficulty": 2,
+          "explanation": "先验概率是在看检测结果之前对『这个人患病』的判断，常见估计是人群患病率或高风险人群的患病率；先验越高，同一份阳性结果越可能指向真患病。",
+          "example": "普通人群患病率可能是千分之几，而门诊高危人群的先验会明显更高。",
+          "misconception": "以为先验只是主观印象，与结果无关，忽略它直接进入贝叶斯公式的分母。"
+        },
+        {
+          "id": "detection-rates",
+          "title": "灵敏度与假阳性率",
+          "parentId": "probability-basics",
+          "difficulty": 2,
+          "explanation": "灵敏度是患病者中被检出阳性的比例；假阳性率是未患病者中被误报为阳性的比例，特异度等于 1 减去假阳性率。两者都按各自子群计算，不能直接比较。",
+          "example": "灵敏度 0.9 表示 100 名患病者里约 90 人被检出阳性；假阳性率 0.05 表示 100 名健康者里约 5 人被误报。",
+          "misconception": "把灵敏度当成『阳性者患病的概率』，实际上它回答的是相反方向的问题。"
+        },
+        {
+          "id": "posterior",
+          "title": "阳性预测值",
+          "parentId": "probability-basics",
+          "difficulty": 3,
+          "explanation": "阳性预测值 PPV 是阳性者中真患病的比例，也就是条件概率 P(患病 | 阳性)。按贝叶斯公式，它等于 灵敏度 × 先验 ÷ (灵敏度 × 先验 + 假阳性率 × (1 − 先验))。",
+          "example": "先验 0.01、灵敏度 0.9、假阳性率 0.05 时，PPV 约为 0.154，即阳性者中约 15.4% 真患病。",
+          "misconception": "把高灵敏度当成高阳性预测值，忽略患病人数少时假阳性会占多数。"
+        }
+      ],
+      "relations": [
+        {
+          "id": "rel-prior-posterior",
+          "from": "prior",
+          "to": "posterior",
+          "type": "prerequisite",
+          "label": "先验进入公式的分母，先看清它才谈得上看懂 PPV"
+        },
+        {
+          "id": "rel-rates-posterior",
+          "from": "detection-rates",
+          "to": "posterior",
+          "type": "application",
+          "label": "灵敏度与假阳性率共同决定阳性者里真患病的比例"
+        }
+      ],
+      "prompts": [
+        {
+          "id": "p-posterior-explain",
+          "conceptId": "posterior",
+          "kind": "explain",
+          "question": "为什么灵敏度 0.9 的检测，在患病率 0.01 的人群里阳性预测值只有约 0.15？",
+          "answer": "因为阳性来自两类人：真患病的少数人贡献了约 0.9 × 0.01 的阳性比例，未患病的多数人贡献了约 0.05 × 0.99 的阳性比例。前者只占阳性总数的一部分，所以阳性者里真患病的比例远低于灵敏度。",
+          "criteria": [
+            "指出假阳性来自数量大得多的未患病者",
+            "把 PPV 写成真阳性比例除以阳性总比例，而不是复用灵敏度"
+          ],
+          "teaching": {
+            "purpose": "variation",
+            "objective": "能在患病率变化时重新解释同一个阳性结果的含义。",
+            "prerequisites": [
+              "prior"
+            ],
+            "misconceptions": [
+              "灵敏度等于阳性者患病的概率"
+            ],
+            "hints": [
+              "先假设一万人，算出患病与未患病各有多少人。",
+              "再分别算出真阳性和假阳性的期望人数，看看两类人谁多。"
+            ]
+          }
+        },
+        {
+          "id": "p-prior-recall",
+          "conceptId": "prior",
+          "kind": "recall",
+          "question": "先验概率在这次筛查里指的是什么？",
+          "answer": "看检测结果之前这个人患病的概率，通常用该人群的患病率估计。"
+        }
+      ],
+      "interactions": [
+        {
+          "kind": "parameter",
+          "id": "bayes-screening-params",
+          "conceptId": "posterior",
+          "title": "改变三个条件，观察阳性预测值",
+          "objective": "调整患病率、灵敏度与假阳性率，观察阳性预测值如何变化，并核对贝叶斯公式给出的同一个结果。",
+          "boundary": "这是一个固定人群先验与检出率的演示模型：三个概率按贝叶斯公式给出同一人群里的阳性预测值。它没有建模重复检测之间的相关性、金标准不完美或患病率估计误差，也不是医学建议。",
+          "question": "把先验患病率从 0.01 调到 0.10，阳性预测值怎样变化？这与『病例少时假阳性占多数』的说法一致吗？",
+          "promptId": "p-posterior-explain",
+          "relatedConceptIds": [
+            "prior",
+            "detection-rates"
+          ],
+          "rule": "bayes-frequency",
+          "roles": {
+            "prior": "prior",
+            "sensitivity": "sensitivity",
+            "falsePositive": "false-positive"
+          },
+          "inputs": [
+            {
+              "id": "prior",
+              "label": "患病先验概率",
+              "unit": "比例0..1",
+              "min": 0,
+              "max": 1,
+              "step": 0.01,
+              "default": 0.01
+            },
+            {
+              "id": "sensitivity",
+              "label": "灵敏度（患病者检出阳性）",
+              "unit": "比例0..1",
+              "min": 0,
+              "max": 1,
+              "step": 0.01,
+              "default": 0.9
+            },
+            {
+              "id": "false-positive",
+              "label": "假阳性率（健康者误报阳性）",
+              "unit": "比例0..1",
+              "min": 0,
+              "max": 1,
+              "step": 0.01,
+              "default": 0.05
+            }
+          ],
+          "outputLabel": "阳性预测值 PPV",
+          "outputUnit": "比例0..1"
+        }
+      ],
+      "sources": [
+        {
+          "id": "gigerenzer-1995",
+          "title": "Gigerenzer & Hoffrage (1995) — How to Improve Bayesian Reasoning Without Instruction: Frequency Formats, Psychological Review 102(4):684–704",
+          "note": "本来源只支持概率公式与频数化解释：把先验、灵敏度与假阳性率放进同一个人群的自然频数，阳性者中真阳性的比例就是阳性预测值；它不作为学习效果的证据。",
+          "kind": "paper",
+          "url": "https://pure.mpg.de/pubman/item/item_2543495_7/component/file_2562163/GG_How_1995.pdf"
+        }
+      ],
+      "limitations": [
+        "医学筛查一例是合成的教学概率，不是医学建议；它只演示固定人群、固定检出率下的贝叶斯公式，没有建模重复检测的相关性、金标准不完美或估计误差。",
+        "三个概率输入都在 0 到 1 之间，组件按贝叶斯公式直接计算，不替代任何临床判断。"
+      ]
+    }
+  },
+  {
+    "name": "uniform-speed",
+    "model": {
+      "schemaVersion": 1,
+      "id": "uniform-speed",
+      "title": "匀速直线运动：路程、时间与平均速率",
+      "goal": "能改变路程或时间，观察平均速率的变化，并说清平均速率与瞬时速率、平均速度的区别。",
+      "summary": "用一段匀速直线运动演示：两个输入按比值规则算出平均速率，并说明它与瞬时速率、加速度的区别。",
+      "concepts": [
+        {
+          "id": "motion-basics",
+          "title": "运动与参照物",
+          "parentId": null,
+          "difficulty": 1,
+          "explanation": "描述运动要先选定参照物；物体相对于参照物的位置随时间改变，才说它在这个参照物下运动。",
+          "example": "以车厢为参照物，座位上的行李是静止的；以地面为参照物，它随车前进。",
+          "misconception": "以为『是否运动』是物体自身的属性，忽略参照物的选择。"
+        },
+        {
+          "id": "distance-time",
+          "title": "路程与时间",
+          "parentId": "motion-basics",
+          "difficulty": 2,
+          "explanation": "路程是运动轨迹的长度，只记大小不计方向；时间是这段过程持续的时长。两者都是描述运动的直接测量量。",
+          "example": "沿操场跑完一圈回到起点，位移是零，路程却是这一圈的长度。",
+          "misconception": "把路程当成位移，回环运动时给出为零的路程。"
+        },
+        {
+          "id": "speed-rate",
+          "title": "平均速率与速度",
+          "parentId": "motion-basics",
+          "difficulty": 2,
+          "explanation": "平均速率等于总路程除以总历时，对非匀速运动同样成立；速度是矢量，还要说明方向，平均速度用总位移除以同一段历时。只有在匀速直线运动里速率不变，平均速率才同时等于各个时刻的瞬时速率。",
+          "example": "两小时行驶 120 km，平均速率是 60 km/h；中途有快有慢也不改变这个算法，只改变某个时刻的瞬时速率。",
+          "misconception": "把平均速率当成瞬时速率，以为知道平均值就能说出中途某一刻有多快。"
+        },
+        {
+          "id": "uniform-motion",
+          "title": "匀速直线运动",
+          "parentId": "motion-basics",
+          "difficulty": 3,
+          "explanation": "匀速直线运动是速率恒定、方向不变的直线运动；因为速率不变，路程与时间成正比，路程除以时间得到的平均速率等于这个恒定速率。",
+          "example": "高铁在平直轨道上以 300 km/h 巡航的稳定阶段，可以近似看成匀速直线运动。",
+          "misconception": "把匀速直线运动套到起步加速或转弯的过程中，忽略速率或方向已经改变。"
+        }
+      ],
+      "relations": [
+        {
+          "id": "rel-distance-speed",
+          "from": "distance-time",
+          "to": "speed-rate",
+          "type": "prerequisite",
+          "label": "先能量出路程和时间，才谈得上算平均速率"
+        },
+        {
+          "id": "rel-speed-uniform",
+          "from": "speed-rate",
+          "to": "uniform-motion",
+          "type": "prerequisite",
+          "label": "速率恒定时路程与时间成正比，这是匀速运动的核心结论"
+        }
+      ],
+      "prompts": [
+        {
+          "id": "p-speed-explain",
+          "conceptId": "speed-rate",
+          "kind": "explain",
+          "question": "为什么平均速率用路程除以时间，而平均速度要用位移除以时间？",
+          "answer": "因为平均速率描述的是运动过程有多快，关心走过的轨迹总长度；平均速度是矢量，关心位置改变的大小与方向，所以用位移除以时间。路程不小于位移的大小，两者只有在单向直线运动时才相等。",
+          "criteria": [
+            "指出平均速率按路程计算、平均速度按位移计算",
+            "说明回环或折返时路程与位移大小不同"
+          ],
+          "teaching": {
+            "purpose": "variation",
+            "objective": "能在折返或回环情境里判断该用路程还是位移。",
+            "prerequisites": [
+              "distance-time"
+            ],
+            "misconceptions": [
+              "平均速率和平均速度总是同一个数"
+            ],
+            "hints": [
+              "先想清楚这段过程是不是始终朝同一个方向走。",
+              "再比较走过的轨迹长度和起点到终点的直线距离。"
+            ]
+          }
+        },
+        {
+          "id": "p-uniform-explain",
+          "conceptId": "uniform-motion",
+          "kind": "explain",
+          "question": "在匀速直线运动里把时间减半、路程不变，平均速率会怎样变化？为什么？",
+          "answer": "平均速率会翻倍，因为平均速率等于总路程除以总历时，路程不变而分母减半，比值就变为原来的两倍。这个算法对非匀速运动同样成立；只有在匀速直线运动里，路程才与时间成正比，时间减半对应的路程也减半，平均速率才同时等于瞬时速率。",
+          "criteria": [
+            "指出平均速率等于总路程除以总历时，分母减半使比值翻倍",
+            "说明匀速直线运动里路程与时间成正比、平均速率等于瞬时速率，而非匀速时只保证平均速率"
+          ]
+        }
+      ],
+      "interactions": [
+        {
+          "kind": "parameter",
+          "id": "uniform-speed-params",
+          "conceptId": "uniform-motion",
+          "title": "改变路程与时间，观察平均速率",
+          "objective": "调整一段运动的总路程与总历时，观察平均速率如何随之变化，并核对『平均速率 = 总路程 ÷ 总历时』这一关系。",
+          "boundary": "这里以匀速直线运动演示，但平均速率 = 总路程 ÷ 总历时对非匀速运动同样成立；只有在匀速直线运动里平均速率才同时等于瞬时速率。需要总历时大于 0。本次没有模拟加速度、方向变化与瞬时过程。",
+          "question": "时间不变而路程翻倍时平均速率怎样变化？把时间调到 0，结果会怎样，这说明计算里缺少了什么条件？",
+          "promptId": "p-uniform-explain",
+          "relatedConceptIds": [
+            "speed-rate",
+            "distance-time"
+          ],
+          "rule": "ratio",
+          "roles": {
+            "numerator": "distance",
+            "denominator": "time"
+          },
+          "inputs": [
+            {
+              "id": "distance",
+              "label": "路程",
+              "unit": "km",
+              "min": 0,
+              "max": 1000,
+              "step": 1,
+              "default": 120
+            },
+            {
+              "id": "time",
+              "label": "时间",
+              "unit": "h",
+              "min": 0,
+              "max": 24,
+              "step": 0.1,
+              "default": 2
+            }
+          ],
+          "outputLabel": "平均速率",
+          "outputUnit": "km/h"
+        }
+      ],
+      "sources": [
+        {
+          "id": "bipm-si",
+          "title": "BIPM — The International System of Units (SI Brochure), 9th edition",
+          "note": "本来源只支持单位：速度的 SI 单位是米每秒，千米每时是允许与 SI 并用的常用单位。它不用于支持平均速率的数学定义。",
+          "kind": "spec"
+        },
+        {
+          "id": "openstax-college-physics-2-3",
+          "title": "OpenStax College Physics 2e §2.3 Time, Velocity, and Speed — Speed",
+          "note": "平均速率等于总路程除以总历时，且可以大于平均速度的大小（回环或折返时更明显），因此不能把平均速率当成瞬时速率。",
+          "kind": "textbook",
+          "url": "https://openstax.org/books/college-physics-2e/pages/2-3-time-velocity-and-speed"
+        }
+      ],
+      "limitations": [
+        "演示用匀速直线运动，但平均速率 = 总路程 ÷ 总历时对非匀速运动同样成立；本次没有模拟加速度、方向变化、瞬时速率与平均速度的方向。",
+        "时间输入允许取 0，此时组件会明确提示无法计算，而不是给出一个被截断的结果。"
+      ]
+    }
+  }
+]

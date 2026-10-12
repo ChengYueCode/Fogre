@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 1,
+  "id": "budget-review-synthetic",
+  "title": "合成复习计划：条件概率",
+  "goal": "区分条件集合与概率方向",
+  "concepts": [
+    {
+      "id": "root",
+      "title": "条件概率总览",
+      "parentId": null,
+      "difficulty": 1,
+      "explanation": "计算时先识别条件集合。"
+    },
+    {
+      "id": "base",
+      "title": "条件集合",
+      "parentId": "root",
+      "difficulty": 1,
+      "explanation": "合成教学定义：明确条件集合，再计算其中目标事件所占比例。"
+    },
+    {
+      "id": "goal",
+      "title": "条件概率方向",
+      "parentId": "root",
+      "difficulty": 1,
+      "explanation": "合成教学定义：明确条件集合，再计算其中目标事件所占比例。"
+    },
+    {
+      "id": "repeat",
+      "title": "阳性群体的分母",
+      "parentId": "root",
+      "difficulty": 1,
+      "explanation": "合成教学定义：明确条件集合，再计算其中目标事件所占比例。"
+    },
+    {
+      "id": "due-a",
+      "title": "计数关系",
+      "parentId": "root",
+      "difficulty": 1,
+      "explanation": "合成教学定义：明确条件集合，再计算其中目标事件所占比例。"
+    },
+    {
+      "id": "due-b",
+      "title": "先验变化",
+      "parentId": "root",
+      "difficulty": 1,
+      "explanation": "合成教学定义：明确条件集合，再计算其中目标事件所占比例。"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "p-base",
+      "conceptId": "base",
+      "kind": "explain",
+      "question": "为何先明确条件集合再计算比例？",
+      "answer": "先确定条件群体，再将群体内目标事件数除以条件群体总数。",
+      "criteria": [
+        "说清条件集合",
+        "说明分子与分母"
+      ]
+    },
+    {
+      "id": "p-goal",
+      "conceptId": "goal",
+      "kind": "apply",
+      "question": "在两种条件相反的情境中解释分母的变化。",
+      "answer": "先确定条件群体，再将群体内目标事件数除以条件群体总数。",
+      "criteria": [
+        "说清条件集合",
+        "说明分子与分母"
+      ]
+    },
+    {
+      "id": "p-repeat",
+      "conceptId": "repeat",
+      "kind": "explain",
+      "question": "阳性预测值的分母是哪一个群体？",
+      "answer": "先确定条件群体，再将群体内目标事件数除以条件群体总数。",
+      "criteria": [
+        "说清条件集合",
+        "说明分子与分母"
+      ]
+    },
+    {
+      "id": "p-due-a",
+      "conceptId": "due-a",
+      "kind": "explain",
+      "question": "如何将子群体计数写成条件概率？",
+      "answer": "先确定条件群体，再将群体内目标事件数除以条件群体总数。",
+      "criteria": [
+        "说清条件集合",
+        "说明分子与分母"
+      ]
+    },
+    {
+      "id": "p-due-b",
+      "conceptId": "due-b",
+      "kind": "explain",
+      "question": "先验变化如何影响阳性者中的比例？",
+      "answer": "先确定条件群体，再将群体内目标事件数除以条件群体总数。",
+      "criteria": [
+        "说清条件集合",
+        "说明分子与分母"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "id": "prereq-base-goal",
+      "from": "base",
+      "to": "goal",
+      "type": "prerequisite",
+      "label": "先明确条件集合才能区分概率方向"
+    }
+  ],
+  "sources": [
+    {
+      "id": "synthetic",
+      "title": "合成教学材料",
+      "kind": "synthetic-teaching-material",
+      "note": "仅用于计划与存档验证，不代表真实学习效果。"
+    }
+  ]
+}

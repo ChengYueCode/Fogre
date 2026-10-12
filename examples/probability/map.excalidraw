@@ -1,0 +1,5819 @@
+{
+  "appState": {
+    "gridSize": null,
+    "viewBackgroundColor": "#faf2f1"
+  },
+  "customData": {
+    "ember": {
+      "generatedAt": "deterministic",
+      "modelFingerprint": "450957b77bfba5abdd50e5f4a516859cc8acc7b613871cfc205ddfc624a88143",
+      "modelId": "probability-basics"
+    }
+  },
+  "elements": [
+    {
+      "angle": 0,
+      "backgroundColor": "transparent",
+      "baseline": 0,
+      "boundElements": null,
+      "containerId": null,
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": null,
+            "containerId": null,
+            "fillStyle": "solid",
+            "fontFamily": 5,
+            "fontSize": 24,
+            "groupIds": [],
+            "height": 34,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "originalText": "条件概率与贝叶斯更新",
+            "roughness": 1,
+            "roundness": null,
+            "strokeColor": "#472a2b",
+            "strokeStyle": "solid",
+            "strokeWidth": 1,
+            "text": "条件概率与贝叶斯更新",
+            "textAlign": "left",
+            "type": "text",
+            "verticalAlign": "top",
+            "width": 320,
+            "x": 0,
+            "y": -116
+          },
+          "builtFingerprint": "450957b77bfba5abdd50e5f4a516859cc8acc7b613871cfc205ddfc624a88143",
+          "builtRevision": 1,
+          "generated": true,
+          "kind": "title",
+          "modelId": "probability-basics"
+        }
+      },
+      "fillStyle": "solid",
+      "fontFamily": 5,
+      "fontSize": 24,
+      "frameId": null,
+      "groupIds": [],
+      "height": 34,
+      "id": "t-scene-title",
+      "isDeleted": false,
+      "lineHeight": 1.25,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "originalText": "条件概率与贝叶斯更新",
+      "roughness": 1,
+      "roundness": null,
+      "seed": 765904910,
+      "strokeColor": "#472a2b",
+      "strokeStyle": "solid",
+      "strokeWidth": 1,
+      "text": "条件概率与贝叶斯更新",
+      "textAlign": "left",
+      "type": "text",
+      "updated": 2,
+      "version": 2,
+      "versionNonce": 340000,
+      "verticalAlign": "top",
+      "width": 320,
+      "x": 0,
+      "y": -116
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "transparent",
+      "baseline": 0,
+      "boundElements": null,
+      "containerId": null,
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": null,
+            "containerId": null,
+            "fillStyle": "solid",
+            "fontFamily": 5,
+            "fontSize": 15,
+            "groupIds": [],
+            "height": 24,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "originalText": "目标：能用先验、检测特性和自然频率解释并计算阳性预测值，并说清先验如何改变结论。",
+            "roughness": 1,
+            "roundness": null,
+            "strokeColor": "#7b5557",
+            "strokeStyle": "solid",
+            "strokeWidth": 1,
+            "text": "目标：能用先验、检测特性和自然频率解释并计算阳性预测值，并说清先验如何改变结论。",
+            "textAlign": "left",
+            "type": "text",
+            "verticalAlign": "top",
+            "width": 620,
+            "x": 0,
+            "y": -74
+          },
+          "builtFingerprint": "450957b77bfba5abdd50e5f4a516859cc8acc7b613871cfc205ddfc624a88143",
+          "builtRevision": 1,
+          "generated": true,
+          "kind": "goal",
+          "modelId": "probability-basics"
+        }
+      },
+      "fillStyle": "solid",
+      "fontFamily": 5,
+      "fontSize": 15,
+      "frameId": null,
+      "groupIds": [],
+      "height": 24,
+      "id": "t-scene-goal",
+      "isDeleted": false,
+      "lineHeight": 1.25,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "originalText": "目标：能用先验、检测特性和自然频率解释并计算阳性预测值，并说清先验如何改变结论。",
+      "roughness": 1,
+      "roundness": null,
+      "seed": 351922590,
+      "strokeColor": "#7b5557",
+      "strokeStyle": "solid",
+      "strokeWidth": 1,
+      "text": "目标：能用先验、检测特性和自然频率解释并计算阳性预测值，并说清先验如何改变结论。",
+      "textAlign": "left",
+      "type": "text",
+      "updated": 2,
+      "version": 2,
+      "versionNonce": 246363,
+      "verticalAlign": "top",
+      "width": 620,
+      "x": 0,
+      "y": -74
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "#f3d7d4",
+      "boundElements": [
+        {
+          "id": "t-conditional-probability",
+          "type": "text"
+        },
+        {
+          "id": "e-parent-prior",
+          "type": "arrow"
+        },
+        {
+          "id": "e-parent-sensitivity-specificity",
+          "type": "arrow"
+        },
+        {
+          "id": "e-parent-ppv",
+          "type": "arrow"
+        },
+        {
+          "id": "e-parent-screening-decision",
+          "type": "arrow"
+        }
+      ],
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "#f3d7d4",
+            "boundElements": [
+              {
+                "id": "t-conditional-probability",
+                "type": "text"
+              },
+              {
+                "id": "e-parent-prior",
+                "type": "arrow"
+              },
+              {
+                "id": "e-parent-sensitivity-specificity",
+                "type": "arrow"
+              },
+              {
+                "id": "e-parent-ppv",
+                "type": "arrow"
+              },
+              {
+                "id": "e-parent-screening-decision",
+                "type": "arrow"
+              }
+            ],
+            "fillStyle": "solid",
+            "groupIds": [
+              "g-conditional-probability"
+            ],
+            "height": 55,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "roughness": 1,
+            "roundness": {
+              "type": 3,
+              "value": 12
+            },
+            "strokeColor": "#a13f48",
+            "strokeStyle": "solid",
+            "strokeWidth": 2,
+            "type": "rectangle",
+            "width": 152,
+            "x": 401,
+            "y": 0
+          },
+          "builtFingerprint": "450957b77bfba5abdd50e5f4a516859cc8acc7b613871cfc205ddfc624a88143",
+          "builtRevision": 1,
+          "conceptId": "conditional-probability",
+          "generated": true,
+          "kind": "node",
+          "modelId": "probability-basics"
+        }
+      },
+      "fillStyle": "solid",
+      "frameId": null,
+      "groupIds": [
+        "g-conditional-probability"
+      ],
+      "height": 55,
+      "id": "c-conditional-probability",
+      "isDeleted": false,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "roughness": 1,
+      "roundness": {
+        "type": 3,
+        "value": 12
+      },
+      "seed": 615328784,
+      "strokeColor": "#a13f48",
+      "strokeStyle": "solid",
+      "strokeWidth": 2,
+      "type": "rectangle",
+      "updated": 2,
+      "version": 2,
+      "versionNonce": 9180,
+      "width": 152,
+      "x": 401,
+      "y": 0
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "transparent",
+      "baseline": 0,
+      "boundElements": null,
+      "containerId": "c-conditional-probability",
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": null,
+            "containerId": "c-conditional-probability",
+            "fillStyle": "solid",
+            "fontFamily": 5,
+            "fontSize": 17,
+            "groupIds": [
+              "g-conditional-probability"
+            ],
+            "height": 25,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "originalText": "条件概率",
+            "roughness": 1,
+            "roundness": null,
+            "strokeColor": "#472a2b",
+            "strokeStyle": "solid",
+            "strokeWidth": 1,
+            "text": "条件概率",
+            "textAlign": "center",
+            "type": "text",
+            "verticalAlign": "middle",
+            "width": 128,
+            "x": 413,
+            "y": 15
+          },
+          "builtFingerprint": "450957b77bfba5abdd50e5f4a516859cc8acc7b613871cfc205ddfc624a88143",
+          "builtRevision": 1,
+          "conceptId": "conditional-probability",
+          "generated": true,
+          "kind": "node-text",
+          "modelId": "probability-basics"
+        }
+      },
+      "fillStyle": "solid",
+      "fontFamily": 5,
+      "fontSize": 17,
+      "frameId": null,
+      "groupIds": [
+        "g-conditional-probability"
+      ],
+      "height": 25,
+      "id": "t-conditional-probability",
+      "isDeleted": false,
+      "lineHeight": 1.25,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "originalText": "条件概率",
+      "roughness": 1,
+      "roundness": null,
+      "seed": 1938392903,
+      "strokeColor": "#472a2b",
+      "strokeStyle": "solid",
+      "strokeWidth": 1,
+      "text": "条件概率",
+      "textAlign": "center",
+      "type": "text",
+      "updated": 2,
+      "version": 2,
+      "versionNonce": 581329,
+      "verticalAlign": "middle",
+      "width": 128,
+      "x": 413,
+      "y": 15
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "transparent",
+      "baseline": 0,
+      "boundElements": null,
+      "containerId": null,
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": null,
+            "containerId": null,
+            "fillStyle": "solid",
+            "fontFamily": 5,
+            "fontSize": 11,
+            "groupIds": [
+              "g-conditional-probability"
+            ],
+            "height": 18,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "originalText": "难度 1",
+            "roughness": 1,
+            "roundness": null,
+            "strokeColor": "#7b5557",
+            "strokeStyle": "solid",
+            "strokeWidth": 1,
+            "text": "难度 1",
+            "textAlign": "right",
+            "type": "text",
+            "verticalAlign": "top",
+            "width": 54,
+            "x": 491,
+            "y": 4
+          },
+          "builtFingerprint": "450957b77bfba5abdd50e5f4a516859cc8acc7b613871cfc205ddfc624a88143",
+          "builtRevision": 1,
+          "conceptId": "conditional-probability",
+          "generated": true,
+          "kind": "difficulty",
+          "modelId": "probability-basics"
+        }
+      },
+      "fillStyle": "solid",
+      "fontFamily": 5,
+      "fontSize": 11,
+      "frameId": null,
+      "groupIds": [
+        "g-conditional-probability"
+      ],
+      "height": 18,
+      "id": "d-conditional-probability",
+      "isDeleted": false,
+      "lineHeight": 1.25,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "originalText": "难度 1",
+      "roughness": 1,
+      "roundness": null,
+      "seed": 1702823171,
+      "strokeColor": "#7b5557",
+      "strokeStyle": "solid",
+      "strokeWidth": 1,
+      "text": "难度 1",
+      "textAlign": "right",
+      "type": "text",
+      "updated": 2,
+      "version": 2,
+      "versionNonce": 534099,
+      "verticalAlign": "top",
+      "width": 54,
+      "x": 491,
+      "y": 4
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "#faece9",
+      "boundElements": [
+        {
+          "id": "t-prior",
+          "type": "text"
+        },
+        {
+          "id": "e-parent-prior",
+          "type": "arrow"
+        },
+        {
+          "id": "e-rel-prior-bayes",
+          "type": "arrow"
+        },
+        {
+          "id": "e-rel-prior-ppv",
+          "type": "arrow"
+        },
+        {
+          "id": "e-rel-prior-screening",
+          "type": "arrow"
+        }
+      ],
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "#faece9",
+            "boundElements": [
+              {
+                "id": "t-prior",
+                "type": "text"
+              },
+              {
+                "id": "e-parent-prior",
+                "type": "arrow"
+              },
+              {
+                "id": "e-rel-prior-bayes",
+                "type": "arrow"
+              },
+              {
+                "id": "e-rel-prior-ppv",
+                "type": "arrow"
+              },
+              {
+                "id": "e-rel-prior-screening",
+                "type": "arrow"
+              }
+            ],
+            "fillStyle": "solid",
+            "groupIds": [
+              "g-prior"
+            ],
+            "height": 55,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "roughness": 1,
+            "roundness": {
+              "type": 3,
+              "value": 12
+            },
+            "strokeColor": "#a13f48",
+            "strokeStyle": "solid",
+            "strokeWidth": 2,
+            "type": "rectangle",
+            "width": 152,
+            "x": 0,
+            "y": 147
+          },
+          "builtFingerprint": "450957b77bfba5abdd50e5f4a516859cc8acc7b613871cfc205ddfc624a88143",
+          "builtRevision": 1,
+          "conceptId": "prior",
+          "generated": true,
+          "kind": "node",
+          "modelId": "probability-basics"
+        }
+      },
+      "fillStyle": "solid",
+      "frameId": null,
+      "groupIds": [
+        "g-prior"
+      ],
+      "height": 55,
+      "id": "c-prior",
+      "isDeleted": false,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "roughness": 1,
+      "roundness": {
+        "type": 3,
+        "value": 12
+      },
+      "seed": 482407875,
+      "strokeColor": "#a13f48",
+      "strokeStyle": "solid",
+      "strokeWidth": 2,
+      "type": "rectangle",
+      "updated": 2,
+      "version": 2,
+      "versionNonce": 874952,
+      "width": 152,
+      "x": 0,
+      "y": 147
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "transparent",
+      "baseline": 0,
+      "boundElements": null,
+      "containerId": "c-prior",
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": null,
+            "containerId": "c-prior",
+            "fillStyle": "solid",
+            "fontFamily": 5,
+            "fontSize": 17,
+            "groupIds": [
+              "g-prior"
+            ],
+            "height": 25,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "originalText": "先验概率",
+            "roughness": 1,
+            "roundness": null,
+            "strokeColor": "#472a2b",
+            "strokeStyle": "solid",
+            "strokeWidth": 1,
+            "text": "先验概率",
+            "textAlign": "center",
+            "type": "text",
+            "verticalAlign": "middle",
+            "width": 128,
+            "x": 12,
+            "y": 162
+          },
+          "builtFingerprint": "450957b77bfba5abdd50e5f4a516859cc8acc7b613871cfc205ddfc624a88143",
+          "builtRevision": 1,
+          "conceptId": "prior",
+          "generated": true,
+          "kind": "node-text",
+          "modelId": "probability-basics"
+        }
+      },
+      "fillStyle": "solid",
+      "fontFamily": 5,
+      "fontSize": 17,
+      "frameId": null,
+      "groupIds": [
+        "g-prior"
+      ],
+      "height": 25,
+      "id": "t-prior",
+      "isDeleted": false,
+      "lineHeight": 1.25,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "originalText": "先验概率",
+      "roughness": 1,
+      "roundness": null,
+      "seed": 280559978,
+      "strokeColor": "#472a2b",
+      "strokeStyle": "solid",
+      "strokeWidth": 1,
+      "text": "先验概率",
+      "textAlign": "center",
+      "type": "text",
+      "updated": 2,
+      "version": 2,
+      "versionNonce": 520542,
+      "verticalAlign": "middle",
+      "width": 128,
+      "x": 12,
+      "y": 162
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "transparent",
+      "baseline": 0,
+      "boundElements": null,
+      "containerId": null,
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": null,
+            "containerId": null,
+            "fillStyle": "solid",
+            "fontFamily": 5,
+            "fontSize": 11,
+            "groupIds": [
+              "g-prior"
+            ],
+            "height": 18,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "originalText": "难度 1",
+            "roughness": 1,
+            "roundness": null,
+            "strokeColor": "#7b5557",
+            "strokeStyle": "solid",
+            "strokeWidth": 1,
+            "text": "难度 1",
+            "textAlign": "right",
+            "type": "text",
+            "verticalAlign": "top",
+            "width": 54,
+            "x": 90,
+            "y": 151
+          },
+          "builtFingerprint": "450957b77bfba5abdd50e5f4a516859cc8acc7b613871cfc205ddfc624a88143",
+          "builtRevision": 1,
+          "conceptId": "prior",
+          "generated": true,
+          "kind": "difficulty",
+          "modelId": "probability-basics"
+        }
+      },
+      "fillStyle": "solid",
+      "fontFamily": 5,
+      "fontSize": 11,
+      "frameId": null,
+      "groupIds": [
+        "g-prior"
+      ],
+      "height": 18,
+      "id": "d-prior",
+      "isDeleted": false,
+      "lineHeight": 1.25,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "originalText": "难度 1",
+      "roughness": 1,
+      "roundness": null,
+      "seed": 1056351418,
+      "strokeColor": "#7b5557",
+      "strokeStyle": "solid",
+      "strokeWidth": 1,
+      "text": "难度 1",
+      "textAlign": "right",
+      "type": "text",
+      "updated": 2,
+      "version": 2,
+      "versionNonce": 612329,
+      "verticalAlign": "top",
+      "width": 54,
+      "x": 90,
+      "y": 151
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "transparent",
+      "boundElements": null,
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": null,
+            "endArrowhead": "arrow",
+            "endBinding": {
+              "elementId": "c-prior",
+              "fixedPoint": [
+                1,
+                0.5
+              ],
+              "focus": 0,
+              "gap": 4
+            },
+            "fillStyle": "solid",
+            "groupIds": [],
+            "height": 147,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "points": [
+              [
+                0,
+                0
+              ],
+              [
+                -249,
+                147
+              ]
+            ],
+            "roughness": 1,
+            "roundness": {
+              "type": 2
+            },
+            "startArrowhead": null,
+            "startBinding": {
+              "elementId": "c-conditional-probability",
+              "fixedPoint": [
+                0,
+                0.5
+              ],
+              "focus": 0,
+              "gap": 4
+            },
+            "strokeColor": "#7b5557",
+            "strokeStyle": "solid",
+            "strokeWidth": 2,
+            "type": "arrow",
+            "width": 249,
+            "x": 401,
+            "y": 27.5
+          },
+          "builtFingerprint": "450957b77bfba5abdd50e5f4a516859cc8acc7b613871cfc205ddfc624a88143",
+          "builtRevision": 1,
+          "conceptId": "prior",
+          "generated": true,
+          "kind": "parent-edge",
+          "modelId": "probability-basics"
+        }
+      },
+      "endArrowhead": "arrow",
+      "endBinding": {
+        "elementId": "c-prior",
+        "fixedPoint": [
+          1,
+          0.5
+        ],
+        "focus": 0,
+        "gap": 4
+      },
+      "fillStyle": "solid",
+      "frameId": null,
+      "groupIds": [],
+      "height": 147,
+      "id": "e-parent-prior",
+      "isDeleted": false,
+      "lastCommittedPoint": null,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          -249,
+          147
+        ]
+      ],
+      "roughness": 1,
+      "roundness": {
+        "type": 2
+      },
+      "seed": 1328585565,
+      "startArrowhead": null,
+      "startBinding": {
+        "elementId": "c-conditional-probability",
+        "fixedPoint": [
+          0,
+          0.5
+        ],
+        "focus": 0,
+        "gap": 4
+      },
+      "strokeColor": "#7b5557",
+      "strokeStyle": "solid",
+      "strokeWidth": 2,
+      "type": "arrow",
+      "updated": 2,
+      "version": 2,
+      "versionNonce": 145664,
+      "width": 249,
+      "x": 401,
+      "y": 27.5
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "#faece9",
+      "boundElements": [
+        {
+          "id": "t-sensitivity-specificity",
+          "type": "text"
+        },
+        {
+          "id": "e-parent-sensitivity-specificity",
+          "type": "arrow"
+        },
+        {
+          "id": "e-rel-sens-ppv",
+          "type": "arrow"
+        },
+        {
+          "id": "e-rel-sens-freq",
+          "type": "arrow"
+        }
+      ],
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "#faece9",
+            "boundElements": [
+              {
+                "id": "t-sensitivity-specificity",
+                "type": "text"
+              },
+              {
+                "id": "e-parent-sensitivity-specificity",
+                "type": "arrow"
+              },
+              {
+                "id": "e-rel-sens-ppv",
+                "type": "arrow"
+              },
+              {
+                "id": "e-rel-sens-freq",
+                "type": "arrow"
+              }
+            ],
+            "fillStyle": "solid",
+            "groupIds": [
+              "g-sensitivity-specificity"
+            ],
+            "height": 55,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "roughness": 1,
+            "roundness": {
+              "type": 3,
+              "value": 12
+            },
+            "strokeColor": "#a13f48",
+            "strokeStyle": "solid",
+            "strokeWidth": 2,
+            "type": "rectangle",
+            "width": 165,
+            "x": 194,
+            "y": 147
+          },
+          "builtFingerprint": "450957b77bfba5abdd50e5f4a516859cc8acc7b613871cfc205ddfc624a88143",
+          "builtRevision": 1,
+          "conceptId": "sensitivity-specificity",
+          "generated": true,
+          "kind": "node",
+          "modelId": "probability-basics"
+        }
+      },
+      "fillStyle": "solid",
+      "frameId": null,
+      "groupIds": [
+        "g-sensitivity-specificity"
+      ],
+      "height": 55,
+      "id": "c-sensitivity-specificity",
+      "isDeleted": false,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "roughness": 1,
+      "roundness": {
+        "type": 3,
+        "value": 12
+      },
+      "seed": 2061371021,
+      "strokeColor": "#a13f48",
+      "strokeStyle": "solid",
+      "strokeWidth": 2,
+      "type": "rectangle",
+      "updated": 2,
+      "version": 2,
+      "versionNonce": 485555,
+      "width": 165,
+      "x": 194,
+      "y": 147
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "transparent",
+      "baseline": 0,
+      "boundElements": null,
+      "containerId": "c-sensitivity-specificity",
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": null,
+            "containerId": "c-sensitivity-specificity",
+            "fillStyle": "solid",
+            "fontFamily": 5,
+            "fontSize": 17,
+            "groupIds": [
+              "g-sensitivity-specificity"
+            ],
+            "height": 25,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "originalText": "灵敏度与特异度",
+            "roughness": 1,
+            "roundness": null,
+            "strokeColor": "#472a2b",
+            "strokeStyle": "solid",
+            "strokeWidth": 1,
+            "text": "灵敏度与特异度",
+            "textAlign": "center",
+            "type": "text",
+            "verticalAlign": "middle",
+            "width": 141,
+            "x": 206,
+            "y": 162
+          },
+          "builtFingerprint": "450957b77bfba5abdd50e5f4a516859cc8acc7b613871cfc205ddfc624a88143",
+          "builtRevision": 1,
+          "conceptId": "sensitivity-specificity",
+          "generated": true,
+          "kind": "node-text",
+          "modelId": "probability-basics"
+        }
+      },
+      "fillStyle": "solid",
+      "fontFamily": 5,
+      "fontSize": 17,
+      "frameId": null,
+      "groupIds": [
+        "g-sensitivity-specificity"
+      ],
+      "height": 25,
+      "id": "t-sensitivity-specificity",
+      "isDeleted": false,
+      "lineHeight": 1.25,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "originalText": "灵敏度与特异度",
+      "roughness": 1,
+      "roundness": null,
+      "seed": 1380718487,
+      "strokeColor": "#472a2b",
+      "strokeStyle": "solid",
+      "strokeWidth": 1,
+      "text": "灵敏度与特异度",
+      "textAlign": "center",
+      "type": "text",
+      "updated": 2,
+      "version": 2,
+      "versionNonce": 183884,
+      "verticalAlign": "middle",
+      "width": 141,
+      "x": 206,
+      "y": 162
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "transparent",
+      "baseline": 0,
+      "boundElements": null,
+      "containerId": null,
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": null,
+            "containerId": null,
+            "fillStyle": "solid",
+            "fontFamily": 5,
+            "fontSize": 11,
+            "groupIds": [
+              "g-sensitivity-specificity"
+            ],
+            "height": 18,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "originalText": "难度 2",
+            "roughness": 1,
+            "roundness": null,
+            "strokeColor": "#7b5557",
+            "strokeStyle": "solid",
+            "strokeWidth": 1,
+            "text": "难度 2",
+            "textAlign": "right",
+            "type": "text",
+            "verticalAlign": "top",
+            "width": 54,
+            "x": 297,
+            "y": 151
+          },
+          "builtFingerprint": "450957b77bfba5abdd50e5f4a516859cc8acc7b613871cfc205ddfc624a88143",
+          "builtRevision": 1,
+          "conceptId": "sensitivity-specificity",
+          "generated": true,
+          "kind": "difficulty",
+          "modelId": "probability-basics"
+        }
+      },
+      "fillStyle": "solid",
+      "fontFamily": 5,
+      "fontSize": 11,
+      "frameId": null,
+      "groupIds": [
+        "g-sensitivity-specificity"
+      ],
+      "height": 18,
+      "id": "d-sensitivity-specificity",
+      "isDeleted": false,
+      "lineHeight": 1.25,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "originalText": "难度 2",
+      "roughness": 1,
+      "roundness": null,
+      "seed": 1621202267,
+      "strokeColor": "#7b5557",
+      "strokeStyle": "solid",
+      "strokeWidth": 1,
+      "text": "难度 2",
+      "textAlign": "right",
+      "type": "text",
+      "updated": 2,
+      "version": 2,
+      "versionNonce": 425739,
+      "verticalAlign": "top",
+      "width": 54,
+      "x": 297,
+      "y": 151
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "transparent",
+      "boundElements": null,
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": null,
+            "endArrowhead": "arrow",
+            "endBinding": {
+              "elementId": "c-sensitivity-specificity",
+              "fixedPoint": [
+                1,
+                0.5
+              ],
+              "focus": 0,
+              "gap": 4
+            },
+            "fillStyle": "solid",
+            "groupIds": [],
+            "height": 147,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "points": [
+              [
+                0,
+                0
+              ],
+              [
+                -42,
+                147
+              ]
+            ],
+            "roughness": 1,
+            "roundness": {
+              "type": 2
+            },
+            "startArrowhead": null,
+            "startBinding": {
+              "elementId": "c-conditional-probability",
+              "fixedPoint": [
+                0,
+                0.5
+              ],
+              "focus": 0,
+              "gap": 4
+            },
+            "strokeColor": "#7b5557",
+            "strokeStyle": "solid",
+            "strokeWidth": 2,
+            "type": "arrow",
+            "width": 42,
+            "x": 401,
+            "y": 27.5
+          },
+          "builtFingerprint": "450957b77bfba5abdd50e5f4a516859cc8acc7b613871cfc205ddfc624a88143",
+          "builtRevision": 1,
+          "conceptId": "sensitivity-specificity",
+          "generated": true,
+          "kind": "parent-edge",
+          "modelId": "probability-basics"
+        }
+      },
+      "endArrowhead": "arrow",
+      "endBinding": {
+        "elementId": "c-sensitivity-specificity",
+        "fixedPoint": [
+          1,
+          0.5
+        ],
+        "focus": 0,
+        "gap": 4
+      },
+      "fillStyle": "solid",
+      "frameId": null,
+      "groupIds": [],
+      "height": 147,
+      "id": "e-parent-sensitivity-specificity",
+      "isDeleted": false,
+      "lastCommittedPoint": null,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          -42,
+          147
+        ]
+      ],
+      "roughness": 1,
+      "roundness": {
+        "type": 2
+      },
+      "seed": 913275037,
+      "startArrowhead": null,
+      "startBinding": {
+        "elementId": "c-conditional-probability",
+        "fixedPoint": [
+          0,
+          0.5
+        ],
+        "focus": 0,
+        "gap": 4
+      },
+      "strokeColor": "#7b5557",
+      "strokeStyle": "solid",
+      "strokeWidth": 2,
+      "type": "arrow",
+      "updated": 2,
+      "version": 2,
+      "versionNonce": 841371,
+      "width": 42,
+      "x": 401,
+      "y": 27.5
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "#faece9",
+      "boundElements": [
+        {
+          "id": "t-ppv",
+          "type": "text"
+        },
+        {
+          "id": "e-parent-ppv",
+          "type": "arrow"
+        },
+        {
+          "id": "e-parent-bayes-update",
+          "type": "arrow"
+        },
+        {
+          "id": "e-parent-base-rate-neglect",
+          "type": "arrow"
+        },
+        {
+          "id": "e-rel-sens-ppv",
+          "type": "arrow"
+        },
+        {
+          "id": "e-rel-prior-ppv",
+          "type": "arrow"
+        },
+        {
+          "id": "e-rel-ppv-screening",
+          "type": "arrow"
+        }
+      ],
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "#faece9",
+            "boundElements": [
+              {
+                "id": "t-ppv",
+                "type": "text"
+              },
+              {
+                "id": "e-parent-ppv",
+                "type": "arrow"
+              },
+              {
+                "id": "e-parent-bayes-update",
+                "type": "arrow"
+              },
+              {
+                "id": "e-parent-base-rate-neglect",
+                "type": "arrow"
+              },
+              {
+                "id": "e-rel-sens-ppv",
+                "type": "arrow"
+              },
+              {
+                "id": "e-rel-prior-ppv",
+                "type": "arrow"
+              },
+              {
+                "id": "e-rel-ppv-screening",
+                "type": "arrow"
+              }
+            ],
+            "fillStyle": "solid",
+            "groupIds": [
+              "g-ppv"
+            ],
+            "height": 55,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "roughness": 1,
+            "roundness": {
+              "type": 3,
+              "value": 12
+            },
+            "strokeColor": "#a13f48",
+            "strokeStyle": "solid",
+            "strokeWidth": 2,
+            "type": "rectangle",
+            "width": 152,
+            "x": 498,
+            "y": 147
+          },
+          "builtFingerprint": "450957b77bfba5abdd50e5f4a516859cc8acc7b613871cfc205ddfc624a88143",
+          "builtRevision": 1,
+          "conceptId": "ppv",
+          "generated": true,
+          "kind": "node",
+          "modelId": "probability-basics"
+        }
+      },
+      "fillStyle": "solid",
+      "frameId": null,
+      "groupIds": [
+        "g-ppv"
+      ],
+      "height": 55,
+      "id": "c-ppv",
+      "isDeleted": false,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "roughness": 1,
+      "roundness": {
+        "type": 3,
+        "value": 12
+      },
+      "seed": 1905970809,
+      "strokeColor": "#a13f48",
+      "strokeStyle": "solid",
+      "strokeWidth": 2,
+      "type": "rectangle",
+      "updated": 2,
+      "version": 2,
+      "versionNonce": 651291,
+      "width": 152,
+      "x": 498,
+      "y": 147
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "transparent",
+      "baseline": 0,
+      "boundElements": null,
+      "containerId": "c-ppv",
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": null,
+            "containerId": "c-ppv",
+            "fillStyle": "solid",
+            "fontFamily": 5,
+            "fontSize": 17,
+            "groupIds": [
+              "g-ppv"
+            ],
+            "height": 25,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "originalText": "阳性预测值",
+            "roughness": 1,
+            "roundness": null,
+            "strokeColor": "#472a2b",
+            "strokeStyle": "solid",
+            "strokeWidth": 1,
+            "text": "阳性预测值",
+            "textAlign": "center",
+            "type": "text",
+            "verticalAlign": "middle",
+            "width": 128,
+            "x": 510,
+            "y": 162
+          },
+          "builtFingerprint": "450957b77bfba5abdd50e5f4a516859cc8acc7b613871cfc205ddfc624a88143",
+          "builtRevision": 1,
+          "conceptId": "ppv",
+          "generated": true,
+          "kind": "node-text",
+          "modelId": "probability-basics"
+        }
+      },
+      "fillStyle": "solid",
+      "fontFamily": 5,
+      "fontSize": 17,
+      "frameId": null,
+      "groupIds": [
+        "g-ppv"
+      ],
+      "height": 25,
+      "id": "t-ppv",
+      "isDeleted": false,
+      "lineHeight": 1.25,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "originalText": "阳性预测值",
+      "roughness": 1,
+      "roundness": null,
+      "seed": 1865099300,
+      "strokeColor": "#472a2b",
+      "strokeStyle": "solid",
+      "strokeWidth": 1,
+      "text": "阳性预测值",
+      "textAlign": "center",
+      "type": "text",
+      "updated": 2,
+      "version": 2,
+      "versionNonce": 423462,
+      "verticalAlign": "middle",
+      "width": 128,
+      "x": 510,
+      "y": 162
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "transparent",
+      "baseline": 0,
+      "boundElements": null,
+      "containerId": null,
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": null,
+            "containerId": null,
+            "fillStyle": "solid",
+            "fontFamily": 5,
+            "fontSize": 11,
+            "groupIds": [
+              "g-ppv"
+            ],
+            "height": 18,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "originalText": "难度 3",
+            "roughness": 1,
+            "roundness": null,
+            "strokeColor": "#7b5557",
+            "strokeStyle": "solid",
+            "strokeWidth": 1,
+            "text": "难度 3",
+            "textAlign": "right",
+            "type": "text",
+            "verticalAlign": "top",
+            "width": 54,
+            "x": 588,
+            "y": 151
+          },
+          "builtFingerprint": "450957b77bfba5abdd50e5f4a516859cc8acc7b613871cfc205ddfc624a88143",
+          "builtRevision": 1,
+          "conceptId": "ppv",
+          "generated": true,
+          "kind": "difficulty",
+          "modelId": "probability-basics"
+        }
+      },
+      "fillStyle": "solid",
+      "fontFamily": 5,
+      "fontSize": 11,
+      "frameId": null,
+      "groupIds": [
+        "g-ppv"
+      ],
+      "height": 18,
+      "id": "d-ppv",
+      "isDeleted": false,
+      "lineHeight": 1.25,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "originalText": "难度 3",
+      "roughness": 1,
+      "roundness": null,
+      "seed": 1714558859,
+      "strokeColor": "#7b5557",
+      "strokeStyle": "solid",
+      "strokeWidth": 1,
+      "text": "难度 3",
+      "textAlign": "right",
+      "type": "text",
+      "updated": 2,
+      "version": 2,
+      "versionNonce": 907545,
+      "verticalAlign": "top",
+      "width": 54,
+      "x": 588,
+      "y": 151
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "transparent",
+      "boundElements": null,
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": null,
+            "endArrowhead": "arrow",
+            "endBinding": {
+              "elementId": "c-ppv",
+              "fixedPoint": [
+                0.5,
+                0
+              ],
+              "focus": 0,
+              "gap": 4
+            },
+            "fillStyle": "solid",
+            "groupIds": [],
+            "height": 92,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "points": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                46
+              ],
+              [
+                97,
+                46
+              ],
+              [
+                97,
+                92
+              ]
+            ],
+            "roughness": 1,
+            "roundness": {
+              "type": 2
+            },
+            "startArrowhead": null,
+            "startBinding": {
+              "elementId": "c-conditional-probability",
+              "fixedPoint": [
+                0.5,
+                1
+              ],
+              "focus": 0,
+              "gap": 4
+            },
+            "strokeColor": "#7b5557",
+            "strokeStyle": "solid",
+            "strokeWidth": 2,
+            "type": "arrow",
+            "width": 97,
+            "x": 477,
+            "y": 55
+          },
+          "builtFingerprint": "450957b77bfba5abdd50e5f4a516859cc8acc7b613871cfc205ddfc624a88143",
+          "builtRevision": 1,
+          "conceptId": "ppv",
+          "generated": true,
+          "kind": "parent-edge",
+          "modelId": "probability-basics"
+        }
+      },
+      "endArrowhead": "arrow",
+      "endBinding": {
+        "elementId": "c-ppv",
+        "fixedPoint": [
+          0.5,
+          0
+        ],
+        "focus": 0,
+        "gap": 4
+      },
+      "fillStyle": "solid",
+      "frameId": null,
+      "groupIds": [],
+      "height": 92,
+      "id": "e-parent-ppv",
+      "isDeleted": false,
+      "lastCommittedPoint": null,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          46
+        ],
+        [
+          97,
+          46
+        ],
+        [
+          97,
+          92
+        ]
+      ],
+      "roughness": 1,
+      "roundness": {
+        "type": 2
+      },
+      "seed": 1792088440,
+      "startArrowhead": null,
+      "startBinding": {
+        "elementId": "c-conditional-probability",
+        "fixedPoint": [
+          0.5,
+          1
+        ],
+        "focus": 0,
+        "gap": 4
+      },
+      "strokeColor": "#7b5557",
+      "strokeStyle": "solid",
+      "strokeWidth": 2,
+      "type": "arrow",
+      "updated": 2,
+      "version": 2,
+      "versionNonce": 408575,
+      "width": 97,
+      "x": 477,
+      "y": 55
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "#ffffff",
+      "boundElements": [
+        {
+          "id": "t-bayes-update",
+          "type": "text"
+        },
+        {
+          "id": "e-parent-bayes-update",
+          "type": "arrow"
+        },
+        {
+          "id": "e-parent-natural-frequencies",
+          "type": "arrow"
+        },
+        {
+          "id": "e-rel-prior-bayes",
+          "type": "arrow"
+        },
+        {
+          "id": "e-rel-baserate-bayes",
+          "type": "arrow"
+        },
+        {
+          "id": "e-rel-freq-bayes",
+          "type": "arrow"
+        }
+      ],
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "#ffffff",
+            "boundElements": [
+              {
+                "id": "t-bayes-update",
+                "type": "text"
+              },
+              {
+                "id": "e-parent-bayes-update",
+                "type": "arrow"
+              },
+              {
+                "id": "e-parent-natural-frequencies",
+                "type": "arrow"
+              },
+              {
+                "id": "e-rel-prior-bayes",
+                "type": "arrow"
+              },
+              {
+                "id": "e-rel-baserate-bayes",
+                "type": "arrow"
+              },
+              {
+                "id": "e-rel-freq-bayes",
+                "type": "arrow"
+              }
+            ],
+            "fillStyle": "solid",
+            "groupIds": [
+              "g-bayes-update"
+            ],
+            "height": 55,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "roughness": 1,
+            "roundness": {
+              "type": 3,
+              "value": 12
+            },
+            "strokeColor": "#a13f48",
+            "strokeStyle": "solid",
+            "strokeWidth": 2,
+            "type": "rectangle",
+            "width": 152,
+            "x": 401,
+            "y": 294
+          },
+          "builtFingerprint": "450957b77bfba5abdd50e5f4a516859cc8acc7b613871cfc205ddfc624a88143",
+          "builtRevision": 1,
+          "conceptId": "bayes-update",
+          "generated": true,
+          "kind": "node",
+          "modelId": "probability-basics"
+        }
+      },
+      "fillStyle": "solid",
+      "frameId": null,
+      "groupIds": [
+        "g-bayes-update"
+      ],
+      "height": 55,
+      "id": "c-bayes-update",
+      "isDeleted": false,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "roughness": 1,
+      "roundness": {
+        "type": 3,
+        "value": 12
+      },
+      "seed": 410493060,
+      "strokeColor": "#a13f48",
+      "strokeStyle": "solid",
+      "strokeWidth": 2,
+      "type": "rectangle",
+      "updated": 2,
+      "version": 2,
+      "versionNonce": 346945,
+      "width": 152,
+      "x": 401,
+      "y": 294
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "transparent",
+      "baseline": 0,
+      "boundElements": null,
+      "containerId": "c-bayes-update",
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": null,
+            "containerId": "c-bayes-update",
+            "fillStyle": "solid",
+            "fontFamily": 5,
+            "fontSize": 17,
+            "groupIds": [
+              "g-bayes-update"
+            ],
+            "height": 25,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "originalText": "贝叶斯更新",
+            "roughness": 1,
+            "roundness": null,
+            "strokeColor": "#472a2b",
+            "strokeStyle": "solid",
+            "strokeWidth": 1,
+            "text": "贝叶斯更新",
+            "textAlign": "center",
+            "type": "text",
+            "verticalAlign": "middle",
+            "width": 128,
+            "x": 413,
+            "y": 309
+          },
+          "builtFingerprint": "450957b77bfba5abdd50e5f4a516859cc8acc7b613871cfc205ddfc624a88143",
+          "builtRevision": 1,
+          "conceptId": "bayes-update",
+          "generated": true,
+          "kind": "node-text",
+          "modelId": "probability-basics"
+        }
+      },
+      "fillStyle": "solid",
+      "fontFamily": 5,
+      "fontSize": 17,
+      "frameId": null,
+      "groupIds": [
+        "g-bayes-update"
+      ],
+      "height": 25,
+      "id": "t-bayes-update",
+      "isDeleted": false,
+      "lineHeight": 1.25,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "originalText": "贝叶斯更新",
+      "roughness": 1,
+      "roundness": null,
+      "seed": 1419543878,
+      "strokeColor": "#472a2b",
+      "strokeStyle": "solid",
+      "strokeWidth": 1,
+      "text": "贝叶斯更新",
+      "textAlign": "center",
+      "type": "text",
+      "updated": 2,
+      "version": 2,
+      "versionNonce": 569079,
+      "verticalAlign": "middle",
+      "width": 128,
+      "x": 413,
+      "y": 309
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "transparent",
+      "baseline": 0,
+      "boundElements": null,
+      "containerId": null,
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": null,
+            "containerId": null,
+            "fillStyle": "solid",
+            "fontFamily": 5,
+            "fontSize": 11,
+            "groupIds": [
+              "g-bayes-update"
+            ],
+            "height": 18,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "originalText": "难度 3",
+            "roughness": 1,
+            "roundness": null,
+            "strokeColor": "#7b5557",
+            "strokeStyle": "solid",
+            "strokeWidth": 1,
+            "text": "难度 3",
+            "textAlign": "right",
+            "type": "text",
+            "verticalAlign": "top",
+            "width": 54,
+            "x": 491,
+            "y": 298
+          },
+          "builtFingerprint": "450957b77bfba5abdd50e5f4a516859cc8acc7b613871cfc205ddfc624a88143",
+          "builtRevision": 1,
+          "conceptId": "bayes-update",
+          "generated": true,
+          "kind": "difficulty",
+          "modelId": "probability-basics"
+        }
+      },
+      "fillStyle": "solid",
+      "fontFamily": 5,
+      "fontSize": 11,
+      "frameId": null,
+      "groupIds": [
+        "g-bayes-update"
+      ],
+      "height": 18,
+      "id": "d-bayes-update",
+      "isDeleted": false,
+      "lineHeight": 1.25,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "originalText": "难度 3",
+      "roughness": 1,
+      "roundness": null,
+      "seed": 2037335644,
+      "strokeColor": "#7b5557",
+      "strokeStyle": "solid",
+      "strokeWidth": 1,
+      "text": "难度 3",
+      "textAlign": "right",
+      "type": "text",
+      "updated": 2,
+      "version": 2,
+      "versionNonce": 763627,
+      "verticalAlign": "top",
+      "width": 54,
+      "x": 491,
+      "y": 298
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "transparent",
+      "boundElements": null,
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": null,
+            "endArrowhead": "arrow",
+            "endBinding": {
+              "elementId": "c-bayes-update",
+              "fixedPoint": [
+                0.5,
+                0
+              ],
+              "focus": 0,
+              "gap": 4
+            },
+            "fillStyle": "solid",
+            "groupIds": [],
+            "height": 92,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "points": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                46
+              ],
+              [
+                -97,
+                46
+              ],
+              [
+                -97,
+                92
+              ]
+            ],
+            "roughness": 1,
+            "roundness": {
+              "type": 2
+            },
+            "startArrowhead": null,
+            "startBinding": {
+              "elementId": "c-ppv",
+              "fixedPoint": [
+                0.5,
+                1
+              ],
+              "focus": 0,
+              "gap": 4
+            },
+            "strokeColor": "#7b5557",
+            "strokeStyle": "solid",
+            "strokeWidth": 2,
+            "type": "arrow",
+            "width": 97,
+            "x": 574,
+            "y": 202
+          },
+          "builtFingerprint": "450957b77bfba5abdd50e5f4a516859cc8acc7b613871cfc205ddfc624a88143",
+          "builtRevision": 1,
+          "conceptId": "bayes-update",
+          "generated": true,
+          "kind": "parent-edge",
+          "modelId": "probability-basics"
+        }
+      },
+      "endArrowhead": "arrow",
+      "endBinding": {
+        "elementId": "c-bayes-update",
+        "fixedPoint": [
+          0.5,
+          0
+        ],
+        "focus": 0,
+        "gap": 4
+      },
+      "fillStyle": "solid",
+      "frameId": null,
+      "groupIds": [],
+      "height": 92,
+      "id": "e-parent-bayes-update",
+      "isDeleted": false,
+      "lastCommittedPoint": null,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          46
+        ],
+        [
+          -97,
+          46
+        ],
+        [
+          -97,
+          92
+        ]
+      ],
+      "roughness": 1,
+      "roundness": {
+        "type": 2
+      },
+      "seed": 638210778,
+      "startArrowhead": null,
+      "startBinding": {
+        "elementId": "c-ppv",
+        "fixedPoint": [
+          0.5,
+          1
+        ],
+        "focus": 0,
+        "gap": 4
+      },
+      "strokeColor": "#7b5557",
+      "strokeStyle": "solid",
+      "strokeWidth": 2,
+      "type": "arrow",
+      "updated": 2,
+      "version": 2,
+      "versionNonce": 960043,
+      "width": 97,
+      "x": 574,
+      "y": 202
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "#ffffff",
+      "boundElements": [
+        {
+          "id": "t-natural-frequencies",
+          "type": "text"
+        },
+        {
+          "id": "e-parent-natural-frequencies",
+          "type": "arrow"
+        },
+        {
+          "id": "e-rel-freq-bayes",
+          "type": "arrow"
+        },
+        {
+          "id": "e-rel-sens-freq",
+          "type": "arrow"
+        }
+      ],
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "#ffffff",
+            "boundElements": [
+              {
+                "id": "t-natural-frequencies",
+                "type": "text"
+              },
+              {
+                "id": "e-parent-natural-frequencies",
+                "type": "arrow"
+              },
+              {
+                "id": "e-rel-freq-bayes",
+                "type": "arrow"
+              },
+              {
+                "id": "e-rel-sens-freq",
+                "type": "arrow"
+              }
+            ],
+            "fillStyle": "solid",
+            "groupIds": [
+              "g-natural-frequencies"
+            ],
+            "height": 55,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "roughness": 1,
+            "roundness": {
+              "type": 3,
+              "value": 12
+            },
+            "strokeColor": "#a13f48",
+            "strokeStyle": "solid",
+            "strokeWidth": 2,
+            "type": "rectangle",
+            "width": 152,
+            "x": 401,
+            "y": 441
+          },
+          "builtFingerprint": "450957b77bfba5abdd50e5f4a516859cc8acc7b613871cfc205ddfc624a88143",
+          "builtRevision": 1,
+          "conceptId": "natural-frequencies",
+          "generated": true,
+          "kind": "node",
+          "modelId": "probability-basics"
+        }
+      },
+      "fillStyle": "solid",
+      "frameId": null,
+      "groupIds": [
+        "g-natural-frequencies"
+      ],
+      "height": 55,
+      "id": "c-natural-frequencies",
+      "isDeleted": false,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "roughness": 1,
+      "roundness": {
+        "type": 3,
+        "value": 12
+      },
+      "seed": 979648964,
+      "strokeColor": "#a13f48",
+      "strokeStyle": "solid",
+      "strokeWidth": 2,
+      "type": "rectangle",
+      "updated": 2,
+      "version": 2,
+      "versionNonce": 931791,
+      "width": 152,
+      "x": 401,
+      "y": 441
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "transparent",
+      "baseline": 0,
+      "boundElements": null,
+      "containerId": "c-natural-frequencies",
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": null,
+            "containerId": "c-natural-frequencies",
+            "fillStyle": "solid",
+            "fontFamily": 5,
+            "fontSize": 17,
+            "groupIds": [
+              "g-natural-frequencies"
+            ],
+            "height": 25,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "originalText": "自然频率树",
+            "roughness": 1,
+            "roundness": null,
+            "strokeColor": "#472a2b",
+            "strokeStyle": "solid",
+            "strokeWidth": 1,
+            "text": "自然频率树",
+            "textAlign": "center",
+            "type": "text",
+            "verticalAlign": "middle",
+            "width": 128,
+            "x": 413,
+            "y": 456
+          },
+          "builtFingerprint": "450957b77bfba5abdd50e5f4a516859cc8acc7b613871cfc205ddfc624a88143",
+          "builtRevision": 1,
+          "conceptId": "natural-frequencies",
+          "generated": true,
+          "kind": "node-text",
+          "modelId": "probability-basics"
+        }
+      },
+      "fillStyle": "solid",
+      "fontFamily": 5,
+      "fontSize": 17,
+      "frameId": null,
+      "groupIds": [
+        "g-natural-frequencies"
+      ],
+      "height": 25,
+      "id": "t-natural-frequencies",
+      "isDeleted": false,
+      "lineHeight": 1.25,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "originalText": "自然频率树",
+      "roughness": 1,
+      "roundness": null,
+      "seed": 1705310184,
+      "strokeColor": "#472a2b",
+      "strokeStyle": "solid",
+      "strokeWidth": 1,
+      "text": "自然频率树",
+      "textAlign": "center",
+      "type": "text",
+      "updated": 2,
+      "version": 2,
+      "versionNonce": 571025,
+      "verticalAlign": "middle",
+      "width": 128,
+      "x": 413,
+      "y": 456
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "transparent",
+      "baseline": 0,
+      "boundElements": null,
+      "containerId": null,
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": null,
+            "containerId": null,
+            "fillStyle": "solid",
+            "fontFamily": 5,
+            "fontSize": 11,
+            "groupIds": [
+              "g-natural-frequencies"
+            ],
+            "height": 18,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "originalText": "难度 2",
+            "roughness": 1,
+            "roundness": null,
+            "strokeColor": "#7b5557",
+            "strokeStyle": "solid",
+            "strokeWidth": 1,
+            "text": "难度 2",
+            "textAlign": "right",
+            "type": "text",
+            "verticalAlign": "top",
+            "width": 54,
+            "x": 491,
+            "y": 445
+          },
+          "builtFingerprint": "450957b77bfba5abdd50e5f4a516859cc8acc7b613871cfc205ddfc624a88143",
+          "builtRevision": 1,
+          "conceptId": "natural-frequencies",
+          "generated": true,
+          "kind": "difficulty",
+          "modelId": "probability-basics"
+        }
+      },
+      "fillStyle": "solid",
+      "fontFamily": 5,
+      "fontSize": 11,
+      "frameId": null,
+      "groupIds": [
+        "g-natural-frequencies"
+      ],
+      "height": 18,
+      "id": "d-natural-frequencies",
+      "isDeleted": false,
+      "lineHeight": 1.25,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "originalText": "难度 2",
+      "roughness": 1,
+      "roundness": null,
+      "seed": 415480124,
+      "strokeColor": "#7b5557",
+      "strokeStyle": "solid",
+      "strokeWidth": 1,
+      "text": "难度 2",
+      "textAlign": "right",
+      "type": "text",
+      "updated": 2,
+      "version": 2,
+      "versionNonce": 273115,
+      "verticalAlign": "top",
+      "width": 54,
+      "x": 491,
+      "y": 445
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "transparent",
+      "boundElements": null,
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": null,
+            "endArrowhead": "arrow",
+            "endBinding": {
+              "elementId": "c-natural-frequencies",
+              "fixedPoint": [
+                0.5,
+                0
+              ],
+              "focus": 0,
+              "gap": 4
+            },
+            "fillStyle": "solid",
+            "groupIds": [],
+            "height": 92,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "points": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                46
+              ],
+              [
+                0,
+                92
+              ]
+            ],
+            "roughness": 1,
+            "roundness": {
+              "type": 2
+            },
+            "startArrowhead": null,
+            "startBinding": {
+              "elementId": "c-bayes-update",
+              "fixedPoint": [
+                0.5,
+                1
+              ],
+              "focus": 0,
+              "gap": 4
+            },
+            "strokeColor": "#7b5557",
+            "strokeStyle": "solid",
+            "strokeWidth": 2,
+            "type": "arrow",
+            "width": 0,
+            "x": 477,
+            "y": 349
+          },
+          "builtFingerprint": "450957b77bfba5abdd50e5f4a516859cc8acc7b613871cfc205ddfc624a88143",
+          "builtRevision": 1,
+          "conceptId": "natural-frequencies",
+          "generated": true,
+          "kind": "parent-edge",
+          "modelId": "probability-basics"
+        }
+      },
+      "endArrowhead": "arrow",
+      "endBinding": {
+        "elementId": "c-natural-frequencies",
+        "fixedPoint": [
+          0.5,
+          0
+        ],
+        "focus": 0,
+        "gap": 4
+      },
+      "fillStyle": "solid",
+      "frameId": null,
+      "groupIds": [],
+      "height": 92,
+      "id": "e-parent-natural-frequencies",
+      "isDeleted": false,
+      "lastCommittedPoint": null,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          46
+        ],
+        [
+          0,
+          92
+        ]
+      ],
+      "roughness": 1,
+      "roundness": {
+        "type": 2
+      },
+      "seed": 859078655,
+      "startArrowhead": null,
+      "startBinding": {
+        "elementId": "c-bayes-update",
+        "fixedPoint": [
+          0.5,
+          1
+        ],
+        "focus": 0,
+        "gap": 4
+      },
+      "strokeColor": "#7b5557",
+      "strokeStyle": "solid",
+      "strokeWidth": 2,
+      "type": "arrow",
+      "updated": 2,
+      "version": 2,
+      "versionNonce": 327912,
+      "width": 0,
+      "x": 477,
+      "y": 349
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "#ffffff",
+      "boundElements": [
+        {
+          "id": "t-base-rate-neglect",
+          "type": "text"
+        },
+        {
+          "id": "e-parent-base-rate-neglect",
+          "type": "arrow"
+        },
+        {
+          "id": "e-rel-baserate-bayes",
+          "type": "arrow"
+        }
+      ],
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "#ffffff",
+            "boundElements": [
+              {
+                "id": "t-base-rate-neglect",
+                "type": "text"
+              },
+              {
+                "id": "e-parent-base-rate-neglect",
+                "type": "arrow"
+              },
+              {
+                "id": "e-rel-baserate-bayes",
+                "type": "arrow"
+              }
+            ],
+            "fillStyle": "solid",
+            "groupIds": [
+              "g-base-rate-neglect"
+            ],
+            "height": 55,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "roughness": 1,
+            "roundness": {
+              "type": 3,
+              "value": 12
+            },
+            "strokeColor": "#a13f48",
+            "strokeStyle": "solid",
+            "strokeWidth": 2,
+            "type": "rectangle",
+            "width": 152,
+            "x": 595,
+            "y": 294
+          },
+          "builtFingerprint": "450957b77bfba5abdd50e5f4a516859cc8acc7b613871cfc205ddfc624a88143",
+          "builtRevision": 1,
+          "conceptId": "base-rate-neglect",
+          "generated": true,
+          "kind": "node",
+          "modelId": "probability-basics"
+        }
+      },
+      "fillStyle": "solid",
+      "frameId": null,
+      "groupIds": [
+        "g-base-rate-neglect"
+      ],
+      "height": 55,
+      "id": "c-base-rate-neglect",
+      "isDeleted": false,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "roughness": 1,
+      "roundness": {
+        "type": 3,
+        "value": 12
+      },
+      "seed": 98957293,
+      "strokeColor": "#a13f48",
+      "strokeStyle": "solid",
+      "strokeWidth": 2,
+      "type": "rectangle",
+      "updated": 2,
+      "version": 2,
+      "versionNonce": 563218,
+      "width": 152,
+      "x": 595,
+      "y": 294
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "transparent",
+      "baseline": 0,
+      "boundElements": null,
+      "containerId": "c-base-rate-neglect",
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": null,
+            "containerId": "c-base-rate-neglect",
+            "fillStyle": "solid",
+            "fontFamily": 5,
+            "fontSize": 17,
+            "groupIds": [
+              "g-base-rate-neglect"
+            ],
+            "height": 25,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "originalText": "基础率谬误",
+            "roughness": 1,
+            "roundness": null,
+            "strokeColor": "#472a2b",
+            "strokeStyle": "solid",
+            "strokeWidth": 1,
+            "text": "基础率谬误",
+            "textAlign": "center",
+            "type": "text",
+            "verticalAlign": "middle",
+            "width": 128,
+            "x": 607,
+            "y": 309
+          },
+          "builtFingerprint": "450957b77bfba5abdd50e5f4a516859cc8acc7b613871cfc205ddfc624a88143",
+          "builtRevision": 1,
+          "conceptId": "base-rate-neglect",
+          "generated": true,
+          "kind": "node-text",
+          "modelId": "probability-basics"
+        }
+      },
+      "fillStyle": "solid",
+      "fontFamily": 5,
+      "fontSize": 17,
+      "frameId": null,
+      "groupIds": [
+        "g-base-rate-neglect"
+      ],
+      "height": 25,
+      "id": "t-base-rate-neglect",
+      "isDeleted": false,
+      "lineHeight": 1.25,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "originalText": "基础率谬误",
+      "roughness": 1,
+      "roundness": null,
+      "seed": 179165221,
+      "strokeColor": "#472a2b",
+      "strokeStyle": "solid",
+      "strokeWidth": 1,
+      "text": "基础率谬误",
+      "textAlign": "center",
+      "type": "text",
+      "updated": 2,
+      "version": 2,
+      "versionNonce": 469689,
+      "verticalAlign": "middle",
+      "width": 128,
+      "x": 607,
+      "y": 309
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "transparent",
+      "baseline": 0,
+      "boundElements": null,
+      "containerId": null,
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": null,
+            "containerId": null,
+            "fillStyle": "solid",
+            "fontFamily": 5,
+            "fontSize": 11,
+            "groupIds": [
+              "g-base-rate-neglect"
+            ],
+            "height": 18,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "originalText": "难度 2",
+            "roughness": 1,
+            "roundness": null,
+            "strokeColor": "#7b5557",
+            "strokeStyle": "solid",
+            "strokeWidth": 1,
+            "text": "难度 2",
+            "textAlign": "right",
+            "type": "text",
+            "verticalAlign": "top",
+            "width": 54,
+            "x": 685,
+            "y": 298
+          },
+          "builtFingerprint": "450957b77bfba5abdd50e5f4a516859cc8acc7b613871cfc205ddfc624a88143",
+          "builtRevision": 1,
+          "conceptId": "base-rate-neglect",
+          "generated": true,
+          "kind": "difficulty",
+          "modelId": "probability-basics"
+        }
+      },
+      "fillStyle": "solid",
+      "fontFamily": 5,
+      "fontSize": 11,
+      "frameId": null,
+      "groupIds": [
+        "g-base-rate-neglect"
+      ],
+      "height": 18,
+      "id": "d-base-rate-neglect",
+      "isDeleted": false,
+      "lineHeight": 1.25,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "originalText": "难度 2",
+      "roughness": 1,
+      "roundness": null,
+      "seed": 955139820,
+      "strokeColor": "#7b5557",
+      "strokeStyle": "solid",
+      "strokeWidth": 1,
+      "text": "难度 2",
+      "textAlign": "right",
+      "type": "text",
+      "updated": 2,
+      "version": 2,
+      "versionNonce": 509553,
+      "verticalAlign": "top",
+      "width": 54,
+      "x": 685,
+      "y": 298
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "transparent",
+      "boundElements": null,
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": null,
+            "endArrowhead": "arrow",
+            "endBinding": {
+              "elementId": "c-base-rate-neglect",
+              "fixedPoint": [
+                0.5,
+                0
+              ],
+              "focus": 0,
+              "gap": 4
+            },
+            "fillStyle": "solid",
+            "groupIds": [],
+            "height": 92,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "points": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                46
+              ],
+              [
+                97,
+                46
+              ],
+              [
+                97,
+                92
+              ]
+            ],
+            "roughness": 1,
+            "roundness": {
+              "type": 2
+            },
+            "startArrowhead": null,
+            "startBinding": {
+              "elementId": "c-ppv",
+              "fixedPoint": [
+                0.5,
+                1
+              ],
+              "focus": 0,
+              "gap": 4
+            },
+            "strokeColor": "#7b5557",
+            "strokeStyle": "solid",
+            "strokeWidth": 2,
+            "type": "arrow",
+            "width": 97,
+            "x": 574,
+            "y": 202
+          },
+          "builtFingerprint": "450957b77bfba5abdd50e5f4a516859cc8acc7b613871cfc205ddfc624a88143",
+          "builtRevision": 1,
+          "conceptId": "base-rate-neglect",
+          "generated": true,
+          "kind": "parent-edge",
+          "modelId": "probability-basics"
+        }
+      },
+      "endArrowhead": "arrow",
+      "endBinding": {
+        "elementId": "c-base-rate-neglect",
+        "fixedPoint": [
+          0.5,
+          0
+        ],
+        "focus": 0,
+        "gap": 4
+      },
+      "fillStyle": "solid",
+      "frameId": null,
+      "groupIds": [],
+      "height": 92,
+      "id": "e-parent-base-rate-neglect",
+      "isDeleted": false,
+      "lastCommittedPoint": null,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          46
+        ],
+        [
+          97,
+          46
+        ],
+        [
+          97,
+          92
+        ]
+      ],
+      "roughness": 1,
+      "roundness": {
+        "type": 2
+      },
+      "seed": 1010917476,
+      "startArrowhead": null,
+      "startBinding": {
+        "elementId": "c-ppv",
+        "fixedPoint": [
+          0.5,
+          1
+        ],
+        "focus": 0,
+        "gap": 4
+      },
+      "strokeColor": "#7b5557",
+      "strokeStyle": "solid",
+      "strokeWidth": 2,
+      "type": "arrow",
+      "updated": 2,
+      "version": 2,
+      "versionNonce": 559546,
+      "width": 97,
+      "x": 574,
+      "y": 202
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "#faece9",
+      "boundElements": [
+        {
+          "id": "t-screening-decision",
+          "type": "text"
+        },
+        {
+          "id": "e-parent-screening-decision",
+          "type": "arrow"
+        },
+        {
+          "id": "e-rel-prior-screening",
+          "type": "arrow"
+        },
+        {
+          "id": "e-rel-ppv-screening",
+          "type": "arrow"
+        }
+      ],
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "#faece9",
+            "boundElements": [
+              {
+                "id": "t-screening-decision",
+                "type": "text"
+              },
+              {
+                "id": "e-parent-screening-decision",
+                "type": "arrow"
+              },
+              {
+                "id": "e-rel-prior-screening",
+                "type": "arrow"
+              },
+              {
+                "id": "e-rel-ppv-screening",
+                "type": "arrow"
+              }
+            ],
+            "fillStyle": "solid",
+            "groupIds": [
+              "g-screening-decision"
+            ],
+            "height": 55,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "roughness": 1,
+            "roundness": {
+              "type": 3,
+              "value": 12
+            },
+            "strokeColor": "#a13f48",
+            "strokeStyle": "solid",
+            "strokeWidth": 2,
+            "type": "rectangle",
+            "width": 165,
+            "x": 789,
+            "y": 147
+          },
+          "builtFingerprint": "450957b77bfba5abdd50e5f4a516859cc8acc7b613871cfc205ddfc624a88143",
+          "builtRevision": 1,
+          "conceptId": "screening-decision",
+          "generated": true,
+          "kind": "node",
+          "modelId": "probability-basics"
+        }
+      },
+      "fillStyle": "solid",
+      "frameId": null,
+      "groupIds": [
+        "g-screening-decision"
+      ],
+      "height": 55,
+      "id": "c-screening-decision",
+      "isDeleted": false,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "roughness": 1,
+      "roundness": {
+        "type": 3,
+        "value": 12
+      },
+      "seed": 1782237368,
+      "strokeColor": "#a13f48",
+      "strokeStyle": "solid",
+      "strokeWidth": 2,
+      "type": "rectangle",
+      "updated": 2,
+      "version": 2,
+      "versionNonce": 101339,
+      "width": 165,
+      "x": 789,
+      "y": 147
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "transparent",
+      "baseline": 0,
+      "boundElements": null,
+      "containerId": "c-screening-decision",
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": null,
+            "containerId": "c-screening-decision",
+            "fillStyle": "solid",
+            "fontFamily": 5,
+            "fontSize": 17,
+            "groupIds": [
+              "g-screening-decision"
+            ],
+            "height": 25,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "originalText": "后验概率的解读",
+            "roughness": 1,
+            "roundness": null,
+            "strokeColor": "#472a2b",
+            "strokeStyle": "solid",
+            "strokeWidth": 1,
+            "text": "后验概率的解读",
+            "textAlign": "center",
+            "type": "text",
+            "verticalAlign": "middle",
+            "width": 141,
+            "x": 801,
+            "y": 162
+          },
+          "builtFingerprint": "450957b77bfba5abdd50e5f4a516859cc8acc7b613871cfc205ddfc624a88143",
+          "builtRevision": 1,
+          "conceptId": "screening-decision",
+          "generated": true,
+          "kind": "node-text",
+          "modelId": "probability-basics"
+        }
+      },
+      "fillStyle": "solid",
+      "fontFamily": 5,
+      "fontSize": 17,
+      "frameId": null,
+      "groupIds": [
+        "g-screening-decision"
+      ],
+      "height": 25,
+      "id": "t-screening-decision",
+      "isDeleted": false,
+      "lineHeight": 1.25,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "originalText": "后验概率的解读",
+      "roughness": 1,
+      "roundness": null,
+      "seed": 150867132,
+      "strokeColor": "#472a2b",
+      "strokeStyle": "solid",
+      "strokeWidth": 1,
+      "text": "后验概率的解读",
+      "textAlign": "center",
+      "type": "text",
+      "updated": 2,
+      "version": 2,
+      "versionNonce": 758985,
+      "verticalAlign": "middle",
+      "width": 141,
+      "x": 801,
+      "y": 162
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "transparent",
+      "baseline": 0,
+      "boundElements": null,
+      "containerId": null,
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": null,
+            "containerId": null,
+            "fillStyle": "solid",
+            "fontFamily": 5,
+            "fontSize": 11,
+            "groupIds": [
+              "g-screening-decision"
+            ],
+            "height": 18,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "originalText": "难度 3",
+            "roughness": 1,
+            "roundness": null,
+            "strokeColor": "#7b5557",
+            "strokeStyle": "solid",
+            "strokeWidth": 1,
+            "text": "难度 3",
+            "textAlign": "right",
+            "type": "text",
+            "verticalAlign": "top",
+            "width": 54,
+            "x": 892,
+            "y": 151
+          },
+          "builtFingerprint": "450957b77bfba5abdd50e5f4a516859cc8acc7b613871cfc205ddfc624a88143",
+          "builtRevision": 1,
+          "conceptId": "screening-decision",
+          "generated": true,
+          "kind": "difficulty",
+          "modelId": "probability-basics"
+        }
+      },
+      "fillStyle": "solid",
+      "fontFamily": 5,
+      "fontSize": 11,
+      "frameId": null,
+      "groupIds": [
+        "g-screening-decision"
+      ],
+      "height": 18,
+      "id": "d-screening-decision",
+      "isDeleted": false,
+      "lineHeight": 1.25,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "originalText": "难度 3",
+      "roughness": 1,
+      "roundness": null,
+      "seed": 1322337157,
+      "strokeColor": "#7b5557",
+      "strokeStyle": "solid",
+      "strokeWidth": 1,
+      "text": "难度 3",
+      "textAlign": "right",
+      "type": "text",
+      "updated": 2,
+      "version": 2,
+      "versionNonce": 792594,
+      "verticalAlign": "top",
+      "width": 54,
+      "x": 892,
+      "y": 151
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "transparent",
+      "boundElements": null,
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": null,
+            "endArrowhead": "arrow",
+            "endBinding": {
+              "elementId": "c-screening-decision",
+              "fixedPoint": [
+                0,
+                0.5
+              ],
+              "focus": 0,
+              "gap": 4
+            },
+            "fillStyle": "solid",
+            "groupIds": [],
+            "height": 147,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "points": [
+              [
+                0,
+                0
+              ],
+              [
+                236,
+                147
+              ]
+            ],
+            "roughness": 1,
+            "roundness": {
+              "type": 2
+            },
+            "startArrowhead": null,
+            "startBinding": {
+              "elementId": "c-conditional-probability",
+              "fixedPoint": [
+                1,
+                0.5
+              ],
+              "focus": 0,
+              "gap": 4
+            },
+            "strokeColor": "#7b5557",
+            "strokeStyle": "solid",
+            "strokeWidth": 2,
+            "type": "arrow",
+            "width": 236,
+            "x": 553,
+            "y": 27.5
+          },
+          "builtFingerprint": "450957b77bfba5abdd50e5f4a516859cc8acc7b613871cfc205ddfc624a88143",
+          "builtRevision": 1,
+          "conceptId": "screening-decision",
+          "generated": true,
+          "kind": "parent-edge",
+          "modelId": "probability-basics"
+        }
+      },
+      "endArrowhead": "arrow",
+      "endBinding": {
+        "elementId": "c-screening-decision",
+        "fixedPoint": [
+          0,
+          0.5
+        ],
+        "focus": 0,
+        "gap": 4
+      },
+      "fillStyle": "solid",
+      "frameId": null,
+      "groupIds": [],
+      "height": 147,
+      "id": "e-parent-screening-decision",
+      "isDeleted": false,
+      "lastCommittedPoint": null,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          236,
+          147
+        ]
+      ],
+      "roughness": 1,
+      "roundness": {
+        "type": 2
+      },
+      "seed": 963397331,
+      "startArrowhead": null,
+      "startBinding": {
+        "elementId": "c-conditional-probability",
+        "fixedPoint": [
+          1,
+          0.5
+        ],
+        "focus": 0,
+        "gap": 4
+      },
+      "strokeColor": "#7b5557",
+      "strokeStyle": "solid",
+      "strokeWidth": 2,
+      "type": "arrow",
+      "updated": 2,
+      "version": 2,
+      "versionNonce": 263498,
+      "width": 236,
+      "x": 553,
+      "y": 27.5
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "transparent",
+      "boundElements": null,
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": null,
+            "endArrowhead": "arrow",
+            "endBinding": {
+              "elementId": "c-bayes-update",
+              "fixedPoint": [
+                0,
+                0.5
+              ],
+              "focus": 0,
+              "gap": 4
+            },
+            "fillStyle": "solid",
+            "groupIds": [],
+            "height": 147,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "points": [
+              [
+                0,
+                0
+              ],
+              [
+                249,
+                147
+              ]
+            ],
+            "roughness": 1,
+            "roundness": {
+              "type": 2
+            },
+            "startArrowhead": null,
+            "startBinding": {
+              "elementId": "c-prior",
+              "fixedPoint": [
+                1,
+                0.5
+              ],
+              "focus": 0,
+              "gap": 4
+            },
+            "strokeColor": "#2857a4",
+            "strokeStyle": "dashed",
+            "strokeWidth": 2,
+            "type": "arrow",
+            "width": 249,
+            "x": 152,
+            "y": 174.5
+          },
+          "builtFingerprint": "450957b77bfba5abdd50e5f4a516859cc8acc7b613871cfc205ddfc624a88143",
+          "builtRevision": 1,
+          "generated": true,
+          "kind": "relation-edge",
+          "modelId": "probability-basics",
+          "relationId": "rel-prior-bayes",
+          "relationType": "prerequisite"
+        }
+      },
+      "endArrowhead": "arrow",
+      "endBinding": {
+        "elementId": "c-bayes-update",
+        "fixedPoint": [
+          0,
+          0.5
+        ],
+        "focus": 0,
+        "gap": 4
+      },
+      "fillStyle": "solid",
+      "frameId": null,
+      "groupIds": [],
+      "height": 147,
+      "id": "e-rel-prior-bayes",
+      "isDeleted": false,
+      "lastCommittedPoint": null,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          249,
+          147
+        ]
+      ],
+      "roughness": 1,
+      "roundness": {
+        "type": 2
+      },
+      "seed": 492797170,
+      "startArrowhead": null,
+      "startBinding": {
+        "elementId": "c-prior",
+        "fixedPoint": [
+          1,
+          0.5
+        ],
+        "focus": 0,
+        "gap": 4
+      },
+      "strokeColor": "#2857a4",
+      "strokeStyle": "dashed",
+      "strokeWidth": 2,
+      "type": "arrow",
+      "updated": 2,
+      "version": 2,
+      "versionNonce": 877477,
+      "width": 249,
+      "x": 152,
+      "y": 174.5
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "transparent",
+      "baseline": 0,
+      "boundElements": null,
+      "containerId": null,
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": null,
+            "containerId": null,
+            "fillStyle": "solid",
+            "fontFamily": 5,
+            "fontSize": 13,
+            "groupIds": [],
+            "height": 22,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "originalText": "先验是更新的起点",
+            "roughness": 1,
+            "roundness": null,
+            "strokeColor": "#2857a4",
+            "strokeStyle": "solid",
+            "strokeWidth": 1,
+            "text": "先验是更新的起点",
+            "textAlign": "center",
+            "type": "text",
+            "verticalAlign": "middle",
+            "width": 128,
+            "x": 212.5,
+            "y": 236
+          },
+          "builtFingerprint": "450957b77bfba5abdd50e5f4a516859cc8acc7b613871cfc205ddfc624a88143",
+          "builtRevision": 1,
+          "generated": true,
+          "kind": "relation-label",
+          "modelId": "probability-basics",
+          "relationId": "rel-prior-bayes",
+          "relationType": "prerequisite"
+        }
+      },
+      "fillStyle": "solid",
+      "fontFamily": 5,
+      "fontSize": 13,
+      "frameId": null,
+      "groupIds": [],
+      "height": 22,
+      "id": "l-rel-prior-bayes",
+      "isDeleted": false,
+      "lineHeight": 1.25,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "originalText": "先验是更新的起点",
+      "roughness": 1,
+      "roundness": null,
+      "seed": 851919606,
+      "strokeColor": "#2857a4",
+      "strokeStyle": "solid",
+      "strokeWidth": 1,
+      "text": "先验是更新的起点",
+      "textAlign": "center",
+      "type": "text",
+      "updated": 2,
+      "version": 2,
+      "versionNonce": 805351,
+      "verticalAlign": "middle",
+      "width": 128,
+      "x": 212.5,
+      "y": 236
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "transparent",
+      "boundElements": null,
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": null,
+            "endArrowhead": "arrow",
+            "endBinding": {
+              "elementId": "c-ppv",
+              "fixedPoint": [
+                0,
+                0.5
+              ],
+              "focus": 0,
+              "gap": 4
+            },
+            "fillStyle": "solid",
+            "groupIds": [],
+            "height": 0,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "points": [
+              [
+                0,
+                0
+              ],
+              [
+                139,
+                0
+              ]
+            ],
+            "roughness": 1,
+            "roundness": {
+              "type": 2
+            },
+            "startArrowhead": null,
+            "startBinding": {
+              "elementId": "c-sensitivity-specificity",
+              "fixedPoint": [
+                1,
+                0.5
+              ],
+              "focus": 0,
+              "gap": 4
+            },
+            "strokeColor": "#805200",
+            "strokeStyle": "solid",
+            "strokeWidth": 2,
+            "type": "arrow",
+            "width": 139,
+            "x": 359,
+            "y": 174.5
+          },
+          "builtFingerprint": "450957b77bfba5abdd50e5f4a516859cc8acc7b613871cfc205ddfc624a88143",
+          "builtRevision": 1,
+          "generated": true,
+          "kind": "relation-edge",
+          "modelId": "probability-basics",
+          "relationId": "rel-sens-ppv",
+          "relationType": "cause"
+        }
+      },
+      "endArrowhead": "arrow",
+      "endBinding": {
+        "elementId": "c-ppv",
+        "fixedPoint": [
+          0,
+          0.5
+        ],
+        "focus": 0,
+        "gap": 4
+      },
+      "fillStyle": "solid",
+      "frameId": null,
+      "groupIds": [],
+      "height": 0,
+      "id": "e-rel-sens-ppv",
+      "isDeleted": false,
+      "lastCommittedPoint": null,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          139,
+          0
+        ]
+      ],
+      "roughness": 1,
+      "roundness": {
+        "type": 2
+      },
+      "seed": 1649164247,
+      "startArrowhead": null,
+      "startBinding": {
+        "elementId": "c-sensitivity-specificity",
+        "fixedPoint": [
+          1,
+          0.5
+        ],
+        "focus": 0,
+        "gap": 4
+      },
+      "strokeColor": "#805200",
+      "strokeStyle": "solid",
+      "strokeWidth": 2,
+      "type": "arrow",
+      "updated": 2,
+      "version": 2,
+      "versionNonce": 804305,
+      "width": 139,
+      "x": 359,
+      "y": 174.5
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "transparent",
+      "baseline": 0,
+      "boundElements": null,
+      "containerId": null,
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": null,
+            "containerId": null,
+            "fillStyle": "solid",
+            "fontFamily": 5,
+            "fontSize": 13,
+            "groupIds": [],
+            "height": 22,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "originalText": "检测特性影响阳性预测值",
+            "roughness": 1,
+            "roundness": null,
+            "strokeColor": "#805200",
+            "strokeStyle": "solid",
+            "strokeWidth": 1,
+            "text": "检测特性影响阳性预测值",
+            "textAlign": "center",
+            "type": "text",
+            "verticalAlign": "middle",
+            "width": 167,
+            "x": 345,
+            "y": 162.5
+          },
+          "builtFingerprint": "450957b77bfba5abdd50e5f4a516859cc8acc7b613871cfc205ddfc624a88143",
+          "builtRevision": 1,
+          "generated": true,
+          "kind": "relation-label",
+          "modelId": "probability-basics",
+          "relationId": "rel-sens-ppv",
+          "relationType": "cause"
+        }
+      },
+      "fillStyle": "solid",
+      "fontFamily": 5,
+      "fontSize": 13,
+      "frameId": null,
+      "groupIds": [],
+      "height": 22,
+      "id": "l-rel-sens-ppv",
+      "isDeleted": false,
+      "lineHeight": 1.25,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "originalText": "检测特性影响阳性预测值",
+      "roughness": 1,
+      "roundness": null,
+      "seed": 283393751,
+      "strokeColor": "#805200",
+      "strokeStyle": "solid",
+      "strokeWidth": 1,
+      "text": "检测特性影响阳性预测值",
+      "textAlign": "center",
+      "type": "text",
+      "updated": 2,
+      "version": 2,
+      "versionNonce": 303901,
+      "verticalAlign": "middle",
+      "width": 167,
+      "x": 345,
+      "y": 162.5
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "transparent",
+      "boundElements": null,
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": null,
+            "endArrowhead": "arrow",
+            "endBinding": {
+              "elementId": "c-ppv",
+              "fixedPoint": [
+                0,
+                0.5
+              ],
+              "focus": 0,
+              "gap": 4
+            },
+            "fillStyle": "solid",
+            "groupIds": [],
+            "height": 0,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "points": [
+              [
+                0,
+                0
+              ],
+              [
+                346,
+                0
+              ]
+            ],
+            "roughness": 1,
+            "roundness": {
+              "type": 2
+            },
+            "startArrowhead": null,
+            "startBinding": {
+              "elementId": "c-prior",
+              "fixedPoint": [
+                1,
+                0.5
+              ],
+              "focus": 0,
+              "gap": 4
+            },
+            "strokeColor": "#805200",
+            "strokeStyle": "solid",
+            "strokeWidth": 2,
+            "type": "arrow",
+            "width": 346,
+            "x": 152,
+            "y": 174.5
+          },
+          "builtFingerprint": "450957b77bfba5abdd50e5f4a516859cc8acc7b613871cfc205ddfc624a88143",
+          "builtRevision": 1,
+          "generated": true,
+          "kind": "relation-edge",
+          "modelId": "probability-basics",
+          "relationId": "rel-prior-ppv",
+          "relationType": "cause"
+        }
+      },
+      "endArrowhead": "arrow",
+      "endBinding": {
+        "elementId": "c-ppv",
+        "fixedPoint": [
+          0,
+          0.5
+        ],
+        "focus": 0,
+        "gap": 4
+      },
+      "fillStyle": "solid",
+      "frameId": null,
+      "groupIds": [],
+      "height": 0,
+      "id": "e-rel-prior-ppv",
+      "isDeleted": false,
+      "lastCommittedPoint": null,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          346,
+          0
+        ]
+      ],
+      "roughness": 1,
+      "roundness": {
+        "type": 2
+      },
+      "seed": 230451227,
+      "startArrowhead": null,
+      "startBinding": {
+        "elementId": "c-prior",
+        "fixedPoint": [
+          1,
+          0.5
+        ],
+        "focus": 0,
+        "gap": 4
+      },
+      "strokeColor": "#805200",
+      "strokeStyle": "solid",
+      "strokeWidth": 2,
+      "type": "arrow",
+      "updated": 2,
+      "version": 2,
+      "versionNonce": 922781,
+      "width": 346,
+      "x": 152,
+      "y": 174.5
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "transparent",
+      "baseline": 0,
+      "boundElements": null,
+      "containerId": null,
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": null,
+            "containerId": null,
+            "fillStyle": "solid",
+            "fontFamily": 5,
+            "fontSize": 13,
+            "groupIds": [],
+            "height": 22,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "originalText": "先验改变阳性预测值",
+            "roughness": 1,
+            "roundness": null,
+            "strokeColor": "#805200",
+            "strokeStyle": "solid",
+            "strokeWidth": 1,
+            "text": "先验改变阳性预测值",
+            "textAlign": "center",
+            "type": "text",
+            "verticalAlign": "middle",
+            "width": 141,
+            "x": 254.5,
+            "y": 162.5
+          },
+          "builtFingerprint": "450957b77bfba5abdd50e5f4a516859cc8acc7b613871cfc205ddfc624a88143",
+          "builtRevision": 1,
+          "generated": true,
+          "kind": "relation-label",
+          "modelId": "probability-basics",
+          "relationId": "rel-prior-ppv",
+          "relationType": "cause"
+        }
+      },
+      "fillStyle": "solid",
+      "fontFamily": 5,
+      "fontSize": 13,
+      "frameId": null,
+      "groupIds": [],
+      "height": 22,
+      "id": "l-rel-prior-ppv",
+      "isDeleted": false,
+      "lineHeight": 1.25,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "originalText": "先验改变阳性预测值",
+      "roughness": 1,
+      "roundness": null,
+      "seed": 1447072229,
+      "strokeColor": "#805200",
+      "strokeStyle": "solid",
+      "strokeWidth": 1,
+      "text": "先验改变阳性预测值",
+      "textAlign": "center",
+      "type": "text",
+      "updated": 2,
+      "version": 2,
+      "versionNonce": 412007,
+      "verticalAlign": "middle",
+      "width": 141,
+      "x": 254.5,
+      "y": 162.5
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "transparent",
+      "boundElements": null,
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": null,
+            "endArrowhead": "arrow",
+            "endBinding": {
+              "elementId": "c-bayes-update",
+              "fixedPoint": [
+                1,
+                0.5
+              ],
+              "focus": 0,
+              "gap": 4
+            },
+            "fillStyle": "solid",
+            "groupIds": [],
+            "height": 0,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "points": [
+              [
+                0,
+                0
+              ],
+              [
+                -42,
+                0
+              ]
+            ],
+            "roughness": 1,
+            "roundness": {
+              "type": 2
+            },
+            "startArrowhead": null,
+            "startBinding": {
+              "elementId": "c-base-rate-neglect",
+              "fixedPoint": [
+                0,
+                0.5
+              ],
+              "focus": 0,
+              "gap": 4
+            },
+            "strokeColor": "#a13f48",
+            "strokeStyle": "dashed",
+            "strokeWidth": 2,
+            "type": "arrow",
+            "width": 42,
+            "x": 595,
+            "y": 321.5
+          },
+          "builtFingerprint": "450957b77bfba5abdd50e5f4a516859cc8acc7b613871cfc205ddfc624a88143",
+          "builtRevision": 1,
+          "generated": true,
+          "kind": "relation-edge",
+          "modelId": "probability-basics",
+          "relationId": "rel-baserate-bayes",
+          "relationType": "contrast"
+        }
+      },
+      "endArrowhead": "arrow",
+      "endBinding": {
+        "elementId": "c-bayes-update",
+        "fixedPoint": [
+          1,
+          0.5
+        ],
+        "focus": 0,
+        "gap": 4
+      },
+      "fillStyle": "solid",
+      "frameId": null,
+      "groupIds": [],
+      "height": 0,
+      "id": "e-rel-baserate-bayes",
+      "isDeleted": false,
+      "lastCommittedPoint": null,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          -42,
+          0
+        ]
+      ],
+      "roughness": 1,
+      "roundness": {
+        "type": 2
+      },
+      "seed": 269190677,
+      "startArrowhead": null,
+      "startBinding": {
+        "elementId": "c-base-rate-neglect",
+        "fixedPoint": [
+          0,
+          0.5
+        ],
+        "focus": 0,
+        "gap": 4
+      },
+      "strokeColor": "#a13f48",
+      "strokeStyle": "dashed",
+      "strokeWidth": 2,
+      "type": "arrow",
+      "updated": 2,
+      "version": 2,
+      "versionNonce": 424668,
+      "width": 42,
+      "x": 595,
+      "y": 321.5
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "transparent",
+      "baseline": 0,
+      "boundElements": null,
+      "containerId": null,
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": null,
+            "containerId": null,
+            "fillStyle": "solid",
+            "fontFamily": 5,
+            "fontSize": 13,
+            "groupIds": [],
+            "height": 22,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "originalText": "忽视基础率 vs 正确加权",
+            "roughness": 1,
+            "roundness": null,
+            "strokeColor": "#a13f48",
+            "strokeStyle": "solid",
+            "strokeWidth": 1,
+            "text": "忽视基础率 vs 正确加权",
+            "textAlign": "center",
+            "type": "text",
+            "verticalAlign": "middle",
+            "width": 170.12,
+            "x": 488.94,
+            "y": 309.5
+          },
+          "builtFingerprint": "450957b77bfba5abdd50e5f4a516859cc8acc7b613871cfc205ddfc624a88143",
+          "builtRevision": 1,
+          "generated": true,
+          "kind": "relation-label",
+          "modelId": "probability-basics",
+          "relationId": "rel-baserate-bayes",
+          "relationType": "contrast"
+        }
+      },
+      "fillStyle": "solid",
+      "fontFamily": 5,
+      "fontSize": 13,
+      "frameId": null,
+      "groupIds": [],
+      "height": 22,
+      "id": "l-rel-baserate-bayes",
+      "isDeleted": false,
+      "lineHeight": 1.25,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "originalText": "忽视基础率 vs 正确加权",
+      "roughness": 1,
+      "roundness": null,
+      "seed": 296847506,
+      "strokeColor": "#a13f48",
+      "strokeStyle": "solid",
+      "strokeWidth": 1,
+      "text": "忽视基础率 vs 正确加权",
+      "textAlign": "center",
+      "type": "text",
+      "updated": 2,
+      "version": 2,
+      "versionNonce": 125925,
+      "verticalAlign": "middle",
+      "width": 170.12,
+      "x": 488.94,
+      "y": 309.5
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "transparent",
+      "boundElements": null,
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": null,
+            "endArrowhead": "arrow",
+            "endBinding": {
+              "elementId": "c-bayes-update",
+              "fixedPoint": [
+                0.5,
+                1
+              ],
+              "focus": 0,
+              "gap": 4
+            },
+            "fillStyle": "solid",
+            "groupIds": [],
+            "height": 92,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "points": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                -46
+              ],
+              [
+                0,
+                -92
+              ]
+            ],
+            "roughness": 1,
+            "roundness": {
+              "type": 2
+            },
+            "startArrowhead": null,
+            "startBinding": {
+              "elementId": "c-natural-frequencies",
+              "fixedPoint": [
+                0.5,
+                0
+              ],
+              "focus": 0,
+              "gap": 4
+            },
+            "strokeColor": "#236044",
+            "strokeStyle": "dotted",
+            "strokeWidth": 2,
+            "type": "arrow",
+            "width": 0,
+            "x": 477,
+            "y": 441
+          },
+          "builtFingerprint": "450957b77bfba5abdd50e5f4a516859cc8acc7b613871cfc205ddfc624a88143",
+          "builtRevision": 1,
+          "generated": true,
+          "kind": "relation-edge",
+          "modelId": "probability-basics",
+          "relationId": "rel-freq-bayes",
+          "relationType": "application"
+        }
+      },
+      "endArrowhead": "arrow",
+      "endBinding": {
+        "elementId": "c-bayes-update",
+        "fixedPoint": [
+          0.5,
+          1
+        ],
+        "focus": 0,
+        "gap": 4
+      },
+      "fillStyle": "solid",
+      "frameId": null,
+      "groupIds": [],
+      "height": 92,
+      "id": "e-rel-freq-bayes",
+      "isDeleted": false,
+      "lastCommittedPoint": null,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          -46
+        ],
+        [
+          0,
+          -92
+        ]
+      ],
+      "roughness": 1,
+      "roundness": {
+        "type": 2
+      },
+      "seed": 1451481143,
+      "startArrowhead": null,
+      "startBinding": {
+        "elementId": "c-natural-frequencies",
+        "fixedPoint": [
+          0.5,
+          0
+        ],
+        "focus": 0,
+        "gap": 4
+      },
+      "strokeColor": "#236044",
+      "strokeStyle": "dotted",
+      "strokeWidth": 2,
+      "type": "arrow",
+      "updated": 2,
+      "version": 2,
+      "versionNonce": 825135,
+      "width": 0,
+      "x": 477,
+      "y": 441
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "transparent",
+      "baseline": 0,
+      "boundElements": null,
+      "containerId": null,
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": null,
+            "containerId": null,
+            "fillStyle": "solid",
+            "fontFamily": 5,
+            "fontSize": 13,
+            "groupIds": [],
+            "height": 22,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "originalText": "用计数实现贝叶斯更新",
+            "roughness": 1,
+            "roundness": null,
+            "strokeColor": "#236044",
+            "strokeStyle": "solid",
+            "strokeWidth": 1,
+            "text": "用计数实现贝叶斯更新",
+            "textAlign": "center",
+            "type": "text",
+            "verticalAlign": "middle",
+            "width": 154,
+            "x": 400,
+            "y": 383
+          },
+          "builtFingerprint": "450957b77bfba5abdd50e5f4a516859cc8acc7b613871cfc205ddfc624a88143",
+          "builtRevision": 1,
+          "generated": true,
+          "kind": "relation-label",
+          "modelId": "probability-basics",
+          "relationId": "rel-freq-bayes",
+          "relationType": "application"
+        }
+      },
+      "fillStyle": "solid",
+      "fontFamily": 5,
+      "fontSize": 13,
+      "frameId": null,
+      "groupIds": [],
+      "height": 22,
+      "id": "l-rel-freq-bayes",
+      "isDeleted": false,
+      "lineHeight": 1.25,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "originalText": "用计数实现贝叶斯更新",
+      "roughness": 1,
+      "roundness": null,
+      "seed": 1814286127,
+      "strokeColor": "#236044",
+      "strokeStyle": "solid",
+      "strokeWidth": 1,
+      "text": "用计数实现贝叶斯更新",
+      "textAlign": "center",
+      "type": "text",
+      "updated": 2,
+      "version": 2,
+      "versionNonce": 583976,
+      "verticalAlign": "middle",
+      "width": 154,
+      "x": 400,
+      "y": 383
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "transparent",
+      "boundElements": null,
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": null,
+            "endArrowhead": "arrow",
+            "endBinding": {
+              "elementId": "c-screening-decision",
+              "fixedPoint": [
+                0,
+                0.5
+              ],
+              "focus": 0,
+              "gap": 4
+            },
+            "fillStyle": "solid",
+            "groupIds": [],
+            "height": 0,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "points": [
+              [
+                0,
+                0
+              ],
+              [
+                637,
+                0
+              ]
+            ],
+            "roughness": 1,
+            "roundness": {
+              "type": 2
+            },
+            "startArrowhead": null,
+            "startBinding": {
+              "elementId": "c-prior",
+              "fixedPoint": [
+                1,
+                0.5
+              ],
+              "focus": 0,
+              "gap": 4
+            },
+            "strokeColor": "#236044",
+            "strokeStyle": "dotted",
+            "strokeWidth": 2,
+            "type": "arrow",
+            "width": 637,
+            "x": 152,
+            "y": 174.5
+          },
+          "builtFingerprint": "450957b77bfba5abdd50e5f4a516859cc8acc7b613871cfc205ddfc624a88143",
+          "builtRevision": 1,
+          "generated": true,
+          "kind": "relation-edge",
+          "modelId": "probability-basics",
+          "relationId": "rel-prior-screening",
+          "relationType": "application"
+        }
+      },
+      "endArrowhead": "arrow",
+      "endBinding": {
+        "elementId": "c-screening-decision",
+        "fixedPoint": [
+          0,
+          0.5
+        ],
+        "focus": 0,
+        "gap": 4
+      },
+      "fillStyle": "solid",
+      "frameId": null,
+      "groupIds": [],
+      "height": 0,
+      "id": "e-rel-prior-screening",
+      "isDeleted": false,
+      "lastCommittedPoint": null,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          637,
+          0
+        ]
+      ],
+      "roughness": 1,
+      "roundness": {
+        "type": 2
+      },
+      "seed": 1448330187,
+      "startArrowhead": null,
+      "startBinding": {
+        "elementId": "c-prior",
+        "fixedPoint": [
+          1,
+          0.5
+        ],
+        "focus": 0,
+        "gap": 4
+      },
+      "strokeColor": "#236044",
+      "strokeStyle": "dotted",
+      "strokeWidth": 2,
+      "type": "arrow",
+      "updated": 2,
+      "version": 2,
+      "versionNonce": 139108,
+      "width": 637,
+      "x": 152,
+      "y": 174.5
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "transparent",
+      "baseline": 0,
+      "boundElements": null,
+      "containerId": null,
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": null,
+            "containerId": null,
+            "fillStyle": "solid",
+            "fontFamily": 5,
+            "fontSize": 13,
+            "groupIds": [],
+            "height": 22,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "originalText": "先验是后验更新的起点",
+            "roughness": 1,
+            "roundness": null,
+            "strokeColor": "#236044",
+            "strokeStyle": "solid",
+            "strokeWidth": 1,
+            "text": "先验是后验更新的起点",
+            "textAlign": "center",
+            "type": "text",
+            "verticalAlign": "middle",
+            "width": 154,
+            "x": 393.5,
+            "y": 162.5
+          },
+          "builtFingerprint": "450957b77bfba5abdd50e5f4a516859cc8acc7b613871cfc205ddfc624a88143",
+          "builtRevision": 1,
+          "generated": true,
+          "kind": "relation-label",
+          "modelId": "probability-basics",
+          "relationId": "rel-prior-screening",
+          "relationType": "application"
+        }
+      },
+      "fillStyle": "solid",
+      "fontFamily": 5,
+      "fontSize": 13,
+      "frameId": null,
+      "groupIds": [],
+      "height": 22,
+      "id": "l-rel-prior-screening",
+      "isDeleted": false,
+      "lineHeight": 1.25,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "originalText": "先验是后验更新的起点",
+      "roughness": 1,
+      "roundness": null,
+      "seed": 1656280378,
+      "strokeColor": "#236044",
+      "strokeStyle": "solid",
+      "strokeWidth": 1,
+      "text": "先验是后验更新的起点",
+      "textAlign": "center",
+      "type": "text",
+      "updated": 2,
+      "version": 2,
+      "versionNonce": 914086,
+      "verticalAlign": "middle",
+      "width": 154,
+      "x": 393.5,
+      "y": 162.5
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "transparent",
+      "boundElements": null,
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": null,
+            "endArrowhead": "arrow",
+            "endBinding": {
+              "elementId": "c-screening-decision",
+              "fixedPoint": [
+                0,
+                0.5
+              ],
+              "focus": 0,
+              "gap": 4
+            },
+            "fillStyle": "solid",
+            "groupIds": [],
+            "height": 0,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "points": [
+              [
+                0,
+                0
+              ],
+              [
+                139,
+                0
+              ]
+            ],
+            "roughness": 1,
+            "roundness": {
+              "type": 2
+            },
+            "startArrowhead": null,
+            "startBinding": {
+              "elementId": "c-ppv",
+              "fixedPoint": [
+                1,
+                0.5
+              ],
+              "focus": 0,
+              "gap": 4
+            },
+            "strokeColor": "#2857a4",
+            "strokeStyle": "dashed",
+            "strokeWidth": 2,
+            "type": "arrow",
+            "width": 139,
+            "x": 650,
+            "y": 174.5
+          },
+          "builtFingerprint": "450957b77bfba5abdd50e5f4a516859cc8acc7b613871cfc205ddfc624a88143",
+          "builtRevision": 1,
+          "generated": true,
+          "kind": "relation-edge",
+          "modelId": "probability-basics",
+          "relationId": "rel-ppv-screening",
+          "relationType": "prerequisite"
+        }
+      },
+      "endArrowhead": "arrow",
+      "endBinding": {
+        "elementId": "c-screening-decision",
+        "fixedPoint": [
+          0,
+          0.5
+        ],
+        "focus": 0,
+        "gap": 4
+      },
+      "fillStyle": "solid",
+      "frameId": null,
+      "groupIds": [],
+      "height": 0,
+      "id": "e-rel-ppv-screening",
+      "isDeleted": false,
+      "lastCommittedPoint": null,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          139,
+          0
+        ]
+      ],
+      "roughness": 1,
+      "roundness": {
+        "type": 2
+      },
+      "seed": 799192512,
+      "startArrowhead": null,
+      "startBinding": {
+        "elementId": "c-ppv",
+        "fixedPoint": [
+          1,
+          0.5
+        ],
+        "focus": 0,
+        "gap": 4
+      },
+      "strokeColor": "#2857a4",
+      "strokeStyle": "dashed",
+      "strokeWidth": 2,
+      "type": "arrow",
+      "updated": 2,
+      "version": 2,
+      "versionNonce": 932274,
+      "width": 139,
+      "x": 650,
+      "y": 174.5
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "transparent",
+      "baseline": 0,
+      "boundElements": null,
+      "containerId": null,
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": null,
+            "containerId": null,
+            "fillStyle": "solid",
+            "fontFamily": 5,
+            "fontSize": 13,
+            "groupIds": [],
+            "height": 22,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "originalText": "阳性预测值即阳性后的后验",
+            "roughness": 1,
+            "roundness": null,
+            "strokeColor": "#2857a4",
+            "strokeStyle": "solid",
+            "strokeWidth": 1,
+            "text": "阳性预测值即阳性后的后验",
+            "textAlign": "center",
+            "type": "text",
+            "verticalAlign": "middle",
+            "width": 180,
+            "x": 629.5,
+            "y": 162.5
+          },
+          "builtFingerprint": "450957b77bfba5abdd50e5f4a516859cc8acc7b613871cfc205ddfc624a88143",
+          "builtRevision": 1,
+          "generated": true,
+          "kind": "relation-label",
+          "modelId": "probability-basics",
+          "relationId": "rel-ppv-screening",
+          "relationType": "prerequisite"
+        }
+      },
+      "fillStyle": "solid",
+      "fontFamily": 5,
+      "fontSize": 13,
+      "frameId": null,
+      "groupIds": [],
+      "height": 22,
+      "id": "l-rel-ppv-screening",
+      "isDeleted": false,
+      "lineHeight": 1.25,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "originalText": "阳性预测值即阳性后的后验",
+      "roughness": 1,
+      "roundness": null,
+      "seed": 1105887194,
+      "strokeColor": "#2857a4",
+      "strokeStyle": "solid",
+      "strokeWidth": 1,
+      "text": "阳性预测值即阳性后的后验",
+      "textAlign": "center",
+      "type": "text",
+      "updated": 2,
+      "version": 2,
+      "versionNonce": 325113,
+      "verticalAlign": "middle",
+      "width": 180,
+      "x": 629.5,
+      "y": 162.5
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "transparent",
+      "boundElements": null,
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": null,
+            "endArrowhead": "arrow",
+            "endBinding": {
+              "elementId": "c-natural-frequencies",
+              "fixedPoint": [
+                0,
+                0.5
+              ],
+              "focus": 0,
+              "gap": 4
+            },
+            "fillStyle": "solid",
+            "groupIds": [],
+            "height": 294,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "points": [
+              [
+                0,
+                0
+              ],
+              [
+                42,
+                294
+              ]
+            ],
+            "roughness": 1,
+            "roundness": {
+              "type": 2
+            },
+            "startArrowhead": null,
+            "startBinding": {
+              "elementId": "c-sensitivity-specificity",
+              "fixedPoint": [
+                1,
+                0.5
+              ],
+              "focus": 0,
+              "gap": 4
+            },
+            "strokeColor": "#236044",
+            "strokeStyle": "dotted",
+            "strokeWidth": 2,
+            "type": "arrow",
+            "width": 42,
+            "x": 359,
+            "y": 174.5
+          },
+          "builtFingerprint": "450957b77bfba5abdd50e5f4a516859cc8acc7b613871cfc205ddfc624a88143",
+          "builtRevision": 1,
+          "generated": true,
+          "kind": "relation-edge",
+          "modelId": "probability-basics",
+          "relationId": "rel-sens-freq",
+          "relationType": "application"
+        }
+      },
+      "endArrowhead": "arrow",
+      "endBinding": {
+        "elementId": "c-natural-frequencies",
+        "fixedPoint": [
+          0,
+          0.5
+        ],
+        "focus": 0,
+        "gap": 4
+      },
+      "fillStyle": "solid",
+      "frameId": null,
+      "groupIds": [],
+      "height": 294,
+      "id": "e-rel-sens-freq",
+      "isDeleted": false,
+      "lastCommittedPoint": null,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          42,
+          294
+        ]
+      ],
+      "roughness": 1,
+      "roundness": {
+        "type": 2
+      },
+      "seed": 1021309415,
+      "startArrowhead": null,
+      "startBinding": {
+        "elementId": "c-sensitivity-specificity",
+        "fixedPoint": [
+          1,
+          0.5
+        ],
+        "focus": 0,
+        "gap": 4
+      },
+      "strokeColor": "#236044",
+      "strokeStyle": "dotted",
+      "strokeWidth": 2,
+      "type": "arrow",
+      "updated": 2,
+      "version": 2,
+      "versionNonce": 226169,
+      "width": 42,
+      "x": 359,
+      "y": 174.5
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "transparent",
+      "baseline": 0,
+      "boundElements": null,
+      "containerId": null,
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": null,
+            "containerId": null,
+            "fillStyle": "solid",
+            "fontFamily": 5,
+            "fontSize": 13,
+            "groupIds": [],
+            "height": 22,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "originalText": "把灵敏度和特异度放进频率树",
+            "roughness": 1,
+            "roundness": null,
+            "strokeColor": "#236044",
+            "strokeStyle": "solid",
+            "strokeWidth": 1,
+            "text": "把灵敏度和特异度放进频率树",
+            "textAlign": "center",
+            "type": "text",
+            "verticalAlign": "middle",
+            "width": 193,
+            "x": 283.5,
+            "y": 309.5
+          },
+          "builtFingerprint": "450957b77bfba5abdd50e5f4a516859cc8acc7b613871cfc205ddfc624a88143",
+          "builtRevision": 1,
+          "generated": true,
+          "kind": "relation-label",
+          "modelId": "probability-basics",
+          "relationId": "rel-sens-freq",
+          "relationType": "application"
+        }
+      },
+      "fillStyle": "solid",
+      "fontFamily": 5,
+      "fontSize": 13,
+      "frameId": null,
+      "groupIds": [],
+      "height": 22,
+      "id": "l-rel-sens-freq",
+      "isDeleted": false,
+      "lineHeight": 1.25,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "originalText": "把灵敏度和特异度放进频率树",
+      "roughness": 1,
+      "roundness": null,
+      "seed": 626253895,
+      "strokeColor": "#236044",
+      "strokeStyle": "solid",
+      "strokeWidth": 1,
+      "text": "把灵敏度和特异度放进频率树",
+      "textAlign": "center",
+      "type": "text",
+      "updated": 2,
+      "version": 2,
+      "versionNonce": 537971,
+      "verticalAlign": "middle",
+      "width": 193,
+      "x": 283.5,
+      "y": 309.5
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "transparent",
+      "baseline": 0,
+      "boundElements": null,
+      "containerId": null,
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": null,
+            "containerId": null,
+            "fillStyle": "solid",
+            "fontFamily": 5,
+            "fontSize": 14,
+            "groupIds": [],
+            "height": 20,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "originalText": "图例",
+            "roughness": 1,
+            "roundness": null,
+            "strokeColor": "#2f2923",
+            "strokeStyle": "solid",
+            "strokeWidth": 1,
+            "text": "图例",
+            "textAlign": "left",
+            "type": "text",
+            "verticalAlign": "middle",
+            "width": 60,
+            "x": 0,
+            "y": 538
+          },
+          "builtFingerprint": "450957b77bfba5abdd50e5f4a516859cc8acc7b613871cfc205ddfc624a88143",
+          "builtRevision": 1,
+          "generated": true,
+          "kind": "legend",
+          "modelId": "probability-basics"
+        }
+      },
+      "fillStyle": "solid",
+      "fontFamily": 5,
+      "fontSize": 14,
+      "frameId": null,
+      "groupIds": [],
+      "height": 20,
+      "id": "t-legend",
+      "isDeleted": false,
+      "lineHeight": 1.25,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "originalText": "图例",
+      "roughness": 1,
+      "roundness": null,
+      "seed": 310174876,
+      "strokeColor": "#2f2923",
+      "strokeStyle": "solid",
+      "strokeWidth": 1,
+      "text": "图例",
+      "textAlign": "left",
+      "type": "text",
+      "updated": 1,
+      "version": 1,
+      "versionNonce": 701484,
+      "verticalAlign": "middle",
+      "width": 60,
+      "x": 0,
+      "y": 538
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "transparent",
+      "boundElements": null,
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": null,
+            "endArrowhead": "arrow",
+            "endBinding": null,
+            "fillStyle": "solid",
+            "groupIds": [],
+            "height": 0,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "points": [
+              [
+                0,
+                0
+              ],
+              [
+                46,
+                0
+              ]
+            ],
+            "roughness": 1,
+            "roundness": {
+              "type": 2
+            },
+            "startArrowhead": null,
+            "startBinding": null,
+            "strokeColor": "#7b5557",
+            "strokeStyle": "solid",
+            "strokeWidth": 2,
+            "type": "arrow",
+            "width": 46,
+            "x": 0,
+            "y": 566
+          },
+          "builtFingerprint": "450957b77bfba5abdd50e5f4a516859cc8acc7b613871cfc205ddfc624a88143",
+          "builtRevision": 1,
+          "generated": true,
+          "kind": "legend-item",
+          "legendKey": "parent",
+          "modelId": "probability-basics"
+        }
+      },
+      "endArrowhead": "arrow",
+      "endBinding": null,
+      "fillStyle": "solid",
+      "frameId": null,
+      "groupIds": [],
+      "height": 0,
+      "id": "legend-parent",
+      "isDeleted": false,
+      "lastCommittedPoint": null,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          46,
+          0
+        ]
+      ],
+      "roughness": 1,
+      "roundness": {
+        "type": 2
+      },
+      "seed": 565536033,
+      "startArrowhead": null,
+      "startBinding": null,
+      "strokeColor": "#7b5557",
+      "strokeStyle": "solid",
+      "strokeWidth": 2,
+      "type": "arrow",
+      "updated": 2,
+      "version": 2,
+      "versionNonce": 574904,
+      "width": 46,
+      "x": 0,
+      "y": 566
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "transparent",
+      "baseline": 0,
+      "boundElements": null,
+      "containerId": null,
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": null,
+            "containerId": null,
+            "fillStyle": "solid",
+            "fontFamily": 5,
+            "fontSize": 13,
+            "groupIds": [],
+            "height": 20,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "originalText": "包含（父子层级）",
+            "roughness": 1,
+            "roundness": null,
+            "strokeColor": "#7b5557",
+            "strokeStyle": "solid",
+            "strokeWidth": 1,
+            "text": "包含（父子层级）",
+            "textAlign": "left",
+            "type": "text",
+            "verticalAlign": "middle",
+            "width": 120,
+            "x": 54,
+            "y": 556
+          },
+          "builtFingerprint": "450957b77bfba5abdd50e5f4a516859cc8acc7b613871cfc205ddfc624a88143",
+          "builtRevision": 1,
+          "generated": true,
+          "kind": "legend-label",
+          "legendKey": "parent",
+          "modelId": "probability-basics"
+        }
+      },
+      "fillStyle": "solid",
+      "fontFamily": 5,
+      "fontSize": 13,
+      "frameId": null,
+      "groupIds": [],
+      "height": 20,
+      "id": "legend-label-parent",
+      "isDeleted": false,
+      "lineHeight": 1.25,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "originalText": "包含（父子层级）",
+      "roughness": 1,
+      "roundness": null,
+      "seed": 684916002,
+      "strokeColor": "#7b5557",
+      "strokeStyle": "solid",
+      "strokeWidth": 1,
+      "text": "包含（父子层级）",
+      "textAlign": "left",
+      "type": "text",
+      "updated": 2,
+      "version": 2,
+      "versionNonce": 600114,
+      "verticalAlign": "middle",
+      "width": 120,
+      "x": 54,
+      "y": 556
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "transparent",
+      "boundElements": null,
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": null,
+            "endArrowhead": "arrow",
+            "endBinding": null,
+            "fillStyle": "solid",
+            "groupIds": [],
+            "height": 0,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "points": [
+              [
+                0,
+                0
+              ],
+              [
+                46,
+                0
+              ]
+            ],
+            "roughness": 1,
+            "roundness": {
+              "type": 2
+            },
+            "startArrowhead": null,
+            "startBinding": null,
+            "strokeColor": "#2857a4",
+            "strokeStyle": "dashed",
+            "strokeWidth": 2,
+            "type": "arrow",
+            "width": 46,
+            "x": 208,
+            "y": 566
+          },
+          "builtFingerprint": "450957b77bfba5abdd50e5f4a516859cc8acc7b613871cfc205ddfc624a88143",
+          "builtRevision": 1,
+          "generated": true,
+          "kind": "legend-item",
+          "legendKey": "prerequisite",
+          "modelId": "probability-basics"
+        }
+      },
+      "endArrowhead": "arrow",
+      "endBinding": null,
+      "fillStyle": "solid",
+      "frameId": null,
+      "groupIds": [],
+      "height": 0,
+      "id": "legend-prerequisite",
+      "isDeleted": false,
+      "lastCommittedPoint": null,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          46,
+          0
+        ]
+      ],
+      "roughness": 1,
+      "roundness": {
+        "type": 2
+      },
+      "seed": 786177452,
+      "startArrowhead": null,
+      "startBinding": null,
+      "strokeColor": "#2857a4",
+      "strokeStyle": "dashed",
+      "strokeWidth": 2,
+      "type": "arrow",
+      "updated": 2,
+      "version": 2,
+      "versionNonce": 976977,
+      "width": 46,
+      "x": 208,
+      "y": 566
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "transparent",
+      "baseline": 0,
+      "boundElements": null,
+      "containerId": null,
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": null,
+            "containerId": null,
+            "fillStyle": "solid",
+            "fontFamily": 5,
+            "fontSize": 13,
+            "groupIds": [],
+            "height": 20,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "originalText": "前置",
+            "roughness": 1,
+            "roundness": null,
+            "strokeColor": "#2857a4",
+            "strokeStyle": "solid",
+            "strokeWidth": 1,
+            "text": "前置",
+            "textAlign": "left",
+            "type": "text",
+            "verticalAlign": "middle",
+            "width": 90,
+            "x": 262,
+            "y": 556
+          },
+          "builtFingerprint": "450957b77bfba5abdd50e5f4a516859cc8acc7b613871cfc205ddfc624a88143",
+          "builtRevision": 1,
+          "generated": true,
+          "kind": "legend-label",
+          "legendKey": "prerequisite",
+          "modelId": "probability-basics"
+        }
+      },
+      "fillStyle": "solid",
+      "fontFamily": 5,
+      "fontSize": 13,
+      "frameId": null,
+      "groupIds": [],
+      "height": 20,
+      "id": "legend-label-prerequisite",
+      "isDeleted": false,
+      "lineHeight": 1.25,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "originalText": "前置",
+      "roughness": 1,
+      "roundness": null,
+      "seed": 989171697,
+      "strokeColor": "#2857a4",
+      "strokeStyle": "solid",
+      "strokeWidth": 1,
+      "text": "前置",
+      "textAlign": "left",
+      "type": "text",
+      "updated": 2,
+      "version": 2,
+      "versionNonce": 859152,
+      "verticalAlign": "middle",
+      "width": 90,
+      "x": 262,
+      "y": 556
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "transparent",
+      "boundElements": null,
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": null,
+            "endArrowhead": "arrow",
+            "endBinding": null,
+            "fillStyle": "solid",
+            "groupIds": [],
+            "height": 0,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "points": [
+              [
+                0,
+                0
+              ],
+              [
+                46,
+                0
+              ]
+            ],
+            "roughness": 1,
+            "roundness": {
+              "type": 2
+            },
+            "startArrowhead": null,
+            "startBinding": null,
+            "strokeColor": "#805200",
+            "strokeStyle": "solid",
+            "strokeWidth": 2,
+            "type": "arrow",
+            "width": 46,
+            "x": 386,
+            "y": 566
+          },
+          "builtFingerprint": "450957b77bfba5abdd50e5f4a516859cc8acc7b613871cfc205ddfc624a88143",
+          "builtRevision": 1,
+          "generated": true,
+          "kind": "legend-item",
+          "legendKey": "cause",
+          "modelId": "probability-basics"
+        }
+      },
+      "endArrowhead": "arrow",
+      "endBinding": null,
+      "fillStyle": "solid",
+      "frameId": null,
+      "groupIds": [],
+      "height": 0,
+      "id": "legend-cause",
+      "isDeleted": false,
+      "lastCommittedPoint": null,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          46,
+          0
+        ]
+      ],
+      "roughness": 1,
+      "roundness": {
+        "type": 2
+      },
+      "seed": 435084511,
+      "startArrowhead": null,
+      "startBinding": null,
+      "strokeColor": "#805200",
+      "strokeStyle": "solid",
+      "strokeWidth": 2,
+      "type": "arrow",
+      "updated": 2,
+      "version": 2,
+      "versionNonce": 986592,
+      "width": 46,
+      "x": 386,
+      "y": 566
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "transparent",
+      "baseline": 0,
+      "boundElements": null,
+      "containerId": null,
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": null,
+            "containerId": null,
+            "fillStyle": "solid",
+            "fontFamily": 5,
+            "fontSize": 13,
+            "groupIds": [],
+            "height": 20,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "originalText": "因果",
+            "roughness": 1,
+            "roundness": null,
+            "strokeColor": "#805200",
+            "strokeStyle": "solid",
+            "strokeWidth": 1,
+            "text": "因果",
+            "textAlign": "left",
+            "type": "text",
+            "verticalAlign": "middle",
+            "width": 90,
+            "x": 440,
+            "y": 556
+          },
+          "builtFingerprint": "450957b77bfba5abdd50e5f4a516859cc8acc7b613871cfc205ddfc624a88143",
+          "builtRevision": 1,
+          "generated": true,
+          "kind": "legend-label",
+          "legendKey": "cause",
+          "modelId": "probability-basics"
+        }
+      },
+      "fillStyle": "solid",
+      "fontFamily": 5,
+      "fontSize": 13,
+      "frameId": null,
+      "groupIds": [],
+      "height": 20,
+      "id": "legend-label-cause",
+      "isDeleted": false,
+      "lineHeight": 1.25,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "originalText": "因果",
+      "roughness": 1,
+      "roundness": null,
+      "seed": 2130333102,
+      "strokeColor": "#805200",
+      "strokeStyle": "solid",
+      "strokeWidth": 1,
+      "text": "因果",
+      "textAlign": "left",
+      "type": "text",
+      "updated": 2,
+      "version": 2,
+      "versionNonce": 707245,
+      "verticalAlign": "middle",
+      "width": 90,
+      "x": 440,
+      "y": 556
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "transparent",
+      "boundElements": null,
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": null,
+            "endArrowhead": "arrow",
+            "endBinding": null,
+            "fillStyle": "solid",
+            "groupIds": [],
+            "height": 0,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "points": [
+              [
+                0,
+                0
+              ],
+              [
+                46,
+                0
+              ]
+            ],
+            "roughness": 1,
+            "roundness": {
+              "type": 2
+            },
+            "startArrowhead": null,
+            "startBinding": null,
+            "strokeColor": "#a13f48",
+            "strokeStyle": "dashed",
+            "strokeWidth": 2,
+            "type": "arrow",
+            "width": 46,
+            "x": 564,
+            "y": 566
+          },
+          "builtFingerprint": "450957b77bfba5abdd50e5f4a516859cc8acc7b613871cfc205ddfc624a88143",
+          "builtRevision": 1,
+          "generated": true,
+          "kind": "legend-item",
+          "legendKey": "contrast",
+          "modelId": "probability-basics"
+        }
+      },
+      "endArrowhead": "arrow",
+      "endBinding": null,
+      "fillStyle": "solid",
+      "frameId": null,
+      "groupIds": [],
+      "height": 0,
+      "id": "legend-contrast",
+      "isDeleted": false,
+      "lastCommittedPoint": null,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          46,
+          0
+        ]
+      ],
+      "roughness": 1,
+      "roundness": {
+        "type": 2
+      },
+      "seed": 1852438198,
+      "startArrowhead": null,
+      "startBinding": null,
+      "strokeColor": "#a13f48",
+      "strokeStyle": "dashed",
+      "strokeWidth": 2,
+      "type": "arrow",
+      "updated": 2,
+      "version": 2,
+      "versionNonce": 389179,
+      "width": 46,
+      "x": 564,
+      "y": 566
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "transparent",
+      "baseline": 0,
+      "boundElements": null,
+      "containerId": null,
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": null,
+            "containerId": null,
+            "fillStyle": "solid",
+            "fontFamily": 5,
+            "fontSize": 13,
+            "groupIds": [],
+            "height": 20,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "originalText": "对比",
+            "roughness": 1,
+            "roundness": null,
+            "strokeColor": "#a13f48",
+            "strokeStyle": "solid",
+            "strokeWidth": 1,
+            "text": "对比",
+            "textAlign": "left",
+            "type": "text",
+            "verticalAlign": "middle",
+            "width": 90,
+            "x": 618,
+            "y": 556
+          },
+          "builtFingerprint": "450957b77bfba5abdd50e5f4a516859cc8acc7b613871cfc205ddfc624a88143",
+          "builtRevision": 1,
+          "generated": true,
+          "kind": "legend-label",
+          "legendKey": "contrast",
+          "modelId": "probability-basics"
+        }
+      },
+      "fillStyle": "solid",
+      "fontFamily": 5,
+      "fontSize": 13,
+      "frameId": null,
+      "groupIds": [],
+      "height": 20,
+      "id": "legend-label-contrast",
+      "isDeleted": false,
+      "lineHeight": 1.25,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "originalText": "对比",
+      "roughness": 1,
+      "roundness": null,
+      "seed": 50664206,
+      "strokeColor": "#a13f48",
+      "strokeStyle": "solid",
+      "strokeWidth": 1,
+      "text": "对比",
+      "textAlign": "left",
+      "type": "text",
+      "updated": 2,
+      "version": 2,
+      "versionNonce": 203792,
+      "verticalAlign": "middle",
+      "width": 90,
+      "x": 618,
+      "y": 556
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "transparent",
+      "boundElements": null,
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": null,
+            "endArrowhead": "arrow",
+            "endBinding": null,
+            "fillStyle": "solid",
+            "groupIds": [],
+            "height": 0,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "points": [
+              [
+                0,
+                0
+              ],
+              [
+                46,
+                0
+              ]
+            ],
+            "roughness": 1,
+            "roundness": {
+              "type": 2
+            },
+            "startArrowhead": null,
+            "startBinding": null,
+            "strokeColor": "#236044",
+            "strokeStyle": "dotted",
+            "strokeWidth": 2,
+            "type": "arrow",
+            "width": 46,
+            "x": 742,
+            "y": 566
+          },
+          "builtFingerprint": "450957b77bfba5abdd50e5f4a516859cc8acc7b613871cfc205ddfc624a88143",
+          "builtRevision": 1,
+          "generated": true,
+          "kind": "legend-item",
+          "legendKey": "application",
+          "modelId": "probability-basics"
+        }
+      },
+      "endArrowhead": "arrow",
+      "endBinding": null,
+      "fillStyle": "solid",
+      "frameId": null,
+      "groupIds": [],
+      "height": 0,
+      "id": "legend-application",
+      "isDeleted": false,
+      "lastCommittedPoint": null,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          46,
+          0
+        ]
+      ],
+      "roughness": 1,
+      "roundness": {
+        "type": 2
+      },
+      "seed": 1810765916,
+      "startArrowhead": null,
+      "startBinding": null,
+      "strokeColor": "#236044",
+      "strokeStyle": "dotted",
+      "strokeWidth": 2,
+      "type": "arrow",
+      "updated": 2,
+      "version": 2,
+      "versionNonce": 754231,
+      "width": 46,
+      "x": 742,
+      "y": 566
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "transparent",
+      "baseline": 0,
+      "boundElements": null,
+      "containerId": null,
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": null,
+            "containerId": null,
+            "fillStyle": "solid",
+            "fontFamily": 5,
+            "fontSize": 13,
+            "groupIds": [],
+            "height": 20,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "originalText": "应用",
+            "roughness": 1,
+            "roundness": null,
+            "strokeColor": "#236044",
+            "strokeStyle": "solid",
+            "strokeWidth": 1,
+            "text": "应用",
+            "textAlign": "left",
+            "type": "text",
+            "verticalAlign": "middle",
+            "width": 90,
+            "x": 796,
+            "y": 556
+          },
+          "builtFingerprint": "450957b77bfba5abdd50e5f4a516859cc8acc7b613871cfc205ddfc624a88143",
+          "builtRevision": 1,
+          "generated": true,
+          "kind": "legend-label",
+          "legendKey": "application",
+          "modelId": "probability-basics"
+        }
+      },
+      "fillStyle": "solid",
+      "fontFamily": 5,
+      "fontSize": 13,
+      "frameId": null,
+      "groupIds": [],
+      "height": 20,
+      "id": "legend-label-application",
+      "isDeleted": false,
+      "lineHeight": 1.25,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "originalText": "应用",
+      "roughness": 1,
+      "roundness": null,
+      "seed": 324627632,
+      "strokeColor": "#236044",
+      "strokeStyle": "solid",
+      "strokeWidth": 1,
+      "text": "应用",
+      "textAlign": "left",
+      "type": "text",
+      "updated": 2,
+      "version": 2,
+      "versionNonce": 447902,
+      "verticalAlign": "middle",
+      "width": 90,
+      "x": 796,
+      "y": 556
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "transparent",
+      "boundElements": [],
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": [],
+            "fillStyle": "solid",
+            "groupIds": [],
+            "height": 1,
+            "isDeleted": false,
+            "link": null,
+            "locked": true,
+            "opacity": 0,
+            "roughness": 1,
+            "roundness": {
+              "type": 3,
+              "value": 0
+            },
+            "strokeColor": "#3b322a",
+            "strokeStyle": "solid",
+            "strokeWidth": 2,
+            "type": "rectangle",
+            "width": 1,
+            "x": 0,
+            "y": 0
+          },
+          "builtFingerprint": "450957b77bfba5abdd50e5f4a516859cc8acc7b613871cfc205ddfc624a88143",
+          "builtRevision": 1,
+          "generated": true,
+          "generatedIds": [
+            "c-base-rate-neglect",
+            "c-bayes-update",
+            "c-conditional-probability",
+            "c-natural-frequencies",
+            "c-ppv",
+            "c-prior",
+            "c-screening-decision",
+            "c-sensitivity-specificity",
+            "d-base-rate-neglect",
+            "d-bayes-update",
+            "d-conditional-probability",
+            "d-natural-frequencies",
+            "d-ppv",
+            "d-prior",
+            "d-screening-decision",
+            "d-sensitivity-specificity",
+            "e-parent-base-rate-neglect",
+            "e-parent-bayes-update",
+            "e-parent-natural-frequencies",
+            "e-parent-ppv",
+            "e-parent-prior",
+            "e-parent-screening-decision",
+            "e-parent-sensitivity-specificity",
+            "e-rel-baserate-bayes",
+            "e-rel-freq-bayes",
+            "e-rel-ppv-screening",
+            "e-rel-prior-bayes",
+            "e-rel-prior-ppv",
+            "e-rel-prior-screening",
+            "e-rel-sens-freq",
+            "e-rel-sens-ppv",
+            "l-rel-baserate-bayes",
+            "l-rel-freq-bayes",
+            "l-rel-ppv-screening",
+            "l-rel-prior-bayes",
+            "l-rel-prior-ppv",
+            "l-rel-prior-screening",
+            "l-rel-sens-freq",
+            "l-rel-sens-ppv",
+            "legend-application",
+            "legend-cause",
+            "legend-contrast",
+            "legend-label-application",
+            "legend-label-cause",
+            "legend-label-contrast",
+            "legend-label-parent",
+            "legend-label-prerequisite",
+            "legend-parent",
+            "legend-prerequisite",
+            "t-base-rate-neglect",
+            "t-bayes-update",
+            "t-conditional-probability",
+            "t-legend",
+            "t-natural-frequencies",
+            "t-ppv",
+            "t-prior",
+            "t-scene-goal",
+            "t-scene-title",
+            "t-screening-decision",
+            "t-sensitivity-specificity"
+          ],
+          "kind": "manifest",
+          "modelId": "probability-basics",
+          "presentationBackground": "#faf2f1",
+          "tombstones": []
+        }
+      },
+      "fillStyle": "solid",
+      "frameId": null,
+      "groupIds": [],
+      "height": 1,
+      "id": "ember-manifest",
+      "isDeleted": false,
+      "link": null,
+      "locked": true,
+      "opacity": 0,
+      "roughness": 1,
+      "roundness": {
+        "type": 3,
+        "value": 0
+      },
+      "seed": 874954428,
+      "strokeColor": "#3b322a",
+      "strokeStyle": "solid",
+      "strokeWidth": 2,
+      "type": "rectangle",
+      "updated": 1,
+      "version": 1,
+      "versionNonce": 656844,
+      "width": 1,
+      "x": 0,
+      "y": 0
+    }
+  ],
+  "files": {},
+  "source": "ember skill (local deterministic exporter)",
+  "type": "excalidraw",
+  "version": 2
+}

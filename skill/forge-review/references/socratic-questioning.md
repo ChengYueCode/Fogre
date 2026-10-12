@@ -1,0 +1,20 @@
+<!-- 本文件由 scripts/build-entries.mjs 自动生成，勿手改。 -->
+<!-- 规则唯一来源：skill/forge/references/；重新生成：node scripts/build-entries.mjs -->
+
+# 苏格拉底式提问策略与教学交接
+
+本参考将[会话提问规则](socratic-questioning-standalone.md)接入 Forge 能力路由和教学轮次。提问方法、帮助、等待与退出的唯一正文在该会话参考中；先读它，再按本次模式读取下方规则。
+
+## 独立模式
+
+用户只要求检查一个目标、主张或解释时，直接按会话规则处理，无需模型、档案或运行程序。`forge-question` 单独安装只附带会话规则；需要保存或转入完整教学时说明范围变化，再选择可用完整入口。
+
+## 嵌入模式
+
+教学轮次中发现具体缺口时，按[模块交接约定](module-contract.md)携带真实任务、已有预算与返回位置，按会话规则提出一个问题并等待。缺口澄清、需要解释、用户停止或预算结束后交回原任务；不强制每轮采用本策略。
+
+- 读回真实 round / task / prompt / session 身份后才保存。开放追问不自动成为既有题目；回答必须确实归属当前任务，需要新题时先准备并读回身份，不能把不同追问答案写入同一 prompt。
+- 按问题实际内容判断协助：中性澄清不自动算提示；透露机制、排除选项或指向答案的追问按实际来源记录 `hint` / `starter` / `reference` / `demonstration` / `tutor-feedback`，见[递进练习与帮助](progressive-practice.md)。帮助与原答分别保存。
+- 「不知道／没理解」、认可回复、解释与停止后的保存和推进沿用[主动教学](adaptive-teaching-and-cases.md)。同一用户消息的进度由编排层只记录一次，策略不重复计数。
+- 发生讲解错误时按[教学纠错](teaching-error-correction.md)核对影响，保留真实原答及纠正历史；不把受误导的回答当作学习者能力缺口。
+- 按模块约定交回 `waiting-for-user`、`completed`、`return-to-teaching`、`stopped` 或缺上下文状态，附当前缺口、依据、实际协助、已保存范围与下一步。保存失败时保留真实文字供恢复并报告实际范围。

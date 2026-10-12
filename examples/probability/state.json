@@ -1,0 +1,35 @@
+{
+  "activeRoundId": null,
+  "attempts": {},
+  "conceptEvidence": {},
+  "conceptRevisions": {},
+  "conflicts": [],
+  "createdAt": "2026-10-08T02:00:16.766Z",
+  "explanations": {},
+  "interactionPositions": {},
+  "learningRounds": {},
+  "migrations": [
+    {
+      "at": "2026-10-10T03:23:09.438Z",
+      "from": 1,
+      "to": 2,
+      "tool": "ember",
+      "warnings": []
+    }
+  ],
+  "modelFingerprint": "450957b77bfba5abdd50e5f4a516859cc8acc7b613871cfc205ddfc624a88143",
+  "modelId": "probability-basics",
+  "modelRevision": 2,
+  "orphans": [],
+  "ownQuestions": {},
+  "practiceSessions": {},
+  "promptEvidence": {},
+  "relationRevisions": {},
+  "reviewRequests": {},
+  "revision": 1,
+  "schedules": {},
+  "schemaVersion": 2,
+  "summaries": {},
+  "teachingCorrections": {},
+  "updatedAt": "2026-10-11T02:14:51.795Z"
+}

@@ -1,0 +1,37 @@
+name: Verify Forge
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        node: [20, 24]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
+      - name: Check generated entries
+        run: node scripts/build-entries.mjs --check
+      - name: Check public documentation links
+        run: npm run check:links
+      - name: Run full suite including real package installation
+        run: npm test
+      - name: Prepare a clean release candidate
+        run: npm run prepare:release -- --out dist/ci-release
+      - name: Verify release hashes
+        run: npm run verify:release -- --verify dist/ci-release
+      - name: Record migration gate boundary
+        run: node -e "console.log('The historical-tool rejection gate is skipped unless EMBER_OLD_TOOL is supplied. Current legacy archive migration tests still run.')"
+
+# This workflow validates candidates; it never publishes or installs user skills.

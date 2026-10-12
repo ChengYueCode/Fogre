@@ -1,0 +1,12 @@
+* text=auto
+*.mjs text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.html text eol=lf
+*.svg text eol=lf
+*.excalidraw text eol=lf
+*.jpg binary
+*.png binary
+*.zip binary

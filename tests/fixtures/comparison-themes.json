@@ -1,0 +1,367 @@
+[
+  {
+    "name": "http-methods",
+    "model": {
+      "schemaVersion": 1,
+      "id": "http-methods",
+      "title": "HTTP 请求方法的对照",
+      "goal": "能区分 GET 与 POST 的语义、幂等性和数据位置，并在真实请求里选对方法。",
+      "summary": "以 GET 与 POST 为主线，比较两者的语义、副作用与数据承载方式，并连线到幂等/安全和请求体两个相邻概念。",
+      "concepts": [
+        {
+          "id": "http-basics",
+          "title": "HTTP 请求概览",
+          "parentId": null,
+          "difficulty": 1,
+          "explanation": "一次 HTTP 请求由方法、目标资源、头字段和可选的请求体组成，方法决定了这次请求的语义。",
+          "example": "浏览器地址栏输入网址通常发出 GET，而提交表单常常发出 POST。",
+          "misconception": "把 HTTP 方法当成纯风格选择，忽略它对缓存、重试和中间件的影响。"
+        },
+        {
+          "id": "http-body",
+          "title": "请求体与查询参数",
+          "parentId": "http-basics",
+          "difficulty": 2,
+          "explanation": "查询参数放在 URL 上，随请求行一起传输；请求体单独承载结构化数据，便于放较大的内容。",
+          "example": "分页游标放在 /items?page=2 的查询串里，而一篇长文章的正文放在请求体里。",
+          "misconception": "以为所有数据都必须塞进 URL，或者以为请求体可以被无条件缓存和重放。"
+        },
+        {
+          "id": "http-idempotency",
+          "title": "幂等与安全方法",
+          "parentId": "http-basics",
+          "difficulty": 3,
+          "explanation": "安全指用户没有请求写副作用，日志、计数等附带作用仍可能发生；幂等方法重复执行的效果与执行一次相同。GET 按约定安全且幂等，POST 两者都不保证，但服务端可以自行实现额外的幂等保护。",
+          "example": "重复刷新一个 GET 详情页不会因用户意图多出记录；重复提交一个 POST 下单请求按语义不保证幂等，可能创建两笔订单，除非服务端另有幂等键等保护。",
+          "misconception": "认为服务端实现了幂等就等同于 HTTP 方法本身幂等。"
+        },
+        {
+          "id": "http-method",
+          "title": "请求方法 GET 与 POST",
+          "parentId": "http-basics",
+          "difficulty": 2,
+          "explanation": "GET 用来读取资源，按约定安全且幂等，实践中常把查询参数放在 URL 上；POST 请求目标资源处理请求体里的内容，可用于提交、创建，也可用于查询，按语义既不安全也不保证幂等。",
+          "example": "搜索商品列表用 GET，把购物车结算并生成订单用 POST。",
+          "misconception": "以为『POST 比 GET 更安全』，其实两者在明文 HTTP 下都不加密，安全性取决于传输层与鉴权。"
+        }
+      ],
+      "relations": [
+        {
+          "id": "rel-body-method",
+          "from": "http-body",
+          "to": "http-method",
+          "type": "prerequisite",
+          "label": "先理解数据放在哪里，才谈得上选方法"
+        },
+        {
+          "id": "rel-method-idempotency",
+          "from": "http-method",
+          "to": "http-idempotency",
+          "type": "contrast",
+          "label": "方法语义决定是否可安全重试"
+        }
+      ],
+      "prompts": [
+        {
+          "id": "http-method-explain",
+          "conceptId": "http-method",
+          "kind": "explain",
+          "question": "用一句话说明为什么把一次『提交评论』改成 GET 会带来问题。",
+          "answer": "因为提交评论带有写副作用的用户意图，而 GET 被约定为安全且幂等的方法，把它改成 GET 既违背方法语义，也可能被缓存、预取或自动重试意外触发写操作。",
+          "criteria": [
+            "点出提交评论会改变服务端状态",
+            "说明 GET 是安全且幂等的方法"
+          ],
+          "teaching": {
+            "purpose": "variation",
+            "objective": "能把方法语义套到一个具体写操作上判断是否合适。",
+            "prerequisites": [
+              "http-body"
+            ],
+            "misconceptions": [
+              "只要接口能跑通就说明方法选对了"
+            ],
+            "hints": [
+              "先判断这次操作是否需要改变服务端状态。",
+              "再想缓存、预取和自动重试会把 GET 当成什么。"
+            ]
+          }
+        },
+        {
+          "id": "http-basics-recall",
+          "conceptId": "http-basics",
+          "kind": "recall",
+          "question": "构造一条 HTTP 请求时，至少要说清哪几个要素？",
+          "answer": "方法、目标资源（URL）、头字段，以及可选的请求体。"
+        },
+        {
+          "id": "http-idempotency-explain",
+          "conceptId": "http-idempotency",
+          "kind": "explain",
+          "question": "为什么重复执行一个幂等请求更安全？",
+          "answer": "因为幂等方法重复执行的效果与执行一次相同，重试或自动重发不会额外改变服务端状态。",
+          "criteria": [
+            "解释幂等的含义是重复执行效果一致",
+            "联系到重试或自动重发的场景"
+          ]
+        }
+      ],
+      "interactions": [
+        {
+          "kind": "comparison",
+          "id": "get-vs-post",
+          "conceptId": "http-method",
+          "title": "GET 与 POST 对照",
+          "objective": "能说出 GET 与 POST 在语义、副作用与数据位置上的关键差异，并据此为一次具体操作选方法。",
+          "boundary": "该对照只覆盖 HTTP/1.1 与 HTTP/2 的方法语义，不展开缓存策略、代理与鉴权的细节。",
+          "question": "把一次『点赞』改成可安全重试的请求，你会保留 POST 还是换方法？说出判断依据。",
+          "promptId": "http-method-explain",
+          "relatedConceptIds": [
+            "http-idempotency",
+            "http-body"
+          ],
+          "objects": [
+            {
+              "id": "get",
+              "label": "GET",
+              "values": {
+                "purpose": "读取资源；实践中常把查询参数放在 URL 上，但查询串并非必需。",
+                "side-effect": "按约定安全且幂等：用户意图没有写副作用，重复请求不会因此改动状态；日志、计数等附带作用仍可能发生。",
+                "data": "RFC 未定义 GET 的通用内容语义，也不禁止请求体；实践中参数多放在 URL 上，因此会出现在日志与历史记录里。",
+                "caching": "可被浏览器、代理和 CDN 缓存，也可能被预取；具体是否缓存取决于响应头。"
+              }
+            },
+            {
+              "id": "post",
+              "label": "POST",
+              "values": {
+                "purpose": "请求目标资源处理请求体里的内容，常见于提交或创建，也可用于查询。",
+                "side-effect": "按语义既不安全也不保证幂等，重复提交可能产生多条记录；服务端可用幂等键等实现额外保护。",
+                "data": "内容放在请求体里，可承载较大且结构化的数据。",
+                "caching": "在明确新鲜度且带 Content-Location 等条件下才可缓存，通常缓存机会远少于 GET。"
+              }
+            }
+          ],
+          "dimensions": [
+            {
+              "id": "purpose",
+              "label": "用途与语义",
+              "difference": "GET 表达读取；POST 请求目标资源处理请求体内容，可用于提交、创建或查询。",
+              "boundary": "用 POST 做查询并不违背语义；是否合适取决于缓存、可重试性与语义清晰度，而不是方法名本身。"
+            },
+            {
+              "id": "side-effect",
+              "label": "副作用与幂等",
+              "difference": "GET 按约定安全且幂等；POST 两者都不保证，服务端可自行实现幂等。",
+              "boundary": "幂等性说的是 HTTP 方法语义，服务端仍可能自行实现额外保护，两者不能混为一谈。"
+            },
+            {
+              "id": "data",
+              "label": "数据存放位置",
+              "difference": "实践中 GET 参数多在 URL 上、POST 内容在请求体里；RFC 未规定 GET 的通用内容语义，也不禁止 GET 带请求体。",
+              "boundary": "两者在明文 HTTP 下都不加密，数据位置不等于安全等级。"
+            },
+            {
+              "id": "caching",
+              "label": "缓存与重试",
+              "difference": "GET 可被缓存和预取；POST 只有在明确新鲜度且带 Content-Location 等条件时才可缓存，通常缓存机会远少于 GET。",
+              "boundary": "具体是否缓存仍取决于响应头与缓存规则，不能只看方法名。"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "id": "rfc9110",
+          "title": "RFC 9110 — HTTP Semantics",
+          "note": "§9.2.1 安全方法（用户意图无写副作用，附带作用允许）、§9.2.2 幂等方法、§9.3.1 GET、§9.3.3 POST（含 POST 响应可缓存的条件）。",
+          "kind": "spec",
+          "url": "https://www.rfc-editor.org/rfc/rfc9110#section-9.2.1"
+        },
+        {
+          "id": "mdn-methods",
+          "title": "MDN — HTTP request methods",
+          "note": "常见方法及其用途的入门说明。",
+          "kind": "doc",
+          "url": "https://developer.mozilla.org/docs/Web/HTTP/Methods"
+        }
+      ],
+      "limitations": [
+        "两个对象默认覆盖 HTTP/1.1 与 HTTP/2 的方法语义，未涵盖缓存策略与中间件的全部细节。"
+      ]
+    }
+  },
+  {
+    "name": "central-tendency",
+    "model": {
+      "schemaVersion": 1,
+      "id": "central-tendency",
+      "title": "均值与中位数的对照",
+      "goal": "能判断一组数据该用均值还是中位数描述，并说明异常值带来的影响。",
+      "summary": "以均值与中位数对照为主线，比较两者的计算方式、对异常值的敏感度和适用场景。",
+      "concepts": [
+        {
+          "id": "stat-center",
+          "title": "集中趋势",
+          "parentId": null,
+          "difficulty": 1,
+          "explanation": "集中趋势用一个数概括一组数据的典型水平，均值和中位数是最常用的两种度量。",
+          "example": "『平均工资』用均值，『中位工资』用中位数，两者常常并不相等。",
+          "misconception": "默认均值总能代表『典型值』，忽略它对极端值高度敏感。"
+        },
+        {
+          "id": "stat-mean",
+          "title": "均值",
+          "parentId": "stat-center",
+          "difficulty": 2,
+          "explanation": "均值把所有数据相加后除以个数，利用了每一个数据点的信息。",
+          "example": "1、2、3、4、100 的均值是 22，被那个 100 明显拉高。",
+          "misconception": "以为均值一定落在数据的『中间』，其实它会被极端值拽向一侧。"
+        },
+        {
+          "id": "stat-median",
+          "title": "中位数",
+          "parentId": "stat-center",
+          "difficulty": 2,
+          "explanation": "中位数把数据排序后取正中间的那个，偶数个则取中间两个的平均；它只关心排序位置，因此改变某个极端值的大小通常不会移动它（但增删或替换数据点、样本量奇偶仍会改变中位数）。",
+          "example": "1、2、3、4、100 的中位数是 3，与均值 22 相比更贴近多数数据。",
+          "misconception": "以为中位数必须出现在原始数据里，偶数个数据时它可以是两个数的平均。"
+        },
+        {
+          "id": "stat-outlier",
+          "title": "异常值与稳健性",
+          "parentId": "stat-center",
+          "difficulty": 3,
+          "explanation": "异常值是明显偏离整体的数据点；对异常值不敏感的统计量被称为稳健的，中位数比均值稳健。",
+          "example": "收入分布右偏时，中位数比均值更接近大多数人的实际收入。",
+          "misconception": "认为异常值一定等于错误数据，其实它也可能是真实的极端情况。"
+        }
+      ],
+      "relations": [
+        {
+          "id": "rel-outlier-mean",
+          "from": "stat-outlier",
+          "to": "stat-mean",
+          "type": "cause",
+          "label": "异常值通过求和把所有数据一起拉偏均值"
+        },
+        {
+          "id": "rel-median-mean",
+          "from": "stat-median",
+          "to": "stat-mean",
+          "type": "contrast",
+          "label": "对极端值的抗偏能力不同"
+        }
+      ],
+      "prompts": [
+        {
+          "id": "stat-center-apply",
+          "conceptId": "stat-center",
+          "kind": "apply",
+          "question": "某小区房价有一条报价远高于其他房源，报告『典型房价』时你更愿意用均值还是中位数？说明理由。",
+          "answer": "更愿意用中位数，因为那条远高的报价是极端值，会把均值拉高；中位数只看排序位置，更能代表大多数房源的典型水平。",
+          "criteria": [
+            "选择中位数并说明对异常值更稳健",
+            "解释均值会被极端值拉高"
+          ],
+          "teaching": {
+            "purpose": "transfer",
+            "objective": "能把稳健性的判断迁移到一个新的数据分布上。",
+            "misconceptions": [
+              "用均值就一定是错的"
+            ],
+            "hints": [
+              "先看这组数据里有没有明显偏离整体的点。",
+              "再想这个点会不会通过求和影响均值。"
+            ]
+          }
+        },
+        {
+          "id": "stat-mean-recall",
+          "conceptId": "stat-mean",
+          "kind": "recall",
+          "question": "均值是怎么算出来的？",
+          "answer": "把所有数据相加，再除以数据的个数。"
+        },
+        {
+          "id": "stat-median-explain",
+          "conceptId": "stat-median",
+          "kind": "explain",
+          "question": "为什么中位数对异常值不敏感？",
+          "answer": "中位数只看排序后的位置，改变某个极端值的大小通常不会移动正中间的项，所以它比均值更稳健；但新增或替换数据点、样本量发生变化时，中位数仍可能改变。",
+          "criteria": [
+            "说明中位数只看排序后的位置",
+            "说明改变极端值大小通常不移动中位数，但增删或替换点仍可能改变它"
+          ]
+        }
+      ],
+      "interactions": [
+        {
+          "kind": "comparison",
+          "id": "mean-vs-median",
+          "conceptId": "stat-center",
+          "title": "均值与中位数对照",
+          "objective": "能说出均值与中位数在计算方式、抗偏能力和适用场景上的关键差异，并据分布形状选合适的度量。",
+          "boundary": "该对照只针对一元数值数据；分类数据的『中心』需要众数，不在本次比较范围内。",
+          "question": "换一组左偏的数据，你会改变刚才的选择吗？说出判断依据。",
+          "promptId": "stat-center-apply",
+          "relatedConceptIds": [
+            "stat-outlier"
+          ],
+          "objects": [
+            {
+              "id": "mean",
+              "label": "均值",
+              "values": {
+                "calculation": "所有数据相加再除以个数，用到了每个数据的大小。",
+                "sensitivity": "对极端值非常敏感，一个很大的值就能把它拉高。",
+                "usage": "数据接近对称分布时，均值既简洁又能反映整体水平。"
+              }
+            },
+            {
+              "id": "median",
+              "label": "中位数",
+              "values": {
+                "calculation": "排序后取正中间的数，偶数个则取中间两个的平均。",
+                "sensitivity": "对极端值的幅度通常更稳健：取排序后的中间值；新增或替换数据点、样本量奇偶变化仍可能改变结果。",
+                "usage": "数据明显偏斜或含异常值时，中位数更能代表典型水平。"
+              }
+            }
+          ],
+          "dimensions": [
+            {
+              "id": "calculation",
+              "label": "计算方式",
+              "difference": "均值用到每个数据的大小并求和，中位数只用到排序后的位置。",
+              "boundary": "两者都要求数据是一元的数值，分类数据无法直接套用。"
+            },
+            {
+              "id": "sensitivity",
+              "label": "对异常值的敏感度",
+              "difference": "均值会被极端值拉偏；中位数取排序后的中间值，对极端值的幅度通常更稳健，但新增或替换数据点仍可能改变结果。",
+              "boundary": "异常值不一定是错误数据，判断稳健性之前要先确认它是否真实。"
+            },
+            {
+              "id": "usage",
+              "label": "适用场景",
+              "difference": "对称分布常用均值，偏斜或含异常值时中位数更可靠。",
+              "boundary": "分布形状只是参考，最终要看你想回答的具体问题。"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "id": "openstax-stats",
+          "title": "OpenStax — Introductory Statistics",
+          "note": "描述性统计章节：均值、中位数（偶数样本取中间两值平均）与对极端值的稳健性，中位数更稳健但会随样本量与数据点变化。",
+          "kind": "textbook",
+          "url": "https://openstax.org/details/books/introductory-statistics"
+        }
+      ],
+      "limitations": [
+        "两个对象默认只比较均值与中位数，未覆盖众数、几何平均等其它集中趋势度量。"
+      ]
+    }
+  }
+]

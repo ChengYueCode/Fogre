@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-48 -164 1050 788" width="1050" height="788" font-family="system-ui, 'Noto Sans SC', sans-serif">
+<rect x="-48" y="-164" width="1050" height="788" fill="#faf2f1"/>
+<defs><marker id="ember-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="context-stroke"/></marker></defs>
+<rect x="401" y="0" width="152" height="55" rx="12" fill="#f3d7d4" stroke="#a13f48" stroke-width="2"/>
+<rect x="0" y="147" width="152" height="55" rx="12" fill="#faece9" stroke="#a13f48" stroke-width="2"/>
+<rect x="194" y="147" width="165" height="55" rx="12" fill="#faece9" stroke="#a13f48" stroke-width="2"/>
+<rect x="498" y="147" width="152" height="55" rx="12" fill="#faece9" stroke="#a13f48" stroke-width="2"/>
+<rect x="401" y="294" width="152" height="55" rx="12" fill="#ffffff" stroke="#a13f48" stroke-width="2"/>
+<rect x="401" y="441" width="152" height="55" rx="12" fill="#ffffff" stroke="#a13f48" stroke-width="2"/>
+<rect x="595" y="294" width="152" height="55" rx="12" fill="#ffffff" stroke="#a13f48" stroke-width="2"/>
+<rect x="789" y="147" width="165" height="55" rx="12" fill="#faece9" stroke="#a13f48" stroke-width="2"/>
+<path d="M 401 27.5 L 152 174.5" fill="none" stroke="#7b5557" stroke-width="2" marker-end="url(#ember-arrow)"/>
+<path d="M 401 27.5 L 359 174.5" fill="none" stroke="#7b5557" stroke-width="2" marker-end="url(#ember-arrow)"/>
+<path d="M 477 55 L 477 101 L 574 101 L 574 147" fill="none" stroke="#7b5557" stroke-width="2" marker-end="url(#ember-arrow)"/>
+<path d="M 574 202 L 574 248 L 477 248 L 477 294" fill="none" stroke="#7b5557" stroke-width="2" marker-end="url(#ember-arrow)"/>
+<path d="M 477 349 L 477 395 L 477 441" fill="none" stroke="#7b5557" stroke-width="2" marker-end="url(#ember-arrow)"/>
+<path d="M 574 202 L 574 248 L 671 248 L 671 294" fill="none" stroke="#7b5557" stroke-width="2" marker-end="url(#ember-arrow)"/>
+<path d="M 553 27.5 L 789 174.5" fill="none" stroke="#7b5557" stroke-width="2" marker-end="url(#ember-arrow)"/>
+<path d="M 152 174.5 L 401 321.5" fill="none" stroke="#2857a4" stroke-width="2" stroke-dasharray="8 6" marker-end="url(#ember-arrow)"/>
+<path d="M 359 174.5 L 498 174.5" fill="none" stroke="#805200" stroke-width="2" marker-end="url(#ember-arrow)"/>
+<path d="M 152 174.5 L 498 174.5" fill="none" stroke="#805200" stroke-width="2" marker-end="url(#ember-arrow)"/>
+<path d="M 595 321.5 L 553 321.5" fill="none" stroke="#a13f48" stroke-width="2" stroke-dasharray="8 6" marker-end="url(#ember-arrow)"/>
+<path d="M 477 441 L 477 395 L 477 349" fill="none" stroke="#236044" stroke-width="2" stroke-dasharray="2 5" marker-end="url(#ember-arrow)"/>
+<path d="M 152 174.5 L 789 174.5" fill="none" stroke="#236044" stroke-width="2" stroke-dasharray="2 5" marker-end="url(#ember-arrow)"/>
+<path d="M 650 174.5 L 789 174.5" fill="none" stroke="#2857a4" stroke-width="2" stroke-dasharray="8 6" marker-end="url(#ember-arrow)"/>
+<path d="M 359 174.5 L 401 468.5" fill="none" stroke="#236044" stroke-width="2" stroke-dasharray="2 5" marker-end="url(#ember-arrow)"/>
+<path d="M 0 566 L 46 566" fill="none" stroke="#7b5557" stroke-width="2" marker-end="url(#ember-arrow)"/>
+<path d="M 208 566 L 254 566" fill="none" stroke="#2857a4" stroke-width="2" stroke-dasharray="8 6" marker-end="url(#ember-arrow)"/>
+<path d="M 386 566 L 432 566" fill="none" stroke="#805200" stroke-width="2" marker-end="url(#ember-arrow)"/>
+<path d="M 564 566 L 610 566" fill="none" stroke="#a13f48" stroke-width="2" stroke-dasharray="8 6" marker-end="url(#ember-arrow)"/>
+<path d="M 742 566 L 788 566" fill="none" stroke="#236044" stroke-width="2" stroke-dasharray="2 5" marker-end="url(#ember-arrow)"/>
+<text x="0" y="-89.6" font-size="24" fill="#472a2b" text-anchor="start">
+<tspan x="0" dy="0">条件概率与贝叶斯更新</tspan>
+</text>
+<text x="0" y="-56.1" font-size="15" fill="#7b5557" text-anchor="start">
+<tspan x="0" dy="0">目标：能用先验、检测特性和自然频率解释并计算阳性预测值，并说清先验如何改变结论。</tspan>
+</text>
+<text x="477" y="34.1" font-size="17" fill="#472a2b" text-anchor="middle">
+<tspan x="477" dy="0">条件概率</tspan>
+</text>
+<text x="545" y="17.3" font-size="11" fill="#7b5557" text-anchor="end">
+<tspan x="545" dy="0">难度 1</tspan>
+</text>
+<text x="76" y="181.1" font-size="17" fill="#472a2b" text-anchor="middle">
+<tspan x="76" dy="0">先验概率</tspan>
+</text>
+<text x="144" y="164.3" font-size="11" fill="#7b5557" text-anchor="end">
+<tspan x="144" dy="0">难度 1</tspan>
+</text>
+<text x="276.5" y="181.1" font-size="17" fill="#472a2b" text-anchor="middle">
+<tspan x="276.5" dy="0">灵敏度与特异度</tspan>
+</text>
+<text x="351" y="164.3" font-size="11" fill="#7b5557" text-anchor="end">
+<tspan x="351" dy="0">难度 2</tspan>
+</text>
+<text x="574" y="181.1" font-size="17" fill="#472a2b" text-anchor="middle">
+<tspan x="574" dy="0">阳性预测值</tspan>
+</text>
+<text x="642" y="164.3" font-size="11" fill="#7b5557" text-anchor="end">
+<tspan x="642" dy="0">难度 3</tspan>
+</text>
+<text x="477" y="328.1" font-size="17" fill="#472a2b" text-anchor="middle">
+<tspan x="477" dy="0">贝叶斯更新</tspan>
+</text>
+<text x="545" y="311.3" font-size="11" fill="#7b5557" text-anchor="end">
+<tspan x="545" dy="0">难度 3</tspan>
+</text>
+<text x="477" y="475.1" font-size="17" fill="#472a2b" text-anchor="middle">
+<tspan x="477" dy="0">自然频率树</tspan>
+</text>
+<text x="545" y="458.3" font-size="11" fill="#7b5557" text-anchor="end">
+<tspan x="545" dy="0">难度 2</tspan>
+</text>
+<text x="671" y="328.1" font-size="17" fill="#472a2b" text-anchor="middle">
+<tspan x="671" dy="0">基础率谬误</tspan>
+</text>
+<text x="739" y="311.3" font-size="11" fill="#7b5557" text-anchor="end">
+<tspan x="739" dy="0">难度 2</tspan>
+</text>
+<text x="871.5" y="181.1" font-size="17" fill="#472a2b" text-anchor="middle">
+<tspan x="871.5" dy="0">后验概率的解读</tspan>
+</text>
+<text x="946" y="164.3" font-size="11" fill="#7b5557" text-anchor="end">
+<tspan x="946" dy="0">难度 3</tspan>
+</text>
+<text x="276.5" y="252.1" font-size="13" fill="#2857a4" text-anchor="middle">
+<tspan x="276.5" dy="0">先验是更新的起点</tspan>
+</text>
+<text x="428.5" y="178.6" font-size="13" fill="#805200" text-anchor="middle">
+<tspan x="428.5" dy="0">检测特性影响阳性预测值</tspan>
+</text>
+<text x="325" y="178.6" font-size="13" fill="#805200" text-anchor="middle">
+<tspan x="325" dy="0">先验改变阳性预测值</tspan>
+</text>
+<text x="574" y="325.6" font-size="13" fill="#a13f48" text-anchor="middle">
+<tspan x="574" dy="0">忽视基础率 vs 正确加权</tspan>
+</text>
+<text x="477" y="399.1" font-size="13" fill="#236044" text-anchor="middle">
+<tspan x="477" dy="0">用计数实现贝叶斯更新</tspan>
+</text>
+<text x="470.5" y="178.6" font-size="13" fill="#236044" text-anchor="middle">
+<tspan x="470.5" dy="0">先验是后验更新的起点</tspan>
+</text>
+<text x="719.5" y="178.6" font-size="13" fill="#2857a4" text-anchor="middle">
+<tspan x="719.5" dy="0">阳性预测值即阳性后的后验</tspan>
+</text>
+<text x="380" y="325.6" font-size="13" fill="#236044" text-anchor="middle">
+<tspan x="380" dy="0">把灵敏度和特异度放进频率树</tspan>
+</text>
+<text x="0" y="553.5" font-size="14" fill="#2f2923" text-anchor="start">
+<tspan x="0" dy="0">图例</tspan>
+</text>
+<text x="54" y="571.1" font-size="13" fill="#7b5557" text-anchor="start">
+<tspan x="54" dy="0">包含（父子层级）</tspan>
+</text>
+<text x="262" y="571.1" font-size="13" fill="#2857a4" text-anchor="start">
+<tspan x="262" dy="0">前置</tspan>
+</text>
+<text x="440" y="571.1" font-size="13" fill="#805200" text-anchor="start">
+<tspan x="440" dy="0">因果</tspan>
+</text>
+<text x="618" y="571.1" font-size="13" fill="#a13f48" text-anchor="start">
+<tspan x="618" dy="0">对比</tspan>
+</text>
+<text x="796" y="571.1" font-size="13" fill="#236044" text-anchor="start">
+<tspan x="796" dy="0">应用</tspan>
+</text>
+</svg>

@@ -1,0 +1,27 @@
+name: Bug report
+description: 报告可复现的功能或保存问题
+body:
+  - type: markdown
+    attributes:
+      value: 请提供匿名最小示例。删除个人作答、凭据、用户名和本机绝对路径。
+  - type: textarea
+    id: environment
+    attributes:
+      label: 环境
+      description: 系统、Node/npm、Agent 宿主与 Forge 版本；技能安装方式和保存模式。
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: 复现步骤
+      description: 从安装或打开主题开始，说明具体命令或会话请求。
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: 预期与实际结果
+      description: 包含错误信息、保存提示和刷新后结果；日志先脱敏。
+    validations:
+      required: true
