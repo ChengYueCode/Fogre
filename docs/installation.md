@@ -24,7 +24,7 @@ npx skills@latest add https://github.com/ChengYueCode/Fogre/tree/main/skill/forg
 
 运行 npx 需要 Node.js/npm 与网络。安装规则、范围与支持的 Agent 以 [Skills 官方文档](https://github.com/vercel-labs/skills#install-a-skill) 为准；不能把工具支持某个 Agent 当作 Forge 已在该宿主完成学习验收。
 
-也可以让 AI 按 [README 的安装提示词](../README.md#方式二让你的-ai-帮你安装) 读取仓库并安装。优先使用 Skills；不可用时使用当前宿主支持的 GitHub 技能安装方式，选取完整 `skill/forge/` 目录。已有同名技能时检查实际目录和版本，不能盲目覆盖或另建副本。
+也可以让 AI 按 [README 的安装提示词](../README.md#开始使用) 读取仓库并安装。优先使用 Skills；不可用时使用当前宿主支持的 GitHub 技能安装方式，选取完整 `skill/forge/` 目录。已有同名技能时检查实际目录和版本，不能盲目覆盖或另建副本。
 
 宿主的加载与刷新方式以其实际要求为准。安装关键文件完整、工具环境可用、宿主能发现并实际调用是分别核对的步骤。完整功能仍需文件读写和命令权限；只复制 SKILL.md 不构成完整技能安装。
 
