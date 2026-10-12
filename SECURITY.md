@@ -6,7 +6,7 @@ Forge 的学习档案存放在学习者选择的本地目录。模型会话中�
 
 ## 报告漏洞
 
-仓库启用 GitHub 的 private vulnerability reporting 后，请从 Security 页面提交涉及敏感数据的报告。首发维护者须先核对该入口可用；当前尚未建立独立安全邮箱或响应时限承诺。
+仓库已启用 GitHub 的 private vulnerability reporting，请从[Security 页面](https://github.com/ChengYueCode/Fogre/security)提交涉及敏感数据的报告。当前尚未建立独立安全邮箱或响应时限承诺。
 
 普通功能问题可使用公开 issue。漏洞报告请说明影响版本、触发步骤、预期边界和匿名最小示例；公开内容仅包含脱敏信息。个人学习档案、模型密钥与完整用户路径保留在本地。
 

@@ -13,7 +13,7 @@
   "bin": { "forge": "bin/forge.mjs" },
   "files": ["bin/", "scripts/install-skill.mjs", "skill/*/SKILL.md", "skill/*/references/*.md", "skill/*/assets/*.html", "skill/*/assets/*.json", "skill/*/scripts/**/*.mjs", "skill/*/agents/*.yaml", "skill/*/LICENSE", "skill/*/NOTICE", "docs/installation.md", "docs/skill-architecture.md", "docs/open-source.md", "docs/skill-acceptance.md", "docs/support.md", "docs/release-checklist.md", "docs/forge-methods.md", "docs/github-introduction.md", "SECURITY.md", "THIRD_PARTY.md", "GLOSSARY.md", "CONTRIBUTING.md", "CHANGELOG.md"],
   "scripts": {
-    "test": "node --test tests/*.test.mjs",
+    "test": "node scripts/run-tests.mjs",
     "test:distribution": "node --test tests/distribution.test.mjs",
     "build:entries": "node scripts/build-entries.mjs",
     "check:links": "node scripts/check-links.mjs",

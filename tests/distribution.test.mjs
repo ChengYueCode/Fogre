@@ -16,8 +16,14 @@ function run(args, cwd = root) {
   return result.stdout;
 }
 
+async function temporary(prefix) {
+  // The installer returns real paths; Windows runner temp roots can differ
+  // in case or use short aliases. Match the same filesystem identity.
+  return fs.realpath(await fs.mkdtemp(path.join(os.tmpdir(), prefix)));
+}
+
 test('explicit installation refuses overwrite, preserves upgrade backup, and rolls back rename failure', async () => {
-  const temp = await fs.mkdtemp(path.join(os.tmpdir(), 'forge-install-'));
+  const temp = await temporary('forge-install-');
   const target = path.join(temp, 'skills with spaces', 'forge');
   const originalRename = fs.rename;
   try {
@@ -46,7 +52,7 @@ test('explicit installation refuses overwrite, preserves upgrade backup, and rol
 });
 
 test('installer rejects broad, foreign, aliased and locked targets', async () => {
-  const temp = await fs.mkdtemp(path.join(os.tmpdir(), 'forge-guard-'));
+  const temp = await temporary('forge-guard-');
   try {
     await assert.rejects(installSkill([]), /--target/);
     await assert.rejects(installSkill(['--target', root]), /npm 包/);
@@ -72,7 +78,7 @@ test('installer rejects broad, foreign, aliased and locked targets', async () =>
 
 test('real npm tarball installs a runnable CLI and complete standalone skill', async () => {
   assert.ok(process.env.npm_execpath, 'Run via npm run test:distribution or npm test to supply npm_execpath');
-  const temp = await fs.mkdtemp(path.join(os.tmpdir(), 'forge-npm-'));
+  const temp = await temporary('forge-npm-');
   try {
     const npm = process.env.npm_execpath;
     const packResult = JSON.parse(run([npm, 'pack', '--json', '--pack-destination', temp]));
@@ -121,7 +127,7 @@ test('real npm tarball installs a runnable CLI and complete standalone skill', a
 });
 
 test('entry installs are identity-checked and version-guarded (P06 reports, never silently mixes)', async () => {
-  const temp = await fs.mkdtemp(path.join(os.tmpdir(), 'forge-entries-'));
+  const temp = await temporary('forge-entries-');
   try {
     const host = path.join(temp, 'host');
     // A legacy sibling kept under an old directory name but exposing the main
