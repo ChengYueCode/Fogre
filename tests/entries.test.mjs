@@ -14,7 +14,7 @@ import { spawnSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 
 import { buildEntries, checkEntries, entryNames } from '../scripts/build-entries.mjs';
-import { checkLinks } from '../scripts/check-links.mjs';
+import { checkLinks, extractLinks } from '../scripts/check-links.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const SKILL = fs.mkdtempSync(path.join(os.tmpdir(), 'forge-entry-tests-'));
@@ -113,6 +113,29 @@ test('generation never touches the forge main skill sources', () => {
   const before = hashTree(source);
   generate();
   assert.deepEqual(hashTree(source), before);
+});
+
+test('every shipped reference is reachable from its skill entry and moved public headings remain', () => {
+  for (const directory of [path.join(ROOT, 'skill/forge'), ...entryNames().map(name => path.join(SKILL, name))]) {
+    const seen = new Set();
+    const pending = ['SKILL.md'];
+    while (pending.length) {
+      const relative = pending.pop();
+      if (seen.has(relative)) continue;
+      seen.add(relative);
+      for (const link of extractLinks(fs.readFileSync(path.join(directory, relative), 'utf8'))) {
+        const target = link.split('#')[0];
+        if (/^[a-z]+:/i.test(target) || !target.endsWith('.md')) continue;
+        pending.push(path.relative(directory, path.resolve(directory, path.dirname(relative), target)).replaceAll('\\', '/'));
+      }
+    }
+    for (const file of fs.readdirSync(path.join(directory, 'references'))) {
+      assert.ok(seen.has(`references/${file}`), `${path.basename(directory)}/${file} must remain reachable`);
+    }
+  }
+  for (const [file, heading] of [['phase-delivery.md', '## 失败恢复'], ['learning-library.md', '## 登记与发现'], ['artifacts.md', '### build 的输出与幂等性']]) {
+    assert.ok(fs.readFileSync(path.join(ROOT, 'skill/forge/references', file), 'utf8').split(/\r?\n/).includes(heading), `${file} preserves its public heading`);
+  }
 });
 
 test('P02 every relative markdown link resolves within each independently installable entry', async () => {

@@ -52,6 +52,28 @@ test('explicit installation refuses overwrite, preserves upgrade backup, and rol
   }
 });
 
+test('skill installation excludes source archive locks without dropping ordinary resources', async () => {
+  const temp = await temporary('forge-source-lock-');
+  try {
+    const fixture = path.join(temp, 'package');
+    await fs.mkdir(path.join(fixture, 'scripts'), { recursive: true });
+    await fs.mkdir(path.join(fixture, 'skill/forge/assets'), { recursive: true });
+    await fs.copyFile(path.join(root, 'scripts/install-skill.mjs'), path.join(fixture, 'scripts/install-skill.mjs'));
+    await fs.writeFile(path.join(fixture, 'package.json'), JSON.stringify({ type: 'module', version: '0.1.0' }));
+    await fs.writeFile(path.join(fixture, 'skill/forge/SKILL.md'), '---\nname: forge\n---\n');
+    for (const name of ['.ember-lock', '.ember-lock.recovery', '.ember-lock.notes.md', 'model.json']) {
+      await fs.writeFile(path.join(fixture, 'skill/forge/assets', name), name);
+    }
+    await fs.writeFile(path.join(fixture, 'install.mjs'), "import { installSkill } from './scripts/install-skill.mjs'; console.log(JSON.stringify(await installSkill(process.argv.slice(2))));");
+    const target = path.join(temp, 'host/forge');
+    run([path.join(fixture, 'install.mjs'), '--target', target], temp);
+    assert.deepEqual((await fs.readdir(path.join(target, 'assets'))).sort(), ['.ember-lock.notes.md', 'model.json']);
+    for (const name of ['.ember-lock', '.ember-lock.recovery']) {
+      assert.equal(await fs.readFile(path.join(fixture, 'skill/forge/assets', name), 'utf8'), name, 'source locks remain untouched');
+    }
+  } finally { await fs.rm(temp, { recursive: true, force: true }); }
+});
+
 test('installer rejects broad, foreign, aliased and locked targets', async () => {
   const temp = await temporary('forge-guard-');
   try {

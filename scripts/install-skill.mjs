@@ -128,7 +128,11 @@ export async function installSkill(args) {
     await fs.mkdir(transaction);
     staging = path.join(transaction, 'staging');
     backup = existing ? path.join(transaction, 'backup') : null;
-    await fs.cp(source, staging, { recursive: true, errorOnExist: true, force: false });
+    await fs.cp(source, staging, {
+      recursive: true, errorOnExist: true, force: false,
+      // Runtime archive locks belong to the source process, never its install.
+      filter: sourcePath => !['.ember-lock', '.ember-lock.recovery'].includes(path.basename(sourcePath)),
+    });
     // The manifest makes every installed piece self-describing: the version
     // guard below (and any future audit) can see which package produced it.
     await fs.writeFile(path.join(staging, '.forge-install.json'),

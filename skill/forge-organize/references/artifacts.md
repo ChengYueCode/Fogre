@@ -220,10 +220,9 @@ schema 之外的多余字段会被保留在 `model.json` 里，但生成页与�
 # 校验模型（不写文件）
 node <skill-dir>/scripts/forge.mjs validate ./learning/probability/model.json
 
-# 构建：生成 index.html、model.json、state.json、map.excalidraw
+# 构建命令示例；输出与写回合同见 references/artifact-rebuild.md
 node <skill-dir>/scripts/forge.mjs build ./learning/probability/model.json --out ./learning/probability --svg
-# 已有 map.excalidraw 时默认按编辑场景续接；显式指定另一份场景：
-# --scene 指定的文件既是读入路径，也是构建后的写回路径。
+# 使用另一份场景（先读重建规则确认写回位置）：
 node <skill-dir>/scripts/forge.mjs build ./learning/probability/model.json --out ./learning/probability --scene ./learning/probability/map.edited.excalidraw
 
 # 本地自动存档
@@ -264,7 +263,7 @@ node <skill-dir>/scripts/forge.mjs insights --out ./learning/probability --conce
 node <skill-dir>/scripts/forge.mjs review-plan --out ./learning/probability --round-id <id> --minutes 20
 # 显式把计划应用到当前轮次；省略 --focus-prompt 保留已保存重点，--clear-focus 清除
 node <skill-dir>/scripts/forge.mjs round --out ./learning/probability --action review-plan --round-id <id> --minutes 20 --focus-prompt p-apply-ppv
-# quality-write 只写 quality.json，不重建页面；写入后重跑 build 并刷新页面才会显示质检结论
+# 将质检结论放入新版页面（重建步骤见下方规则）
 node <skill-dir>/scripts/forge.mjs build ./learning/probability/model.json --out ./learning/probability
 
 # 独立文件模式的导入导出
