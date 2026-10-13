@@ -1,0 +1,773 @@
+{
+  "conceptSources": {
+    "choose": [
+      "src-ask-matt"
+    ],
+    "pair-1": [
+      "src-grill-with-docs",
+      "src-grill-me"
+    ],
+    "pair-2": [
+      "src-to-spec",
+      "src-to-tickets"
+    ],
+    "pair-3": [
+      "src-implement",
+      "src-implement-spec"
+    ],
+    "pair-4": [
+      "src-diagnosing-bugs",
+      "src-improve-codebase-architecture"
+    ],
+    "pair-5": [
+      "src-handoff",
+      "src-teach"
+    ],
+    "source-priority": [
+      "upstream-readme",
+      "src-tdd"
+    ]
+  },
+  "concepts": [
+    {
+      "difficulty": 1,
+      "example": "规格综合和任务拆解都涉及计划，但解决不同问题。",
+      "explanation": "相似名字不代表相同职责。比较当前输入、预期结果和用户决定点，再读适用入口。",
+      "id": "choose",
+      "misconception": "看到相似词，就以为两个入口可以互换。",
+      "parentId": null,
+      "title": "按差异选择"
+    },
+    {
+      "difficulty": 2,
+      "example": "grill-with-docs：澄清后的共同理解，以及领域词汇或适当的决策记录。\ngrill-me：共同理解的想法和已确认决定。",
+      "explanation": "在工作目录中是否维护领域语言与必要决定。",
+      "id": "pair-1",
+      "misconception": "两者可无条件互换，或者一个名字会自动触发另一个用户入口。",
+      "parentId": "choose",
+      "title": "项目访谈与无状态访谈"
+    },
+    {
+      "difficulty": 2,
+      "example": "to-spec：可交付规格，按配置进入任务追踪并标记 ready-for-agent。\nto-tickets：逐个可验收的任务、验收条件和明确阻塞边。",
+      "explanation": "已有讨论变成规格，或可用规格变成可验收任务图。",
+      "id": "pair-2",
+      "misconception": "两者可无条件互换，或者一个名字会自动触发另一个用户入口。",
+      "parentId": "choose",
+      "title": "综合规格与拆解任务"
+    },
+    {
+      "difficulty": 2,
+      "example": "implement：已实现、验证、审查并提交的本段工作。\nimplement-spec：落在单一集成分支上的整份规格，以及按追踪规则解决的任务。",
+      "explanation": "单段实施和审查，或集成分支上的就绪前沿编排。",
+      "id": "pair-3",
+      "misconception": "两者可无条件互换，或者一个名字会自动触发另一个用户入口。",
+      "parentId": "choose",
+      "title": "一段工作与整份任务图"
+    },
+    {
+      "difficulty": 2,
+      "example": "diagnosing-bugs：复现信号、被支持的原因、修复与回归证据。\nimprove-codebase-architecture：候选报告、推荐强度和选中后的设计讨论。",
+      "explanation": "针对当前症状的失败反馈，或近期热点的深模块候选。",
+      "id": "pair-4",
+      "misconception": "两者可无条件互换，或者一个名字会自动触发另一个用户入口。",
+      "parentId": "choose",
+      "title": "症状诊断与结构调查"
+    },
+    {
+      "difficulty": 2,
+      "example": "handoff：可带到新环境的 Markdown 交接文档。\nteach：可持续的学习工作区与一系列聚焦课程。",
+      "explanation": "可携带工作摘要，或围绕学习目的维护多会话课程。",
+      "id": "pair-5",
+      "misconception": "两者可无条件互换，或者一个名字会自动触发另一个用户入口。",
+      "parentId": "choose",
+      "title": "工作交接与持续学习"
+    },
+    {
+      "difficulty": 2,
+      "example": "学习 to-spec 时，以入口“综合已有讨论”与测试接口确认的具体步骤为准。",
+      "explanation": "总体说明用于定位；具体行为回到入口及必要参考。本快照的 tdd 入口将重构放在 review 阶段，与 README 的一般红绿重构描述应分层理解。",
+      "id": "source-priority",
+      "misconception": "总体简介提到的词就能覆盖入口的具体完成条件。",
+      "parentId": "choose",
+      "title": "摘要与入口细则"
+    }
+  ],
+  "goal": "能区分五组相似入口，并在来源摘要与入口细则冲突时回到具体原文。",
+  "id": "mattpocock-skills-comparisons",
+  "interactions": [
+    {
+      "boundary": "这里只读展示入口规则，点击对照不会启动所列技能。",
+      "conceptId": "pair-1",
+      "dimensions": [
+        {
+          "boundary": "先核对当前处境。",
+          "difference": "要解决的问题不同。",
+          "id": "scene",
+          "label": "适用场景"
+        },
+        {
+          "boundary": "缺项由实际探索核对。",
+          "difference": "已有上下文与材料不同。",
+          "id": "input",
+          "label": "必要输入"
+        },
+        {
+          "boundary": "预期不表示本次已执行。",
+          "difference": "完成后的结果不同。",
+          "id": "output",
+          "label": "预期产物"
+        },
+        {
+          "boundary": "来源操作不是当前执行授权。",
+          "difference": "用户决定和不能替代的职责不同。",
+          "id": "boundary",
+          "label": "停止与边界"
+        }
+      ],
+      "id": "compare-1",
+      "kind": "comparison",
+      "objective": "在新场景中解释选择理由。",
+      "objects": [
+        {
+          "id": "grill-with-docs",
+          "label": "grill-with-docs",
+          "values": {
+            "boundary": "原文入口是两个复用能力的组合；并不意味着每次都必须生成 ADR。",
+            "input": "想法、当前工作目录与可核对的项目事实。",
+            "output": "澄清后的共同理解，以及领域词汇或适当的决策记录。",
+            "scene": "正在工作目录中讨论新功能，目标和术语仍含糊。"
+          }
+        },
+        {
+          "id": "grill-me",
+          "label": "grill-me",
+          "values": {
+            "boundary": "不负责维护本地术语表；在工作目录中通常更适合 grill-with-docs。",
+            "input": "计划、决策或想法。",
+            "output": "共同理解的想法和已确认决定。",
+            "scene": "只想推敲一个计划，当前没有需要维护的项目目录。"
+          }
+        }
+      ],
+      "promptId": "p-pair-1",
+      "question": "什么输入使你选 grill-with-docs，什么输入使你选 grill-me？",
+      "title": "项目访谈与无状态访谈"
+    },
+    {
+      "boundary": "这里只读展示入口规则，点击对照不会启动所列技能。",
+      "conceptId": "pair-2",
+      "dimensions": [
+        {
+          "boundary": "先核对当前处境。",
+          "difference": "要解决的问题不同。",
+          "id": "scene",
+          "label": "适用场景"
+        },
+        {
+          "boundary": "缺项由实际探索核对。",
+          "difference": "已有上下文与材料不同。",
+          "id": "input",
+          "label": "必要输入"
+        },
+        {
+          "boundary": "预期不表示本次已执行。",
+          "difference": "完成后的结果不同。",
+          "id": "output",
+          "label": "预期产物"
+        },
+        {
+          "boundary": "来源操作不是当前执行授权。",
+          "difference": "用户决定和不能替代的职责不同。",
+          "id": "boundary",
+          "label": "停止与边界"
+        }
+      ],
+      "id": "compare-2",
+      "kind": "comparison",
+      "objective": "在新场景中解释选择理由。",
+      "objects": [
+        {
+          "id": "to-spec",
+          "label": "to-spec",
+          "values": {
+            "boundary": "原文明确不是新一轮需求访谈；测试接口确认不等于重新 grill 全部需求。通常不写具体文件路径与代码，原型决策片段是例外。",
+            "input": "当前讨论上下文、仓库理解、已配置的任务追踪方式。",
+            "output": "可交付规格，按配置进入任务追踪并标记 ready-for-agent。",
+            "scene": "需求已讨论清楚，希望形成可交给后续实现的规格。"
+          }
+        },
+        {
+          "id": "to-tickets",
+          "label": "to-tickets",
+          "values": {
+            "boundary": "不是数据库、接口、页面各一张的水平分层；跨全仓机械迁移可用 expand–contract 例外；不关闭或修改父任务。",
+            "input": "规格、计划或可用讨论；有引用时读取全文与评论；任务追踪配置。",
+            "output": "逐个可验收的任务、验收条件和明确阻塞边。",
+            "scene": "规格较大，需要分成能在独立新会话中完成的任务。"
+          }
+        }
+      ],
+      "promptId": "p-pair-2",
+      "question": "什么输入使你选 to-spec，什么输入使你选 to-tickets？",
+      "title": "综合规格与拆解任务"
+    },
+    {
+      "boundary": "这里只读展示入口规则，点击对照不会启动所列技能。",
+      "conceptId": "pair-3",
+      "dimensions": [
+        {
+          "boundary": "先核对当前处境。",
+          "difference": "要解决的问题不同。",
+          "id": "scene",
+          "label": "适用场景"
+        },
+        {
+          "boundary": "缺项由实际探索核对。",
+          "difference": "已有上下文与材料不同。",
+          "id": "input",
+          "label": "必要输入"
+        },
+        {
+          "boundary": "预期不表示本次已执行。",
+          "difference": "完成后的结果不同。",
+          "id": "output",
+          "label": "预期产物"
+        },
+        {
+          "boundary": "来源操作不是当前执行授权。",
+          "difference": "用户决定和不能替代的职责不同。",
+          "id": "boundary",
+          "label": "停止与边界"
+        }
+      ],
+      "id": "compare-3",
+      "kind": "comparison",
+      "objective": "在新场景中解释选择理由。",
+      "objects": [
+        {
+          "id": "implement",
+          "label": "implement",
+          "values": {
+            "boundary": "不是替需求澄清；原文要求审查和提交，真实操作仍要满足当前会话授权与仓库要求。",
+            "input": "规格或任务；明确引用；已确认的测试接口位置。",
+            "output": "已实现、验证、审查并提交的本段工作。",
+            "scene": "已有一张明确任务或一份范围清楚的规格。"
+          }
+        },
+        {
+          "id": "implement-spec",
+          "label": "implement-spec",
+          "values": {
+            "boundary": "不是把任意任务同时发出去；有阻塞边、有分支同步与合并；草稿 PR 以追踪规则或用户要求为条件。",
+            "input": "规格、关联任务及其阻塞关系、任务追踪配置。",
+            "output": "落在单一集成分支上的整份规格，以及按追踪规则解决的任务。",
+            "scene": "规格已有任务图，想让就绪任务并行推进后集成。"
+          }
+        }
+      ],
+      "promptId": "p-pair-3",
+      "question": "什么输入使你选 implement，什么输入使你选 implement-spec？",
+      "title": "一段工作与整份任务图"
+    },
+    {
+      "boundary": "这里只读展示入口规则，点击对照不会启动所列技能。",
+      "conceptId": "pair-4",
+      "dimensions": [
+        {
+          "boundary": "先核对当前处境。",
+          "difference": "要解决的问题不同。",
+          "id": "scene",
+          "label": "适用场景"
+        },
+        {
+          "boundary": "缺项由实际探索核对。",
+          "difference": "已有上下文与材料不同。",
+          "id": "input",
+          "label": "必要输入"
+        },
+        {
+          "boundary": "预期不表示本次已执行。",
+          "difference": "完成后的结果不同。",
+          "id": "output",
+          "label": "预期产物"
+        },
+        {
+          "boundary": "来源操作不是当前执行授权。",
+          "difference": "用户决定和不能替代的职责不同。",
+          "id": "boundary",
+          "label": "停止与边界"
+        }
+      ],
+      "id": "compare-4",
+      "kind": "comparison",
+      "objective": "在新场景中解释选择理由。",
+      "objects": [
+        {
+          "id": "diagnosing-bugs",
+          "label": "diagnosing-bugs",
+          "values": {
+            "boundary": "反馈环没有建立前不跳到猜原因；敏感输出先脱敏；无有效测试接口位置应如实报告。",
+            "input": "用户症状、复现条件与可访问环境。",
+            "output": "复现信号、被支持的原因、修复与回归证据。",
+            "scene": "遇到难复现的错误、偶发故障或性能回退。"
+          }
+        },
+        {
+          "id": "improve-codebase-architecture",
+          "label": "improve-codebase-architecture",
+          "values": {
+            "boundary": "调查候选不等于自动重构；报告阶段不先提出具体新接口；默认 HTML 放系统临时目录。",
+            "input": "指定痛点或近期提交热点、领域术语、相关 ADR。",
+            "output": "候选报告、推荐强度和选中后的设计讨论。",
+            "scene": "常改区域难理解、难测试，希望寻找改善机会。"
+          }
+        }
+      ],
+      "promptId": "p-pair-4",
+      "question": "什么输入使你选 diagnosing-bugs，什么输入使你选 improve-codebase-architecture？",
+      "title": "症状诊断与结构调查"
+    },
+    {
+      "boundary": "这里只读展示入口规则，点击对照不会启动所列技能。",
+      "conceptId": "pair-5",
+      "dimensions": [
+        {
+          "boundary": "先核对当前处境。",
+          "difference": "要解决的问题不同。",
+          "id": "scene",
+          "label": "适用场景"
+        },
+        {
+          "boundary": "缺项由实际探索核对。",
+          "difference": "已有上下文与材料不同。",
+          "id": "input",
+          "label": "必要输入"
+        },
+        {
+          "boundary": "预期不表示本次已执行。",
+          "difference": "完成后的结果不同。",
+          "id": "output",
+          "label": "预期产物"
+        },
+        {
+          "boundary": "来源操作不是当前执行授权。",
+          "difference": "用户决定和不能替代的职责不同。",
+          "id": "boundary",
+          "label": "停止与边界"
+        }
+      ],
+      "id": "compare-5",
+      "kind": "comparison",
+      "objective": "在新场景中解释选择理由。",
+      "objects": [
+        {
+          "id": "handoff",
+          "label": "handoff",
+          "values": {
+            "boundary": "不写在当前仓库；保留一手材料的指针，摘要仍是有损二手材料。",
+            "input": "当前已知决定、未决问题、已有产物引用与下一会话用途。",
+            "output": "可带到新环境的 Markdown 交接文档。",
+            "scene": "要换宿主、目录、同事，或中途分出独立侧任务。"
+          }
+        },
+        {
+          "id": "teach",
+          "label": "teach",
+          "values": {
+            "boundary": "不把当下流利感当长期保持；未知基础不能凭空写成已掌握。本包学习 teach 原文规则，不执行上游课程来替你制造历史。",
+            "input": "学习任务的目的、可信资源，以及已有学习记录。",
+            "output": "可持续的学习工作区与一系列聚焦课程。",
+            "scene": "要围绕真实学习目的持续学习一个主题。"
+          }
+        }
+      ],
+      "promptId": "p-pair-5",
+      "question": "什么输入使你选 handoff，什么输入使你选 teach？",
+      "title": "工作交接与持续学习"
+    }
+  ],
+  "limitations": [
+    "中文讲解、学习顺序和场景练习是本项目的教学组织，不是上游承诺的唯一流程。",
+    "文件阅读与产物生成不证明安装、宿主兼容、真人掌握或长期保持；材料中的发布和执行步骤不是本次执行授权。",
+    "来源锁定提交 49dd158；未来版本可能变化。试验入口可能改变，misc 已冻结。"
+  ],
+  "presentation": {
+    "rationale": "主要动作是并排比较容易混淆的入口。",
+    "theme": "contrast"
+  },
+  "prompts": [
+    {
+      "answer": "在工作目录中是否维护领域语言与必要决定。 grill-with-docs 产出：澄清后的共同理解，以及领域词汇或适当的决策记录。；grill-me 产出：共同理解的想法和已确认决定。",
+      "conceptId": "pair-1",
+      "criteria": [
+        "情境与所选入口职责一致",
+        "说明必要输入和产物差异",
+        "指出不应混用的边界"
+      ],
+      "id": "p-pair-1",
+      "kind": "compare",
+      "question": "请用一个新场景解释“项目访谈与无状态访谈”怎样选择。"
+    },
+    {
+      "answer": "已有讨论变成规格，或可用规格变成可验收任务图。 to-spec 产出：可交付规格，按配置进入任务追踪并标记 ready-for-agent。；to-tickets 产出：逐个可验收的任务、验收条件和明确阻塞边。",
+      "conceptId": "pair-2",
+      "criteria": [
+        "情境与所选入口职责一致",
+        "说明必要输入和产物差异",
+        "指出不应混用的边界"
+      ],
+      "id": "p-pair-2",
+      "kind": "compare",
+      "question": "请用一个新场景解释“综合规格与拆解任务”怎样选择。"
+    },
+    {
+      "answer": "单段实施和审查，或集成分支上的就绪前沿编排。 implement 产出：已实现、验证、审查并提交的本段工作。；implement-spec 产出：落在单一集成分支上的整份规格，以及按追踪规则解决的任务。",
+      "conceptId": "pair-3",
+      "criteria": [
+        "情境与所选入口职责一致",
+        "说明必要输入和产物差异",
+        "指出不应混用的边界"
+      ],
+      "id": "p-pair-3",
+      "kind": "compare",
+      "question": "请用一个新场景解释“一段工作与整份任务图”怎样选择。"
+    },
+    {
+      "answer": "针对当前症状的失败反馈，或近期热点的深模块候选。 diagnosing-bugs 产出：复现信号、被支持的原因、修复与回归证据。；improve-codebase-architecture 产出：候选报告、推荐强度和选中后的设计讨论。",
+      "conceptId": "pair-4",
+      "criteria": [
+        "情境与所选入口职责一致",
+        "说明必要输入和产物差异",
+        "指出不应混用的边界"
+      ],
+      "id": "p-pair-4",
+      "kind": "compare",
+      "question": "请用一个新场景解释“症状诊断与结构调查”怎样选择。"
+    },
+    {
+      "answer": "可携带工作摘要，或围绕学习目的维护多会话课程。 handoff 产出：可带到新环境的 Markdown 交接文档。；teach 产出：可持续的学习工作区与一系列聚焦课程。",
+      "conceptId": "pair-5",
+      "criteria": [
+        "情境与所选入口职责一致",
+        "说明必要输入和产物差异",
+        "指出不应混用的边界"
+      ],
+      "id": "p-pair-5",
+      "kind": "compare",
+      "question": "请用一个新场景解释“工作交接与持续学习”怎样选择。"
+    },
+    {
+      "answer": "总体介绍提供方向，实际操作规则以固定版本 tdd 入口为准：预先确认接口、一个测试到最小实现的红绿循环，重构放在 review 阶段。",
+      "conceptId": "source-priority",
+      "criteria": [
+        "区分总体介绍与具体规则",
+        "给出固定入口的实际规定",
+        "不静默消除来源层次差异"
+      ],
+      "id": "p-source-priority",
+      "kind": "explain",
+      "question": "README 讲红绿重构，而当前 tdd 入口把重构放在 review；你应怎样说明这两层来源？"
+    }
+  ],
+  "relations": [],
+  "schemaVersion": 1,
+  "sources": [
+    {
+      "id": "src-ask-matt",
+      "kind": "primary-source",
+      "note": "固定提交 49dd158d1076134a641b33efb035946536778336；skills/engineering/ask-matt/SKILL.md，第 1–97 行。中文说明与练习由 Forge 编写。",
+      "title": "上游 ask-matt 入口原文",
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/ask-matt/SKILL.md"
+    },
+    {
+      "id": "src-setup-matt-pocock-skills",
+      "kind": "primary-source",
+      "note": "固定提交 49dd158d1076134a641b33efb035946536778336；skills/engineering/setup-matt-pocock-skills/SKILL.md，第 1–118 行。中文说明与练习由 Forge 编写。",
+      "title": "上游 setup-matt-pocock-skills 入口原文",
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/setup-matt-pocock-skills/SKILL.md"
+    },
+    {
+      "id": "src-grill-with-docs",
+      "kind": "primary-source",
+      "note": "固定提交 49dd158d1076134a641b33efb035946536778336；skills/engineering/grill-with-docs/SKILL.md，第 1–7 行。中文说明与练习由 Forge 编写。",
+      "title": "上游 grill-with-docs 入口原文",
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/grill-with-docs/SKILL.md"
+    },
+    {
+      "id": "src-grill-me",
+      "kind": "primary-source",
+      "note": "固定提交 49dd158d1076134a641b33efb035946536778336；skills/productivity/grill-me/SKILL.md，第 1–7 行。中文说明与练习由 Forge 编写。",
+      "title": "上游 grill-me 入口原文",
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/productivity/grill-me/SKILL.md"
+    },
+    {
+      "id": "src-grilling",
+      "kind": "primary-source",
+      "note": "固定提交 49dd158d1076134a641b33efb035946536778336；skills/productivity/grilling/SKILL.md，第 1–30 行。中文说明与练习由 Forge 编写。",
+      "title": "上游 grilling 入口原文",
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/productivity/grilling/SKILL.md"
+    },
+    {
+      "id": "src-domain-modeling",
+      "kind": "primary-source",
+      "note": "固定提交 49dd158d1076134a641b33efb035946536778336；skills/engineering/domain-modeling/SKILL.md，第 1–74 行。中文说明与练习由 Forge 编写。",
+      "title": "上游 domain-modeling 入口原文",
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/domain-modeling/SKILL.md"
+    },
+    {
+      "id": "src-to-spec",
+      "kind": "primary-source",
+      "note": "固定提交 49dd158d1076134a641b33efb035946536778336；skills/engineering/to-spec/SKILL.md，第 1–75 行。中文说明与练习由 Forge 编写。",
+      "title": "上游 to-spec 入口原文",
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/to-spec/SKILL.md"
+    },
+    {
+      "id": "src-to-tickets",
+      "kind": "primary-source",
+      "note": "固定提交 49dd158d1076134a641b33efb035946536778336；skills/engineering/to-tickets/SKILL.md，第 1–105 行。中文说明与练习由 Forge 编写。",
+      "title": "上游 to-tickets 入口原文",
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/to-tickets/SKILL.md"
+    },
+    {
+      "id": "src-wayfinder",
+      "kind": "primary-source",
+      "note": "固定提交 49dd158d1076134a641b33efb035946536778336；skills/engineering/wayfinder/SKILL.md，第 1–128 行。中文说明与练习由 Forge 编写。",
+      "title": "上游 wayfinder 入口原文",
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/wayfinder/SKILL.md"
+    },
+    {
+      "id": "src-implement",
+      "kind": "primary-source",
+      "note": "固定提交 49dd158d1076134a641b33efb035946536778336；skills/engineering/implement/SKILL.md，第 1–17 行。中文说明与练习由 Forge 编写。",
+      "title": "上游 implement 入口原文",
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/implement/SKILL.md"
+    },
+    {
+      "id": "src-implement-spec",
+      "kind": "primary-source",
+      "note": "固定提交 49dd158d1076134a641b33efb035946536778336；skills/engineering/implement-spec/SKILL.md，第 1–40 行。中文说明与练习由 Forge 编写。",
+      "title": "上游 implement-spec 入口原文",
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/implement-spec/SKILL.md"
+    },
+    {
+      "id": "src-tdd",
+      "kind": "primary-source",
+      "note": "固定提交 49dd158d1076134a641b33efb035946536778336；skills/engineering/tdd/SKILL.md，第 1–38 行。中文说明与练习由 Forge 编写。",
+      "title": "上游 tdd 入口原文",
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/tdd/SKILL.md"
+    },
+    {
+      "id": "src-prototype",
+      "kind": "primary-source",
+      "note": "固定提交 49dd158d1076134a641b33efb035946536778336；skills/engineering/prototype/SKILL.md，第 1–26 行。中文说明与练习由 Forge 编写。",
+      "title": "上游 prototype 入口原文",
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/prototype/SKILL.md"
+    },
+    {
+      "id": "src-research",
+      "kind": "primary-source",
+      "note": "固定提交 49dd158d1076134a641b33efb035946536778336；skills/engineering/research/SKILL.md，第 1–12 行。中文说明与练习由 Forge 编写。",
+      "title": "上游 research 入口原文",
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/research/SKILL.md"
+    },
+    {
+      "id": "src-wizard",
+      "kind": "primary-source",
+      "note": "固定提交 49dd158d1076134a641b33efb035946536778336；skills/engineering/wizard/SKILL.md，第 1–44 行。中文说明与练习由 Forge 编写。",
+      "title": "上游 wizard 入口原文",
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/wizard/SKILL.md"
+    },
+    {
+      "id": "src-diagnosing-bugs",
+      "kind": "primary-source",
+      "note": "固定提交 49dd158d1076134a641b33efb035946536778336；skills/engineering/diagnosing-bugs/SKILL.md，第 1–138 行。中文说明与练习由 Forge 编写。",
+      "title": "上游 diagnosing-bugs 入口原文",
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/diagnosing-bugs/SKILL.md"
+    },
+    {
+      "id": "src-triage",
+      "kind": "primary-source",
+      "note": "固定提交 49dd158d1076134a641b33efb035946536778336；skills/engineering/triage/SKILL.md，第 1–112 行。中文说明与练习由 Forge 编写。",
+      "title": "上游 triage 入口原文",
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/triage/SKILL.md"
+    },
+    {
+      "id": "src-code-review",
+      "kind": "primary-source",
+      "note": "固定提交 49dd158d1076134a641b33efb035946536778336；skills/engineering/code-review/SKILL.md，第 1–89 行。中文说明与练习由 Forge 编写。",
+      "title": "上游 code-review 入口原文",
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/code-review/SKILL.md"
+    },
+    {
+      "id": "src-codebase-design",
+      "kind": "primary-source",
+      "note": "固定提交 49dd158d1076134a641b33efb035946536778336；skills/engineering/codebase-design/SKILL.md，第 1–114 行。中文说明与练习由 Forge 编写。",
+      "title": "上游 codebase-design 入口原文",
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/codebase-design/SKILL.md"
+    },
+    {
+      "id": "src-improve-codebase-architecture",
+      "kind": "primary-source",
+      "note": "固定提交 49dd158d1076134a641b33efb035946536778336；skills/engineering/improve-codebase-architecture/SKILL.md，第 1–71 行。中文说明与练习由 Forge 编写。",
+      "title": "上游 improve-codebase-architecture 入口原文",
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/improve-codebase-architecture/SKILL.md"
+    },
+    {
+      "id": "src-pr",
+      "kind": "primary-source",
+      "note": "固定提交 49dd158d1076134a641b33efb035946536778336；skills/engineering/pr/SKILL.md，第 1–170 行。中文说明与练习由 Forge 编写。",
+      "title": "上游 pr 入口原文",
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/pr/SKILL.md"
+    },
+    {
+      "id": "src-retro",
+      "kind": "primary-source",
+      "note": "固定提交 49dd158d1076134a641b33efb035946536778336；skills/engineering/retro/SKILL.md，第 1–44 行。中文说明与练习由 Forge 编写。",
+      "title": "上游 retro 入口原文",
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/retro/SKILL.md"
+    },
+    {
+      "id": "src-handoff",
+      "kind": "primary-source",
+      "note": "固定提交 49dd158d1076134a641b33efb035946536778336；skills/productivity/handoff/SKILL.md，第 1–16 行。中文说明与练习由 Forge 编写。",
+      "title": "上游 handoff 入口原文",
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/productivity/handoff/SKILL.md"
+    },
+    {
+      "id": "src-teach",
+      "kind": "primary-source",
+      "note": "固定提交 49dd158d1076134a641b33efb035946536778336；skills/productivity/teach/SKILL.md，第 1–140 行。中文说明与练习由 Forge 编写。",
+      "title": "上游 teach 入口原文",
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/productivity/teach/SKILL.md"
+    },
+    {
+      "id": "src-to-questionnaire",
+      "kind": "primary-source",
+      "note": "固定提交 49dd158d1076134a641b33efb035946536778336；skills/productivity/to-questionnaire/SKILL.md，第 1–54 行。中文说明与练习由 Forge 编写。",
+      "title": "上游 to-questionnaire 入口原文",
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/productivity/to-questionnaire/SKILL.md"
+    },
+    {
+      "id": "src-wait-what",
+      "kind": "primary-source",
+      "note": "固定提交 49dd158d1076134a641b33efb035946536778336；skills/productivity/wait-what/SKILL.md，第 1–7 行。中文说明与练习由 Forge 编写。",
+      "title": "上游 wait-what 入口原文",
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/productivity/wait-what/SKILL.md"
+    },
+    {
+      "id": "src-writing-for-agents",
+      "kind": "primary-source",
+      "note": "固定提交 49dd158d1076134a641b33efb035946536778336；skills/productivity/writing-for-agents/SKILL.md，第 1–81 行。中文说明与练习由 Forge 编写。",
+      "title": "上游 writing-for-agents 入口原文",
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/productivity/writing-for-agents/SKILL.md"
+    },
+    {
+      "id": "src-chief-of-staff",
+      "kind": "primary-source",
+      "note": "固定提交 49dd158d1076134a641b33efb035946536778336；skills/in-progress/chief-of-staff/SKILL.md，第 1–45 行。中文说明与练习由 Forge 编写。",
+      "title": "上游 chief-of-staff 入口原文",
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/in-progress/chief-of-staff/SKILL.md"
+    },
+    {
+      "id": "src-claude-handoff",
+      "kind": "primary-source",
+      "note": "固定提交 49dd158d1076134a641b33efb035946536778336；skills/in-progress/claude-handoff/SKILL.md，第 1–18 行。中文说明与练习由 Forge 编写。",
+      "title": "上游 claude-handoff 入口原文",
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/in-progress/claude-handoff/SKILL.md"
+    },
+    {
+      "id": "src-loop-me",
+      "kind": "primary-source",
+      "note": "固定提交 49dd158d1076134a641b33efb035946536778336；skills/in-progress/loop-me/SKILL.md，第 1–32 行。中文说明与练习由 Forge 编写。",
+      "title": "上游 loop-me 入口原文",
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/in-progress/loop-me/SKILL.md"
+    },
+    {
+      "id": "src-setup-ts-deep-modules",
+      "kind": "primary-source",
+      "note": "固定提交 49dd158d1076134a641b33efb035946536778336；skills/in-progress/setup-ts-deep-modules/SKILL.md，第 1–102 行。中文说明与练习由 Forge 编写。",
+      "title": "上游 setup-ts-deep-modules 入口原文",
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/in-progress/setup-ts-deep-modules/SKILL.md"
+    },
+    {
+      "id": "src-writing-beats",
+      "kind": "primary-source",
+      "note": "固定提交 49dd158d1076134a641b33efb035946536778336；skills/in-progress/writing-beats/SKILL.md，第 1–67 行。中文说明与练习由 Forge 编写。",
+      "title": "上游 writing-beats 入口原文",
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/in-progress/writing-beats/SKILL.md"
+    },
+    {
+      "id": "src-writing-fragments",
+      "kind": "primary-source",
+      "note": "固定提交 49dd158d1076134a641b33efb035946536778336；skills/in-progress/writing-fragments/SKILL.md，第 1–79 行。中文说明与练习由 Forge 编写。",
+      "title": "上游 writing-fragments 入口原文",
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/in-progress/writing-fragments/SKILL.md"
+    },
+    {
+      "id": "src-writing-shape",
+      "kind": "primary-source",
+      "note": "固定提交 49dd158d1076134a641b33efb035946536778336；skills/in-progress/writing-shape/SKILL.md，第 1–79 行。中文说明与练习由 Forge 编写。",
+      "title": "上游 writing-shape 入口原文",
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/in-progress/writing-shape/SKILL.md"
+    },
+    {
+      "id": "src-git-guardrails-claude-code",
+      "kind": "primary-source",
+      "note": "固定提交 49dd158d1076134a641b33efb035946536778336；skills/misc/git-guardrails-claude-code/SKILL.md，第 1–95 行。中文说明与练习由 Forge 编写。",
+      "title": "上游 git-guardrails-claude-code 入口原文",
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/misc/git-guardrails-claude-code/SKILL.md"
+    },
+    {
+      "id": "src-migrate-to-shoehorn",
+      "kind": "primary-source",
+      "note": "固定提交 49dd158d1076134a641b33efb035946536778336；skills/misc/migrate-to-shoehorn/SKILL.md，第 1–118 行。中文说明与练习由 Forge 编写。",
+      "title": "上游 migrate-to-shoehorn 入口原文",
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/misc/migrate-to-shoehorn/SKILL.md"
+    },
+    {
+      "id": "src-scaffold-exercises",
+      "kind": "primary-source",
+      "note": "固定提交 49dd158d1076134a641b33efb035946536778336；skills/misc/scaffold-exercises/SKILL.md，第 1–106 行。中文说明与练习由 Forge 编写。",
+      "title": "上游 scaffold-exercises 入口原文",
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/misc/scaffold-exercises/SKILL.md"
+    },
+    {
+      "id": "src-setup-pre-commit",
+      "kind": "primary-source",
+      "note": "固定提交 49dd158d1076134a641b33efb035946536778336；skills/misc/setup-pre-commit/SKILL.md，第 1–91 行。中文说明与练习由 Forge 编写。",
+      "title": "上游 setup-pre-commit 入口原文",
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/misc/setup-pre-commit/SKILL.md"
+    },
+    {
+      "id": "upstream-readme",
+      "kind": "primary-source",
+      "note": "固定提交 49dd158d1076134a641b33efb035946536778336；README.md。",
+      "title": "上游总体说明：用途、调用身份与安装选择",
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/README.md"
+    },
+    {
+      "id": "upstream-scope",
+      "kind": "primary-source",
+      "note": "固定提交 49dd158d1076134a641b33efb035946536778336；SCOPE.md。",
+      "title": "上游范围：正式、试验、冻结与反馈边界",
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/SCOPE.md"
+    },
+    {
+      "id": "upstream-mechanics",
+      "kind": "primary-source",
+      "note": "固定提交 49dd158d1076134a641b33efb035946536778336；skills/productivity/writing-for-agents/SKILL-MECHANICS.md。",
+      "title": "调用机制：模型入口、用户入口与路由器",
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/productivity/writing-for-agents/SKILL-MECHANICS.md"
+    },
+    {
+      "id": "phase-boundaries",
+      "kind": "primary-source",
+      "note": "固定提交 49dd158d1076134a641b33efb035946536778336；skills/engineering/ask-matt/PHASE-BOUNDARIES.md。",
+      "title": "阶段边界：继续、清空、交接、子任务与压缩",
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/ask-matt/PHASE-BOUNDARIES.md"
+    }
+  ],
+  "summary": "通过场景、输入与产物对照判断，而不只按技能名猜测。",
+  "title": "学习 mattpocock/skills：容易选错的入口"
+}

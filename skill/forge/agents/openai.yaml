@@ -1,5 +1,5 @@
 interface:
-  display_name: "forge · 锻造"
-  short_description: "核对材料、检验真实作答，保存学习档案以续学和复习"
+  display_name: "Forge"
+  short_description: "帮你学新知识、整理资料、检查答案，保存学习进度，下次接着学。"
   brand_color: "#3F6B4F"
-  default_prompt: "/forge 帮我学习这个主题，按我的目标核对材料、安排练习并保存学习档案；如果已有记录，先读回当前位置和缺口再继续。"
+  default_prompt: "/forge 带我学习这个主题，用例子讲解，再让我试一试。请保存回答和进度，方便下次继续；已有记录时先看上次学到了哪里。"

@@ -1,0 +1,1140 @@
+{
+  "repository": "mattpocock/skills",
+  "commit": "49dd158d1076134a641b33efb035946536778336",
+  "capturedOn": "2026-10-13",
+  "scope": "27 engineering/productivity entries deeply taught; 7 in-progress and 4 frozen misc entries indexed with boundaries; deprecated is empty",
+  "skills": [
+    {
+      "name": "ask-matt",
+      "bucket": "engineering",
+      "invocation": "user",
+      "description": "Ask which skill or flow fits your situation. A router over the skills in this repo.",
+      "sourcePath": "skills/engineering/ask-matt/SKILL.md",
+      "sourceUrl": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/ask-matt/SKILL.md",
+      "sourceSha256": "1371f5ce005de0992a44b137748bfb960a56948aa9871b405fe9d90b24332e3c",
+      "lines": 97
+    },
+    {
+      "name": "code-review",
+      "bucket": "engineering",
+      "invocation": "model",
+      "description": "Review the changes since a fixed point (commit, branch, tag, or merge-base) along two axes: Standards (does the code follow this repo's documented coding standards?) and Spec (does the code match what the originating issue/spec asked for?). Runs both reviews in parallel sub-agents and reports them side by side. Use when the user wants to review a branch, a PR, work-in-progress changes, or asks to \\\"review since X\\\".",
+      "sourcePath": "skills/engineering/code-review/SKILL.md",
+      "sourceUrl": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/code-review/SKILL.md",
+      "sourceSha256": "09eb147f793e4647949edd32dbad278f0554dfb56e0d46b699cd4c2c55bf0357",
+      "lines": 89
+    },
+    {
+      "name": "codebase-design",
+      "bucket": "engineering",
+      "invocation": "model",
+      "description": "Shared vocabulary for designing deep modules. Use when the user wants to design or improve a module's interface, find deepening opportunities, decide where a seam goes, make code more testable or AI-navigable, or when another skill needs the deep-module vocabulary.",
+      "sourcePath": "skills/engineering/codebase-design/SKILL.md",
+      "sourceUrl": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/codebase-design/SKILL.md",
+      "sourceSha256": "2c20617f87ec8af6a434859f381b2f061a69b530444e74eb39e78bb016a6d1e2",
+      "lines": 114
+    },
+    {
+      "name": "diagnosing-bugs",
+      "bucket": "engineering",
+      "invocation": "model",
+      "description": "Diagnosis loop for hard bugs and performance regressions. Use when the user says \"diagnose\"/\"debug this\", or reports something broken/throwing/failing/slow.",
+      "sourcePath": "skills/engineering/diagnosing-bugs/SKILL.md",
+      "sourceUrl": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/diagnosing-bugs/SKILL.md",
+      "sourceSha256": "849198df88cdb65fd0d97236604c1fca7ff2f22d2f705f9724a800d0266b118d",
+      "lines": 138
+    },
+    {
+      "name": "domain-modeling",
+      "bucket": "engineering",
+      "invocation": "model",
+      "description": "Build and sharpen a project's domain model. Use when discussing codebase terminology, writing or editing a GLOSSARY.md, or recording or editing an ADR.",
+      "sourcePath": "skills/engineering/domain-modeling/SKILL.md",
+      "sourceUrl": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/domain-modeling/SKILL.md",
+      "sourceSha256": "7b925d7b1e341a2eeae33ad68a8a8c0ab889a38ddd22a7598e4c240e5a7556a3",
+      "lines": 74
+    },
+    {
+      "name": "grill-with-docs",
+      "bucket": "engineering",
+      "invocation": "user",
+      "description": "A relentless interview to sharpen a plan or design, which also creates docs (ADR's and glossary) as we go.",
+      "sourcePath": "skills/engineering/grill-with-docs/SKILL.md",
+      "sourceUrl": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/grill-with-docs/SKILL.md",
+      "sourceSha256": "7de372c13488f1ee96cc11cd8907b56b6809cc93eef776eeddd37de6b6cbe3fe",
+      "lines": 7
+    },
+    {
+      "name": "implement-spec",
+      "bucket": "engineering",
+      "invocation": "user",
+      "description": "Implement the result of /to-spec and /to-tickets in code.",
+      "sourcePath": "skills/engineering/implement-spec/SKILL.md",
+      "sourceUrl": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/implement-spec/SKILL.md",
+      "sourceSha256": "7a22dd2e60b8fcece478ced9d2533582adf3520d695acd3ab715341535c9e56d",
+      "lines": 40
+    },
+    {
+      "name": "implement",
+      "bucket": "engineering",
+      "invocation": "user",
+      "description": "Implement a piece of work based on a spec or set of tickets.",
+      "sourcePath": "skills/engineering/implement/SKILL.md",
+      "sourceUrl": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/implement/SKILL.md",
+      "sourceSha256": "483bdc4ccf4ac31d86ac7beeaa0d0db80313e71e120bb8c59b3196ae5decd53d",
+      "lines": 17
+    },
+    {
+      "name": "improve-codebase-architecture",
+      "bucket": "engineering",
+      "invocation": "user",
+      "description": "Scan a codebase for deepening opportunities, present them as a visual HTML report, then grill through whichever one you pick.",
+      "sourcePath": "skills/engineering/improve-codebase-architecture/SKILL.md",
+      "sourceUrl": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/improve-codebase-architecture/SKILL.md",
+      "sourceSha256": "552240a5ab5cec6b67c15dd1ad6e9f6962b1bca6ce870059a8c2713760c20392",
+      "lines": 71
+    },
+    {
+      "name": "pr",
+      "bucket": "engineering",
+      "invocation": "model",
+      "description": "Use when writing a PR body.",
+      "sourcePath": "skills/engineering/pr/SKILL.md",
+      "sourceUrl": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/pr/SKILL.md",
+      "sourceSha256": "ab63f1cf78647389edcd386c9427c5dfca27ed2836930c24773ffee834c19bcd",
+      "lines": 170
+    },
+    {
+      "name": "prototype",
+      "bucket": "engineering",
+      "invocation": "model",
+      "description": "Build a throwaway prototype to answer a design question. Use when the user wants to sanity-check whether a state model or logic feels right, or explore what a UI should look like.",
+      "sourcePath": "skills/engineering/prototype/SKILL.md",
+      "sourceUrl": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/prototype/SKILL.md",
+      "sourceSha256": "714de632d116bb73f65cdb5a882db15b9369a6713b9a47c0fad827848f0bfbe3",
+      "lines": 26
+    },
+    {
+      "name": "research",
+      "bucket": "engineering",
+      "invocation": "model",
+      "description": "Investigate a question against high-trust primary sources and capture the findings as a Markdown file in the repo. Use when the user wants a topic researched, docs or API facts gathered, or reading legwork delegated to a background agent.",
+      "sourcePath": "skills/engineering/research/SKILL.md",
+      "sourceUrl": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/research/SKILL.md",
+      "sourceSha256": "985569f15739c713d6784887c3d186d4ef9ac85bec5ad9c068d25bf0739928e4",
+      "lines": 12
+    },
+    {
+      "name": "retro",
+      "bucket": "engineering",
+      "invocation": "user",
+      "description": "Conduct a retrospective on a coding session.",
+      "sourcePath": "skills/engineering/retro/SKILL.md",
+      "sourceUrl": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/retro/SKILL.md",
+      "sourceSha256": "33fbc28568e3146f20fd908b12998bc0ab30aa4f4c87288199a40793efa94696",
+      "lines": 44
+    },
+    {
+      "name": "setup-matt-pocock-skills",
+      "bucket": "engineering",
+      "invocation": "user",
+      "description": "Configure this repo for the engineering skills: set up its issue tracker, triage label vocabulary, and domain doc layout. Run once before first use of the other engineering skills.",
+      "sourcePath": "skills/engineering/setup-matt-pocock-skills/SKILL.md",
+      "sourceUrl": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/setup-matt-pocock-skills/SKILL.md",
+      "sourceSha256": "f148858ffb7f63c03c06fca06e6fdb1d91a35c6b293244b8fdfacd5f4cc028c4",
+      "lines": 118
+    },
+    {
+      "name": "tdd",
+      "bucket": "engineering",
+      "invocation": "model",
+      "description": "Test-driven development. Use when the user wants to build features or fix bugs test-first, mentions \"red-green-refactor\", or wants integration tests.",
+      "sourcePath": "skills/engineering/tdd/SKILL.md",
+      "sourceUrl": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/tdd/SKILL.md",
+      "sourceSha256": "5505d25bbaa8fc14a79e4d20163936958992a2995b7f1dd1d6197edc9ed722e0",
+      "lines": 38
+    },
+    {
+      "name": "to-spec",
+      "bucket": "engineering",
+      "invocation": "user",
+      "description": "Turn the current conversation into a spec and publish it to the project issue tracker: no interview, just synthesis of what you've already discussed.",
+      "sourcePath": "skills/engineering/to-spec/SKILL.md",
+      "sourceUrl": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/to-spec/SKILL.md",
+      "sourceSha256": "43ad9cf318e5e7d3d1fa360253a37021796dc87a0c2e595ad262661a10f85088",
+      "lines": 75
+    },
+    {
+      "name": "to-tickets",
+      "bucket": "engineering",
+      "invocation": "user",
+      "description": "Break a plan, spec, or the current conversation into a set of tracer-bullet tickets, each declaring its blocking edges, published to the configured tracker (edges as text in one file per ticket locally, or native blocking links on a real tracker).",
+      "sourcePath": "skills/engineering/to-tickets/SKILL.md",
+      "sourceUrl": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/to-tickets/SKILL.md",
+      "sourceSha256": "56ec23c5b2782785d4e65bff9e315b6d3aeb4ef977c174a219e99489fada1995",
+      "lines": 105
+    },
+    {
+      "name": "triage",
+      "bucket": "engineering",
+      "invocation": "user",
+      "description": "Move issues and external PRs through a state machine of triage roles, categorise, verify, grill if needed, and write agent-ready briefs.",
+      "sourcePath": "skills/engineering/triage/SKILL.md",
+      "sourceUrl": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/triage/SKILL.md",
+      "sourceSha256": "917b0baf74be583e74f110857ed45df2766617f75c00baf61fd136d7af515edf",
+      "lines": 112
+    },
+    {
+      "name": "wayfinder",
+      "bucket": "engineering",
+      "invocation": "user",
+      "description": "Plan a huge chunk of work (more than one agent session can hold) as a shared map of decision tickets on your issue tracker, and resolve them one at a time until the way to the destination is clear.",
+      "sourcePath": "skills/engineering/wayfinder/SKILL.md",
+      "sourceUrl": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/wayfinder/SKILL.md",
+      "sourceSha256": "9be7b478c389605a24517d27752f278933588da97a1b5921b165f455edf4c5b7",
+      "lines": 128
+    },
+    {
+      "name": "wizard",
+      "bucket": "engineering",
+      "invocation": "model",
+      "description": "Generate an interactive bash wizard that walks a human through steps only they can perform. Use when provisioning infrastructure, setting up credentials or CI secrets, walking an unfamiliar third-party dashboard, or running a one-off migration or cutover. Don't invoke this for steps the agent can perform itself.",
+      "sourcePath": "skills/engineering/wizard/SKILL.md",
+      "sourceUrl": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/wizard/SKILL.md",
+      "sourceSha256": "bdf31d48211ea559878f95a4f344aeabf8d85897488ba564382bab0b000daac1",
+      "lines": 44
+    },
+    {
+      "name": "chief-of-staff",
+      "bucket": "in-progress",
+      "invocation": "user",
+      "description": "Pursue a long-running goal in a single session by co-ordinating subagents.",
+      "sourcePath": "skills/in-progress/chief-of-staff/SKILL.md",
+      "sourceUrl": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/in-progress/chief-of-staff/SKILL.md",
+      "sourceSha256": "6cc6e47ab5022f3e45e5be0fedbb0f6e645f4f0190d6b0c51c7cd60c2d7c1d98",
+      "lines": 45
+    },
+    {
+      "name": "claude-handoff",
+      "bucket": "in-progress",
+      "invocation": "user",
+      "description": "Hand the current conversation off to a fresh background agent that picks up the work immediately.",
+      "sourcePath": "skills/in-progress/claude-handoff/SKILL.md",
+      "sourceUrl": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/in-progress/claude-handoff/SKILL.md",
+      "sourceSha256": "79357a18425d66d4c24048bedf83dceb79d3bba356f38014950f764a7fab4026",
+      "lines": 18
+    },
+    {
+      "name": "loop-me",
+      "bucket": "in-progress",
+      "invocation": "user",
+      "description": "Grill me about specs for the workflows I want to build, within this workspace.",
+      "sourcePath": "skills/in-progress/loop-me/SKILL.md",
+      "sourceUrl": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/in-progress/loop-me/SKILL.md",
+      "sourceSha256": "e44d1cc3e760fb86ac42964c2a5f1fcac511715db50fb375f3f7be814de1eaa7",
+      "lines": 32
+    },
+    {
+      "name": "setup-ts-deep-modules",
+      "bucket": "in-progress",
+      "invocation": "user",
+      "description": "Wire dependency-cruiser into a TypeScript repo so each package is a deep module, with implementation hidden in subfolders and reachable only through its entry-point files. User-invoked.",
+      "sourcePath": "skills/in-progress/setup-ts-deep-modules/SKILL.md",
+      "sourceUrl": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/in-progress/setup-ts-deep-modules/SKILL.md",
+      "sourceSha256": "29acca66ac99d4532e2a6f0370d8125d7cba1e87c9ac66573203c75189d3e6c7",
+      "lines": 102
+    },
+    {
+      "name": "writing-beats",
+      "bucket": "in-progress",
+      "invocation": "user",
+      "description": "Writing, exploit; assemble raw material into a journey of beats, grounding each term before a beat leans on it.",
+      "sourcePath": "skills/in-progress/writing-beats/SKILL.md",
+      "sourceUrl": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/in-progress/writing-beats/SKILL.md",
+      "sourceSha256": "a96abafa2372eede8267d770138b322d6125da8adaa7ccf0a5e08e4ee13ee71e",
+      "lines": 67
+    },
+    {
+      "name": "writing-fragments",
+      "bucket": "in-progress",
+      "invocation": "user",
+      "description": "Writing, explore: mine raw fragments, no structure yet.",
+      "sourcePath": "skills/in-progress/writing-fragments/SKILL.md",
+      "sourceUrl": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/in-progress/writing-fragments/SKILL.md",
+      "sourceSha256": "298b0edd23df229183630de592ed8aa4289233560f2040691f6eb77caeaad4ea",
+      "lines": 79
+    },
+    {
+      "name": "writing-shape",
+      "bucket": "in-progress",
+      "invocation": "user",
+      "description": "Writing, exploit: shape raw material into an article, paragraph by paragraph.",
+      "sourcePath": "skills/in-progress/writing-shape/SKILL.md",
+      "sourceUrl": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/in-progress/writing-shape/SKILL.md",
+      "sourceSha256": "f5e6c57bdd85178ace4a260c92f46da6b64ddee18215b461d875739c68976f72",
+      "lines": 79
+    },
+    {
+      "name": "git-guardrails-claude-code",
+      "bucket": "misc",
+      "invocation": "model",
+      "description": "Set up Claude Code hooks to block dangerous git commands (push, reset --hard, clean, branch -D, etc.) before they execute. Use when user wants to prevent destructive git operations, add git safety hooks, or block git push/reset in Claude Code.",
+      "sourcePath": "skills/misc/git-guardrails-claude-code/SKILL.md",
+      "sourceUrl": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/misc/git-guardrails-claude-code/SKILL.md",
+      "sourceSha256": "69b291d655626a01602b998a1836fcb93c058ede68dfafddfd71e87f17074764",
+      "lines": 95
+    },
+    {
+      "name": "migrate-to-shoehorn",
+      "bucket": "misc",
+      "invocation": "model",
+      "description": "Migrate test files from `as` type assertions to @total-typescript/shoehorn. Use when user mentions shoehorn, wants to replace `as` in tests, or needs partial test data.",
+      "sourcePath": "skills/misc/migrate-to-shoehorn/SKILL.md",
+      "sourceUrl": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/misc/migrate-to-shoehorn/SKILL.md",
+      "sourceSha256": "de4da4c11d924fac79c924b2ee3d2db4a5cb98386eb490a599119463d036ae72",
+      "lines": 118
+    },
+    {
+      "name": "scaffold-exercises",
+      "bucket": "misc",
+      "invocation": "model",
+      "description": "Create exercise directory structures with sections, problems, solutions, and explainers that pass linting. Use when user wants to scaffold exercises, create exercise stubs, or set up a new course section.",
+      "sourcePath": "skills/misc/scaffold-exercises/SKILL.md",
+      "sourceUrl": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/misc/scaffold-exercises/SKILL.md",
+      "sourceSha256": "75f5c9d771606fb9762f16522efc954df11c324f87148d8ff069bce166257de9",
+      "lines": 106
+    },
+    {
+      "name": "setup-pre-commit",
+      "bucket": "misc",
+      "invocation": "model",
+      "description": "Set up Husky pre-commit hooks with lint-staged (Prettier), type checking, and tests in the current repo. Use when user wants to add pre-commit hooks, set up Husky, configure lint-staged, or add commit-time formatting/typechecking/testing.",
+      "sourcePath": "skills/misc/setup-pre-commit/SKILL.md",
+      "sourceUrl": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/misc/setup-pre-commit/SKILL.md",
+      "sourceSha256": "c9819d7f1e3b198064edc1faa3154224ed67395e9f07f5d3cea4b67cf0a11a98",
+      "lines": 91
+    },
+    {
+      "name": "grill-me",
+      "bucket": "productivity",
+      "invocation": "user",
+      "description": "A relentless interview to sharpen a plan or design.",
+      "sourcePath": "skills/productivity/grill-me/SKILL.md",
+      "sourceUrl": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/productivity/grill-me/SKILL.md",
+      "sourceSha256": "caaf8b8de1684f96e26b28f3c29189db5c89cce4b73e1c93d86164f66ef88637",
+      "lines": 7
+    },
+    {
+      "name": "grilling",
+      "bucket": "productivity",
+      "invocation": "model",
+      "description": "Grill the user relentlessly about a plan, decision, or idea. Use when the user wants to stress-test their thinking, or uses any 'grill' trigger phrases.",
+      "sourcePath": "skills/productivity/grilling/SKILL.md",
+      "sourceUrl": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/productivity/grilling/SKILL.md",
+      "sourceSha256": "befdff1e27a1dfe2a294d5871169ac1afe16d983911daa4f32627514a48c1e15",
+      "lines": 30
+    },
+    {
+      "name": "handoff",
+      "bucket": "productivity",
+      "invocation": "user",
+      "description": "Compact the current conversation into a handoff document for another agent to pick up.",
+      "sourcePath": "skills/productivity/handoff/SKILL.md",
+      "sourceUrl": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/productivity/handoff/SKILL.md",
+      "sourceSha256": "4cbb043950dad2ffd3662ff1a5a0b51ae676004b5cae10e3787e8ee7a4ee69d3",
+      "lines": 16
+    },
+    {
+      "name": "teach",
+      "bucket": "productivity",
+      "invocation": "user",
+      "description": "Teach the user a new skill or concept, within this workspace.",
+      "sourcePath": "skills/productivity/teach/SKILL.md",
+      "sourceUrl": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/productivity/teach/SKILL.md",
+      "sourceSha256": "550482c2d674b085c9043b87bfdc14a8f2ec453c736119e7fcbb1e9332bffeba",
+      "lines": 140
+    },
+    {
+      "name": "to-questionnaire",
+      "bucket": "productivity",
+      "invocation": "user",
+      "description": "Turn a decision you can't fully answer into a questionnaire for someone else to fill in.",
+      "sourcePath": "skills/productivity/to-questionnaire/SKILL.md",
+      "sourceUrl": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/productivity/to-questionnaire/SKILL.md",
+      "sourceSha256": "b5eb929842ee0e93d867c5e906d183d350f2f2d149eaeaa86967d94d8eda1d3b",
+      "lines": 54
+    },
+    {
+      "name": "wait-what",
+      "bucket": "productivity",
+      "invocation": "user",
+      "description": "Stop. That last message did not land: re-pitch it.",
+      "sourcePath": "skills/productivity/wait-what/SKILL.md",
+      "sourceUrl": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/productivity/wait-what/SKILL.md",
+      "sourceSha256": "d961bb37defd975c539427edb8f450cdbccdcdd552e213c1ece46676a7970905",
+      "lines": 7
+    },
+    {
+      "name": "writing-for-agents",
+      "bucket": "productivity",
+      "invocation": "model",
+      "description": "Writing documents for agents. Use when creating or editing skills, or modifying AGENTS.md or CLAUDE.md.",
+      "sourcePath": "skills/productivity/writing-for-agents/SKILL.md",
+      "sourceUrl": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/productivity/writing-for-agents/SKILL.md",
+      "sourceSha256": "551adca942227b44192edba88acd4e8db911f0121ce58ad16944ccf6a896a74a",
+      "lines": 81
+    }
+  ],
+  "files": [
+    {
+      "path": "LICENSE",
+      "sha256": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+      "bytes": 1068,
+      "lines": 21,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/LICENSE"
+    },
+    {
+      "path": "README.md",
+      "sha256": "345041d56cf1411b6b3ca1cc54014d26c563890f817f4cb9e2cb193dcd771a3e",
+      "bytes": 16461,
+      "lines": 258,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/README.md"
+    },
+    {
+      "path": "SCOPE.md",
+      "sha256": "4d5c09ef33193d9db3dac2e6e11e5d6b1abcfe08135d20c8a6d9cd3b0d6ed866",
+      "bytes": 2348,
+      "lines": 35,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/SCOPE.md"
+    },
+    {
+      "path": "skills/deprecated/README.md",
+      "sha256": "8b2009e31b7353f318a4321901b1141377e4d395f092934bacde7e9c5b070e26",
+      "bytes": 160,
+      "lines": 3,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/deprecated/README.md"
+    },
+    {
+      "path": "skills/engineering/README.md",
+      "sha256": "32d9469dda4e6103d952909cb83e657b7bec01bc582b6be4cec3b493f66920fd",
+      "bytes": 4287,
+      "lines": 34,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/README.md"
+    },
+    {
+      "path": "skills/engineering/ask-matt/PHASE-BOUNDARIES.md",
+      "sha256": "a8aa20158609ef39e2b308b6ba0660c91066838d07a867202e63a7744a88a3ed",
+      "bytes": 4249,
+      "lines": 55,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/ask-matt/PHASE-BOUNDARIES.md"
+    },
+    {
+      "path": "skills/engineering/ask-matt/SKILL.md",
+      "sha256": "1371f5ce005de0992a44b137748bfb960a56948aa9871b405fe9d90b24332e3c",
+      "bytes": 12594,
+      "lines": 97,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/ask-matt/SKILL.md"
+    },
+    {
+      "path": "skills/engineering/ask-matt/agents/openai.yaml",
+      "sha256": "bdffbc5a0a99ed1b6ef3253d251d755fd18162b9845972e380007f844b09b05c",
+      "bytes": 137,
+      "lines": 5,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/ask-matt/agents/openai.yaml"
+    },
+    {
+      "path": "skills/engineering/code-review/SKILL.md",
+      "sha256": "09eb147f793e4647949edd32dbad278f0554dfb56e0d46b699cd4c2c55bf0357",
+      "bytes": 6670,
+      "lines": 89,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/code-review/SKILL.md"
+    },
+    {
+      "path": "skills/engineering/code-review/agents/openai.yaml",
+      "sha256": "8229ca854e11dc8e6aef2131ee03f31fb1561cf905fab9ccc325180cf3331352",
+      "bytes": 100,
+      "lines": 3,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/code-review/agents/openai.yaml"
+    },
+    {
+      "path": "skills/engineering/codebase-design/DEEPENING.md",
+      "sha256": "f3dd099ce99289bd213914d8ee3e2429b78309c3957ca4583f7659551b1d53c1",
+      "bytes": 2553,
+      "lines": 37,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/codebase-design/DEEPENING.md"
+    },
+    {
+      "path": "skills/engineering/codebase-design/DESIGN-IT-TWICE.md",
+      "sha256": "52b52e75655a27aea59c6966b410bac82448968ad46ef1ebb9f07c274e3ae010",
+      "bytes": 2665,
+      "lines": 44,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/codebase-design/DESIGN-IT-TWICE.md"
+    },
+    {
+      "path": "skills/engineering/codebase-design/SKILL.md",
+      "sha256": "2c20617f87ec8af6a434859f381b2f061a69b530444e74eb39e78bb016a6d1e2",
+      "bytes": 6446,
+      "lines": 114,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/codebase-design/SKILL.md"
+    },
+    {
+      "path": "skills/engineering/codebase-design/agents/openai.yaml",
+      "sha256": "edebc9e4fcfe102114012575eaa9600b9b5fd08c311664f389c36e7bc717740f",
+      "bytes": 102,
+      "lines": 3,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/codebase-design/agents/openai.yaml"
+    },
+    {
+      "path": "skills/engineering/diagnosing-bugs/SKILL.md",
+      "sha256": "849198df88cdb65fd0d97236604c1fca7ff2f22d2f705f9724a800d0266b118d",
+      "bytes": 8664,
+      "lines": 138,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/diagnosing-bugs/SKILL.md"
+    },
+    {
+      "path": "skills/engineering/diagnosing-bugs/agents/openai.yaml",
+      "sha256": "3e430dbe4334a87597488c060cb3dc3786bb00c9182877d6f5ec41f62490e90b",
+      "bytes": 103,
+      "lines": 3,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/diagnosing-bugs/agents/openai.yaml"
+    },
+    {
+      "path": "skills/engineering/domain-modeling/ADR-FORMAT.md",
+      "sha256": "944c92aa790e8fbdc9199640b170979abb8a34ba8d0fe18c2a01a63bce140ca0",
+      "bytes": 2733,
+      "lines": 47,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/domain-modeling/ADR-FORMAT.md"
+    },
+    {
+      "path": "skills/engineering/domain-modeling/GLOSSARY-FORMAT.md",
+      "sha256": "21dcc40cdec8e151a829b98ab1517c1867bc444e3665134a98c6983411996801",
+      "bytes": 2300,
+      "lines": 60,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/domain-modeling/GLOSSARY-FORMAT.md"
+    },
+    {
+      "path": "skills/engineering/domain-modeling/SKILL.md",
+      "sha256": "7b925d7b1e341a2eeae33ad68a8a8c0ab889a38ddd22a7598e4c240e5a7556a3",
+      "bytes": 3346,
+      "lines": 74,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/domain-modeling/SKILL.md"
+    },
+    {
+      "path": "skills/engineering/domain-modeling/agents/openai.yaml",
+      "sha256": "f6bf2aa996c6e6f53fdd0708e18a0d16a56aed8322cca59fedbe3c0d2c75f06b",
+      "bytes": 101,
+      "lines": 3,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/domain-modeling/agents/openai.yaml"
+    },
+    {
+      "path": "skills/engineering/grill-with-docs/SKILL.md",
+      "sha256": "7de372c13488f1ee96cc11cd8907b56b6809cc93eef776eeddd37de6b6cbe3fe",
+      "bytes": 247,
+      "lines": 7,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/grill-with-docs/SKILL.md"
+    },
+    {
+      "path": "skills/engineering/grill-with-docs/agents/openai.yaml",
+      "sha256": "94cd0ab161fb468a836349f5ed482ba58ce8e709a05c57ce533d739dbd35cca9",
+      "bytes": 145,
+      "lines": 5,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/grill-with-docs/agents/openai.yaml"
+    },
+    {
+      "path": "skills/engineering/implement-spec/SKILL.md",
+      "sha256": "7a22dd2e60b8fcece478ced9d2533582adf3520d695acd3ab715341535c9e56d",
+      "bytes": 2780,
+      "lines": 40,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/implement-spec/SKILL.md"
+    },
+    {
+      "path": "skills/engineering/implement-spec/agents/openai.yaml",
+      "sha256": "fd41efb42c60c96320d6531be7e4bf15cbf5518cd652d57dff27ccffa46988e9",
+      "bytes": 168,
+      "lines": 5,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/implement-spec/agents/openai.yaml"
+    },
+    {
+      "path": "skills/engineering/implement/SKILL.md",
+      "sha256": "483bdc4ccf4ac31d86ac7beeaa0d0db80313e71e120bb8c59b3196ae5decd53d",
+      "bytes": 622,
+      "lines": 17,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/implement/SKILL.md"
+    },
+    {
+      "path": "skills/engineering/implement/agents/openai.yaml",
+      "sha256": "8970a8596ade0c28ab427f41a4ea242d6bdf6186c59ebf55e1238dbecaab79dc",
+      "bytes": 139,
+      "lines": 5,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/implement/agents/openai.yaml"
+    },
+    {
+      "path": "skills/engineering/improve-codebase-architecture/HTML-REPORT.md",
+      "sha256": "581e8bb5a521e46bbda8ca7e19b15948bed882187108092ebb90c62513b77528",
+      "bytes": 6641,
+      "lines": 123,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/improve-codebase-architecture/HTML-REPORT.md"
+    },
+    {
+      "path": "skills/engineering/improve-codebase-architecture/SKILL.md",
+      "sha256": "552240a5ab5cec6b67c15dd1ad6e9f6962b1bca6ce870059a8c2713760c20392",
+      "bytes": 6000,
+      "lines": 71,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/improve-codebase-architecture/SKILL.md"
+    },
+    {
+      "path": "skills/engineering/improve-codebase-architecture/agents/openai.yaml",
+      "sha256": "c8cb20f68ebf0edb4e497bc11ae5fcaa196004e661cd189015b04f4109ced7f1",
+      "bytes": 166,
+      "lines": 5,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/improve-codebase-architecture/agents/openai.yaml"
+    },
+    {
+      "path": "skills/engineering/pr/CREDITS.md",
+      "sha256": "a7a087127665d7298a72280ef6e19c41ad8404523712a788c8dc3ab414bc2497",
+      "bytes": 604,
+      "lines": 3,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/pr/CREDITS.md"
+    },
+    {
+      "path": "skills/engineering/pr/SKILL.md",
+      "sha256": "ab63f1cf78647389edcd386c9427c5dfca27ed2836930c24773ffee834c19bcd",
+      "bytes": 4169,
+      "lines": 170,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/pr/SKILL.md"
+    },
+    {
+      "path": "skills/engineering/pr/agents/openai.yaml",
+      "sha256": "2295b586624db4ef546f3fd4695492f039d941a46d8a1593a702ce3ca511b8ad",
+      "bytes": 93,
+      "lines": 3,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/pr/agents/openai.yaml"
+    },
+    {
+      "path": "skills/engineering/prototype/LOGIC.md",
+      "sha256": "f61c7d249e786a79ef289018901c348271e1798dd0b0bc5607b5c6f4d4a01ab9",
+      "bytes": 6036,
+      "lines": 67,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/prototype/LOGIC.md"
+    },
+    {
+      "path": "skills/engineering/prototype/SKILL.md",
+      "sha256": "714de632d116bb73f65cdb5a882db15b9369a6713b9a47c0fad827848f0bfbe3",
+      "bytes": 2931,
+      "lines": 26,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/prototype/SKILL.md"
+    },
+    {
+      "path": "skills/engineering/prototype/UI.md",
+      "sha256": "723211e878acbc7b6ff09755263f3295cde724ba902ff0064da41eed51d45ad3",
+      "bytes": 6913,
+      "lines": 112,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/prototype/UI.md"
+    },
+    {
+      "path": "skills/engineering/prototype/agents/openai.yaml",
+      "sha256": "5af65e43ab41a350436697b81e27b7f848d36782043b73c322bb2c9fa9cc55dc",
+      "bytes": 100,
+      "lines": 3,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/prototype/agents/openai.yaml"
+    },
+    {
+      "path": "skills/engineering/research/SKILL.md",
+      "sha256": "985569f15739c713d6784887c3d186d4ef9ac85bec5ad9c068d25bf0739928e4",
+      "bytes": 794,
+      "lines": 12,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/research/SKILL.md"
+    },
+    {
+      "path": "skills/engineering/research/agents/openai.yaml",
+      "sha256": "9b4c470d63221c1f68f22df70b83e2f12401b317babe0d1b7b5f24a974474d0d",
+      "bytes": 94,
+      "lines": 3,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/research/agents/openai.yaml"
+    },
+    {
+      "path": "skills/engineering/retro/SKILL.md",
+      "sha256": "33fbc28568e3146f20fd908b12998bc0ab30aa4f4c87288199a40793efa94696",
+      "bytes": 4369,
+      "lines": 44,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/retro/SKILL.md"
+    },
+    {
+      "path": "skills/engineering/retro/agents/openai.yaml",
+      "sha256": "cb6fb9d7e6b4be5975f41f6def1dd00a1255bad5d9b02696b124c924a8b8745c",
+      "bytes": 146,
+      "lines": 5,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/retro/agents/openai.yaml"
+    },
+    {
+      "path": "skills/engineering/setup-matt-pocock-skills/SKILL.md",
+      "sha256": "f148858ffb7f63c03c06fca06e6fdb1d91a35c6b293244b8fdfacd5f4cc028c4",
+      "bytes": 6978,
+      "lines": 118,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/setup-matt-pocock-skills/SKILL.md"
+    },
+    {
+      "path": "skills/engineering/setup-matt-pocock-skills/agents/openai.yaml",
+      "sha256": "9527de0110541c45712319025155aeab8dc7d77c6ed6e5e83271bab1851ab939",
+      "bytes": 152,
+      "lines": 5,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/setup-matt-pocock-skills/agents/openai.yaml"
+    },
+    {
+      "path": "skills/engineering/setup-matt-pocock-skills/domain.md",
+      "sha256": "593a7042218689f1d24df89df14eaf0a20e19e0d0a7d479a01947ac78f0784b9",
+      "bytes": 2042,
+      "lines": 51,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/setup-matt-pocock-skills/domain.md"
+    },
+    {
+      "path": "skills/engineering/setup-matt-pocock-skills/issue-tracker-github.md",
+      "sha256": "f0653fe106dd8ee7b33be27bd7fe3104b40555896cb45f61997aed20467020c3",
+      "bytes": 4117,
+      "lines": 46,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/setup-matt-pocock-skills/issue-tracker-github.md"
+    },
+    {
+      "path": "skills/engineering/setup-matt-pocock-skills/issue-tracker-gitlab.md",
+      "sha256": "591a9e7057382aaccdfbed3f7ea3f2ad07e0cd29f012d18b82ee4e485fd81e24",
+      "bytes": 3816,
+      "lines": 46,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/setup-matt-pocock-skills/issue-tracker-gitlab.md"
+    },
+    {
+      "path": "skills/engineering/setup-matt-pocock-skills/issue-tracker-local.md",
+      "sha256": "7dcda20a2eb4bdc89b95d1143423c0691309921cadae3132e6424f371030506e",
+      "bytes": 1810,
+      "lines": 30,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/setup-matt-pocock-skills/issue-tracker-local.md"
+    },
+    {
+      "path": "skills/engineering/setup-matt-pocock-skills/triage-labels.md",
+      "sha256": "ae512af838c78b8750471c42cd2b20fa32319553e61d84c9a23d171b40ce14aa",
+      "bytes": 1057,
+      "lines": 15,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/setup-matt-pocock-skills/triage-labels.md"
+    },
+    {
+      "path": "skills/engineering/tdd/SKILL.md",
+      "sha256": "5505d25bbaa8fc14a79e4d20163936958992a2995b7f1dd1d6197edc9ed722e0",
+      "bytes": 3629,
+      "lines": 38,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/tdd/SKILL.md"
+    },
+    {
+      "path": "skills/engineering/tdd/agents/openai.yaml",
+      "sha256": "ea6f01cf1b8c06a4b0f5b649d74b1b8ce8685e72af1b38d70d877693e092af0b",
+      "bytes": 87,
+      "lines": 3,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/tdd/agents/openai.yaml"
+    },
+    {
+      "path": "skills/engineering/tdd/mocking.md",
+      "sha256": "3ceb807fdf4a47d6a93d4d9a891e5ba6d362a6247bd08adc451feebfc17361ef",
+      "bytes": 1481,
+      "lines": 59,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/tdd/mocking.md"
+    },
+    {
+      "path": "skills/engineering/tdd/tests.md",
+      "sha256": "859f9e592c188fda4fc7277dd180e4ce9c7a2e13f6efe1f6f29eccc9d28c106a",
+      "bytes": 2214,
+      "lines": 77,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/tdd/tests.md"
+    },
+    {
+      "path": "skills/engineering/to-spec/SKILL.md",
+      "sha256": "43ad9cf318e5e7d3d1fa360253a37021796dc87a0c2e595ad262661a10f85088",
+      "bytes": 3043,
+      "lines": 75,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/to-spec/SKILL.md"
+    },
+    {
+      "path": "skills/engineering/to-spec/agents/openai.yaml",
+      "sha256": "1c5b4d1e3d8e52287ef19cc2742fdbbfae1914ac75d33af3e4c8174f08cc55bb",
+      "bytes": 135,
+      "lines": 5,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/to-spec/agents/openai.yaml"
+    },
+    {
+      "path": "skills/engineering/to-tickets/SKILL.md",
+      "sha256": "56ec23c5b2782785d4e65bff9e315b6d3aeb4ef977c174a219e99489fada1995",
+      "bytes": 5812,
+      "lines": 105,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/to-tickets/SKILL.md"
+    },
+    {
+      "path": "skills/engineering/to-tickets/agents/openai.yaml",
+      "sha256": "21bc6215fffcd7614e9f772bb1760e87cc5fc7dcc707e7d282bc9414267a6090",
+      "bytes": 146,
+      "lines": 5,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/to-tickets/agents/openai.yaml"
+    },
+    {
+      "path": "skills/engineering/triage/AGENT-BRIEF.md",
+      "sha256": "7f5f87fed3033df1b06e083c480f3e847b1fbb0647746b8a4c6a50f9f26ef44f",
+      "bytes": 7942,
+      "lines": 207,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/triage/AGENT-BRIEF.md"
+    },
+    {
+      "path": "skills/engineering/triage/OUT-OF-SCOPE.md",
+      "sha256": "1fbf9b432130c6380aa65813b55553cfda150309b27c595e183f8e335b8a190d",
+      "bytes": 4667,
+      "lines": 105,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/triage/OUT-OF-SCOPE.md"
+    },
+    {
+      "path": "skills/engineering/triage/SKILL.md",
+      "sha256": "917b0baf74be583e74f110857ed45df2766617f75c00baf61fd136d7af515edf",
+      "bytes": 6558,
+      "lines": 112,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/triage/SKILL.md"
+    },
+    {
+      "path": "skills/engineering/triage/agents/openai.yaml",
+      "sha256": "2e683717720cf456d165d0bb1a68bb600d0b6a8ccb61841c172e50d26f95351c",
+      "bytes": 135,
+      "lines": 5,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/triage/agents/openai.yaml"
+    },
+    {
+      "path": "skills/engineering/wayfinder/SKILL.md",
+      "sha256": "9be7b478c389605a24517d27752f278933588da97a1b5921b165f455edf4c5b7",
+      "bytes": 12380,
+      "lines": 128,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/wayfinder/SKILL.md"
+    },
+    {
+      "path": "skills/engineering/wayfinder/agents/openai.yaml",
+      "sha256": "88bc81a11a6d52ac67aeaa76b8b619e387020d47c5133a4dd4927fd15c4ad073",
+      "bytes": 144,
+      "lines": 5,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/wayfinder/agents/openai.yaml"
+    },
+    {
+      "path": "skills/engineering/wizard/SKILL.md",
+      "sha256": "bdf31d48211ea559878f95a4f344aeabf8d85897488ba564382bab0b000daac1",
+      "bytes": 4123,
+      "lines": 44,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/wizard/SKILL.md"
+    },
+    {
+      "path": "skills/engineering/wizard/agents/openai.yaml",
+      "sha256": "98f44d682d58e262f160dc59a8befc365e0aa65820dd0261864af26aa8e59d83",
+      "bytes": 96,
+      "lines": 3,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/wizard/agents/openai.yaml"
+    },
+    {
+      "path": "skills/in-progress/README.md",
+      "sha256": "740e1d097748d68ebc00cb98de7b2dadbbac0e714af37a0d6a251819c0073584",
+      "bytes": 1676,
+      "lines": 16,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/in-progress/README.md"
+    },
+    {
+      "path": "skills/in-progress/chief-of-staff/SKILL.md",
+      "sha256": "6cc6e47ab5022f3e45e5be0fedbb0f6e645f4f0190d6b0c51c7cd60c2d7c1d98",
+      "bytes": 2112,
+      "lines": 45,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/in-progress/chief-of-staff/SKILL.md"
+    },
+    {
+      "path": "skills/in-progress/chief-of-staff/agents/openai.yaml",
+      "sha256": "c0f68ed9da6977adc97a791be3bb0830d301b2d27f9c635d92d6f325bffefb83",
+      "bytes": 184,
+      "lines": 5,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/in-progress/chief-of-staff/agents/openai.yaml"
+    },
+    {
+      "path": "skills/in-progress/claude-handoff/SKILL.md",
+      "sha256": "79357a18425d66d4c24048bedf83dceb79d3bba356f38014950f764a7fab4026",
+      "bytes": 1424,
+      "lines": 18,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/in-progress/claude-handoff/SKILL.md"
+    },
+    {
+      "path": "skills/in-progress/claude-handoff/agents/openai.yaml",
+      "sha256": "2308a672978864633286fb9f0792b08657e501426b3f7883fc418d5d2eac5eb0",
+      "bytes": 141,
+      "lines": 5,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/in-progress/claude-handoff/agents/openai.yaml"
+    },
+    {
+      "path": "skills/in-progress/loop-me/SKILL.md",
+      "sha256": "e44d1cc3e760fb86ac42964c2a5f1fcac511715db50fb375f3f7be814de1eaa7",
+      "bytes": 2522,
+      "lines": 32,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/in-progress/loop-me/SKILL.md"
+    },
+    {
+      "path": "skills/in-progress/loop-me/agents/openai.yaml",
+      "sha256": "b66fa10079957051be6a812f45e55b67ac394b71d5ba88349962b4c9205802c3",
+      "bytes": 140,
+      "lines": 5,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/in-progress/loop-me/agents/openai.yaml"
+    },
+    {
+      "path": "skills/in-progress/setup-ts-deep-modules/SKILL.md",
+      "sha256": "29acca66ac99d4532e2a6f0370d8125d7cba1e87c9ac66573203c75189d3e6c7",
+      "bytes": 7546,
+      "lines": 102,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/in-progress/setup-ts-deep-modules/SKILL.md"
+    },
+    {
+      "path": "skills/in-progress/setup-ts-deep-modules/agents/openai.yaml",
+      "sha256": "159f680217d50747702620c05fd65734a152185b3219a8ca5ee4630878a354fa",
+      "bytes": 149,
+      "lines": 5,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/in-progress/setup-ts-deep-modules/agents/openai.yaml"
+    },
+    {
+      "path": "skills/in-progress/writing-beats/SKILL.md",
+      "sha256": "a96abafa2372eede8267d770138b322d6125da8adaa7ccf0a5e08e4ee13ee71e",
+      "bytes": 4855,
+      "lines": 67,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/in-progress/writing-beats/SKILL.md"
+    },
+    {
+      "path": "skills/in-progress/writing-beats/agents/openai.yaml",
+      "sha256": "ddaef01da61d8e3c5f482c4403033c20cf5823f08a1dbf1d4c871670831d01e2",
+      "bytes": 142,
+      "lines": 5,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/in-progress/writing-beats/agents/openai.yaml"
+    },
+    {
+      "path": "skills/in-progress/writing-fragments/SKILL.md",
+      "sha256": "298b0edd23df229183630de592ed8aa4289233560f2040691f6eb77caeaad4ea",
+      "bytes": 3558,
+      "lines": 79,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/in-progress/writing-fragments/SKILL.md"
+    },
+    {
+      "path": "skills/in-progress/writing-fragments/agents/openai.yaml",
+      "sha256": "81167f25ee8ea1bb4b4958f12b6702ea972ad31b05e03ec91e39fa4bae0c2641",
+      "bytes": 140,
+      "lines": 5,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/in-progress/writing-fragments/agents/openai.yaml"
+    },
+    {
+      "path": "skills/in-progress/writing-shape/SKILL.md",
+      "sha256": "f5e6c57bdd85178ace4a260c92f46da6b64ddee18215b461d875739c68976f72",
+      "bytes": 5922,
+      "lines": 79,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/in-progress/writing-shape/SKILL.md"
+    },
+    {
+      "path": "skills/in-progress/writing-shape/agents/openai.yaml",
+      "sha256": "56de45430e23104ff178415f5ecf7821d51a9cfabd8814b1607ebf39da2ef5cd",
+      "bytes": 144,
+      "lines": 5,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/in-progress/writing-shape/agents/openai.yaml"
+    },
+    {
+      "path": "skills/misc/README.md",
+      "sha256": "95f0b467b7f3a2bb27421c6536f35392b6846f5ad26b44ab7df00380ed02edf0",
+      "bytes": 684,
+      "lines": 8,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/misc/README.md"
+    },
+    {
+      "path": "skills/misc/git-guardrails-claude-code/SKILL.md",
+      "sha256": "69b291d655626a01602b998a1836fcb93c058ede68dfafddfd71e87f17074764",
+      "bytes": 2313,
+      "lines": 95,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/misc/git-guardrails-claude-code/SKILL.md"
+    },
+    {
+      "path": "skills/misc/git-guardrails-claude-code/agents/openai.yaml",
+      "sha256": "d53cd783fc0ac208dec9a4c267989284384785aab6422dccdaed42f9e40243ec",
+      "bytes": 112,
+      "lines": 3,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/misc/git-guardrails-claude-code/agents/openai.yaml"
+    },
+    {
+      "path": "skills/misc/migrate-to-shoehorn/SKILL.md",
+      "sha256": "de4da4c11d924fac79c924b2ee3d2db4a5cb98386eb490a599119463d036ae72",
+      "bytes": 2795,
+      "lines": 118,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/misc/migrate-to-shoehorn/SKILL.md"
+    },
+    {
+      "path": "skills/misc/migrate-to-shoehorn/agents/openai.yaml",
+      "sha256": "395c2db852e66a199f1cd07f7ed92d66cb6f0787460c5475926f1a5e778b699d",
+      "bytes": 110,
+      "lines": 3,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/misc/migrate-to-shoehorn/agents/openai.yaml"
+    },
+    {
+      "path": "skills/misc/scaffold-exercises/SKILL.md",
+      "sha256": "75f5c9d771606fb9762f16522efc954df11c324f87148d8ff069bce166257de9",
+      "bytes": 3589,
+      "lines": 106,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/misc/scaffold-exercises/SKILL.md"
+    },
+    {
+      "path": "skills/misc/scaffold-exercises/agents/openai.yaml",
+      "sha256": "525b33913340bea7947ad2de17f2a7c5fb94be543345fe80ae753b9a44ba601d",
+      "bytes": 108,
+      "lines": 3,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/misc/scaffold-exercises/agents/openai.yaml"
+    },
+    {
+      "path": "skills/misc/setup-pre-commit/SKILL.md",
+      "sha256": "c9819d7f1e3b198064edc1faa3154224ed67395e9f07f5d3cea4b67cf0a11a98",
+      "bytes": 2258,
+      "lines": 91,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/misc/setup-pre-commit/SKILL.md"
+    },
+    {
+      "path": "skills/misc/setup-pre-commit/agents/openai.yaml",
+      "sha256": "acf41db398c5c43afe504008bb7d615a97b6498b0f1f6c5b2395254c0bfb57d1",
+      "bytes": 99,
+      "lines": 3,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/misc/setup-pre-commit/agents/openai.yaml"
+    },
+    {
+      "path": "skills/productivity/README.md",
+      "sha256": "8e39d23dc60e4b3e433ea17f0ed79510c73873a2779e9852920c9791a217efc8",
+      "bytes": 1481,
+      "lines": 20,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/productivity/README.md"
+    },
+    {
+      "path": "skills/productivity/grill-me/SKILL.md",
+      "sha256": "caaf8b8de1684f96e26b28f3c29189db5c89cce4b73e1c93d86164f66ef88637",
+      "bytes": 157,
+      "lines": 7,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/productivity/grill-me/SKILL.md"
+    },
+    {
+      "path": "skills/productivity/grill-me/agents/openai.yaml",
+      "sha256": "c061e39c3e0f9d865fb1b97556d485704af2a8a58f4b8221a8917a5c2074a32b",
+      "bytes": 137,
+      "lines": 5,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/productivity/grill-me/agents/openai.yaml"
+    },
+    {
+      "path": "skills/productivity/grilling/SKILL.md",
+      "sha256": "befdff1e27a1dfe2a294d5871169ac1afe16d983911daa4f32627514a48c1e15",
+      "bytes": 2049,
+      "lines": 30,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/productivity/grilling/SKILL.md"
+    },
+    {
+      "path": "skills/productivity/grilling/agents/openai.yaml",
+      "sha256": "1411d7df7d99b7e621a1ff8283c8133cc2464be63d064e52d8ce169c6800ee9b",
+      "bytes": 113,
+      "lines": 3,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/productivity/grilling/agents/openai.yaml"
+    },
+    {
+      "path": "skills/productivity/handoff/SKILL.md",
+      "sha256": "4cbb043950dad2ffd3662ff1a5a0b51ae676004b5cae10e3787e8ee7a4ee69d3",
+      "bytes": 940,
+      "lines": 16,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/productivity/handoff/SKILL.md"
+    },
+    {
+      "path": "skills/productivity/handoff/agents/openai.yaml",
+      "sha256": "5c479fd562c691851690e8b18c8501045bef0943c10743d636b2fae26add1d28",
+      "bytes": 141,
+      "lines": 5,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/productivity/handoff/agents/openai.yaml"
+    },
+    {
+      "path": "skills/productivity/teach/GLOSSARY-FORMAT.md",
+      "sha256": "9b99859ec28437668130d8f2ce5a342938970f8a1ed4fd38c3eab4f4b5fff210",
+      "bytes": 2122,
+      "lines": 35,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/productivity/teach/GLOSSARY-FORMAT.md"
+    },
+    {
+      "path": "skills/productivity/teach/LEARNING-RECORD-FORMAT.md",
+      "sha256": "701fa34b6748aa89e6c960ffb815257f481a7d77fb2900f9028f7edf3fdd6052",
+      "bytes": 2747,
+      "lines": 46,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/productivity/teach/LEARNING-RECORD-FORMAT.md"
+    },
+    {
+      "path": "skills/productivity/teach/MISSION-FORMAT.md",
+      "sha256": "8cacbb3c0644d3ae0ea4965564797099401a6930a23f7cf462918576587f2418",
+      "bytes": 1540,
+      "lines": 31,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/productivity/teach/MISSION-FORMAT.md"
+    },
+    {
+      "path": "skills/productivity/teach/RESOURCES-FORMAT.md",
+      "sha256": "e9cacf34026e11a8d1c8f9de88abe5bcbf654f4ebdb25cae8c0de0d5f48f44ec",
+      "bytes": 1924,
+      "lines": 32,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/productivity/teach/RESOURCES-FORMAT.md"
+    },
+    {
+      "path": "skills/productivity/teach/SKILL.md",
+      "sha256": "550482c2d674b085c9043b87bfdc14a8f2ec453c736119e7fcbb1e9332bffeba",
+      "bytes": 9733,
+      "lines": 140,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/productivity/teach/SKILL.md"
+    },
+    {
+      "path": "skills/productivity/teach/agents/openai.yaml",
+      "sha256": "5856f3ae8aec742f1499c640aecdd5f1d6af5fa210a7c6ec794de8263a6f733f",
+      "bytes": 139,
+      "lines": 5,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/productivity/teach/agents/openai.yaml"
+    },
+    {
+      "path": "skills/productivity/to-questionnaire/SKILL.md",
+      "sha256": "b5eb929842ee0e93d867c5e906d183d350f2f2d149eaeaa86967d94d8eda1d3b",
+      "bytes": 2904,
+      "lines": 54,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/productivity/to-questionnaire/SKILL.md"
+    },
+    {
+      "path": "skills/productivity/to-questionnaire/agents/openai.yaml",
+      "sha256": "9e8a06c38c8842eea8d4922cb9d1ead8e3ace647bab259b943c994a1b4742bc2",
+      "bytes": 166,
+      "lines": 5,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/productivity/to-questionnaire/agents/openai.yaml"
+    },
+    {
+      "path": "skills/productivity/wait-what/SKILL.md",
+      "sha256": "d961bb37defd975c539427edb8f450cdbccdcdd552e213c1ece46676a7970905",
+      "bytes": 396,
+      "lines": 7,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/productivity/wait-what/SKILL.md"
+    },
+    {
+      "path": "skills/productivity/wait-what/agents/openai.yaml",
+      "sha256": "b41faadf741d51e4ea184148b2d1854d93f947aaf754c7844f70a00f04194999",
+      "bytes": 158,
+      "lines": 5,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/productivity/wait-what/agents/openai.yaml"
+    },
+    {
+      "path": "skills/productivity/writing-for-agents/SKILL-MECHANICS.md",
+      "sha256": "c768e6307c7c10728c401c213f2c4ba71c542127eeb7ad2956aabd15a0fa0059",
+      "bytes": 2629,
+      "lines": 22,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/productivity/writing-for-agents/SKILL-MECHANICS.md"
+    },
+    {
+      "path": "skills/productivity/writing-for-agents/SKILL.md",
+      "sha256": "551adca942227b44192edba88acd4e8db911f0121ce58ad16944ccf6a896a74a",
+      "bytes": 10886,
+      "lines": 81,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/productivity/writing-for-agents/SKILL.md"
+    },
+    {
+      "path": "skills/productivity/writing-for-agents/agents/openai.yaml",
+      "sha256": "eacb24b2a618cfb81dacb0416f4fdd75ddf3a8060f8ddb99aae1b1e301907e4b",
+      "bytes": 102,
+      "lines": 3,
+      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/productivity/writing-for-agents/agents/openai.yaml"
+    }
+  ],
+  "readingBoundary": "Entry rules and relevant cited references underpin these Chinese notes. File inventory hashes identify the snapshot; hashes alone are not a claim that every supporting template or external link was fully taught or executed."
+}

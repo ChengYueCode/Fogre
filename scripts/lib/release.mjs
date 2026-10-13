@@ -4,9 +4,9 @@ import { createHash } from 'node:crypto';
 
 export const SKILLS = Object.freeze(['forge', 'forge-insights', 'forge-organize', 'forge-question', 'forge-review', 'forge-review-plan']);
 const ROOT_FILES = ['README.md', 'CONTRIBUTING.md', 'CHANGELOG.md', 'GLOSSARY.md', 'AGENTS.md', 'SECURITY.md', 'THIRD_PARTY.md', 'LICENSE', 'NOTICE', 'package.json', '.gitignore', '.gitattributes'];
-const DOCS = ['installation', 'github-introduction', 'forge-methods', 'skill-architecture', 'skill-acceptance', 'open-source', 'release-checklist', 'support'].map(name => `docs/${name}.md`);
-const FILES = new Set([...ROOT_FILES, ...DOCS, 'docs/assets/forge-preview.jpg', '.claude-plugin/plugin.json']);
-const TREES = ['.github', 'bin', 'scripts', 'tests', 'docs/agents', 'docs/adr', 'examples/probability', ...SKILLS.map(name => `skill/${name}`)];
+const DOCS = ['installation', 'github-introduction', 'forge-methods', 'skill-architecture', 'skill-acceptance', 'open-source', 'release-checklist', 'support', 'visual-showcase'].map(name => `docs/${name}.md`);
+const FILES = new Set([...ROOT_FILES, ...DOCS, 'docs/assets/forge-preview.jpg', 'examples/README.md', '.claude-plugin/plugin.json']);
+const TREES = ['.github', 'bin', 'scripts', 'tests', 'docs/agents', 'docs/adr', 'docs/assets/cases', 'docs/assets/showcase', 'examples/mattpocock-skills', ...SKILLS.map(name => `skill/${name}`)];
 const compare = (a, b) => a < b ? -1 : a > b ? 1 : 0;
 const slash = value => value.split(path.sep).join('/');
 const sha256 = data => createHash('sha256').update(data).digest('hex');

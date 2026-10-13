@@ -40,4 +40,6 @@ npm run verify:release -- --verify dist/release-candidate
 
 ## 本次交付状态
 
+2026-10-13 更新内容：Forge 的最新定位与六个技能描述、面向普通学习者的说明、mattpocock/skills 全套案例、20 张实际图片及三张 AI 展示图。学习流程人物按用户提供的形象替换，来源、提示词与原始上传不分发的边界随源码说明。当前上传授权已覆盖这次 GitHub 项目更新；实际提交及 CI 以仓库 main 和 Actions 对应记录为准。未创建新版本标签、GitHub Release 或 npm 发布，也未升级个人安装。
+
 2026-10-12：仓库 [ChengYueCode/Fogre](https://github.com/ChengYueCode/Fogre) 已公开上传，使用 MIT 许可证与 ChengYueCode 版权署名。已整理公开文档、排除规则、CI 与反馈模板，并提供经过测试的干净发布快照/ZIP/清单工具。远程主技能安装和随包工具 smoke 已完成，完整宿主学习调用仍未验收。CI 状态以仓库 Actions 的对应 commit 为准；本地检查见[验收说明](skill-acceptance.md)。未发布 npm、未改动用户个人技能安装。

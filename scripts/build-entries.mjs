@@ -30,13 +30,14 @@ const AUTO_HEADER = [
 const ENTRIES = [
   {
     name: 'forge-question',
-    title: '只用提问检查解释或推理',
-    description: '只用苏格拉底式提问检查学习者的解释或推理：一次针对一个缺口提一个问题并停等真实回答，不讲解、不代答、不评分。当用户想「用提问检查我的解释/推理」「以问题方式检验我的理解」或明确只要提问策略时使用；需要讲解、整理产物、复核作答、安排复习或汇总洞见时改用 forge 主技能（/forge）。',
-    summary: '本入口只做一件事：围绕学习者给出的解释或推理，用苏格拉底式提问暴露缺口。单项使用不建画像、不做诊断、不展开完整学习旅程。',
+    title: '检查理解',
+    shortDescription: '通过提问检查你是否想清楚了，每次只问一个问题，等你自己回答。',
+    description: '通过一次一个问题检查用户给出的解释或推理，问完后等待用户回答。当用户想「通过提问检查我的理解」「看看我的解释有没有漏洞」或只要问题时使用。只在聊天里提问，不直接讲解、给答案、评分或保存学习文件；需要讲解、整理资料、检查答案、保存记录或安排复习时用 forge 主技能（/forge）。',
+    summary: '你先说出自己的解释，它通过追问帮你发现没想清楚的地方。一次只问一个问题，等你自己回答；这一项只在聊天里提问，不直接讲解、给答案、打分或保存文件。',
     example: {
-      scene: '你觉得自己理解了二分查找，希望用一个问题检验解释里的条件。',
-      request: '/forge-question 检查我的解释：“任何有序数据都能套同一种二分边界写法。”先问一个问题并等我回答。',
-      result: '针对一个缺口提问并等待真实回答；不代答、不评分，也不宣称无档案的讨论已归档。',
+      scene: '读完一篇文章后，你想检查自己的解释是否站得住脚。',
+      request: '/forge-question 检查我的解释：“两件事一起发生，就说明其中一件导致了另一件。”每次只问一个问题，等我回答。',
+      result: '围绕你的解释问一个问题，然后等待回答。不会直接替你给出答案，也不会把这次聊天说成已保存的学习记录。',
     },
     bodies: ['socratic-questioning-standalone.md'],
     references: [],
@@ -45,13 +46,14 @@ const ENTRIES = [
   },
   {
     name: 'forge-review',
-    title: '集中复核作答',
-    description: '复核学习者已提交的真实作答：固定复核范围，逐项说明正确部分、具体误解、核对依据与修补，并把结果写回学习档案。当用户想「检查我的作答」「复核这批答案」「集中批改本轮回答」时使用；「安排今天复习什么」用 forge-review-plan；完整学习旅程用 forge 主技能（/forge）。',
-    summary: '本入口只做一件事：对已保存的真实作答做导师侧集中复核。它不新建教学、不出新题，也不把复核结论当成新的作答。',
+    title: '检查答案',
+    shortDescription: '检查学习记录里已有的答案，说明哪里答对、哪里有问题，以及怎样改。',
+    description: '检查学习记录中用户已提交的答案，对照题目和材料说明答对的部分、具体问题及修改建议，并保存反馈。当用户想「检查我的答案」「批改这次练习」「看看哪里答错了」时使用。需要可读取的学习记录和实际答案，保留原答案，把后续修改另存；不替用户作答或出新题。安排复习用 forge-review-plan，从头学习用 forge 主技能（/forge）。',
+    summary: '把已有学习记录的位置告诉它，让它逐题检查你已经提交的答案，说明答对的部分、具体问题和修改建议，并保存反馈。原答案会保留，你后来的修改另存；这项功能不会替你答题或新增练习。',
     example: {
-      scene: 'learning/binary-search 中已有本轮作答，你想集中核对并留下反馈。',
-      request: '/forge-review 检查 learning/binary-search 本轮已提交作答，说明正确部分、误解和依据，保存逐项反馈。',
-      result: '固定复核范围、核对真实原答并读回反馈；原答保留，缺依据或内容失效的项保持待处理。',
+      scene: '你已经完成并保存了一批练习，希望知道具体哪里答错了。',
+      request: '/forge-review 检查 learning/my-topic 里我这次已经提交的答案，说明哪里答对、哪里有问题、怎样修改，并保存反馈。',
+      result: '先确认要检查哪些答案，再逐题给出反馈。原答案保留；材料不够或暂时无法判断的题目会明确说明。',
     },
     bodies: ['tutor-review.md'],
     references: ['evidence-and-review.md'],
@@ -60,13 +62,14 @@ const ENTRIES = [
   },
   {
     name: 'forge-review-plan',
-    title: '预算内复习安排',
-    description: '在时间预算内安排今天该复习的内容：选择到期项、前置缺口与重复错误，说明选择理由与暂缓项，学习者可指定本轮重点。当用户想「安排今天的复习」「今天复习哪些」「X 分钟内复习」时使用；「检查/批改已有作答」用 forge-review；完整学习旅程用 forge 主技能（/forge）。',
-    summary: '本入口只做一件事：产出本轮的复习安排。选择只是安排，不是完成、遗忘或新的掌握结论。',
+    title: '安排复习',
+    shortDescription: '根据你以前的学习记录和今天的时间，安排先复习什么、哪些留到以后。',
+    description: '根据已有学习记录和用户今天可用的时间安排复习，优先考虑该复习的题目、后续内容需要的基础和反复答错的地方，说明选择理由与暂时不复习的内容。当用户想「今天复习什么」「安排 15 分钟复习」时使用；需要可读取的学习记录，先提供安排，明确要求保存后再写入适用的学习轮次。检查已有答案用 forge-review，从头学习用 forge 主技能（/forge）。',
+    summary: '告诉它学习记录在哪里、今天有多少时间，以及你想重点复习什么。它会先给出复习安排，解释为什么先选这些、哪些留到以后；你明确要求保存后才会写入记录。安排好复习不代表已经完成复习。',
     example: {
-      scene: '今天只有 15 分钟，希望根据这个主题已有记录优先补左右边界的缺口。',
-      request: '/forge-review-plan 根据 learning/binary-search 的记录安排 15 分钟复习，重点是左右边界，说明选择和暂缓理由。',
-      result: '按主题的前置、主动重点、重复错误与真实到期项安排；没有到期记录如实说明，未选中不算完成。',
+      scene: '你今天只有 15 分钟，想先复习以前经常答错的地方。',
+      request: '/forge-review-plan 根据 learning/my-topic 的学习记录安排 15 分钟复习，优先处理我反复答错的地方，并说明哪些留到下次。',
+      result: '给出这次要复习的内容、选择理由和以后再复习的部分。没有足够记录时会说明；这只是计划，不会把题目标成已经完成。',
     },
     bodies: ['review-plan.md'],
     references: [],
@@ -75,13 +78,14 @@ const ENTRIES = [
   },
   {
     name: 'forge-insights',
-    title: '洞见与速查汇总',
-    description: '按概念汇总学习档案里已有的解释、原答、修正、复核反馈与自创检索问题（洞见与速查）：只聚合已有记录，不新建事实、不提升掌握度。当用户想「汇总我的误区」「看看我的理解变化」「生成洞见速查」时使用；需要新教学或新产物时用 forge 主技能（/forge）。',
-    summary: '本入口只做一件事：把同一份学习档案里的已有记录按概念重新聚合并如实呈现，区分当前内容与历史孤立项。',
+    title: '回看变化',
+    shortDescription: '回看你以前的解释、答案和修改，找出反复出错的地方与理解上的变化。',
+    description: '把同一份学习记录里已有的解释、答案、修改、反馈和自创问题按知识点整理，帮助用户回看理解的变化。当用户想「汇总我的误区」「看看我的理解变化」「回看以前怎么想的」或生成洞见速查时使用。需要可读取的学习记录，只汇总已保存的内容，不补写用户没说过的话，不因此判断已经学会；需要新讲解、练习或学习文件时用 forge 主技能（/forge）。',
+    summary: '读取已有学习记录，把你以前怎么解释、后来怎样修改、收到什么反馈放在一起，方便回看变化和反复出错的地方。只整理已经保存的内容；缺少旧记录时会说明，不能据此判断你已经学会。',
     example: {
-      scene: '你已学过几轮，希望看见自己的原理解、修正和反复出现的误区。',
-      request: '/forge-insights 汇总 learning/binary-search 中我的原答、修正、反馈与误区，没有记录的部分不要补写。',
-      result: '只聚合已有记录并区分当前内容与历史；不新建事实，不增加掌握证据。',
+      scene: '学了一段时间后，你想知道自己的解释发生了哪些变化。',
+      request: '/forge-insights 回看 learning/my-topic 的记录，整理我以前的解释、后来的修改和反复出错的地方。没有记录的部分请说明。',
+      result: '按知识点展示已有答案、修改和反馈。只有一次记录时会说明无法比较，不会补写你没说过的内容。',
     },
     bodies: ['insight-notes.md'],
     references: [],
@@ -90,13 +94,14 @@ const ENTRIES = [
   },
   {
     name: 'forge-organize',
-    title: '材料整理与学习产物',
-    description: '只把已有资料整理成学习产物：交互学习页、可编辑思维导图、练习问题与来源标注，不提问、不评估、不推进掌握度（初始掌握度如实未知）。当用户想「把笔记/资料做成学习页」「生成思维导图」「只要产物不要教学」时使用；要进入完整学习旅程用 forge 主技能（/forge）。',
-    summary: '本入口只做一件事：从你提供的材料生成或重建学习产物，并保留来源与缺口。材料核对规则与产物命令见下方随附参考。',
+    title: '整理资料',
+    shortDescription: '把文章、课程笔记等资料整理成学习网页、思维导图和练习，保留来源。',
+    description: '把用户提供的文章、课程笔记等资料整理成可以阅读、做练习和记笔记的学习网页，以及可编辑的思维导图，保留资料出处和没有弄清楚的问题。当用户想「整理我的笔记」「生成学习页或思维导图」「只要整理结果，今天不提问」时使用；只整理资料，不现场提问或判断用户是否学会。需要带着学习、检查答案或安排复习时用 forge 主技能（/forge）。',
+    summary: '把文章、课程笔记等材料交给它，就能整理成学习网页、可编辑思维导图和练习，并保留来源与疑问。这项功能只整理资料，不现场提问，也不把整理完成当成你已经学会。具体材料要求和生成方法见下面的参考。',
     example: {
-      scene: '你已有二分查找笔记，想先看清知识关系，暂时不做现场问答。',
-      request: '/forge-organize 只整理我提供的笔记，生成学习页和可编辑导图，保留疑问与来源，放在 learning/binary-search。',
-      result: '先核对材料再生成或重建产物，并登记标准学习目录；不强制诊断，初始掌握度保持未知。',
+      scene: '你有一份课程笔记，希望先整理清楚，今天不想做问答练习。',
+      request: '/forge-organize 把我提供的课程笔记整理成学习网页和可编辑思维导图，保留疑问与来源，放在 learning/my-topic。今天先不提问。',
+      result: '先阅读材料，再生成学习网页、导图和练习，说明保存位置。不会强制你先回答问题，也不会判断你已经学会。',
     },
     bodies: ['source-grounded-teaching.md', 'artifacts.md'],
     references: ['content-quality.md', 'learning-registration.md'],
@@ -168,7 +173,7 @@ function buildSkillMd(def) {
   parts.push('');
   parts.push(AUTO_HEADER);
   parts.push('');
-  parts.push(`# ${def.name} · ${def.title}`);
+  parts.push(`# Forge · ${def.title}`);
   parts.push('');
   parts.push(def.summary);
   parts.push('');
@@ -238,8 +243,8 @@ function buildEntry(def, skillDir) {
   fs.writeFileSync(path.join(target, 'agents', 'openai.yaml'), [
     '# Generated by scripts/build-entries.mjs; edit the entry definition instead.',
     'interface:',
-    `  display_name: ${JSON.stringify(`${def.name} · ${def.title}`)}`,
-    `  short_description: ${JSON.stringify(def.example.result)}`,
+    `  display_name: ${JSON.stringify(`Forge · ${def.title}`)}`,
+    `  short_description: ${JSON.stringify(def.shortDescription)}`,
     '  brand_color: "#3F6B4F"',
     `  default_prompt: ${JSON.stringify(def.example.request)}`,
     '',

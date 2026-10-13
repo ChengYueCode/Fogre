@@ -1,0 +1,11 @@
+#!/usr/bin/env node
+// Render an independently checked real response; never synthesize Agent output.
+import fs from 'node:fs/promises';
+import { fileURLToPath } from 'node:url';
+
+const directory = fileURLToPath(new URL('../examples/mattpocock-skills/question/', import.meta.url));
+const record = JSON.parse(await fs.readFile(`${directory}response.json`, 'utf8'));
+if (record.kind !== 'single-turn-source-rule-response' || record.exitCode !== 0 || !record.response.trim()) throw new Error('Expected a successful actual source-rule response.');
+const escape = value => String(value).replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[char]);
+await fs.writeFile(`${directory}index.html`, `<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>学习 mattpocock/skills · 单次提问实录</title><style>*{box-sizing:border-box}body{margin:0;background:#eef1f6;color:#17233b;font:20px/1.8 "Microsoft YaHei",system-ui,sans-serif}main{max-width:1180px;margin:32px auto;padding:36px;background:white;border:1px solid #d8deeb;border-radius:18px}b{color:#315bcc;font-size:15px;letter-spacing:1px}h1{font-size:32px;margin:8px 0 20px}.disclosure{font-size:14px;color:#71612d;background:#fff8e6;padding:12px 16px;border:1px solid #eadcaf;border-radius:7px}.card{padding:22px 26px;border:1px solid #dce2ed;border-radius:12px;margin:24px 0}.card h2{font-size:16px;color:#455573;margin:0 0 12px}.card p{margin:0;white-space:pre-wrap}.response{background:#eef6ff;border-color:#c9dcf5}footer{font-size:14px;color:#59667c}a{color:#315bcc}</style><main><b>Forge / 学习 mattpocock/skills</b><p>Make sense. Keep going.</p><h1>检查调用身份，然后等待真实回答</h1><div class="disclosure">显式读取公开源码规则后的实际响应 · 输入解释为演示 · 未验证安装发现或完整教学</div><article class="card"><h2>演示请求</h2><p>${escape(record.request)}</p></article><article class="card response"><h2>Codex CLI 实际响应</h2><p>${escape(record.response)}</p></article><footer>未模拟学习者后续回答，未创建学习档案或掌握证据。此图是实录展示页，不是 Forge 内置聊天界面。<br><a href="response.json">完整响应 JSON 与技能哈希</a> · <a href="README.md">验证范围与复现说明</a></footer></main></html>`, 'utf8');
+console.log('Rendered the actual single-turn source-rule response.');

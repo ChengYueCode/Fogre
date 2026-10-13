@@ -1,0 +1,2096 @@
+{
+  "kind": "synthetic-cli-demonstration",
+  "topic": "学习 mattpocock/skills",
+  "upstreamCommit": "49dd158d1076134a641b33efb035946536778336",
+  "generatedAt": "2026-10-13T07:04:17.113Z",
+  "disclosure": "作答与反馈为合成演示，结果由公开 CLI 实际执行并读回；不是真人记录或完整 Agent 教学。",
+  "reviewClock": {
+    "kind": "simulated-next-day",
+    "at": "2026-10-14T07:04:16.696Z"
+  },
+  "checks": {
+    "originalPreserved": true,
+    "correctionsDoNotAddAttempts": true,
+    "readbackDidNotWrite": true,
+    "masteryEvidenceEntries": 0
+  },
+  "submitted": {
+    "saved": true,
+    "state": "<isolated-tool-directory>\\tool-demo\\state.json",
+    "attempt": {
+      "id": "matt-demo-original",
+      "promptId": "p-invocation",
+      "conceptId": "invocation",
+      "at": "2026-10-13T07:04:14.794Z",
+      "answer": "这些技能都能由模型自动触发；ask-matt 给出路线后就会替我执行 to-spec 和 implement-spec。",
+      "rating": null,
+      "assisted": false,
+      "assistance": [],
+      "submission": {
+        "assisted": false,
+        "assistance": []
+      },
+      "source": "cli",
+      "sessionId": "matt-demo-session",
+      "fingerprint": "13b57559d64e043331e5c6bb368698f3f07a26bd2fa07d1a4175e8c14b975c14",
+      "modelFingerprint": "44432e2fbbcb8520f25f150f1e53fbd93aa34f329e11f6e3a69f6fd28ac2f8fc",
+      "modelRevision": 1,
+      "submittedAt": "2026-10-13T07:04:14.794Z",
+      "corrections": [],
+      "roundId": "matt-skills-demo",
+      "taskId": "task-12c2ff73"
+    },
+    "schedule": null
+  },
+  "correction": {
+    "saved": true,
+    "state": "<isolated-tool-directory>\\tool-demo\\state.json",
+    "attempt": {
+      "answer": "这些技能都能由模型自动触发；ask-matt 给出路线后就会替我执行 to-spec 和 implement-spec。",
+      "assistance": [],
+      "assisted": false,
+      "at": "2026-10-13T07:04:14.794Z",
+      "conceptId": "invocation",
+      "corrections": [
+        {
+          "id": "matt-demo-correction",
+          "attemptId": "matt-demo-original",
+          "text": "用户入口要由用户明确发起，ask-matt 只给建议；模型入口可由 Agent 复用，用户也能显式使用。",
+          "at": "2026-10-13T07:04:15.498Z",
+          "source": "cli",
+          "assistance": [
+            "tutor-feedback"
+          ]
+        }
+      ],
+      "fingerprint": "13b57559d64e043331e5c6bb368698f3f07a26bd2fa07d1a4175e8c14b975c14",
+      "id": "matt-demo-original",
+      "modelFingerprint": "44432e2fbbcb8520f25f150f1e53fbd93aa34f329e11f6e3a69f6fd28ac2f8fc",
+      "modelRevision": 1,
+      "promptId": "p-invocation",
+      "rating": null,
+      "roundId": "matt-skills-demo",
+      "sessionId": "matt-demo-session",
+      "source": "cli",
+      "submission": {
+        "assistance": [],
+        "assisted": false
+      },
+      "submittedAt": "2026-10-13T07:04:14.794Z",
+      "taskId": "task-12c2ff73",
+      "tutorAssessments": [
+        {
+          "at": "2026-10-13T07:04:15.232Z",
+          "attemptId": "matt-demo-original",
+          "id": "rev-16x6d6174742d64656d6f2d726576696577-12x702d696e766f636174696f6e-18x6d6174742d64656d6f2d6f726967696e616c-0x",
+          "rating": "again",
+          "source": "tutor",
+          "targetCorrectionId": null
+        }
+      ],
+      "tutorFeedback": [
+        {
+          "assessmentId": "rev-16x6d6174742d64656d6f2d726576696577-12x702d696e766f636174696f6e-18x6d6174742d64656d6f2d6f726967696e616c-0x",
+          "at": "2026-10-13T07:04:15.232Z",
+          "attemptId": "matt-demo-original",
+          "id": "feedback-rev-16x6d6174742d64656d6f2d726576696577-12x702d696e766f636174696f6e-18x6d6174742d64656d6f2d6f726967696e616c-0x",
+          "source": "tutor",
+          "targetCorrectionId": null,
+          "text": "固定提交 49dd158 的 README Reference、SKILL-MECHANICS 的 Invocation/Router skills，以及 p-invocation 的三条标准。"
+        }
+      ]
+    }
+  },
+  "review": {
+    "present": true,
+    "roundId": "matt-skills-demo",
+    "requestId": "matt-demo-review",
+    "pendingCount": 0,
+    "pendingAttempts": [],
+    "historyPendingCount": 0,
+    "historyPendingAttempts": [],
+    "openPendingCount": 0,
+    "totalPendingCount": 0,
+    "callbackText": "请复核本轮（matt-skills-demo）的真实作答：forge review-read --out <学习目录> --round-id matt-skills-demo，再对每个待复核成员执行 review-item。",
+    "requests": [
+      {
+        "id": "matt-demo-review",
+        "scope": "round",
+        "roundId": "matt-skills-demo",
+        "status": "completed",
+        "createdAt": "2026-10-13T07:04:14.994Z",
+        "updatedAt": "2026-10-13T07:04:15.232Z",
+        "total": 1,
+        "completed": 1,
+        "remaining": 0,
+        "members": [
+          {
+            "promptId": "p-invocation",
+            "attemptId": "matt-demo-original",
+            "conceptId": "invocation",
+            "kind": "compare",
+            "origin": "model",
+            "question": "ask-matt 建议 to-spec 和 implement-spec 后，能替用户自动调用它们吗？模型入口是否只允许模型使用？",
+            "reference": "不能替用户自动调用这些用户入口；需要用户显式发起。模型入口同时可以由用户显式使用，并不是只允许模型。",
+            "criteria": [
+              "指出用户入口需要显式发起",
+              "路由器只给建议",
+              "模型入口也可由人调用"
+            ],
+            "answer": "这些技能都能由模型自动触发；ask-matt 给出路线后就会替我执行 to-spec 和 implement-spec。",
+            "assisted": false,
+            "assistance": [],
+            "at": "2026-10-13T07:04:14.794Z",
+            "submittedAt": "2026-10-13T07:04:14.794Z",
+            "corrections": [],
+            "fingerprint": "13b57559d64e043331e5c6bb368698f3f07a26bd2fa07d1a4175e8c14b975c14",
+            "current": true,
+            "status": "completed",
+            "storedStatus": "completed",
+            "reason": null,
+            "feedback": {
+              "basis": "固定提交 49dd158 的 README Reference、SKILL-MECHANICS 的 Invocation/Router skills，以及 p-invocation 的三条标准。",
+              "correct": "原答知道 ask-matt 会提供技能路线建议。",
+              "misconceptions": "把路由建议当成执行，并把全部入口混为模型自动触发；遗漏用户入口的显式发起要求。",
+              "nextTask": "解释为什么 to-spec 的测试接口确认不是一轮完整的需求访谈。",
+              "rating": "again",
+              "repair": "区分“人发起用户入口”“Agent 或人使用模型入口”“路由器只提示下一入口”。to-spec 和 implement-spec 不能被 ask-matt 自动发起。",
+              "targetCorrectionId": null
+            },
+            "targetCorrectionId": null,
+            "rating": "again",
+            "resolvedAt": "2026-10-13T07:04:15.232Z"
+          }
+        ]
+      }
+    ]
+  },
+  "paused": {
+    "readOnly": true,
+    "at": "2026-10-13T07:04:16.163Z",
+    "identity": {
+      "modelId": "mattpocock-skills-overview",
+      "modelTitle": "学习 mattpocock/skills：按场景选择技能",
+      "modelFingerprint": "44432e2fbbcb8520f25f150f1e53fbd93aa34f329e11f6e3a69f6fd28ac2f8fc"
+    },
+    "activeRoundId": "matt-skills-demo",
+    "requestedRoundId": "matt-skills-demo",
+    "rounds": [
+      {
+        "id": "matt-skills-demo",
+        "entry": "organize-existing-material",
+        "goal": "区分用户入口、模型入口与路由建议（合成工具演示）",
+        "status": "paused",
+        "storedStatus": "paused",
+        "resumeStatus": "active",
+        "currentTaskId": "task-12c2ff73",
+        "updatedAt": "2026-10-13T07:04:15.915Z"
+      }
+    ],
+    "roundPresent": true,
+    "round": {
+      "id": "matt-skills-demo",
+      "entry": "organize-existing-material",
+      "goal": "区分用户入口、模型入口与路由建议（合成工具演示）",
+      "conceptIds": [
+        "invocation",
+        "to-spec"
+      ],
+      "budgetMinutes": 45,
+      "status": "paused",
+      "storedStatus": "paused",
+      "resumeStatus": "active",
+      "createdAt": "2026-10-13T07:04:14.047Z",
+      "updatedAt": "2026-10-13T07:04:15.915Z"
+    },
+    "profile": {
+      "present": false,
+      "learner": null,
+      "unknownFields": [
+        "role",
+        "task",
+        "background",
+        "preference"
+      ],
+      "interactionLimit": null,
+      "historyCount": 0,
+      "note": "本轮未记录学习画像，画像各字段未知；需要时只补影响教学的关键缺项，不补造历史画像。"
+    },
+    "goalAndBudget": {
+      "present": true,
+      "goal": "区分用户入口、模型入口与路由建议（合成工具演示）",
+      "budgetMinutes": 45,
+      "entry": "organize-existing-material",
+      "status": "paused",
+      "storedStatus": "paused",
+      "resumeStatus": "active",
+      "diagnosticGate": null,
+      "scopes": [],
+      "note": "保存的时间预算为 45 分钟；预计用时不是用户硬上限。"
+    },
+    "position": {
+      "present": true,
+      "currentTask": {
+        "id": "task-12c2ff73",
+        "conceptId": "invocation",
+        "conceptTitle": "谁能发起调用",
+        "promptKind": "compare",
+        "completionCriteria": [
+          "并列写出两者的关键差异",
+          "指出在什么条件下应使用哪一个"
+        ],
+        "diagnostic": false,
+        "deferred": false,
+        "submitted": true,
+        "contentUpdated": false
+      },
+      "nextTask": null,
+      "remainingTasks": 1,
+      "deferredTasks": 0,
+      "submittedTasks": 1,
+      "budgetInsufficient": false,
+      "requiredMinutes": null,
+      "ended": false,
+      "note": "当前位置以上方任务为准；完成标准随任务保存，恢复后不重复已提交的步骤。"
+    },
+    "interactions": {
+      "present": false,
+      "countedInteractions": null,
+      "totalInteractions": null,
+      "totalKnown": false,
+      "actualMinutes": null,
+      "interactionLimit": null,
+      "closure": null,
+      "note": "本轮未启用互动计数（旧轮次或未开启进度跟踪）：实际互动总数未知，不补造计数或学习时间。"
+    },
+    "answers": {
+      "present": true,
+      "total": 1,
+      "independent": 1,
+      "assisted": 0,
+      "pendingReview": 0,
+      "items": [
+        {
+          "id": "matt-demo-original",
+          "promptId": "p-invocation",
+          "conceptId": "invocation",
+          "conceptTitle": "谁能发起调用",
+          "taskId": "task-12c2ff73",
+          "answer": "这些技能都能由模型自动触发；ask-matt 给出路线后就会替我执行 to-spec 和 implement-spec。",
+          "at": "2026-10-13T07:04:14.794Z",
+          "assisted": false,
+          "assistanceSources": [],
+          "assessed": true,
+          "latestRating": "again",
+          "active": true
+        }
+      ],
+      "unattributed": {
+        "count": 0,
+        "ids": []
+      },
+      "note": "原答与协助属性按保存原文读回；有协助作答不构成独立证据，待复核作答保持待复核身份。"
+    },
+    "gaps": {
+      "present": false,
+      "needsWorkConcepts": [],
+      "dueNow": [],
+      "deferredTaskIds": [],
+      "qualityBlockingGaps": [],
+      "note": "当前没有仍有效的缺口记录；这不表示已掌握，只表示没有可核对的未决缺口。"
+    },
+    "materialScope": {
+      "present": false,
+      "stale": false,
+      "staleReasons": [],
+      "counts": null,
+      "sources": [],
+      "note": "未写入质检记录（quality.json），材料核对范围未知；恢复讲解前需按目标重新核对相关原文。"
+    },
+    "corrections": {
+      "present": false,
+      "total": 0,
+      "items": [],
+      "note": "没有教学纠错记录（旧档或未发生纠错）；这不表示讲解从未出错，只表示档案中没有已保存的纠错。"
+    },
+    "changes": {
+      "detected": false,
+      "goalChanged": {
+        "detected": false,
+        "scopes": []
+      },
+      "contentChanged": {
+        "detected": false,
+        "scopes": [],
+        "affectedTasks": [],
+        "staleSubmissions": 0,
+        "invalidatedEvidence": {
+          "concepts": 0,
+          "prompts": 0,
+          "ids": []
+        }
+      },
+      "materialScopeStale": {
+        "detected": false,
+        "reasons": [
+          "还没有内容质检记录"
+        ]
+      },
+      "note": "以上为保存值与当前值的差异事实：历史记录全部保留，不沿用失效结论；先向学习者说明受影响范围，按当前目标调整路线或重新核对材料后再继续。"
+    },
+    "persistence": {
+      "archive": "state.json",
+      "note": "本读回只反映目录中的学习档案（state.json）：serve 本地服务与 CLI 直接写回该档案；独立打开的页面只写本机浏览器缓存，未导出并导入前不在此档案内，新会话读不到，也不得宣称已读。缓存与重建发生冲突时，页面保留双方事实并如实报告，不静默覆盖任一版本。"
+    },
+    "out": "<isolated-tool-directory>\\tool-demo",
+    "stateFile": "<isolated-tool-directory>\\tool-demo\\state.json",
+    "archiveUpdatedAt": "2026-10-13T07:04:15.915Z",
+    "reviewDue": []
+  },
+  "resumed": {
+    "saved": true,
+    "state": "<isolated-tool-directory>\\tool-demo\\state.json",
+    "action": "resume",
+    "round": {
+      "id": "matt-skills-demo",
+      "entry": "organize-existing-material",
+      "goal": "区分用户入口、模型入口与路由建议（合成工具演示）",
+      "conceptIds": [
+        "invocation",
+        "to-spec"
+      ],
+      "budgetMinutes": 45,
+      "status": "active",
+      "currentTaskId": "task-12c2ff73",
+      "tasks": [
+        {
+          "id": "task-12c2ff73",
+          "conceptId": "invocation",
+          "promptId": "p-invocation",
+          "fingerprint": "13b57559d64e043331e5c6bb368698f3f07a26bd2fa07d1a4175e8c14b975c14",
+          "reason": "本轮目标概念；当前内容还没有独立原答的导师评价，先用解释题建立可核对基线",
+          "teachingPurpose": "explanation",
+          "estimatedMinutes": 14,
+          "completionCriteria": [
+            "并列写出两者的关键差异",
+            "指出在什么条件下应使用哪一个"
+          ],
+          "authorCriteria": [
+            "指出用户入口需要显式发起",
+            "路由器只给建议",
+            "模型入口也可由人调用"
+          ],
+          "deferred": false,
+          "deferredReason": null,
+          "diagnostic": false,
+          "reviewPlanned": false,
+          "reviewSource": null,
+          "dueAt": null,
+          "dueNow": false,
+          "assessmentSource": null,
+          "attemptId": null,
+          "pendingAssessmentAt": null
+        },
+        {
+          "id": "task-329fc7e9",
+          "conceptId": "to-spec",
+          "promptId": "p-to-spec",
+          "fingerprint": "92a61e8eb4d7ed108c63055fbff226268af027bc8c33b4dc16c2b2a1427458be",
+          "reason": "本轮目标概念；先补齐必要前置；当前内容还没有独立原答的导师评价，先用解释题建立可核对基线",
+          "teachingPurpose": "explanation",
+          "estimatedMinutes": 14,
+          "completionCriteria": [
+            "用自己的话解释机制或因果，而不是复述标题",
+            "说明关键步骤之间的关系，并给出一个例子"
+          ],
+          "authorCriteria": [
+            "说明所问情境下的来源规则",
+            "区分问题中的易混对象或错误假设",
+            "保持入口、输入与边界一致"
+          ],
+          "deferred": false,
+          "deferredReason": null,
+          "diagnostic": false,
+          "reviewPlanned": false,
+          "reviewSource": null,
+          "dueAt": null,
+          "dueNow": false,
+          "assessmentSource": null,
+          "attemptId": null,
+          "pendingAssessmentAt": null
+        }
+      ],
+      "reviewPlan": null,
+      "opening": null,
+      "progress": null
+    }
+  },
+  "afterResume": {
+    "readOnly": true,
+    "at": "2026-10-13T07:04:16.651Z",
+    "identity": {
+      "modelId": "mattpocock-skills-overview",
+      "modelTitle": "学习 mattpocock/skills：按场景选择技能",
+      "modelFingerprint": "44432e2fbbcb8520f25f150f1e53fbd93aa34f329e11f6e3a69f6fd28ac2f8fc"
+    },
+    "activeRoundId": "matt-skills-demo",
+    "requestedRoundId": "matt-skills-demo",
+    "rounds": [
+      {
+        "id": "matt-skills-demo",
+        "entry": "organize-existing-material",
+        "goal": "区分用户入口、模型入口与路由建议（合成工具演示）",
+        "status": "active",
+        "storedStatus": "active",
+        "resumeStatus": null,
+        "currentTaskId": "task-12c2ff73",
+        "updatedAt": "2026-10-13T07:04:16.409Z"
+      }
+    ],
+    "roundPresent": true,
+    "round": {
+      "id": "matt-skills-demo",
+      "entry": "organize-existing-material",
+      "goal": "区分用户入口、模型入口与路由建议（合成工具演示）",
+      "conceptIds": [
+        "invocation",
+        "to-spec"
+      ],
+      "budgetMinutes": 45,
+      "status": "active",
+      "storedStatus": "active",
+      "resumeStatus": null,
+      "createdAt": "2026-10-13T07:04:14.047Z",
+      "updatedAt": "2026-10-13T07:04:16.409Z"
+    },
+    "profile": {
+      "present": false,
+      "learner": null,
+      "unknownFields": [
+        "role",
+        "task",
+        "background",
+        "preference"
+      ],
+      "interactionLimit": null,
+      "historyCount": 0,
+      "note": "本轮未记录学习画像，画像各字段未知；需要时只补影响教学的关键缺项，不补造历史画像。"
+    },
+    "goalAndBudget": {
+      "present": true,
+      "goal": "区分用户入口、模型入口与路由建议（合成工具演示）",
+      "budgetMinutes": 45,
+      "entry": "organize-existing-material",
+      "status": "active",
+      "storedStatus": "active",
+      "resumeStatus": null,
+      "diagnosticGate": null,
+      "scopes": [],
+      "note": "保存的时间预算为 45 分钟；预计用时不是用户硬上限。"
+    },
+    "position": {
+      "present": true,
+      "currentTask": {
+        "id": "task-12c2ff73",
+        "conceptId": "invocation",
+        "conceptTitle": "谁能发起调用",
+        "promptKind": "compare",
+        "completionCriteria": [
+          "并列写出两者的关键差异",
+          "指出在什么条件下应使用哪一个"
+        ],
+        "diagnostic": false,
+        "deferred": false,
+        "submitted": true,
+        "contentUpdated": false
+      },
+      "nextTask": null,
+      "remainingTasks": 1,
+      "deferredTasks": 0,
+      "submittedTasks": 1,
+      "budgetInsufficient": false,
+      "requiredMinutes": null,
+      "ended": false,
+      "note": "当前位置以上方任务为准；完成标准随任务保存，恢复后不重复已提交的步骤。"
+    },
+    "interactions": {
+      "present": false,
+      "countedInteractions": null,
+      "totalInteractions": null,
+      "totalKnown": false,
+      "actualMinutes": null,
+      "interactionLimit": null,
+      "closure": null,
+      "note": "本轮未启用互动计数（旧轮次或未开启进度跟踪）：实际互动总数未知，不补造计数或学习时间。"
+    },
+    "answers": {
+      "present": true,
+      "total": 1,
+      "independent": 1,
+      "assisted": 0,
+      "pendingReview": 0,
+      "items": [
+        {
+          "id": "matt-demo-original",
+          "promptId": "p-invocation",
+          "conceptId": "invocation",
+          "conceptTitle": "谁能发起调用",
+          "taskId": "task-12c2ff73",
+          "answer": "这些技能都能由模型自动触发；ask-matt 给出路线后就会替我执行 to-spec 和 implement-spec。",
+          "at": "2026-10-13T07:04:14.794Z",
+          "assisted": false,
+          "assistanceSources": [],
+          "assessed": true,
+          "latestRating": "again",
+          "active": true
+        }
+      ],
+      "unattributed": {
+        "count": 0,
+        "ids": []
+      },
+      "note": "原答与协助属性按保存原文读回；有协助作答不构成独立证据，待复核作答保持待复核身份。"
+    },
+    "gaps": {
+      "present": false,
+      "needsWorkConcepts": [],
+      "dueNow": [],
+      "deferredTaskIds": [],
+      "qualityBlockingGaps": [],
+      "note": "当前没有仍有效的缺口记录；这不表示已掌握，只表示没有可核对的未决缺口。"
+    },
+    "materialScope": {
+      "present": false,
+      "stale": false,
+      "staleReasons": [],
+      "counts": null,
+      "sources": [],
+      "note": "未写入质检记录（quality.json），材料核对范围未知；恢复讲解前需按目标重新核对相关原文。"
+    },
+    "corrections": {
+      "present": false,
+      "total": 0,
+      "items": [],
+      "note": "没有教学纠错记录（旧档或未发生纠错）；这不表示讲解从未出错，只表示档案中没有已保存的纠错。"
+    },
+    "changes": {
+      "detected": false,
+      "goalChanged": {
+        "detected": false,
+        "scopes": []
+      },
+      "contentChanged": {
+        "detected": false,
+        "scopes": [],
+        "affectedTasks": [],
+        "staleSubmissions": 0,
+        "invalidatedEvidence": {
+          "concepts": 0,
+          "prompts": 0,
+          "ids": []
+        }
+      },
+      "materialScopeStale": {
+        "detected": false,
+        "reasons": [
+          "还没有内容质检记录"
+        ]
+      },
+      "note": "以上为保存值与当前值的差异事实：历史记录全部保留，不沿用失效结论；先向学习者说明受影响范围，按当前目标调整路线或重新核对材料后再继续。"
+    },
+    "persistence": {
+      "archive": "state.json",
+      "note": "本读回只反映目录中的学习档案（state.json）：serve 本地服务与 CLI 直接写回该档案；独立打开的页面只写本机浏览器缓存，未导出并导入前不在此档案内，新会话读不到，也不得宣称已读。缓存与重建发生冲突时，页面保留双方事实并如实报告，不静默覆盖任一版本。"
+    },
+    "out": "<isolated-tool-directory>\\tool-demo",
+    "stateFile": "<isolated-tool-directory>\\tool-demo\\state.json",
+    "archiveUpdatedAt": "2026-10-13T07:04:16.409Z",
+    "reviewDue": []
+  },
+  "plan": {
+    "readOnly": true,
+    "out": "<isolated-tool-directory>\\tool-demo",
+    "timeSource": "explicit-test-time",
+    "timeNote": "--at 是用于独立测试目录的模拟时间，不代表真实保持效果。",
+    "present": true,
+    "roundId": "matt-skills-demo",
+    "at": "2026-10-14T07:04:16.696Z",
+    "budgetMinutes": 15,
+    "focusPromptIds": [
+      "p-to-spec"
+    ],
+    "candidates": [
+      {
+        "promptId": "p-invocation",
+        "conceptId": "invocation",
+        "conceptTitle": "谁能发起调用",
+        "question": "ask-matt 建议 to-spec 和 implement-spec 后，能替用户自动调用它们吗？模型入口是否只允许模型使用？",
+        "origin": "model",
+        "reason": "真实到期安排，按到期程度安排本轮复习；暂缓不表示完成或遗忘；主动重点 p-to-spec 的必要前置；目标概念 to-spec 的必要前置 谁能发起调用 还缺少当前内容的独立原答导师成功依据，先安排可核对补漏；最近一次当前内容的独立原答被导师评为 again，先补解释或必要前置",
+        "priority": 0,
+        "priorityKind": "prerequisite",
+        "source": "prerequisite",
+        "sources": [
+          "option",
+          "due",
+          "prerequisite"
+        ],
+        "estimatedMinutes": 14,
+        "dueAt": "2026-10-14T07:04:14.794Z",
+        "dueNow": true,
+        "assessmentSource": "tutor",
+        "attemptId": "matt-demo-original",
+        "pendingAssessmentAt": null,
+        "deferredReason": null,
+        "considered": true,
+        "focus": false,
+        "actionable": true,
+        "unresolved": false,
+        "target": true
+      },
+      {
+        "promptId": "p-to-spec",
+        "conceptId": "to-spec",
+        "conceptTitle": "to-spec",
+        "question": "to-spec 应先重新采访用户补全需求，还是综合已讨论内容？",
+        "origin": "model",
+        "reason": "学习者主动调整本轮重点：先做这道题。选择只改变本轮安排，不表示完成，也不改动复习日期",
+        "priority": 1,
+        "priorityKind": "focus",
+        "source": "focus",
+        "sources": [
+          "option",
+          "focus"
+        ],
+        "estimatedMinutes": 14,
+        "dueAt": null,
+        "dueNow": false,
+        "assessmentSource": null,
+        "attemptId": null,
+        "pendingAssessmentAt": null,
+        "deferredReason": null,
+        "considered": true,
+        "focus": true,
+        "actionable": true,
+        "unresolved": false,
+        "target": true
+      },
+      {
+        "promptId": "p-ask-matt",
+        "conceptId": "ask-matt",
+        "conceptTitle": "ask-matt",
+        "question": "ask-matt 建议 to-tickets 后，会自动替你发布全部任务吗？",
+        "origin": "model",
+        "reason": "当前内容中的可复习题；默认未到期，可主动选为本轮重点",
+        "priority": 9,
+        "priorityKind": "option",
+        "source": "option",
+        "sources": [
+          "option"
+        ],
+        "estimatedMinutes": 14,
+        "dueAt": null,
+        "dueNow": false,
+        "assessmentSource": null,
+        "attemptId": null,
+        "pendingAssessmentAt": null,
+        "deferredReason": null,
+        "considered": false,
+        "focus": false,
+        "actionable": true,
+        "unresolved": false,
+        "target": false
+      },
+      {
+        "promptId": "p-chief-of-staff",
+        "conceptId": "chief-of-staff",
+        "conceptTitle": "chief-of-staff",
+        "question": "它属于已在正式插件推广的稳定入口吗？",
+        "origin": "model",
+        "reason": "当前内容中的可复习题；默认未到期，可主动选为本轮重点",
+        "priority": 9,
+        "priorityKind": "option",
+        "source": "option",
+        "sources": [
+          "option"
+        ],
+        "estimatedMinutes": 8,
+        "dueAt": null,
+        "dueNow": false,
+        "assessmentSource": null,
+        "attemptId": null,
+        "pendingAssessmentAt": null,
+        "deferredReason": null,
+        "considered": false,
+        "focus": false,
+        "actionable": true,
+        "unresolved": false,
+        "target": false
+      },
+      {
+        "promptId": "p-claude-handoff",
+        "conceptId": "claude-handoff",
+        "conceptTitle": "claude-handoff",
+        "question": "它与 handoff 的产物差在哪里？",
+        "origin": "model",
+        "reason": "当前内容中的可复习题；默认未到期，可主动选为本轮重点",
+        "priority": 9,
+        "priorityKind": "option",
+        "source": "option",
+        "sources": [
+          "option"
+        ],
+        "estimatedMinutes": 8,
+        "dueAt": null,
+        "dueNow": false,
+        "assessmentSource": null,
+        "attemptId": null,
+        "pendingAssessmentAt": null,
+        "deferredReason": null,
+        "considered": false,
+        "focus": false,
+        "actionable": true,
+        "unresolved": false,
+        "target": false
+      },
+      {
+        "promptId": "p-code-review",
+        "conceptId": "code-review",
+        "conceptTitle": "code-review",
+        "question": "规范全部满足，但漏了用户要求的过滤条件，应算总体通过吗？",
+        "origin": "model",
+        "reason": "当前内容中的可复习题；默认未到期，可主动选为本轮重点",
+        "priority": 9,
+        "priorityKind": "option",
+        "source": "option",
+        "sources": [
+          "option"
+        ],
+        "estimatedMinutes": 14,
+        "dueAt": null,
+        "dueNow": false,
+        "assessmentSource": null,
+        "attemptId": null,
+        "pendingAssessmentAt": null,
+        "deferredReason": null,
+        "considered": false,
+        "focus": false,
+        "actionable": true,
+        "unresolved": false,
+        "target": false
+      },
+      {
+        "promptId": "p-codebase-design",
+        "conceptId": "codebase-design",
+        "conceptTitle": "codebase-design",
+        "question": "实现代码越长、公共函数越少，模块就一定越深吗？",
+        "origin": "model",
+        "reason": "当前内容中的可复习题；默认未到期，可主动选为本轮重点",
+        "priority": 9,
+        "priorityKind": "option",
+        "source": "option",
+        "sources": [
+          "option"
+        ],
+        "estimatedMinutes": 14,
+        "dueAt": null,
+        "dueNow": false,
+        "assessmentSource": null,
+        "attemptId": null,
+        "pendingAssessmentAt": null,
+        "deferredReason": null,
+        "considered": false,
+        "focus": false,
+        "actionable": true,
+        "unresolved": false,
+        "target": false
+      },
+      {
+        "promptId": "p-diagnosing-bugs",
+        "conceptId": "diagnosing-bugs",
+        "conceptTitle": "diagnosing-bugs",
+        "question": "看到一段可疑代码后，能跳过复现就直接修吗？",
+        "origin": "model",
+        "reason": "当前内容中的可复习题；默认未到期，可主动选为本轮重点",
+        "priority": 9,
+        "priorityKind": "option",
+        "source": "option",
+        "sources": [
+          "option"
+        ],
+        "estimatedMinutes": 14,
+        "dueAt": null,
+        "dueNow": false,
+        "assessmentSource": null,
+        "attemptId": null,
+        "pendingAssessmentAt": null,
+        "deferredReason": null,
+        "considered": false,
+        "focus": false,
+        "actionable": true,
+        "unresolved": false,
+        "target": false
+      },
+      {
+        "promptId": "p-domain-modeling",
+        "conceptId": "domain-modeling",
+        "conceptTitle": "domain-modeling",
+        "question": "把数据库列名和完整实现计划都塞进术语表，符合规则吗？",
+        "origin": "model",
+        "reason": "当前内容中的可复习题；默认未到期，可主动选为本轮重点",
+        "priority": 9,
+        "priorityKind": "option",
+        "source": "option",
+        "sources": [
+          "option"
+        ],
+        "estimatedMinutes": 14,
+        "dueAt": null,
+        "dueNow": false,
+        "assessmentSource": null,
+        "attemptId": null,
+        "pendingAssessmentAt": null,
+        "deferredReason": null,
+        "considered": false,
+        "focus": false,
+        "actionable": true,
+        "unresolved": false,
+        "target": false
+      },
+      {
+        "promptId": "p-git-guardrails-claude-code",
+        "conceptId": "git-guardrails-claude-code",
+        "conceptTitle": "git-guardrails-claude-code",
+        "question": "它能无配置地保护所有宿主的 Git 操作吗？",
+        "origin": "model",
+        "reason": "当前内容中的可复习题；默认未到期，可主动选为本轮重点",
+        "priority": 9,
+        "priorityKind": "option",
+        "source": "option",
+        "sources": [
+          "option"
+        ],
+        "estimatedMinutes": 8,
+        "dueAt": null,
+        "dueNow": false,
+        "assessmentSource": null,
+        "attemptId": null,
+        "pendingAssessmentAt": null,
+        "deferredReason": null,
+        "considered": false,
+        "focus": false,
+        "actionable": true,
+        "unresolved": false,
+        "target": false
+      },
+      {
+        "promptId": "p-grill-me",
+        "conceptId": "grill-me",
+        "conceptTitle": "grill-me",
+        "question": "需要持续记录项目术语时，更合适的入口是什么？",
+        "origin": "model",
+        "reason": "当前内容中的可复习题；默认未到期，可主动选为本轮重点",
+        "priority": 9,
+        "priorityKind": "option",
+        "source": "option",
+        "sources": [
+          "option"
+        ],
+        "estimatedMinutes": 14,
+        "dueAt": null,
+        "dueNow": false,
+        "assessmentSource": null,
+        "attemptId": null,
+        "pendingAssessmentAt": null,
+        "deferredReason": null,
+        "considered": false,
+        "focus": false,
+        "actionable": true,
+        "unresolved": false,
+        "target": false
+      },
+      {
+        "promptId": "p-grill-with-docs",
+        "conceptId": "grill-with-docs",
+        "conceptTitle": "grill-with-docs",
+        "question": "grill-with-docs 与 grill-me 的主要区别是什么？",
+        "origin": "model",
+        "reason": "当前内容中的可复习题；默认未到期，可主动选为本轮重点",
+        "priority": 9,
+        "priorityKind": "option",
+        "source": "option",
+        "sources": [
+          "option"
+        ],
+        "estimatedMinutes": 14,
+        "dueAt": null,
+        "dueNow": false,
+        "assessmentSource": null,
+        "attemptId": null,
+        "pendingAssessmentAt": null,
+        "deferredReason": null,
+        "considered": false,
+        "focus": false,
+        "actionable": true,
+        "unresolved": false,
+        "target": false
+      },
+      {
+        "promptId": "p-grilling",
+        "conceptId": "grilling",
+        "conceptTitle": "grilling",
+        "question": "为什么依赖尚未回答问题的后续问题不能放进同轮前沿？",
+        "origin": "model",
+        "reason": "当前内容中的可复习题；默认未到期，可主动选为本轮重点",
+        "priority": 9,
+        "priorityKind": "option",
+        "source": "option",
+        "sources": [
+          "option"
+        ],
+        "estimatedMinutes": 14,
+        "dueAt": null,
+        "dueNow": false,
+        "assessmentSource": null,
+        "attemptId": null,
+        "pendingAssessmentAt": null,
+        "deferredReason": null,
+        "considered": false,
+        "focus": false,
+        "actionable": true,
+        "unresolved": false,
+        "target": false
+      },
+      {
+        "promptId": "p-handoff",
+        "conceptId": "handoff",
+        "conceptTitle": "handoff",
+        "question": "handoff 的核心收益是释放上下文，还是跨环境携带信息？",
+        "origin": "model",
+        "reason": "当前内容中的可复习题；默认未到期，可主动选为本轮重点",
+        "priority": 9,
+        "priorityKind": "option",
+        "source": "option",
+        "sources": [
+          "option"
+        ],
+        "estimatedMinutes": 14,
+        "dueAt": null,
+        "dueNow": false,
+        "assessmentSource": null,
+        "attemptId": null,
+        "pendingAssessmentAt": null,
+        "deferredReason": null,
+        "considered": false,
+        "focus": false,
+        "actionable": true,
+        "unresolved": false,
+        "target": false
+      },
+      {
+        "promptId": "p-implement",
+        "conceptId": "implement",
+        "conceptTitle": "implement",
+        "question": "implement 收尾只要测试通过就够了吗？",
+        "origin": "model",
+        "reason": "当前内容中的可复习题；默认未到期，可主动选为本轮重点",
+        "priority": 9,
+        "priorityKind": "option",
+        "source": "option",
+        "sources": [
+          "option"
+        ],
+        "estimatedMinutes": 14,
+        "dueAt": null,
+        "dueNow": false,
+        "assessmentSource": null,
+        "attemptId": null,
+        "pendingAssessmentAt": null,
+        "deferredReason": null,
+        "considered": false,
+        "focus": false,
+        "actionable": true,
+        "unresolved": false,
+        "target": false
+      },
+      {
+        "promptId": "p-implement-spec",
+        "conceptId": "implement-spec",
+        "conceptTitle": "implement-spec",
+        "question": "任务 B 阻塞于 A，是否能因为有空闲 Agent 就让 B 同时开始？",
+        "origin": "model",
+        "reason": "当前内容中的可复习题；默认未到期，可主动选为本轮重点",
+        "priority": 9,
+        "priorityKind": "option",
+        "source": "option",
+        "sources": [
+          "option"
+        ],
+        "estimatedMinutes": 14,
+        "dueAt": null,
+        "dueNow": false,
+        "assessmentSource": null,
+        "attemptId": null,
+        "pendingAssessmentAt": null,
+        "deferredReason": null,
+        "considered": false,
+        "focus": false,
+        "actionable": true,
+        "unresolved": false,
+        "target": false
+      },
+      {
+        "promptId": "p-improve-codebase-architecture",
+        "conceptId": "improve-codebase-architecture",
+        "conceptTitle": "improve-codebase-architecture",
+        "question": "报告列出三个候选后，Agent 能直接全部重构吗？",
+        "origin": "model",
+        "reason": "当前内容中的可复习题；默认未到期，可主动选为本轮重点",
+        "priority": 9,
+        "priorityKind": "option",
+        "source": "option",
+        "sources": [
+          "option"
+        ],
+        "estimatedMinutes": 14,
+        "dueAt": null,
+        "dueNow": false,
+        "assessmentSource": null,
+        "attemptId": null,
+        "pendingAssessmentAt": null,
+        "deferredReason": null,
+        "considered": false,
+        "focus": false,
+        "actionable": true,
+        "unresolved": false,
+        "target": false
+      },
+      {
+        "promptId": "p-loop-me",
+        "conceptId": "loop-me",
+        "conceptTitle": "loop-me",
+        "question": "所有 loop-me 工作流都必须有 AI 和定时任务吗？",
+        "origin": "model",
+        "reason": "当前内容中的可复习题；默认未到期，可主动选为本轮重点",
+        "priority": 9,
+        "priorityKind": "option",
+        "source": "option",
+        "sources": [
+          "option"
+        ],
+        "estimatedMinutes": 8,
+        "dueAt": null,
+        "dueNow": false,
+        "assessmentSource": null,
+        "attemptId": null,
+        "pendingAssessmentAt": null,
+        "deferredReason": null,
+        "considered": false,
+        "focus": false,
+        "actionable": true,
+        "unresolved": false,
+        "target": false
+      },
+      {
+        "promptId": "p-migrate-to-shoehorn",
+        "conceptId": "migrate-to-shoehorn",
+        "conceptTitle": "migrate-to-shoehorn",
+        "question": "这些测试辅助是否应进入生产实现？",
+        "origin": "model",
+        "reason": "当前内容中的可复习题；默认未到期，可主动选为本轮重点",
+        "priority": 9,
+        "priorityKind": "option",
+        "source": "option",
+        "sources": [
+          "option"
+        ],
+        "estimatedMinutes": 8,
+        "dueAt": null,
+        "dueNow": false,
+        "assessmentSource": null,
+        "attemptId": null,
+        "pendingAssessmentAt": null,
+        "deferredReason": null,
+        "considered": false,
+        "focus": false,
+        "actionable": true,
+        "unresolved": false,
+        "target": false
+      },
+      {
+        "promptId": "p-pr",
+        "conceptId": "pr",
+        "conceptTitle": "pr",
+        "question": "PR 里能用“已经测试过”代替具体前后证据吗？",
+        "origin": "model",
+        "reason": "当前内容中的可复习题；默认未到期，可主动选为本轮重点",
+        "priority": 9,
+        "priorityKind": "option",
+        "source": "option",
+        "sources": [
+          "option"
+        ],
+        "estimatedMinutes": 14,
+        "dueAt": null,
+        "dueNow": false,
+        "assessmentSource": null,
+        "attemptId": null,
+        "pendingAssessmentAt": null,
+        "deferredReason": null,
+        "considered": false,
+        "focus": false,
+        "actionable": true,
+        "unresolved": false,
+        "target": false
+      },
+      {
+        "promptId": "p-prototype",
+        "conceptId": "skill-prototype",
+        "conceptTitle": "prototype",
+        "question": "原型代码不用作生产实现，是否应立即删除所有证据？",
+        "origin": "model",
+        "reason": "当前内容中的可复习题；默认未到期，可主动选为本轮重点",
+        "priority": 9,
+        "priorityKind": "option",
+        "source": "option",
+        "sources": [
+          "option"
+        ],
+        "estimatedMinutes": 14,
+        "dueAt": null,
+        "dueNow": false,
+        "assessmentSource": null,
+        "attemptId": null,
+        "pendingAssessmentAt": null,
+        "deferredReason": null,
+        "considered": false,
+        "focus": false,
+        "actionable": true,
+        "unresolved": false,
+        "target": false
+      },
+      {
+        "promptId": "p-research",
+        "conceptId": "research",
+        "conceptTitle": "research",
+        "question": "为什么只收集几篇二手教程不足以完成这里的研究？",
+        "origin": "model",
+        "reason": "当前内容中的可复习题；默认未到期，可主动选为本轮重点",
+        "priority": 9,
+        "priorityKind": "option",
+        "source": "option",
+        "sources": [
+          "option"
+        ],
+        "estimatedMinutes": 14,
+        "dueAt": null,
+        "dueNow": false,
+        "assessmentSource": null,
+        "attemptId": null,
+        "pendingAssessmentAt": null,
+        "deferredReason": null,
+        "considered": false,
+        "focus": false,
+        "actionable": true,
+        "unresolved": false,
+        "target": false
+      },
+      {
+        "promptId": "p-retro",
+        "conceptId": "retro",
+        "conceptTitle": "retro",
+        "question": "固定语法模式的错误，更适合只加一段说明还是加确定性检查？",
+        "origin": "model",
+        "reason": "当前内容中的可复习题；默认未到期，可主动选为本轮重点",
+        "priority": 9,
+        "priorityKind": "option",
+        "source": "option",
+        "sources": [
+          "option"
+        ],
+        "estimatedMinutes": 14,
+        "dueAt": null,
+        "dueNow": false,
+        "assessmentSource": null,
+        "attemptId": null,
+        "pendingAssessmentAt": null,
+        "deferredReason": null,
+        "considered": false,
+        "focus": false,
+        "actionable": true,
+        "unresolved": false,
+        "target": false
+      },
+      {
+        "promptId": "p-scaffold-exercises",
+        "conceptId": "scaffold-exercises",
+        "conceptTitle": "scaffold-exercises",
+        "question": "没有该课程工具，也能宣称内部 lint 已通过吗？",
+        "origin": "model",
+        "reason": "当前内容中的可复习题；默认未到期，可主动选为本轮重点",
+        "priority": 9,
+        "priorityKind": "option",
+        "source": "option",
+        "sources": [
+          "option"
+        ],
+        "estimatedMinutes": 8,
+        "dueAt": null,
+        "dueNow": false,
+        "assessmentSource": null,
+        "attemptId": null,
+        "pendingAssessmentAt": null,
+        "deferredReason": null,
+        "considered": false,
+        "focus": false,
+        "actionable": true,
+        "unresolved": false,
+        "target": false
+      },
+      {
+        "promptId": "p-setup-matt-pocock-skills",
+        "conceptId": "setup-matt-pocock-skills",
+        "conceptTitle": "setup-matt-pocock-skills",
+        "question": "没有安装 triage 时，是否仍必须收集一套标签？",
+        "origin": "model",
+        "reason": "当前内容中的可复习题；默认未到期，可主动选为本轮重点",
+        "priority": 9,
+        "priorityKind": "option",
+        "source": "option",
+        "sources": [
+          "option"
+        ],
+        "estimatedMinutes": 14,
+        "dueAt": null,
+        "dueNow": false,
+        "assessmentSource": null,
+        "attemptId": null,
+        "pendingAssessmentAt": null,
+        "deferredReason": null,
+        "considered": false,
+        "focus": false,
+        "actionable": true,
+        "unresolved": false,
+        "target": false
+      },
+      {
+        "promptId": "p-setup-pre-commit",
+        "conceptId": "setup-pre-commit",
+        "conceptTitle": "setup-pre-commit",
+        "question": "项目没有类型检查脚本，是否也应硬写一个已存在的命令？",
+        "origin": "model",
+        "reason": "当前内容中的可复习题；默认未到期，可主动选为本轮重点",
+        "priority": 9,
+        "priorityKind": "option",
+        "source": "option",
+        "sources": [
+          "option"
+        ],
+        "estimatedMinutes": 8,
+        "dueAt": null,
+        "dueNow": false,
+        "assessmentSource": null,
+        "attemptId": null,
+        "pendingAssessmentAt": null,
+        "deferredReason": null,
+        "considered": false,
+        "focus": false,
+        "actionable": true,
+        "unresolved": false,
+        "target": false
+      },
+      {
+        "promptId": "p-setup-ts-deep-modules",
+        "conceptId": "setup-ts-deep-modules",
+        "conceptTitle": "setup-ts-deep-modules",
+        "question": "只有一个 index.ts 才算深模块吗？",
+        "origin": "model",
+        "reason": "当前内容中的可复习题；默认未到期，可主动选为本轮重点",
+        "priority": 9,
+        "priorityKind": "option",
+        "source": "option",
+        "sources": [
+          "option"
+        ],
+        "estimatedMinutes": 8,
+        "dueAt": null,
+        "dueNow": false,
+        "assessmentSource": null,
+        "attemptId": null,
+        "pendingAssessmentAt": null,
+        "deferredReason": null,
+        "considered": false,
+        "focus": false,
+        "actionable": true,
+        "unresolved": false,
+        "target": false
+      },
+      {
+        "promptId": "p-tdd",
+        "conceptId": "tdd",
+        "conceptTitle": "tdd",
+        "question": "同一预期用实现算法再算一次，就能形成有效测试吗？",
+        "origin": "model",
+        "reason": "当前内容中的可复习题；默认未到期，可主动选为本轮重点",
+        "priority": 9,
+        "priorityKind": "option",
+        "source": "option",
+        "sources": [
+          "option"
+        ],
+        "estimatedMinutes": 14,
+        "dueAt": null,
+        "dueNow": false,
+        "assessmentSource": null,
+        "attemptId": null,
+        "pendingAssessmentAt": null,
+        "deferredReason": null,
+        "considered": false,
+        "focus": false,
+        "actionable": true,
+        "unresolved": false,
+        "target": false
+      },
+      {
+        "promptId": "p-teach",
+        "conceptId": "teach",
+        "conceptTitle": "teach",
+        "question": "看懂一页速查说明，就能登记长期保持成功吗？",
+        "origin": "model",
+        "reason": "当前内容中的可复习题；默认未到期，可主动选为本轮重点",
+        "priority": 9,
+        "priorityKind": "option",
+        "source": "option",
+        "sources": [
+          "option"
+        ],
+        "estimatedMinutes": 14,
+        "dueAt": null,
+        "dueNow": false,
+        "assessmentSource": null,
+        "attemptId": null,
+        "pendingAssessmentAt": null,
+        "deferredReason": null,
+        "considered": false,
+        "focus": false,
+        "actionable": true,
+        "unresolved": false,
+        "target": false
+      },
+      {
+        "promptId": "p-to-questionnaire",
+        "conceptId": "to-questionnaire",
+        "conceptTitle": "to-questionnaire",
+        "question": "发送者不知道权限事实，技能该继续逼他回答这些事实吗？",
+        "origin": "model",
+        "reason": "当前内容中的可复习题；默认未到期，可主动选为本轮重点",
+        "priority": 9,
+        "priorityKind": "option",
+        "source": "option",
+        "sources": [
+          "option"
+        ],
+        "estimatedMinutes": 14,
+        "dueAt": null,
+        "dueNow": false,
+        "assessmentSource": null,
+        "attemptId": null,
+        "pendingAssessmentAt": null,
+        "deferredReason": null,
+        "considered": false,
+        "focus": false,
+        "actionable": true,
+        "unresolved": false,
+        "target": false
+      },
+      {
+        "promptId": "p-to-tickets",
+        "conceptId": "to-tickets",
+        "conceptTitle": "to-tickets",
+        "question": "把所有数据库工作作为任务一、所有页面作为任务二，是默认要求的切片吗？",
+        "origin": "model",
+        "reason": "当前内容中的可复习题；默认未到期，可主动选为本轮重点",
+        "priority": 9,
+        "priorityKind": "option",
+        "source": "option",
+        "sources": [
+          "option"
+        ],
+        "estimatedMinutes": 14,
+        "dueAt": null,
+        "dueNow": false,
+        "assessmentSource": null,
+        "attemptId": null,
+        "pendingAssessmentAt": null,
+        "deferredReason": null,
+        "considered": false,
+        "focus": false,
+        "actionable": true,
+        "unresolved": false,
+        "target": false
+      },
+      {
+        "promptId": "p-triage",
+        "conceptId": "triage",
+        "conceptTitle": "triage",
+        "question": "to-tickets 刚发布的明确任务还需要逐张 triage 吗？",
+        "origin": "model",
+        "reason": "当前内容中的可复习题；默认未到期，可主动选为本轮重点",
+        "priority": 9,
+        "priorityKind": "option",
+        "source": "option",
+        "sources": [
+          "option"
+        ],
+        "estimatedMinutes": 14,
+        "dueAt": null,
+        "dueNow": false,
+        "assessmentSource": null,
+        "attemptId": null,
+        "pendingAssessmentAt": null,
+        "deferredReason": null,
+        "considered": false,
+        "focus": false,
+        "actionable": true,
+        "unresolved": false,
+        "target": false
+      },
+      {
+        "promptId": "p-wait-what",
+        "conceptId": "wait-what",
+        "conceptTitle": "wait-what",
+        "question": "用户说没听懂时，继续重复更复杂的术语有帮助吗？",
+        "origin": "model",
+        "reason": "当前内容中的可复习题；默认未到期，可主动选为本轮重点",
+        "priority": 9,
+        "priorityKind": "option",
+        "source": "option",
+        "sources": [
+          "option"
+        ],
+        "estimatedMinutes": 14,
+        "dueAt": null,
+        "dueNow": false,
+        "assessmentSource": null,
+        "attemptId": null,
+        "pendingAssessmentAt": null,
+        "deferredReason": null,
+        "considered": false,
+        "focus": false,
+        "actionable": true,
+        "unresolved": false,
+        "target": false
+      },
+      {
+        "promptId": "p-wayfinder",
+        "conceptId": "wayfinder",
+        "conceptTitle": "wayfinder",
+        "question": "地图清晰后默认直接跳进大规模实现，合适吗？",
+        "origin": "model",
+        "reason": "当前内容中的可复习题；默认未到期，可主动选为本轮重点",
+        "priority": 9,
+        "priorityKind": "option",
+        "source": "option",
+        "sources": [
+          "option"
+        ],
+        "estimatedMinutes": 14,
+        "dueAt": null,
+        "dueNow": false,
+        "assessmentSource": null,
+        "attemptId": null,
+        "pendingAssessmentAt": null,
+        "deferredReason": null,
+        "considered": false,
+        "focus": false,
+        "actionable": true,
+        "unresolved": false,
+        "target": false
+      },
+      {
+        "promptId": "p-wizard",
+        "conceptId": "wizard",
+        "conceptTitle": "wizard",
+        "question": "Agent 已能直接执行的本地构建，也必须做成向导吗？",
+        "origin": "model",
+        "reason": "当前内容中的可复习题；默认未到期，可主动选为本轮重点",
+        "priority": 9,
+        "priorityKind": "option",
+        "source": "option",
+        "sources": [
+          "option"
+        ],
+        "estimatedMinutes": 14,
+        "dueAt": null,
+        "dueNow": false,
+        "assessmentSource": null,
+        "attemptId": null,
+        "pendingAssessmentAt": null,
+        "deferredReason": null,
+        "considered": false,
+        "focus": false,
+        "actionable": true,
+        "unresolved": false,
+        "target": false
+      },
+      {
+        "promptId": "p-writing-beats",
+        "conceptId": "writing-beats",
+        "conceptTitle": "writing-beats",
+        "question": "是否必须把素材全部用尽才算文章结束？",
+        "origin": "model",
+        "reason": "当前内容中的可复习题；默认未到期，可主动选为本轮重点",
+        "priority": 9,
+        "priorityKind": "option",
+        "source": "option",
+        "sources": [
+          "option"
+        ],
+        "estimatedMinutes": 8,
+        "dueAt": null,
+        "dueNow": false,
+        "assessmentSource": null,
+        "attemptId": null,
+        "pendingAssessmentAt": null,
+        "deferredReason": null,
+        "considered": false,
+        "focus": false,
+        "actionable": true,
+        "unresolved": false,
+        "target": false
+      },
+      {
+        "promptId": "p-writing-for-agents",
+        "conceptId": "writing-for-agents",
+        "conceptTitle": "writing-for-agents",
+        "question": "把所有规则移出文件，却不说明何时读引用，能改善执行吗？",
+        "origin": "model",
+        "reason": "当前内容中的可复习题；默认未到期，可主动选为本轮重点",
+        "priority": 9,
+        "priorityKind": "option",
+        "source": "option",
+        "sources": [
+          "option"
+        ],
+        "estimatedMinutes": 14,
+        "dueAt": null,
+        "dueNow": false,
+        "assessmentSource": null,
+        "attemptId": null,
+        "pendingAssessmentAt": null,
+        "deferredReason": null,
+        "considered": false,
+        "focus": false,
+        "actionable": true,
+        "unresolved": false,
+        "target": false
+      },
+      {
+        "promptId": "p-writing-fragments",
+        "conceptId": "writing-fragments",
+        "conceptTitle": "writing-fragments",
+        "question": "一开始就强制文章大纲，符合这个入口吗？",
+        "origin": "model",
+        "reason": "当前内容中的可复习题；默认未到期，可主动选为本轮重点",
+        "priority": 9,
+        "priorityKind": "option",
+        "source": "option",
+        "sources": [
+          "option"
+        ],
+        "estimatedMinutes": 8,
+        "dueAt": null,
+        "dueNow": false,
+        "assessmentSource": null,
+        "attemptId": null,
+        "pendingAssessmentAt": null,
+        "deferredReason": null,
+        "considered": false,
+        "focus": false,
+        "actionable": true,
+        "unresolved": false,
+        "target": false
+      },
+      {
+        "promptId": "p-writing-shape",
+        "conceptId": "writing-shape",
+        "conceptTitle": "writing-shape",
+        "question": "能在成文时覆盖修改原始素材文件吗？",
+        "origin": "model",
+        "reason": "当前内容中的可复习题；默认未到期，可主动选为本轮重点",
+        "priority": 9,
+        "priorityKind": "option",
+        "source": "option",
+        "sources": [
+          "option"
+        ],
+        "estimatedMinutes": 8,
+        "dueAt": null,
+        "dueNow": false,
+        "assessmentSource": null,
+        "attemptId": null,
+        "pendingAssessmentAt": null,
+        "deferredReason": null,
+        "considered": false,
+        "focus": false,
+        "actionable": true,
+        "unresolved": false,
+        "target": false
+      }
+    ],
+    "selected": [
+      {
+        "promptId": "p-invocation",
+        "conceptId": "invocation",
+        "conceptTitle": "谁能发起调用",
+        "question": "ask-matt 建议 to-spec 和 implement-spec 后，能替用户自动调用它们吗？模型入口是否只允许模型使用？",
+        "origin": "model",
+        "reason": "真实到期安排，按到期程度安排本轮复习；暂缓不表示完成或遗忘；主动重点 p-to-spec 的必要前置；目标概念 to-spec 的必要前置 谁能发起调用 还缺少当前内容的独立原答导师成功依据，先安排可核对补漏；最近一次当前内容的独立原答被导师评为 again，先补解释或必要前置",
+        "priority": 0,
+        "priorityKind": "prerequisite",
+        "source": "prerequisite",
+        "sources": [
+          "option",
+          "due",
+          "prerequisite"
+        ],
+        "estimatedMinutes": 14,
+        "dueAt": "2026-10-14T07:04:14.794Z",
+        "dueNow": true,
+        "assessmentSource": "tutor",
+        "attemptId": "matt-demo-original",
+        "pendingAssessmentAt": null,
+        "deferredReason": null,
+        "considered": true,
+        "focus": false,
+        "actionable": true,
+        "unresolved": false,
+        "target": true
+      }
+    ],
+    "deferred": [
+      {
+        "promptId": "p-to-spec",
+        "conceptId": "to-spec",
+        "conceptTitle": "to-spec",
+        "question": "to-spec 应先重新采访用户补全需求，还是综合已讨论内容？",
+        "origin": "model",
+        "reason": "学习者主动调整本轮重点：先做这道题。选择只改变本轮安排，不表示完成，也不改动复习日期",
+        "priority": 1,
+        "priorityKind": "focus",
+        "source": "focus",
+        "sources": [
+          "option",
+          "focus"
+        ],
+        "estimatedMinutes": 14,
+        "dueAt": null,
+        "dueNow": false,
+        "assessmentSource": null,
+        "attemptId": null,
+        "pendingAssessmentAt": null,
+        "deferredReason": "超出本轮 15 分钟预算，暂缓续接；未选中的到期题仍保持真实到期状态",
+        "considered": true,
+        "focus": true,
+        "actionable": true,
+        "unresolved": false,
+        "target": true
+      }
+    ],
+    "estimatedMinutes": 14,
+    "allDue": [
+      {
+        "promptId": "p-invocation",
+        "conceptId": "invocation",
+        "conceptTitle": "谁能发起调用",
+        "question": "ask-matt 建议 to-spec 和 implement-spec 后，能替用户自动调用它们吗？模型入口是否只允许模型使用？",
+        "origin": "model",
+        "reason": "真实到期安排；未选中不等于完成或忘记",
+        "priority": 3,
+        "priorityKind": "due",
+        "source": "due",
+        "sources": [
+          "due"
+        ],
+        "estimatedMinutes": 14,
+        "dueAt": "2026-10-14T07:04:14.794Z",
+        "dueNow": true,
+        "assessmentSource": "tutor",
+        "attemptId": "matt-demo-original",
+        "pendingAssessmentAt": null,
+        "deferredReason": null,
+        "considered": true,
+        "focus": false,
+        "actionable": true,
+        "unresolved": false,
+        "target": false
+      }
+    ],
+    "dueCount": 1,
+    "modelFingerprint": "44432e2fbbcb8520f25f150f1e53fbd93aa34f329e11f6e3a69f6fd28ac2f8fc"
+  },
+  "insights": {
+    "readOnly": true,
+    "out": "<isolated-tool-directory>\\tool-demo",
+    "conceptId": "invocation",
+    "concepts": [
+      {
+        "conceptId": "invocation",
+        "title": "谁能发起调用",
+        "historical": false,
+        "modelPresent": true,
+        "authorExplanation": "用户入口由人明确发起；模型入口可由 Agent 按场景使用，人也可以显式发起。路由器可提示用户入口，但不能替人自动调用它们。",
+        "authorExample": "ask-matt 可建议 to-spec；to-spec 由用户显式发起。tdd 是可复用的模型入口，implement 可使用它。",
+        "authorMisconception": "模型入口只有 Agent 能用，或用户入口会因被路由器提到而自动执行。",
+        "attempts": [
+          {
+            "answer": "这些技能都能由模型自动触发；ask-matt 给出路线后就会替我执行 to-spec 和 implement-spec。",
+            "assistance": [],
+            "assisted": false,
+            "at": "2026-10-13T07:04:14.794Z",
+            "conceptId": "invocation",
+            "corrections": [
+              {
+                "assistance": [
+                  "tutor-feedback"
+                ],
+                "at": "2026-10-13T07:04:15.498Z",
+                "attemptId": "matt-demo-original",
+                "id": "matt-demo-correction",
+                "source": "cli",
+                "text": "用户入口要由用户明确发起，ask-matt 只给建议；模型入口可由 Agent 复用，用户也能显式使用。"
+              }
+            ],
+            "fingerprint": "13b57559d64e043331e5c6bb368698f3f07a26bd2fa07d1a4175e8c14b975c14",
+            "id": "matt-demo-original",
+            "modelFingerprint": "44432e2fbbcb8520f25f150f1e53fbd93aa34f329e11f6e3a69f6fd28ac2f8fc",
+            "modelRevision": 1,
+            "promptId": "p-invocation",
+            "rating": null,
+            "roundId": "matt-skills-demo",
+            "sessionId": "matt-demo-session",
+            "source": "cli",
+            "submission": {
+              "assistance": [],
+              "assisted": false
+            },
+            "submittedAt": "2026-10-13T07:04:14.794Z",
+            "taskId": "task-12c2ff73",
+            "tutorAssessments": [
+              {
+                "at": "2026-10-13T07:04:15.232Z",
+                "attemptId": "matt-demo-original",
+                "id": "rev-16x6d6174742d64656d6f2d726576696577-12x702d696e766f636174696f6e-18x6d6174742d64656d6f2d6f726967696e616c-0x",
+                "rating": "again",
+                "source": "tutor",
+                "targetCorrectionId": null
+              }
+            ],
+            "tutorFeedback": [
+              {
+                "assessmentId": "rev-16x6d6174742d64656d6f2d726576696577-12x702d696e766f636174696f6e-18x6d6174742d64656d6f2d6f726967696e616c-0x",
+                "at": "2026-10-13T07:04:15.232Z",
+                "attemptId": "matt-demo-original",
+                "id": "feedback-rev-16x6d6174742d64656d6f2d726576696577-12x702d696e766f636174696f6e-18x6d6174742d64656d6f2d6f726967696e616c-0x",
+                "source": "tutor",
+                "targetCorrectionId": null,
+                "text": "固定提交 49dd158 的 README Reference、SKILL-MECHANICS 的 Invocation/Router skills，以及 p-invocation 的三条标准。"
+              }
+            ],
+            "stale": false,
+            "reviews": [
+              {
+                "requestId": "matt-demo-review",
+                "status": "completed",
+                "feedback": {
+                  "basis": "固定提交 49dd158 的 README Reference、SKILL-MECHANICS 的 Invocation/Router skills，以及 p-invocation 的三条标准。",
+                  "correct": "原答知道 ask-matt 会提供技能路线建议。",
+                  "misconceptions": "把路由建议当成执行，并把全部入口混为模型自动触发；遗漏用户入口的显式发起要求。",
+                  "nextTask": "解释为什么 to-spec 的测试接口确认不是一轮完整的需求访谈。",
+                  "rating": "again",
+                  "repair": "区分“人发起用户入口”“Agent 或人使用模型入口”“路由器只提示下一入口”。to-spec 和 implement-spec 不能被 ask-matt 自动发起。",
+                  "targetCorrectionId": null
+                },
+                "feedbackComplete": true,
+                "feedbackMissing": false,
+                "pending": false,
+                "source": "tutor",
+                "at": "2026-10-13T07:04:15.232Z"
+              }
+            ]
+          }
+        ],
+        "explanation": null,
+        "summary": null,
+        "questions": []
+      }
+    ]
+  },
+  "commands": [
+    [
+      "build",
+      "<isolated-tool-directory>\\overview.json",
+      "--out",
+      "<case-output>\\overview",
+      "--svg"
+    ],
+    [
+      "quality-template",
+      "--out",
+      "<case-output>\\overview"
+    ],
+    [
+      "quality-write",
+      "--out",
+      "<case-output>\\overview",
+      "--quality",
+      "<isolated-tool-directory>\\overview-quality.json"
+    ],
+    [
+      "quality-read",
+      "--out",
+      "<case-output>\\overview"
+    ],
+    [
+      "build",
+      "<case-output>\\overview\\model.json",
+      "--out",
+      "<case-output>\\overview",
+      "--svg"
+    ],
+    [
+      "build",
+      "<isolated-tool-directory>\\workflow.json",
+      "--out",
+      "<case-output>\\workflow",
+      "--svg"
+    ],
+    [
+      "quality-template",
+      "--out",
+      "<case-output>\\workflow"
+    ],
+    [
+      "quality-write",
+      "--out",
+      "<case-output>\\workflow",
+      "--quality",
+      "<isolated-tool-directory>\\workflow-quality.json"
+    ],
+    [
+      "quality-read",
+      "--out",
+      "<case-output>\\workflow"
+    ],
+    [
+      "build",
+      "<case-output>\\workflow\\model.json",
+      "--out",
+      "<case-output>\\workflow",
+      "--svg"
+    ],
+    [
+      "build",
+      "<isolated-tool-directory>\\comparisons.json",
+      "--out",
+      "<case-output>\\comparisons",
+      "--svg"
+    ],
+    [
+      "quality-template",
+      "--out",
+      "<case-output>\\comparisons"
+    ],
+    [
+      "quality-write",
+      "--out",
+      "<case-output>\\comparisons",
+      "--quality",
+      "<isolated-tool-directory>\\comparisons-quality.json"
+    ],
+    [
+      "quality-read",
+      "--out",
+      "<case-output>\\comparisons"
+    ],
+    [
+      "build",
+      "<case-output>\\comparisons\\model.json",
+      "--out",
+      "<case-output>\\comparisons",
+      "--svg"
+    ],
+    [
+      "build",
+      "<case-output>\\workflow\\model.json",
+      "--out",
+      "<case-output>\\workflow",
+      "--svg"
+    ],
+    [
+      "build",
+      "<case-output>\\overview\\model.json",
+      "--out",
+      "<isolated-tool-directory>\\tool-demo",
+      "--svg"
+    ],
+    [
+      "round",
+      "--out",
+      "<isolated-tool-directory>\\tool-demo",
+      "--action",
+      "create",
+      "--round-id",
+      "matt-skills-demo",
+      "--entry",
+      "organize-existing-material",
+      "--goal",
+      "区分用户入口、模型入口与路由建议（合成工具演示）",
+      "--concept",
+      "invocation",
+      "--concept",
+      "to-spec",
+      "--minutes",
+      "45"
+    ],
+    [
+      "round",
+      "--out",
+      "<isolated-tool-directory>\\tool-demo",
+      "--action",
+      "focus",
+      "--round-id",
+      "matt-skills-demo",
+      "--task-id",
+      "task-12c2ff73"
+    ],
+    [
+      "practice",
+      "--out",
+      "<isolated-tool-directory>\\tool-demo",
+      "--prompt",
+      "p-invocation",
+      "--session-id",
+      "matt-demo-session",
+      "--round-id",
+      "matt-skills-demo",
+      "--task-id",
+      "task-12c2ff73",
+      "--draft",
+      "这些技能都能由模型自动触发；ask-matt 给出路线后就会替我执行 to-spec 和 implement-spec。"
+    ],
+    [
+      "submit",
+      "--out",
+      "<isolated-tool-directory>\\tool-demo",
+      "--prompt",
+      "p-invocation",
+      "--answer",
+      "这些技能都能由模型自动触发；ask-matt 给出路线后就会替我执行 to-spec 和 implement-spec。",
+      "--attempt-id",
+      "matt-demo-original",
+      "--session-id",
+      "matt-demo-session",
+      "--round-id",
+      "matt-skills-demo",
+      "--task-id",
+      "task-12c2ff73"
+    ],
+    [
+      "review-start",
+      "--out",
+      "<isolated-tool-directory>\\tool-demo",
+      "--request-id",
+      "matt-demo-review",
+      "--round-id",
+      "matt-skills-demo"
+    ],
+    [
+      "review-item",
+      "--out",
+      "<isolated-tool-directory>\\tool-demo",
+      "--request-id",
+      "matt-demo-review",
+      "--prompt",
+      "p-invocation",
+      "--attempt-id",
+      "matt-demo-original",
+      "--feedback",
+      "<isolated-tool-directory>\\feedback.json"
+    ],
+    [
+      "correction",
+      "--out",
+      "<isolated-tool-directory>\\tool-demo",
+      "--prompt",
+      "p-invocation",
+      "--attempt-id",
+      "matt-demo-original",
+      "--text",
+      "用户入口要由用户明确发起，ask-matt 只给建议；模型入口可由 Agent 复用，用户也能显式使用。",
+      "--correction-id",
+      "matt-demo-correction",
+      "--assistance",
+      "tutor-feedback"
+    ],
+    [
+      "review-read",
+      "--out",
+      "<isolated-tool-directory>\\tool-demo",
+      "--request-id",
+      "matt-demo-review"
+    ],
+    [
+      "round",
+      "--out",
+      "<isolated-tool-directory>\\tool-demo",
+      "--action",
+      "pause",
+      "--round-id",
+      "matt-skills-demo"
+    ],
+    [
+      "resume-read",
+      "--out",
+      "<isolated-tool-directory>\\tool-demo",
+      "--round-id",
+      "matt-skills-demo"
+    ],
+    [
+      "round",
+      "--out",
+      "<isolated-tool-directory>\\tool-demo",
+      "--action",
+      "resume",
+      "--round-id",
+      "matt-skills-demo"
+    ],
+    [
+      "resume-read",
+      "--out",
+      "<isolated-tool-directory>\\tool-demo",
+      "--round-id",
+      "matt-skills-demo"
+    ],
+    [
+      "review-plan",
+      "--out",
+      "<isolated-tool-directory>\\tool-demo",
+      "--round-id",
+      "matt-skills-demo",
+      "--minutes",
+      "15",
+      "--at",
+      "2026-10-14T07:04:16.696Z",
+      "--focus-prompt",
+      "p-to-spec"
+    ],
+    [
+      "insights",
+      "--out",
+      "<isolated-tool-directory>\\tool-demo",
+      "--concept",
+      "invocation"
+    ]
+  ]
+}

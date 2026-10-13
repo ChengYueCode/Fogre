@@ -1,0 +1,420 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-48 -164 8775 641" width="8775" height="641" font-family="system-ui, 'Noto Sans SC', sans-serif">
+<rect x="-48" y="-164" width="8775" height="641" fill="#f1f5fa"/>
+<defs><marker id="ember-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="context-stroke"/></marker></defs>
+<rect x="4264" y="0" width="152" height="55" rx="12" fill="#dae6fa" stroke="#2857a4" stroke-width="2"/>
+<rect x="256" y="147" width="152" height="55" rx="12" fill="#edf2fb" stroke="#2857a4" stroke-width="2"/>
+<rect x="0" y="294" width="152" height="55" rx="12" fill="#ffffff" stroke="#2857a4" stroke-width="2"/>
+<rect x="194" y="294" width="152" height="55" rx="12" fill="#ffffff" stroke="#2857a4" stroke-width="2"/>
+<rect x="388" y="294" width="275" height="55" rx="12" fill="#ffffff" stroke="#2857a4" stroke-width="2"/>
+<rect x="1027" y="147" width="165" height="55" rx="12" fill="#edf2fb" stroke="#2857a4" stroke-width="2"/>
+<rect x="705" y="294" width="189" height="55" rx="12" fill="#ffffff" stroke="#2857a4" stroke-width="2"/>
+<rect x="936" y="294" width="152" height="55" rx="12" fill="#ffffff" stroke="#2857a4" stroke-width="2"/>
+<rect x="1130" y="294" width="152" height="55" rx="12" fill="#ffffff" stroke="#2857a4" stroke-width="2"/>
+<rect x="1324" y="294" width="189" height="55" rx="12" fill="#ffffff" stroke="#2857a4" stroke-width="2"/>
+<rect x="1749" y="147" width="152" height="55" rx="12" fill="#edf2fb" stroke="#2857a4" stroke-width="2"/>
+<rect x="1555" y="294" width="152" height="55" rx="12" fill="#ffffff" stroke="#2857a4" stroke-width="2"/>
+<rect x="1749" y="294" width="152" height="55" rx="12" fill="#ffffff" stroke="#2857a4" stroke-width="2"/>
+<rect x="1943" y="294" width="152" height="55" rx="12" fill="#ffffff" stroke="#2857a4" stroke-width="2"/>
+<rect x="2752" y="147" width="152" height="55" rx="12" fill="#edf2fb" stroke="#2857a4" stroke-width="2"/>
+<rect x="2137" y="294" width="152" height="55" rx="12" fill="#ffffff" stroke="#2857a4" stroke-width="2"/>
+<rect x="2331" y="294" width="180" height="55" rx="12" fill="#ffffff" stroke="#2857a4" stroke-width="2"/>
+<rect x="2553" y="294" width="152" height="55" rx="12" fill="#ffffff" stroke="#2857a4" stroke-width="2"/>
+<rect x="2747" y="294" width="152" height="55" rx="12" fill="#ffffff" stroke="#2857a4" stroke-width="2"/>
+<rect x="2941" y="294" width="152" height="55" rx="12" fill="#ffffff" stroke="#2857a4" stroke-width="2"/>
+<rect x="3135" y="294" width="152" height="55" rx="12" fill="#ffffff" stroke="#2857a4" stroke-width="2"/>
+<rect x="3329" y="294" width="189" height="55" rx="12" fill="#ffffff" stroke="#2857a4" stroke-width="2"/>
+<rect x="4143" y="147" width="165" height="55" rx="12" fill="#edf2fb" stroke="#2857a4" stroke-width="2"/>
+<rect x="3560" y="294" width="152" height="55" rx="12" fill="#ffffff" stroke="#2857a4" stroke-width="2"/>
+<rect x="3754" y="294" width="152" height="55" rx="12" fill="#ffffff" stroke="#2857a4" stroke-width="2"/>
+<rect x="3948" y="294" width="189" height="55" rx="12" fill="#ffffff" stroke="#2857a4" stroke-width="2"/>
+<rect x="4179" y="294" width="323" height="55" rx="12" fill="#ffffff" stroke="#2857a4" stroke-width="2"/>
+<rect x="4544" y="294" width="152" height="55" rx="12" fill="#ffffff" stroke="#2857a4" stroke-width="2"/>
+<rect x="4738" y="294" width="152" height="55" rx="12" fill="#ffffff" stroke="#2857a4" stroke-width="2"/>
+<rect x="5377" y="147" width="152" height="55" rx="12" fill="#edf2fb" stroke="#2857a4" stroke-width="2"/>
+<rect x="4932" y="294" width="152" height="55" rx="12" fill="#ffffff" stroke="#2857a4" stroke-width="2"/>
+<rect x="5126" y="294" width="152" height="55" rx="12" fill="#ffffff" stroke="#2857a4" stroke-width="2"/>
+<rect x="5320" y="294" width="199" height="55" rx="12" fill="#ffffff" stroke="#2857a4" stroke-width="2"/>
+<rect x="5561" y="294" width="152" height="55" rx="12" fill="#ffffff" stroke="#2857a4" stroke-width="2"/>
+<rect x="5755" y="294" width="218" height="55" rx="12" fill="#ffffff" stroke="#2857a4" stroke-width="2"/>
+<rect x="7265" y="147" width="165" height="55" rx="12" fill="#edf2fb" stroke="#2857a4" stroke-width="2"/>
+<rect x="6015" y="294" width="180" height="55" rx="12" fill="#ffffff" stroke="#2857a4" stroke-width="2"/>
+<rect x="6237" y="294" width="180" height="55" rx="12" fill="#ffffff" stroke="#2857a4" stroke-width="2"/>
+<rect x="6459" y="294" width="152" height="55" rx="12" fill="#ffffff" stroke="#2857a4" stroke-width="2"/>
+<rect x="6653" y="294" width="246" height="55" rx="12" fill="#ffffff" stroke="#2857a4" stroke-width="2"/>
+<rect x="6941" y="294" width="170" height="55" rx="12" fill="#ffffff" stroke="#2857a4" stroke-width="2"/>
+<rect x="7153" y="294" width="208" height="55" rx="12" fill="#ffffff" stroke="#2857a4" stroke-width="2"/>
+<rect x="7403" y="294" width="170" height="55" rx="12" fill="#ffffff" stroke="#2857a4" stroke-width="2"/>
+<rect x="7615" y="294" width="294" height="55" rx="12" fill="#ffffff" stroke="#2857a4" stroke-width="2"/>
+<rect x="7951" y="294" width="227" height="55" rx="12" fill="#ffffff" stroke="#2857a4" stroke-width="2"/>
+<rect x="8220" y="294" width="218" height="55" rx="12" fill="#ffffff" stroke="#2857a4" stroke-width="2"/>
+<rect x="8480" y="294" width="199" height="55" rx="12" fill="#ffffff" stroke="#2857a4" stroke-width="2"/>
+<path d="M 4264 27.5 L 408 174.5" fill="none" stroke="#50637a" stroke-width="2" marker-end="url(#ember-arrow)"/>
+<path d="M 256 174.5 L 152 321.5" fill="none" stroke="#50637a" stroke-width="2" marker-end="url(#ember-arrow)"/>
+<path d="M 332 202 L 332 248 L 270 248 L 270 294" fill="none" stroke="#50637a" stroke-width="2" marker-end="url(#ember-arrow)"/>
+<path d="M 408 174.5 L 388 321.5" fill="none" stroke="#50637a" stroke-width="2" marker-end="url(#ember-arrow)"/>
+<path d="M 4264 27.5 L 1192 174.5" fill="none" stroke="#50637a" stroke-width="2" marker-end="url(#ember-arrow)"/>
+<path d="M 1027 174.5 L 894 321.5" fill="none" stroke="#50637a" stroke-width="2" marker-end="url(#ember-arrow)"/>
+<path d="M 1109.5 202 L 1109.5 248 L 1012 248 L 1012 294" fill="none" stroke="#50637a" stroke-width="2" marker-end="url(#ember-arrow)"/>
+<path d="M 1109.5 202 L 1109.5 248 L 1206 248 L 1206 294" fill="none" stroke="#50637a" stroke-width="2" marker-end="url(#ember-arrow)"/>
+<path d="M 1192 174.5 L 1324 321.5" fill="none" stroke="#50637a" stroke-width="2" marker-end="url(#ember-arrow)"/>
+<path d="M 4264 27.5 L 1901 174.5" fill="none" stroke="#50637a" stroke-width="2" marker-end="url(#ember-arrow)"/>
+<path d="M 1749 174.5 L 1707 321.5" fill="none" stroke="#50637a" stroke-width="2" marker-end="url(#ember-arrow)"/>
+<path d="M 1825 202 L 1825 248 L 1825 294" fill="none" stroke="#50637a" stroke-width="2" marker-end="url(#ember-arrow)"/>
+<path d="M 1901 174.5 L 1943 321.5" fill="none" stroke="#50637a" stroke-width="2" marker-end="url(#ember-arrow)"/>
+<path d="M 4264 27.5 L 2904 174.5" fill="none" stroke="#50637a" stroke-width="2" marker-end="url(#ember-arrow)"/>
+<path d="M 2752 174.5 L 2289 321.5" fill="none" stroke="#50637a" stroke-width="2" marker-end="url(#ember-arrow)"/>
+<path d="M 2752 174.5 L 2511 321.5" fill="none" stroke="#50637a" stroke-width="2" marker-end="url(#ember-arrow)"/>
+<path d="M 2752 174.5 L 2705 321.5" fill="none" stroke="#50637a" stroke-width="2" marker-end="url(#ember-arrow)"/>
+<path d="M 2828 202 L 2828 248 L 2823 248 L 2823 294" fill="none" stroke="#50637a" stroke-width="2" marker-end="url(#ember-arrow)"/>
+<path d="M 2904 174.5 L 2941 321.5" fill="none" stroke="#50637a" stroke-width="2" marker-end="url(#ember-arrow)"/>
+<path d="M 2904 174.5 L 3135 321.5" fill="none" stroke="#50637a" stroke-width="2" marker-end="url(#ember-arrow)"/>
+<path d="M 2904 174.5 L 3329 321.5" fill="none" stroke="#50637a" stroke-width="2" marker-end="url(#ember-arrow)"/>
+<path d="M 4340 55 L 4340 101 L 4225.5 101 L 4225.5 147" fill="none" stroke="#50637a" stroke-width="2" marker-end="url(#ember-arrow)"/>
+<path d="M 4143 174.5 L 3712 321.5" fill="none" stroke="#50637a" stroke-width="2" marker-end="url(#ember-arrow)"/>
+<path d="M 4143 174.5 L 3906 321.5" fill="none" stroke="#50637a" stroke-width="2" marker-end="url(#ember-arrow)"/>
+<path d="M 4143 174.5 L 4137 321.5" fill="none" stroke="#50637a" stroke-width="2" marker-end="url(#ember-arrow)"/>
+<path d="M 4225.5 202 L 4225.5 248 L 4340.5 248 L 4340.5 294" fill="none" stroke="#50637a" stroke-width="2" marker-end="url(#ember-arrow)"/>
+<path d="M 4308 174.5 L 4544 321.5" fill="none" stroke="#50637a" stroke-width="2" marker-end="url(#ember-arrow)"/>
+<path d="M 4308 174.5 L 4738 321.5" fill="none" stroke="#50637a" stroke-width="2" marker-end="url(#ember-arrow)"/>
+<path d="M 4416 27.5 L 5377 174.5" fill="none" stroke="#50637a" stroke-width="2" marker-end="url(#ember-arrow)"/>
+<path d="M 5377 174.5 L 5084 321.5" fill="none" stroke="#50637a" stroke-width="2" marker-end="url(#ember-arrow)"/>
+<path d="M 5377 174.5 L 5278 321.5" fill="none" stroke="#50637a" stroke-width="2" marker-end="url(#ember-arrow)"/>
+<path d="M 5453 202 L 5453 248 L 5419.5 248 L 5419.5 294" fill="none" stroke="#50637a" stroke-width="2" marker-end="url(#ember-arrow)"/>
+<path d="M 5529 174.5 L 5561 321.5" fill="none" stroke="#50637a" stroke-width="2" marker-end="url(#ember-arrow)"/>
+<path d="M 5529 174.5 L 5755 321.5" fill="none" stroke="#50637a" stroke-width="2" marker-end="url(#ember-arrow)"/>
+<path d="M 4416 27.5 L 7265 174.5" fill="none" stroke="#50637a" stroke-width="2" marker-end="url(#ember-arrow)"/>
+<path d="M 7265 174.5 L 6195 321.5" fill="none" stroke="#50637a" stroke-width="2" marker-end="url(#ember-arrow)"/>
+<path d="M 7265 174.5 L 6417 321.5" fill="none" stroke="#50637a" stroke-width="2" marker-end="url(#ember-arrow)"/>
+<path d="M 7265 174.5 L 6611 321.5" fill="none" stroke="#50637a" stroke-width="2" marker-end="url(#ember-arrow)"/>
+<path d="M 7265 174.5 L 6899 321.5" fill="none" stroke="#50637a" stroke-width="2" marker-end="url(#ember-arrow)"/>
+<path d="M 7265 174.5 L 7111 321.5" fill="none" stroke="#50637a" stroke-width="2" marker-end="url(#ember-arrow)"/>
+<path d="M 7347.5 202 L 7347.5 248 L 7257 248 L 7257 294" fill="none" stroke="#50637a" stroke-width="2" marker-end="url(#ember-arrow)"/>
+<path d="M 7430 174.5 L 7403 321.5" fill="none" stroke="#50637a" stroke-width="2" marker-end="url(#ember-arrow)"/>
+<path d="M 7430 174.5 L 7615 321.5" fill="none" stroke="#50637a" stroke-width="2" marker-end="url(#ember-arrow)"/>
+<path d="M 7430 174.5 L 7951 321.5" fill="none" stroke="#50637a" stroke-width="2" marker-end="url(#ember-arrow)"/>
+<path d="M 7430 174.5 L 8220 321.5" fill="none" stroke="#50637a" stroke-width="2" marker-end="url(#ember-arrow)"/>
+<path d="M 7430 174.5 L 8480 321.5" fill="none" stroke="#50637a" stroke-width="2" marker-end="url(#ember-arrow)"/>
+<path d="M 152 321.5 L 1555 321.5" fill="none" stroke="#2857a4" stroke-width="2" stroke-dasharray="8 6" marker-end="url(#ember-arrow)"/>
+<path d="M 1707 321.5 L 1749 321.5" fill="none" stroke="#236044" stroke-width="2" stroke-dasharray="2 5" marker-end="url(#ember-arrow)"/>
+<path d="M 2553 321.5 L 2289 321.5" fill="none" stroke="#236044" stroke-width="2" stroke-dasharray="2 5" marker-end="url(#ember-arrow)"/>
+<path d="M 0 419 L 46 419" fill="none" stroke="#50637a" stroke-width="2" marker-end="url(#ember-arrow)"/>
+<path d="M 208 419 L 254 419" fill="none" stroke="#2857a4" stroke-width="2" stroke-dasharray="8 6" marker-end="url(#ember-arrow)"/>
+<path d="M 386 419 L 432 419" fill="none" stroke="#805200" stroke-width="2" marker-end="url(#ember-arrow)"/>
+<path d="M 564 419 L 610 419" fill="none" stroke="#a13f48" stroke-width="2" stroke-dasharray="8 6" marker-end="url(#ember-arrow)"/>
+<path d="M 742 419 L 788 419" fill="none" stroke="#236044" stroke-width="2" stroke-dasharray="2 5" marker-end="url(#ember-arrow)"/>
+<text x="0" y="-89.6" font-size="24" fill="#172b43" text-anchor="start">
+<tspan x="0" dy="0">学习 mattpocock/skills：按场景选择技能</tspan>
+</text>
+<text x="0" y="-56.1" font-size="15" fill="#50637a" text-anchor="start">
+<tspan x="0" dy="0">目标：能为工程与生产力场景选择正式技能，解释必要输入、技能自带流程、用户决定与产物边界。</tspan>
+</text>
+<text x="4340" y="34.1" font-size="17" fill="#172b43" text-anchor="middle">
+<tspan x="4340" dy="0">场景决定入口</tspan>
+</text>
+<text x="4408" y="17.3" font-size="11" fill="#50637a" text-anchor="end">
+<tspan x="4408" dy="0">难度 1</tspan>
+</text>
+<text x="332" y="181.1" font-size="17" fill="#172b43" text-anchor="middle">
+<tspan x="332" dy="0">入口与调用</tspan>
+</text>
+<text x="400" y="164.3" font-size="11" fill="#50637a" text-anchor="end">
+<tspan x="400" dy="0">难度 1</tspan>
+</text>
+<text x="76" y="328.1" font-size="17" fill="#172b43" text-anchor="middle">
+<tspan x="76" dy="0">谁能发起调用</tspan>
+</text>
+<text x="144" y="311.3" font-size="11" fill="#50637a" text-anchor="end">
+<tspan x="144" dy="0">难度 2</tspan>
+</text>
+<text x="270" y="328.1" font-size="17" fill="#172b43" text-anchor="middle">
+<tspan x="270" dy="0">ask-matt</tspan>
+</text>
+<text x="338" y="311.3" font-size="11" fill="#50637a" text-anchor="end">
+<tspan x="338" dy="0">难度 2</tspan>
+</text>
+<text x="525.5" y="328.1" font-size="17" fill="#172b43" text-anchor="middle">
+<tspan x="525.5" dy="0">setup-matt-pocock-skills</tspan>
+</text>
+<text x="655" y="311.3" font-size="11" fill="#50637a" text-anchor="end">
+<tspan x="655" dy="0">难度 2</tspan>
+</text>
+<text x="1109.5" y="181.1" font-size="17" fill="#172b43" text-anchor="middle">
+<tspan x="1109.5" dy="0">澄清与领域语言</tspan>
+</text>
+<text x="1184" y="164.3" font-size="11" fill="#50637a" text-anchor="end">
+<tspan x="1184" dy="0">难度 1</tspan>
+</text>
+<text x="799.5" y="328.1" font-size="17" fill="#172b43" text-anchor="middle">
+<tspan x="799.5" dy="0">grill-with-docs</tspan>
+</text>
+<text x="886" y="311.3" font-size="11" fill="#50637a" text-anchor="end">
+<tspan x="886" dy="0">难度 2</tspan>
+</text>
+<text x="1012" y="328.1" font-size="17" fill="#172b43" text-anchor="middle">
+<tspan x="1012" dy="0">grill-me</tspan>
+</text>
+<text x="1080" y="311.3" font-size="11" fill="#50637a" text-anchor="end">
+<tspan x="1080" dy="0">难度 2</tspan>
+</text>
+<text x="1206" y="328.1" font-size="17" fill="#172b43" text-anchor="middle">
+<tspan x="1206" dy="0">grilling</tspan>
+</text>
+<text x="1274" y="311.3" font-size="11" fill="#50637a" text-anchor="end">
+<tspan x="1274" dy="0">难度 2</tspan>
+</text>
+<text x="1418.5" y="328.1" font-size="17" fill="#172b43" text-anchor="middle">
+<tspan x="1418.5" dy="0">domain-modeling</tspan>
+</text>
+<text x="1505" y="311.3" font-size="11" fill="#50637a" text-anchor="end">
+<tspan x="1505" dy="0">难度 2</tspan>
+</text>
+<text x="1825" y="181.1" font-size="17" fill="#172b43" text-anchor="middle">
+<tspan x="1825" dy="0">规格与任务图</tspan>
+</text>
+<text x="1893" y="164.3" font-size="11" fill="#50637a" text-anchor="end">
+<tspan x="1893" dy="0">难度 1</tspan>
+</text>
+<text x="1631" y="328.1" font-size="17" fill="#172b43" text-anchor="middle">
+<tspan x="1631" dy="0">to-spec</tspan>
+</text>
+<text x="1699" y="311.3" font-size="11" fill="#50637a" text-anchor="end">
+<tspan x="1699" dy="0">难度 2</tspan>
+</text>
+<text x="1825" y="328.1" font-size="17" fill="#172b43" text-anchor="middle">
+<tspan x="1825" dy="0">to-tickets</tspan>
+</text>
+<text x="1893" y="311.3" font-size="11" fill="#50637a" text-anchor="end">
+<tspan x="1893" dy="0">难度 2</tspan>
+</text>
+<text x="2019" y="328.1" font-size="17" fill="#172b43" text-anchor="middle">
+<tspan x="2019" dy="0">wayfinder</tspan>
+</text>
+<text x="2087" y="311.3" font-size="11" fill="#50637a" text-anchor="end">
+<tspan x="2087" dy="0">难度 2</tspan>
+</text>
+<text x="2828" y="181.1" font-size="17" fill="#172b43" text-anchor="middle">
+<tspan x="2828" dy="0">实现与验证</tspan>
+</text>
+<text x="2896" y="164.3" font-size="11" fill="#50637a" text-anchor="end">
+<tspan x="2896" dy="0">难度 1</tspan>
+</text>
+<text x="2213" y="328.1" font-size="17" fill="#172b43" text-anchor="middle">
+<tspan x="2213" dy="0">implement</tspan>
+</text>
+<text x="2281" y="311.3" font-size="11" fill="#50637a" text-anchor="end">
+<tspan x="2281" dy="0">难度 2</tspan>
+</text>
+<text x="2421" y="328.1" font-size="17" fill="#172b43" text-anchor="middle">
+<tspan x="2421" dy="0">implement-spec</tspan>
+</text>
+<text x="2503" y="311.3" font-size="11" fill="#50637a" text-anchor="end">
+<tspan x="2503" dy="0">难度 2</tspan>
+</text>
+<text x="2629" y="328.1" font-size="17" fill="#172b43" text-anchor="middle">
+<tspan x="2629" dy="0">tdd</tspan>
+</text>
+<text x="2697" y="311.3" font-size="11" fill="#50637a" text-anchor="end">
+<tspan x="2697" dy="0">难度 2</tspan>
+</text>
+<text x="2823" y="328.1" font-size="17" fill="#172b43" text-anchor="middle">
+<tspan x="2823" dy="0">prototype</tspan>
+</text>
+<text x="2891" y="311.3" font-size="11" fill="#50637a" text-anchor="end">
+<tspan x="2891" dy="0">难度 2</tspan>
+</text>
+<text x="3017" y="328.1" font-size="17" fill="#172b43" text-anchor="middle">
+<tspan x="3017" dy="0">research</tspan>
+</text>
+<text x="3085" y="311.3" font-size="11" fill="#50637a" text-anchor="end">
+<tspan x="3085" dy="0">难度 2</tspan>
+</text>
+<text x="3211" y="328.1" font-size="17" fill="#172b43" text-anchor="middle">
+<tspan x="3211" dy="0">wizard</tspan>
+</text>
+<text x="3279" y="311.3" font-size="11" fill="#50637a" text-anchor="end">
+<tspan x="3279" dy="0">难度 2</tspan>
+</text>
+<text x="3423.5" y="328.1" font-size="17" fill="#172b43" text-anchor="middle">
+<tspan x="3423.5" dy="0">diagnosing-bugs</tspan>
+</text>
+<text x="3510" y="311.3" font-size="11" fill="#50637a" text-anchor="end">
+<tspan x="3510" dy="0">难度 2</tspan>
+</text>
+<text x="4225.5" y="181.1" font-size="17" fill="#172b43" text-anchor="middle">
+<tspan x="4225.5" dy="0">审查与环境改进</tspan>
+</text>
+<text x="4300" y="164.3" font-size="11" fill="#50637a" text-anchor="end">
+<tspan x="4300" dy="0">难度 1</tspan>
+</text>
+<text x="3636" y="328.1" font-size="17" fill="#172b43" text-anchor="middle">
+<tspan x="3636" dy="0">triage</tspan>
+</text>
+<text x="3704" y="311.3" font-size="11" fill="#50637a" text-anchor="end">
+<tspan x="3704" dy="0">难度 2</tspan>
+</text>
+<text x="3830" y="328.1" font-size="17" fill="#172b43" text-anchor="middle">
+<tspan x="3830" dy="0">code-review</tspan>
+</text>
+<text x="3898" y="311.3" font-size="11" fill="#50637a" text-anchor="end">
+<tspan x="3898" dy="0">难度 2</tspan>
+</text>
+<text x="4042.5" y="328.1" font-size="17" fill="#172b43" text-anchor="middle">
+<tspan x="4042.5" dy="0">codebase-design</tspan>
+</text>
+<text x="4129" y="311.3" font-size="11" fill="#50637a" text-anchor="end">
+<tspan x="4129" dy="0">难度 2</tspan>
+</text>
+<text x="4340.5" y="328.1" font-size="17" fill="#172b43" text-anchor="middle">
+<tspan x="4340.5" dy="0">improve-codebase-architecture</tspan>
+</text>
+<text x="4494" y="311.3" font-size="11" fill="#50637a" text-anchor="end">
+<tspan x="4494" dy="0">难度 2</tspan>
+</text>
+<text x="4620" y="328.1" font-size="17" fill="#172b43" text-anchor="middle">
+<tspan x="4620" dy="0">pr</tspan>
+</text>
+<text x="4688" y="311.3" font-size="11" fill="#50637a" text-anchor="end">
+<tspan x="4688" dy="0">难度 2</tspan>
+</text>
+<text x="4814" y="328.1" font-size="17" fill="#172b43" text-anchor="middle">
+<tspan x="4814" dy="0">retro</tspan>
+</text>
+<text x="4882" y="311.3" font-size="11" fill="#50637a" text-anchor="end">
+<tspan x="4882" dy="0">难度 2</tspan>
+</text>
+<text x="5453" y="181.1" font-size="17" fill="#172b43" text-anchor="middle">
+<tspan x="5453" dy="0">续接与学习</tspan>
+</text>
+<text x="5521" y="164.3" font-size="11" fill="#50637a" text-anchor="end">
+<tspan x="5521" dy="0">难度 1</tspan>
+</text>
+<text x="5008" y="328.1" font-size="17" fill="#172b43" text-anchor="middle">
+<tspan x="5008" dy="0">handoff</tspan>
+</text>
+<text x="5076" y="311.3" font-size="11" fill="#50637a" text-anchor="end">
+<tspan x="5076" dy="0">难度 2</tspan>
+</text>
+<text x="5202" y="328.1" font-size="17" fill="#172b43" text-anchor="middle">
+<tspan x="5202" dy="0">teach</tspan>
+</text>
+<text x="5270" y="311.3" font-size="11" fill="#50637a" text-anchor="end">
+<tspan x="5270" dy="0">难度 2</tspan>
+</text>
+<text x="5419.5" y="328.1" font-size="17" fill="#172b43" text-anchor="middle">
+<tspan x="5419.5" dy="0">to-questionnaire</tspan>
+</text>
+<text x="5511" y="311.3" font-size="11" fill="#50637a" text-anchor="end">
+<tspan x="5511" dy="0">难度 2</tspan>
+</text>
+<text x="5637" y="328.1" font-size="17" fill="#172b43" text-anchor="middle">
+<tspan x="5637" dy="0">wait-what</tspan>
+</text>
+<text x="5705" y="311.3" font-size="11" fill="#50637a" text-anchor="end">
+<tspan x="5705" dy="0">难度 2</tspan>
+</text>
+<text x="5864" y="328.1" font-size="17" fill="#172b43" text-anchor="middle">
+<tspan x="5864" dy="0">writing-for-agents</tspan>
+</text>
+<text x="5965" y="311.3" font-size="11" fill="#50637a" text-anchor="end">
+<tspan x="5965" dy="0">难度 2</tspan>
+</text>
+<text x="7347.5" y="181.1" font-size="17" fill="#172b43" text-anchor="middle">
+<tspan x="7347.5" dy="0">试验与冻结附录</tspan>
+</text>
+<text x="7422" y="164.3" font-size="11" fill="#50637a" text-anchor="end">
+<tspan x="7422" dy="0">难度 1</tspan>
+</text>
+<text x="6105" y="328.1" font-size="17" fill="#172b43" text-anchor="middle">
+<tspan x="6105" dy="0">chief-of-staff</tspan>
+</text>
+<text x="6187" y="311.3" font-size="11" fill="#50637a" text-anchor="end">
+<tspan x="6187" dy="0">难度 1</tspan>
+</text>
+<text x="6327" y="328.1" font-size="17" fill="#172b43" text-anchor="middle">
+<tspan x="6327" dy="0">claude-handoff</tspan>
+</text>
+<text x="6409" y="311.3" font-size="11" fill="#50637a" text-anchor="end">
+<tspan x="6409" dy="0">难度 1</tspan>
+</text>
+<text x="6535" y="328.1" font-size="17" fill="#172b43" text-anchor="middle">
+<tspan x="6535" dy="0">loop-me</tspan>
+</text>
+<text x="6603" y="311.3" font-size="11" fill="#50637a" text-anchor="end">
+<tspan x="6603" dy="0">难度 1</tspan>
+</text>
+<text x="6776" y="328.1" font-size="17" fill="#172b43" text-anchor="middle">
+<tspan x="6776" dy="0">setup-ts-deep-modules</tspan>
+</text>
+<text x="6891" y="311.3" font-size="11" fill="#50637a" text-anchor="end">
+<tspan x="6891" dy="0">难度 1</tspan>
+</text>
+<text x="7026" y="328.1" font-size="17" fill="#172b43" text-anchor="middle">
+<tspan x="7026" dy="0">writing-beats</tspan>
+</text>
+<text x="7103" y="311.3" font-size="11" fill="#50637a" text-anchor="end">
+<tspan x="7103" dy="0">难度 1</tspan>
+</text>
+<text x="7257" y="328.1" font-size="17" fill="#172b43" text-anchor="middle">
+<tspan x="7257" dy="0">writing-fragments</tspan>
+</text>
+<text x="7353" y="311.3" font-size="11" fill="#50637a" text-anchor="end">
+<tspan x="7353" dy="0">难度 1</tspan>
+</text>
+<text x="7488" y="328.1" font-size="17" fill="#172b43" text-anchor="middle">
+<tspan x="7488" dy="0">writing-shape</tspan>
+</text>
+<text x="7565" y="311.3" font-size="11" fill="#50637a" text-anchor="end">
+<tspan x="7565" dy="0">难度 1</tspan>
+</text>
+<text x="7762" y="328.1" font-size="17" fill="#172b43" text-anchor="middle">
+<tspan x="7762" dy="0">git-guardrails-claude-code</tspan>
+</text>
+<text x="7901" y="311.3" font-size="11" fill="#50637a" text-anchor="end">
+<tspan x="7901" dy="0">难度 1</tspan>
+</text>
+<text x="8064.5" y="328.1" font-size="17" fill="#172b43" text-anchor="middle">
+<tspan x="8064.5" dy="0">migrate-to-shoehorn</tspan>
+</text>
+<text x="8170" y="311.3" font-size="11" fill="#50637a" text-anchor="end">
+<tspan x="8170" dy="0">难度 1</tspan>
+</text>
+<text x="8329" y="328.1" font-size="17" fill="#172b43" text-anchor="middle">
+<tspan x="8329" dy="0">scaffold-exercises</tspan>
+</text>
+<text x="8430" y="311.3" font-size="11" fill="#50637a" text-anchor="end">
+<tspan x="8430" dy="0">难度 1</tspan>
+</text>
+<text x="8579.5" y="328.1" font-size="17" fill="#172b43" text-anchor="middle">
+<tspan x="8579.5" dy="0">setup-pre-commit</tspan>
+</text>
+<text x="8671" y="311.3" font-size="11" fill="#50637a" text-anchor="end">
+<tspan x="8671" dy="0">难度 1</tspan>
+</text>
+<text x="853.5" y="325.6" font-size="13" fill="#2857a4" text-anchor="middle">
+<tspan x="853.5" dy="0">先确认调用身份</tspan>
+</text>
+<text x="1728" y="325.6" font-size="13" fill="#236044" text-anchor="middle">
+<tspan x="1728" dy="0">规格成为任务分解输入</tspan>
+</text>
+<text x="2421" y="325.6" font-size="13" fill="#236044" text-anchor="middle">
+<tspan x="2421" dy="0">可复用的实现纪律</tspan>
+</text>
+<text x="0" y="406.5" font-size="14" fill="#2f2923" text-anchor="start">
+<tspan x="0" dy="0">图例</tspan>
+</text>
+<text x="54" y="424.1" font-size="13" fill="#50637a" text-anchor="start">
+<tspan x="54" dy="0">包含（父子层级）</tspan>
+</text>
+<text x="262" y="424.1" font-size="13" fill="#2857a4" text-anchor="start">
+<tspan x="262" dy="0">前置</tspan>
+</text>
+<text x="440" y="424.1" font-size="13" fill="#805200" text-anchor="start">
+<tspan x="440" dy="0">因果</tspan>
+</text>
+<text x="618" y="424.1" font-size="13" fill="#a13f48" text-anchor="start">
+<tspan x="618" dy="0">对比</tspan>
+</text>
+<text x="796" y="424.1" font-size="13" fill="#236044" text-anchor="start">
+<tspan x="796" dy="0">应用</tspan>
+</text>
+</svg>

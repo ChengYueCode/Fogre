@@ -99,11 +99,15 @@ test('explicit public allowlist ships six entries, preserves literals and exclud
     '.github/workflows/ci.yml', '.claude-plugin/plugin.json', 'bin/forge.mjs', 'scripts/helper.mjs', 'tests/literals.test.mjs',
     'docs/github-introduction.md', 'docs/forge-methods.md', 'docs/skill-architecture.md', 'docs/skill-acceptance.md', 'docs/open-source.md', 'docs/release-checklist.md', 'docs/support.md',
     'docs/agents/issue-tracker.md', 'docs/adr/0001-decision.md', 'docs/assets/forge-preview.jpg',
-    'examples/probability/README.md', 'examples/probability/state.json', 'skill/forge/assets/中文.txt'];
+    'examples/mattpocock-skills/README.md', 'examples/mattpocock-skills/overview/state.json', 'examples/README.md',
+    'examples/mattpocock-skills/HANDBOOK.md', 'examples/mattpocock-skills/sources.json', 'examples/mattpocock-skills/tool-demo/readback.json', 'examples/mattpocock-skills/question/response.json',
+    'docs/assets/cases/manifest.json', 'docs/assets/cases/mp-review.png', 'docs/visual-showcase.md',
+    'docs/assets/showcase/forge-hero.png', 'docs/assets/showcase/forge-learning-flow.png', 'docs/assets/showcase/forge-case-study.png',
+    'docs/assets/showcase/manifest.json', 'docs/assets/showcase/PROMPTS.md', 'skill/forge/assets/中文.txt'];
   for (const name of publicNames) await put(source, name, name.endsWith('.md') ? '[Home](/README.md)\n'.replace('/README.md', path.posix.relative(path.posix.dirname(name), 'README.md') || 'README.md') : 'C:\\Users\\personal token=example literal');
   const privateNames = ['.scratch/notes.md', '.git/config', 'dist/old.zip', 'INTENT.md', 'research/report.md', 'other.md', 'docs/research-report.md',
-    'docs/validation/result.json', 'docs/assets/other.jpg', 'skill/foreign/SKILL.md', 'skill/forge/debug.log', 'scripts/run.log', 'tests/debug.log',
-    'examples/probability/state.v1.backup.json', 'skill/forge/state.bak.json', 'scripts/tool.lock', 'skill/forge/.forge-install.json', 'skill/forge/.forge-install-lock',
+    'docs/validation/result.json', 'docs/assets/other.jpg', 'examples/private-learner/state.json', 'docs/assets/cases/debug.log', 'docs/assets/showcase/debug.log', 'docs/assets/showcase/.env', 'skill/foreign/SKILL.md', 'skill/forge/debug.log', 'scripts/run.log', 'tests/debug.log',
+    'examples/mattpocock-skills/state.v1.backup.json', 'examples/probability/README.md', 'skill/forge/state.bak.json', 'scripts/tool.lock', 'skill/forge/.forge-install.json', 'skill/forge/.forge-install-lock',
     'skill/forge/.scratch/notes.md', 'scripts/dist/cache.json', 'scripts/node_modules/cache.json',
     'scripts/.env', 'tests/.env.local', 'skill/forge/.npmrc', 'skill/forge/private.pem', 'scripts/server.key'];
   for (const name of privateNames) await put(source, name, 'must not ship');

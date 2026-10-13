@@ -61,7 +61,8 @@ const HERE = path.dirname(fileURLToPath(import.meta.url));
 const SKILL_ROOT = path.resolve(HERE, '..');
 const VIEWER_PATH = path.join(SKILL_ROOT, 'assets', 'viewer.html');
 
-const HELP = `forge · 锻造 — 学习产物与复习循环
+const HELP = `Forge — Make sense. Keep going.
+学新知识、整理资料、检查答案，保存进度，下次接着学。
 
 用法：node <skill-dir>/scripts/forge.mjs <命令> [参数]
 脚本位置由技能包决定；不需要 cd 进技能目录，学习数据放在你自己的工作区。

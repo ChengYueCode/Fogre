@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-48 -164 1671 596" width="1671" height="596" font-family="system-ui, 'Noto Sans SC', sans-serif">
+<rect x="-48" y="-164" width="1671" height="596" fill="#f3f1fa"/>
+<defs><marker id="ember-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="context-stroke"/></marker></defs>
+<rect x="712" y="0" width="152" height="55" rx="12" fill="#e2d6f4" stroke="#6940a5" stroke-width="2"/>
+<rect x="0" y="147" width="189" height="55" rx="12" fill="#f0eafa" stroke="#6940a5" stroke-width="2"/>
+<rect x="231" y="147" width="152" height="55" rx="12" fill="#f0eafa" stroke="#6940a5" stroke-width="2"/>
+<rect x="425" y="147" width="152" height="55" rx="12" fill="#f0eafa" stroke="#6940a5" stroke-width="2"/>
+<rect x="619" y="147" width="152" height="55" rx="12" fill="#f0eafa" stroke="#6940a5" stroke-width="2"/>
+<rect x="813" y="147" width="180" height="55" rx="12" fill="#f0eafa" stroke="#6940a5" stroke-width="2"/>
+<rect x="1035" y="147" width="152" height="55" rx="12" fill="#f0eafa" stroke="#6940a5" stroke-width="2"/>
+<rect x="1229" y="147" width="152" height="55" rx="12" fill="#f0eafa" stroke="#6940a5" stroke-width="2"/>
+<rect x="1423" y="147" width="152" height="55" rx="12" fill="#f0eafa" stroke="#6940a5" stroke-width="2"/>
+<path d="M 712 27.5 L 189 174.5" fill="none" stroke="#68577d" stroke-width="2" marker-end="url(#ember-arrow)"/>
+<path d="M 712 27.5 L 383 174.5" fill="none" stroke="#68577d" stroke-width="2" marker-end="url(#ember-arrow)"/>
+<path d="M 712 27.5 L 577 174.5" fill="none" stroke="#68577d" stroke-width="2" marker-end="url(#ember-arrow)"/>
+<path d="M 788 55 L 788 101 L 695 101 L 695 147" fill="none" stroke="#68577d" stroke-width="2" marker-end="url(#ember-arrow)"/>
+<path d="M 788 55 L 788 101 L 903 101 L 903 147" fill="none" stroke="#68577d" stroke-width="2" marker-end="url(#ember-arrow)"/>
+<path d="M 864 27.5 L 1035 174.5" fill="none" stroke="#68577d" stroke-width="2" marker-end="url(#ember-arrow)"/>
+<path d="M 864 27.5 L 1229 174.5" fill="none" stroke="#68577d" stroke-width="2" marker-end="url(#ember-arrow)"/>
+<path d="M 864 27.5 L 1423 174.5" fill="none" stroke="#68577d" stroke-width="2" marker-end="url(#ember-arrow)"/>
+<path d="M 383 174.5 L 425 174.5" fill="none" stroke="#2857a4" stroke-width="2" stroke-dasharray="8 6" marker-end="url(#ember-arrow)"/>
+<path d="M 577 174.5 L 813 174.5" fill="none" stroke="#236044" stroke-width="2" stroke-dasharray="2 5" marker-end="url(#ember-arrow)"/>
+<path d="M 0 272 L 46 272" fill="none" stroke="#68577d" stroke-width="2" marker-end="url(#ember-arrow)"/>
+<path d="M 208 272 L 254 272" fill="none" stroke="#2857a4" stroke-width="2" stroke-dasharray="8 6" marker-end="url(#ember-arrow)"/>
+<path d="M 386 272 L 432 272" fill="none" stroke="#805200" stroke-width="2" marker-end="url(#ember-arrow)"/>
+<path d="M 564 272 L 610 272" fill="none" stroke="#a13f48" stroke-width="2" stroke-dasharray="8 6" marker-end="url(#ember-arrow)"/>
+<path d="M 742 272 L 788 272" fill="none" stroke="#236044" stroke-width="2" stroke-dasharray="2 5" marker-end="url(#ember-arrow)"/>
+<text x="0" y="-89.6" font-size="24" fill="#302348" text-anchor="start">
+<tspan x="0" dy="0">学习 mattpocock/skills：工程路线与阶段边界</tspan>
+</text>
+<text x="0" y="-56.1" font-size="15" fill="#68577d" text-anchor="start">
+<tspan x="0" dy="0">目标：能解释从已澄清想法到规格、任务图、实现和审查的路线，并按依赖选择下一阶段。</tspan>
+</text>
+<text x="788" y="34.1" font-size="17" fill="#302348" text-anchor="middle">
+<tspan x="788" dy="0">选择工程路线</tspan>
+</text>
+<text x="856" y="17.3" font-size="11" fill="#68577d" text-anchor="end">
+<tspan x="856" dy="0">难度 1</tspan>
+</text>
+<text x="94.5" y="181.1" font-size="17" fill="#302348" text-anchor="middle">
+<tspan x="94.5" dy="0">grill-with-docs</tspan>
+</text>
+<text x="181" y="164.3" font-size="11" fill="#68577d" text-anchor="end">
+<tspan x="181" dy="0">难度 2</tspan>
+</text>
+<text x="307" y="181.1" font-size="17" fill="#302348" text-anchor="middle">
+<tspan x="307" dy="0">to-spec</tspan>
+</text>
+<text x="375" y="164.3" font-size="11" fill="#68577d" text-anchor="end">
+<tspan x="375" dy="0">难度 2</tspan>
+</text>
+<text x="501" y="181.1" font-size="17" fill="#302348" text-anchor="middle">
+<tspan x="501" dy="0">to-tickets</tspan>
+</text>
+<text x="569" y="164.3" font-size="11" fill="#68577d" text-anchor="end">
+<tspan x="569" dy="0">难度 2</tspan>
+</text>
+<text x="695" y="181.1" font-size="17" fill="#302348" text-anchor="middle">
+<tspan x="695" dy="0">implement</tspan>
+</text>
+<text x="763" y="164.3" font-size="11" fill="#68577d" text-anchor="end">
+<tspan x="763" dy="0">难度 2</tspan>
+</text>
+<text x="903" y="181.1" font-size="17" fill="#302348" text-anchor="middle">
+<tspan x="903" dy="0">implement-spec</tspan>
+</text>
+<text x="985" y="164.3" font-size="11" fill="#68577d" text-anchor="end">
+<tspan x="985" dy="0">难度 2</tspan>
+</text>
+<text x="1111" y="181.1" font-size="17" fill="#302348" text-anchor="middle">
+<tspan x="1111" dy="0">tdd</tspan>
+</text>
+<text x="1179" y="164.3" font-size="11" fill="#68577d" text-anchor="end">
+<tspan x="1179" dy="0">难度 2</tspan>
+</text>
+<text x="1305" y="181.1" font-size="17" fill="#302348" text-anchor="middle">
+<tspan x="1305" dy="0">code-review</tspan>
+</text>
+<text x="1373" y="164.3" font-size="11" fill="#68577d" text-anchor="end">
+<tspan x="1373" dy="0">难度 2</tspan>
+</text>
+<text x="1499" y="181.1" font-size="17" fill="#302348" text-anchor="middle">
+<tspan x="1499" dy="0">retro</tspan>
+</text>
+<text x="1567" y="164.3" font-size="11" fill="#68577d" text-anchor="end">
+<tspan x="1567" dy="0">难度 2</tspan>
+</text>
+<text x="310" y="358.1" font-size="15" fill="#2857a4" text-anchor="middle">
+<tspan x="310" dy="0">to-spec → to-tickets</tspan>
+<tspan x="310" dy="19.5">以已有规格为输入的这条教学路线</tspan>
+</text>
+<text x="960" y="358.1" font-size="15" fill="#236044" text-anchor="middle">
+<tspan x="960" dy="0">to-tickets → implement-spec</tspan>
+<tspan x="960" dy="19.5">任务图决定就绪前沿</tspan>
+</text>
+<text x="0" y="259.5" font-size="14" fill="#2f2923" text-anchor="start">
+<tspan x="0" dy="0">图例</tspan>
+</text>
+<text x="54" y="277.1" font-size="13" fill="#68577d" text-anchor="start">
+<tspan x="54" dy="0">包含（父子层级）</tspan>
+</text>
+<text x="262" y="277.1" font-size="13" fill="#2857a4" text-anchor="start">
+<tspan x="262" dy="0">前置</tspan>
+</text>
+<text x="440" y="277.1" font-size="13" fill="#805200" text-anchor="start">
+<tspan x="440" dy="0">因果</tspan>
+</text>
+<text x="618" y="277.1" font-size="13" fill="#a13f48" text-anchor="start">
+<tspan x="618" dy="0">对比</tspan>
+</text>
+<text x="796" y="277.1" font-size="13" fill="#236044" text-anchor="start">
+<tspan x="796" dy="0">应用</tspan>
+</text>
+</svg>

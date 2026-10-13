@@ -1,0 +1,250 @@
+{
+  "kind": "actual-browser-captures",
+  "topic": "学习 mattpocock/skills",
+  "upstreamCommit": "49dd158d1076134a641b33efb035946536778336",
+  "generatedAt": "2026-10-13T08:11:05.753Z",
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "browser": "155.0.8059.40",
+  "disclosure": "新主题作者学习产物、明确标注的合成工具读回以及当前实际单次响应；不证明真人掌握或宿主安装发现。",
+  "records": [
+    {
+      "image": "docs/assets/cases/mp-hub.png",
+      "source": "examples/mattpocock-skills/index.html",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "action": "实际打开新主题资料总入口，27 正式、11 附录、8 单元与未知学习状态。",
+      "sourceSha256": "b3b21e38193bd691e191071327fb2c888dca2ef0f42fd273e77c97c22615fb3a",
+      "imageSha256": "ec8d4799078065fa38f82e9de0aabaaeab9299bb93510d374e9a21ddf1b22217"
+    },
+    {
+      "image": "docs/assets/cases/mp-catalog.png",
+      "source": "examples/mattpocock-skills/index.html",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "action": "实际搜索并展开 to-spec，查看必要输入、自带流程与边界。",
+      "sourceSha256": "b3b21e38193bd691e191071327fb2c888dca2ef0f42fd273e77c97c22615fb3a",
+      "imageSha256": "d9eecfcd4365e5d50a24ab344b4dc525ec7f9336f9578f8163cba2e38a1ea87e"
+    },
+    {
+      "image": "docs/assets/cases/mp-sources.png",
+      "source": "examples/mattpocock-skills/index.html",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "action": "固定提交、107 文件的来源清单与未验证范围。",
+      "sourceSha256": "b3b21e38193bd691e191071327fb2c888dca2ef0f42fd273e77c97c22615fb3a",
+      "imageSha256": "691e73d79f428d52677bb89a91ec96ea6c8b069a7dadcdc5be452023a1707b18"
+    },
+    {
+      "image": "docs/assets/cases/mp-invocation.png",
+      "source": "examples/mattpocock-skills/overview/index.html",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "action": "实际选择调用身份并查看用户入口与模型入口对照。",
+      "sourceSha256": "392262f1b3968407da22c214c0fcd3403c68def28dbe70f1e69b3a5c3bc390c7",
+      "imageSha256": "0db7fc15f1dcc8734f24d985b7b69a474585af3a41d5103994b0dd572df94ef7",
+      "captureSourceSha256": "f07fcb6d827b0e33268c62484f2c728f3e2629ccfcad46dd72f22f7d2eb1a75d",
+      "sourceCanonicalization": "LF normalization and trailing horizontal whitespace cleanup after capture; visual content unchanged"
+    },
+    {
+      "image": "docs/assets/cases/mp-overview.png",
+      "source": "examples/mattpocock-skills/overview/index.html",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "action": "atlas 实际聚焦入口与调用分组，展开子节点并缩放查看；其余入口可从全景和目录探索。",
+      "sourceSha256": "392262f1b3968407da22c214c0fcd3403c68def28dbe70f1e69b3a5c3bc390c7",
+      "imageSha256": "8e003fed91fb0902282a69025f628361d02abf84887a19a17e509c6ceb777368",
+      "captureSourceSha256": "f07fcb6d827b0e33268c62484f2c728f3e2629ccfcad46dd72f22f7d2eb1a75d",
+      "sourceCanonicalization": "LF normalization and trailing horizontal whitespace cleanup after capture; visual content unchanged"
+    },
+    {
+      "image": "docs/assets/cases/mp-workflow.png",
+      "source": "examples/mattpocock-skills/workflow/index.html",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "action": "sequence 工程路线与分步推演。",
+      "sourceSha256": "b693743b4a6f707cddfb95104d77c29f479a379aadc644ad913c56313c528840",
+      "imageSha256": "2ac1b1e7571274d3aa77e5d87ee4b9ac08a42036d6590cd4ef74c3490ff5a7de",
+      "captureSourceSha256": "6aae7c31dda359074ccc821a1cfba4627bbc1e39bcc1332855e9bb9f3b042fc3",
+      "sourceCanonicalization": "LF normalization and trailing horizontal whitespace cleanup after capture; visual content unchanged"
+    },
+    {
+      "image": "docs/assets/cases/mp-workflow-start.png",
+      "source": "examples/mattpocock-skills/workflow/index.html",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "action": "第 1 步：先澄清目标和语言。",
+      "sourceSha256": "b693743b4a6f707cddfb95104d77c29f479a379aadc644ad913c56313c528840",
+      "imageSha256": "c51b43229d33f5113e2bce93faaff2249caac4949a89713e451b3650a8ad36d7",
+      "captureSourceSha256": "6aae7c31dda359074ccc821a1cfba4627bbc1e39bcc1332855e9bb9f3b042fc3",
+      "sourceCanonicalization": "LF normalization and trailing horizontal whitespace cleanup after capture; visual content unchanged"
+    },
+    {
+      "image": "docs/assets/cases/mp-workflow-end.png",
+      "source": "examples/mattpocock-skills/workflow/index.html",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "action": "实际推进至第 5 步：需求和规范分开审查。",
+      "sourceSha256": "b693743b4a6f707cddfb95104d77c29f479a379aadc644ad913c56313c528840",
+      "imageSha256": "876e5cd29dab6a22807355f911bdee2e71c022478c23040932aace77f3059319",
+      "captureSourceSha256": "6aae7c31dda359074ccc821a1cfba4627bbc1e39bcc1332855e9bb9f3b042fc3",
+      "sourceCanonicalization": "LF normalization and trailing horizontal whitespace cleanup after capture; visual content unchanged"
+    },
+    {
+      "image": "docs/assets/cases/mp-comparison.png",
+      "source": "examples/mattpocock-skills/comparisons/index.html",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "action": "实际选择 to-spec 与 to-tickets，比较场景、输入、产物和用户确认。",
+      "sourceSha256": "f156abe93949bc3bc9ea64e2f3ff9c889e69206975b3ed32b0ec3e4b98dee3aa",
+      "imageSha256": "4f96c4ccc8c0efa020d0dc935b28f63628b62b4f84f348f5fe44858a5bf9defb",
+      "captureSourceSha256": "3077cd78e033dfda68e14525d1a94125d77a8912adbd2e798fd09623bb9b5cde",
+      "sourceCanonicalization": "LF normalization and trailing horizontal whitespace cleanup after capture; visual content unchanged"
+    },
+    {
+      "image": "docs/assets/cases/mp-practice.png",
+      "source": "examples/mattpocock-skills/comparisons/index.html",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "action": "实际进入比较题；未填入模拟作答，参考初始隐藏。",
+      "sourceSha256": "f156abe93949bc3bc9ea64e2f3ff9c889e69206975b3ed32b0ec3e4b98dee3aa",
+      "imageSha256": "8b014c61b2f936dd6fb30dc84dbfa85368986a4bd1416345e014882a3b4f9247",
+      "captureSourceSha256": "3077cd78e033dfda68e14525d1a94125d77a8912adbd2e798fd09623bb9b5cde",
+      "sourceCanonicalization": "LF normalization and trailing horizontal whitespace cleanup after capture; visual content unchanged"
+    },
+    {
+      "image": "docs/assets/cases/mp-review.png",
+      "source": "examples/mattpocock-skills/tool-demo/index.html",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "action": "新主题的实际 CLI review 读回；合成输入明确标注。",
+      "sourceSha256": "4771a63d15b9c65ac3a4c7878e1f94ce2a69efda5d7a48438637bdc7f25a6f1e",
+      "imageSha256": "d131fba4f6d39a3c84fa90cd819332a30e2cfb0c84951418967258d9fefb2fb9"
+    },
+    {
+      "image": "docs/assets/cases/mp-resume.png",
+      "source": "examples/mattpocock-skills/tool-demo/index.html",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "action": "新主题的实际 CLI resume 读回；合成输入明确标注。",
+      "sourceSha256": "4771a63d15b9c65ac3a4c7878e1f94ce2a69efda5d7a48438637bdc7f25a6f1e",
+      "imageSha256": "381ad9ff98b8e5f388fed9aa3b01f8f99b7cca8949f15a180c7f3741fcc53122"
+    },
+    {
+      "image": "docs/assets/cases/mp-plan.png",
+      "source": "examples/mattpocock-skills/tool-demo/index.html",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "action": "新主题的实际 CLI plan 读回；合成输入明确标注。",
+      "sourceSha256": "4771a63d15b9c65ac3a4c7878e1f94ce2a69efda5d7a48438637bdc7f25a6f1e",
+      "imageSha256": "c1b1c71e1c2cab4449f1829018ae2e178611e13ed03f115178147fba4a161f7b"
+    },
+    {
+      "image": "docs/assets/cases/mp-insights.png",
+      "source": "examples/mattpocock-skills/tool-demo/index.html",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "action": "新主题的实际 CLI insights 读回；合成输入明确标注。",
+      "sourceSha256": "4771a63d15b9c65ac3a4c7878e1f94ce2a69efda5d7a48438637bdc7f25a6f1e",
+      "imageSha256": "5be9be3254d1b66a12c6ea7e98873553517df9dd52fdef3f4787eb44804e23ac"
+    },
+    {
+      "image": "docs/assets/cases/mp-question.png",
+      "source": "examples/mattpocock-skills/question/index.html",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "action": "围绕 mattpocock/skills 调用身份的当前单次实际响应；不验证安装发现。",
+      "sourceSha256": "d2acb455eb6bc8dc34543fb356e45cf922726e64354559abc91ed0e48ab40b6f",
+      "imageSha256": "d521612278f9a421323648de6e5a3026d47d538f878c7f76b85ee36ce9320b7e"
+    },
+    {
+      "image": "docs/assets/cases/mp-quick-reference.png",
+      "source": "examples/mattpocock-skills/quick-reference.html",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "action": "同一主题的可打印场景速查与固定版本链接。",
+      "sourceSha256": "aa3df8c36cbac76e14bd9fffd942152e9b1527dd2d17bf4141574419a7db5642",
+      "imageSha256": "5dd01b1cadcba0f9e5f028c19eaaf62fe2b0debae98bd4379f3f56ab2736c812"
+    },
+    {
+      "image": "docs/assets/cases/mp-map-overview.png",
+      "source": "examples/mattpocock-skills/overview/map.svg",
+      "viewport": {
+        "width": 8775,
+        "height": 641
+      },
+      "action": "按最终 SVG 原始尺寸实际打开并截图；没有重排、删减节点或加入新内容。",
+      "sourceSha256": "b66f641f5e7d9ccea98ad23af0934c870b142e02be21908a5fd7d4565f5c98fa",
+      "imageSha256": "a884dc72ad766ee8dd5b559a023a80345e3475750b0c2e2f8188fa7bc51d3ab2"
+    },
+    {
+      "image": "docs/assets/cases/mp-map-workflow.png",
+      "source": "examples/mattpocock-skills/workflow/map.svg",
+      "viewport": {
+        "width": 1671,
+        "height": 596
+      },
+      "action": "按最终 SVG 原始尺寸实际打开并截图；没有重排、删减节点或加入新内容。",
+      "sourceSha256": "4669e4508af667c1052d8ded588fc6e4c99a68e80788774937892adad5dfd277",
+      "imageSha256": "df2c441ad329620cd7b47ec698cc4fbad69c61b40136e0f3bbf12bd8df7aa295"
+    },
+    {
+      "image": "docs/assets/cases/mp-map-comparisons.png",
+      "source": "examples/mattpocock-skills/comparisons/map.svg",
+      "viewport": {
+        "width": 1500,
+        "height": 494
+      },
+      "action": "按最终 SVG 原始尺寸实际打开并截图；没有重排、删减节点或加入新内容。",
+      "sourceSha256": "a3dc6dbb3f542a7805b00fde70b7672f5e9c4017784d223ff38c3c21e20a4b5b",
+      "imageSha256": "e55f12240813576b3fdee7bae96e29438fa66f1c68f3e736d9aaf3fd6d201cd0"
+    },
+    {
+      "image": "docs/assets/cases/mp-editor.png",
+      "source": "examples/mattpocock-skills/workflow/map.excalidraw",
+      "viewport": {
+        "width": 2400,
+        "height": 1100
+      },
+      "action": "在独立 Excalidraw 编辑器实际加载新主题工程路线原生导图并选中元素。",
+      "sourceSha256": "78d1eb18a9365a52e59eb8634cfbaf150754f42bc107c77b7d43256953bf5c88",
+      "imageSha256": "7ed969324e1ea5121a9ad89f1c846b03cb26df7fbe082a74037421489a236b88",
+      "capturedAt": "2026-10-13T07:38:57.724Z"
+    }
+  ],
+  "sourceCanonicalizationNote": "Publication text uses LF, with trailing formatting whitespace removed where needed. Original captured-source hashes are retained; image bytes and visible content are unchanged."
+}

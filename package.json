@@ -2,7 +2,7 @@
   "name": "forge-learning-local",
   "version": "0.1.0",
   "private": true,
-  "description": "forge · 锻造：核对材料、检验真实作答，生成学习产物与可查找、可续接的本地学习档案",
+  "description": "Forge — Make sense. Keep going. 在 AI 助手里学新知识、整理资料、检查答案，保存学习进度，下次接着学。",
   "type": "module",
   "license": "MIT",
   "author": "ChengYueCode",

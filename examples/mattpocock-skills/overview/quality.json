@@ -1,0 +1,2732 @@
+{
+  "generatedAt": "2026-10-13T07:04:09.586Z",
+  "goalFingerprint": "1fa6209182b41a1faf82732c82fbb761ddc190084e5118c3bf2527a86ed3cff8",
+  "goals": [
+    {
+      "concepts": [
+        {
+          "id": "skills",
+          "role": "structural"
+        },
+        {
+          "id": "foundation",
+          "role": "structural"
+        },
+        {
+          "id": "alignment",
+          "role": "structural"
+        },
+        {
+          "id": "planning",
+          "role": "structural"
+        },
+        {
+          "id": "execution",
+          "role": "structural"
+        },
+        {
+          "id": "quality",
+          "role": "structural"
+        },
+        {
+          "id": "continuity",
+          "role": "structural"
+        },
+        {
+          "id": "appendix",
+          "role": "structural"
+        },
+        {
+          "dimensions": [
+            {
+              "basis": "本概念以“谁能发起调用”支持入口选择、输入与边界解释；对应作者讲解已与 上游总体说明：用途、调用身份与安装选择；调用机制：模型入口、用户入口与路由器 核对。",
+              "id": "goal-coverage",
+              "result": "covered"
+            },
+            {
+              "basis": "先交代技能/入口、项目上下文与用户决定；涉及固定版本 49dd158 的条件，不把未知安装或学习基础当成已确认。",
+              "id": "prerequisite",
+              "result": "covered"
+            },
+            {
+              "basis": "讲解：用户入口由人明确发起；模型入口可由 Agent 按场景使用，人也可以显式发起。路由器可提示用户入口，但不能替人自动调用它们。；例子：ask-matt 可建议 to-spec；to-spec 由用户显式发起。tdd 是可复用的模型入口，implement 可使用它。。中文情境为教学组织，不声称实际执行。",
+              "id": "explanation-example",
+              "result": "covered"
+            },
+            {
+              "basis": "边界和误区：模型入口只有 Agent 能用，或用户入口会因被路由器提到而自动执行。。不把阅读、建议或生成页面当成已运行与已掌握。",
+              "id": "boundary-misconception",
+              "result": "covered"
+            },
+            {
+              "basis": "已核对 p-invocation 的题目、参考与判定标准与本概念一致。",
+              "id": "task-criteria",
+              "result": "covered"
+            },
+            {
+              "basis": "来源以固定提交链接及行范围定位：上游总体说明：用途、调用身份与安装选择；调用机制：模型入口、用户入口与路由器。支持模板的完整运行、其他宿主和外部链接不属于本材料已验证范围。",
+              "id": "sources-gaps",
+              "result": "covered"
+            }
+          ],
+          "gaps": [],
+          "id": "invocation",
+          "role": "core",
+          "supplements": []
+        },
+        {
+          "dimensions": [
+            {
+              "basis": "本概念以“ask-matt”支持入口选择、输入与边界解释；对应作者讲解已与 上游 ask-matt 入口原文 核对。",
+              "id": "goal-coverage",
+              "result": "covered"
+            },
+            {
+              "basis": "先交代技能/入口、项目上下文与用户决定；涉及固定版本 49dd158 的条件，不把未知安装或学习基础当成已确认。",
+              "id": "prerequisite",
+              "result": "covered"
+            },
+            {
+              "basis": "讲解：场景：知道遇到了什么问题，却记不住该用哪个技能。\n必要输入：当前处境、已有材料；必要时说明是否在工作目录中。\n技能自带流程：先读相关技能原文，再建议主路线、旁路或独立能力；在阶段边界考虑上下文处理。；例子：最小请求：/ask-matt 我有一份已经讨论清楚的规格，下一步该用哪个入口？\n预期产物：技能选择建议与路线解释。。中文情境为教学组织，不声称实际执行。",
+              "id": "explanation-example",
+              "result": "covered"
+            },
+            {
+              "basis": "边界和误区：它是用户调用的路由器，只提示下一入口，不替用户调用另一个用户入口。。不把阅读、建议或生成页面当成已运行与已掌握。",
+              "id": "boundary-misconception",
+              "result": "covered"
+            },
+            {
+              "basis": "已核对 p-ask-matt 的题目、参考与判定标准与本概念一致。",
+              "id": "task-criteria",
+              "result": "covered"
+            },
+            {
+              "basis": "来源以固定提交链接及行范围定位：上游 ask-matt 入口原文。支持模板的完整运行、其他宿主和外部链接不属于本材料已验证范围。",
+              "id": "sources-gaps",
+              "result": "covered"
+            }
+          ],
+          "gaps": [],
+          "id": "ask-matt",
+          "role": "core",
+          "supplements": []
+        },
+        {
+          "dimensions": [
+            {
+              "basis": "本概念以“setup-matt-pocock-skills”支持入口选择、输入与边界解释；对应作者讲解已与 上游 setup-matt-pocock-skills 入口原文 核对。",
+              "id": "goal-coverage",
+              "result": "covered"
+            },
+            {
+              "basis": "先交代技能/入口、项目上下文与用户决定；涉及固定版本 49dd158 的条件，不把未知安装或学习基础当成已确认。",
+              "id": "prerequisite",
+              "result": "covered"
+            },
+            {
+              "basis": "讲解：场景：首次在一个仓库使用工程技能，尚未说明任务和领域文档放在哪里。\n必要输入：当前仓库；现有 Agent 指令、远程信息、任务追踪及领域文档。\n技能自带流程：探索现状，确认任务追踪方式；安装 triage 时才询问标签；默认单上下文，存在真实 monorepo 信号才讨论多上下文；展示草稿再写入。；例子：最小请求：/setup-matt-pocock-skills 配置这个仓库的工程技能。\n预期产物：任务追踪、标签映射、领域布局文档与已有指令文件中的导航。。中文情境为教学组织，不声称实际执行。",
+              "id": "explanation-example",
+              "result": "covered"
+            },
+            {
+              "basis": "边界和误区：提示驱动而非确定脚本；已有 CLAUDE.md 时不另外创建 AGENTS.md；不得覆盖用户周边内容。。不把阅读、建议或生成页面当成已运行与已掌握。",
+              "id": "boundary-misconception",
+              "result": "covered"
+            },
+            {
+              "basis": "已核对 p-setup-matt-pocock-skills 的题目、参考与判定标准与本概念一致。",
+              "id": "task-criteria",
+              "result": "covered"
+            },
+            {
+              "basis": "来源以固定提交链接及行范围定位：上游 setup-matt-pocock-skills 入口原文。支持模板的完整运行、其他宿主和外部链接不属于本材料已验证范围。",
+              "id": "sources-gaps",
+              "result": "covered"
+            }
+          ],
+          "gaps": [],
+          "id": "setup-matt-pocock-skills",
+          "role": "core",
+          "supplements": []
+        },
+        {
+          "dimensions": [
+            {
+              "basis": "本概念以“grill-with-docs”支持入口选择、输入与边界解释；对应作者讲解已与 上游 grill-with-docs 入口原文 核对。",
+              "id": "goal-coverage",
+              "result": "covered"
+            },
+            {
+              "basis": "先交代技能/入口、项目上下文与用户决定；涉及固定版本 49dd158 的条件，不把未知安装或学习基础当成已确认。",
+              "id": "prerequisite",
+              "result": "covered"
+            },
+            {
+              "basis": "讲解：场景：正在工作目录中讨论新功能，目标和术语仍含糊。\n必要输入：想法、当前工作目录与可核对的项目事实。\n技能自带流程：使用 grilling 的决策树访谈，并结合 domain-modeling 随讨论修订术语与必要 ADR。；例子：最小请求：/grill-with-docs 我想做一个资料检索工具，先检查目标和范围。\n预期产物：澄清后的共同理解，以及领域词汇或适当的决策记录。。中文情境为教学组织，不声称实际执行。",
+              "id": "explanation-example",
+              "result": "covered"
+            },
+            {
+              "basis": "边界和误区：原文入口是两个复用能力的组合；并不意味着每次都必须生成 ADR。。不把阅读、建议或生成页面当成已运行与已掌握。",
+              "id": "boundary-misconception",
+              "result": "covered"
+            },
+            {
+              "basis": "已核对 p-grill-with-docs 的题目、参考与判定标准与本概念一致。",
+              "id": "task-criteria",
+              "result": "covered"
+            },
+            {
+              "basis": "来源以固定提交链接及行范围定位：上游 grill-with-docs 入口原文。支持模板的完整运行、其他宿主和外部链接不属于本材料已验证范围。",
+              "id": "sources-gaps",
+              "result": "covered"
+            }
+          ],
+          "gaps": [],
+          "id": "grill-with-docs",
+          "role": "core",
+          "supplements": []
+        },
+        {
+          "dimensions": [
+            {
+              "basis": "本概念以“grill-me”支持入口选择、输入与边界解释；对应作者讲解已与 上游 grill-me 入口原文 核对。",
+              "id": "goal-coverage",
+              "result": "covered"
+            },
+            {
+              "basis": "先交代技能/入口、项目上下文与用户决定；涉及固定版本 49dd158 的条件，不把未知安装或学习基础当成已确认。",
+              "id": "prerequisite",
+              "result": "covered"
+            },
+            {
+              "basis": "讲解：场景：只想推敲一个计划，当前没有需要维护的项目目录。\n必要输入：计划、决策或想法。\n技能自带流程：调用 grilling，通过决策树逐轮澄清。；例子：最小请求：/grill-me 检查我这个个人学习计划是否遗漏了关键前提。\n预期产物：共同理解的想法和已确认决定。。中文情境为教学组织，不声称实际执行。",
+              "id": "explanation-example",
+              "result": "covered"
+            },
+            {
+              "basis": "边界和误区：不负责维护本地术语表；在工作目录中通常更适合 grill-with-docs。。不把阅读、建议或生成页面当成已运行与已掌握。",
+              "id": "boundary-misconception",
+              "result": "covered"
+            },
+            {
+              "basis": "已核对 p-grill-me 的题目、参考与判定标准与本概念一致。",
+              "id": "task-criteria",
+              "result": "covered"
+            },
+            {
+              "basis": "来源以固定提交链接及行范围定位：上游 grill-me 入口原文。支持模板的完整运行、其他宿主和外部链接不属于本材料已验证范围。",
+              "id": "sources-gaps",
+              "result": "covered"
+            }
+          ],
+          "gaps": [],
+          "id": "grill-me",
+          "role": "core",
+          "supplements": []
+        },
+        {
+          "dimensions": [
+            {
+              "basis": "本概念以“grilling”支持入口选择、输入与边界解释；对应作者讲解已与 上游 grilling 入口原文 核对。",
+              "id": "goal-coverage",
+              "result": "covered"
+            },
+            {
+              "basis": "先交代技能/入口、项目上下文与用户决定；涉及固定版本 49dd158 的条件，不把未知安装或学习基础当成已确认。",
+              "id": "prerequisite",
+              "result": "covered"
+            },
+            {
+              "basis": "讲解：场景：一个决策包含多层依赖，容易在前置未定时乱问后续细节。\n必要输入：当前决策树、已知事实与用户真实选择。\n技能自带流程：每轮询问前置已定的整组前沿问题，附建议；收到真实回答后重算前沿；环境事实由 Agent 核对。；例子：最小请求：/grilling 检查这套方案的决策依赖。\n预期产物：逐轮澄清与已达成共同理解的决策树。。中文情境为教学组织，不声称实际执行。",
+              "id": "explanation-example",
+              "result": "covered"
+            },
+            {
+              "basis": "边界和误区：依赖同轮未决问题的后续问题应留到下一轮；不代替用户回答。。不把阅读、建议或生成页面当成已运行与已掌握。",
+              "id": "boundary-misconception",
+              "result": "covered"
+            },
+            {
+              "basis": "已核对 p-grilling 的题目、参考与判定标准与本概念一致。",
+              "id": "task-criteria",
+              "result": "covered"
+            },
+            {
+              "basis": "来源以固定提交链接及行范围定位：上游 grilling 入口原文。支持模板的完整运行、其他宿主和外部链接不属于本材料已验证范围。",
+              "id": "sources-gaps",
+              "result": "covered"
+            }
+          ],
+          "gaps": [],
+          "id": "grilling",
+          "role": "core",
+          "supplements": []
+        },
+        {
+          "dimensions": [
+            {
+              "basis": "本概念以“domain-modeling”支持入口选择、输入与边界解释；对应作者讲解已与 上游 domain-modeling 入口原文 核对。",
+              "id": "goal-coverage",
+              "result": "covered"
+            },
+            {
+              "basis": "先交代技能/入口、项目上下文与用户决定；涉及固定版本 49dd158 的条件，不把未知安装或学习基础当成已确认。",
+              "id": "prerequisite",
+              "result": "covered"
+            },
+            {
+              "basis": "讲解：场景：同一个词在讨论里指向不同对象，代码和描述也可能冲突。\n必要输入：当前用词、项目术语表、实际代码行为与相关 ADR。\n技能自带流程：挑战歧义，用具体边界场景核对；术语一旦确定就记入 GLOSSARY.md；重大取舍才考虑 ADR。；例子：最小请求：/domain-modeling 这里“资料”同时指原文件和索引条目，请帮我区分。\n预期产物：清晰的领域词汇与少量必要的决策记录。。中文情境为教学组织，不声称实际执行。",
+              "id": "explanation-example",
+              "result": "covered"
+            },
+            {
+              "basis": "边界和误区：术语表不是规格或实现笔记；ADR 要同时满足难逆转、缺上下文会意外、确有取舍。。不把阅读、建议或生成页面当成已运行与已掌握。",
+              "id": "boundary-misconception",
+              "result": "covered"
+            },
+            {
+              "basis": "已核对 p-domain-modeling 的题目、参考与判定标准与本概念一致。",
+              "id": "task-criteria",
+              "result": "covered"
+            },
+            {
+              "basis": "来源以固定提交链接及行范围定位：上游 domain-modeling 入口原文。支持模板的完整运行、其他宿主和外部链接不属于本材料已验证范围。",
+              "id": "sources-gaps",
+              "result": "covered"
+            }
+          ],
+          "gaps": [],
+          "id": "domain-modeling",
+          "role": "core",
+          "supplements": []
+        },
+        {
+          "dimensions": [
+            {
+              "basis": "本概念以“to-spec”支持入口选择、输入与边界解释；对应作者讲解已与 上游 to-spec 入口原文 核对。",
+              "id": "goal-coverage",
+              "result": "covered"
+            },
+            {
+              "basis": "先交代技能/入口、项目上下文与用户决定；涉及固定版本 49dd158 的条件，不把未知安装或学习基础当成已确认。",
+              "id": "prerequisite",
+              "result": "covered"
+            },
+            {
+              "basis": "讲解：场景：需求已讨论清楚，希望形成可交给后续实现的规格。\n必要输入：当前讨论上下文、仓库理解、已配置的任务追踪方式。\n技能自带流程：核对项目与测试接口位置，确认测试位置，再按模板综合问题、解决方案、故事、实现和测试决定、范围外内容，发布规格。；例子：最小请求：/to-spec 把已经确认的讨论整理成规格。\n预期产物：可交付规格，按配置进入任务追踪并标记 ready-for-agent。。中文情境为教学组织，不声称实际执行。",
+              "id": "explanation-example",
+              "result": "covered"
+            },
+            {
+              "basis": "边界和误区：原文明确不是新一轮需求访谈；测试接口确认不等于重新 grill 全部需求。通常不写具体文件路径与代码，原型决策片段是例外。。不把阅读、建议或生成页面当成已运行与已掌握。",
+              "id": "boundary-misconception",
+              "result": "covered"
+            },
+            {
+              "basis": "已核对 p-to-spec 的题目、参考与判定标准与本概念一致。",
+              "id": "task-criteria",
+              "result": "covered"
+            },
+            {
+              "basis": "来源以固定提交链接及行范围定位：上游 to-spec 入口原文。支持模板的完整运行、其他宿主和外部链接不属于本材料已验证范围。",
+              "id": "sources-gaps",
+              "result": "covered"
+            }
+          ],
+          "gaps": [],
+          "id": "to-spec",
+          "role": "core",
+          "supplements": []
+        },
+        {
+          "dimensions": [
+            {
+              "basis": "本概念以“to-tickets”支持入口选择、输入与边界解释；对应作者讲解已与 上游 to-tickets 入口原文 核对。",
+              "id": "goal-coverage",
+              "result": "covered"
+            },
+            {
+              "basis": "先交代技能/入口、项目上下文与用户决定；涉及固定版本 49dd158 的条件，不把未知安装或学习基础当成已确认。",
+              "id": "prerequisite",
+              "result": "covered"
+            },
+            {
+              "basis": "讲解：场景：规格较大，需要分成能在独立新会话中完成的任务。\n必要输入：规格、计划或可用讨论；有引用时读取全文与评论；任务追踪配置。\n技能自带流程：提出贯穿各层的窄完整切片，声明阻塞关系；用户审核粒度和依赖后，再按追踪方式发布。；例子：最小请求：/to-tickets 把这份已确认规格拆成任务。\n预期产物：逐个可验收的任务、验收条件和明确阻塞边。。中文情境为教学组织，不声称实际执行。",
+              "id": "explanation-example",
+              "result": "covered"
+            },
+            {
+              "basis": "边界和误区：不是数据库、接口、页面各一张的水平分层；跨全仓机械迁移可用 expand–contract 例外；不关闭或修改父任务。。不把阅读、建议或生成页面当成已运行与已掌握。",
+              "id": "boundary-misconception",
+              "result": "covered"
+            },
+            {
+              "basis": "已核对 p-to-tickets 的题目、参考与判定标准与本概念一致。",
+              "id": "task-criteria",
+              "result": "covered"
+            },
+            {
+              "basis": "来源以固定提交链接及行范围定位：上游 to-tickets 入口原文。支持模板的完整运行、其他宿主和外部链接不属于本材料已验证范围。",
+              "id": "sources-gaps",
+              "result": "covered"
+            }
+          ],
+          "gaps": [],
+          "id": "to-tickets",
+          "role": "core",
+          "supplements": []
+        },
+        {
+          "dimensions": [
+            {
+              "basis": "本概念以“wayfinder”支持入口选择、输入与边界解释；对应作者讲解已与 上游 wayfinder 入口原文 核对。",
+              "id": "goal-coverage",
+              "result": "covered"
+            },
+            {
+              "basis": "先交代技能/入口、项目上下文与用户决定；涉及固定版本 49dd158 的条件，不把未知安装或学习基础当成已确认。",
+              "id": "prerequisite",
+              "result": "covered"
+            },
+            {
+              "basis": "讲解：场景：项目太大、跨多次会话，连决定之间的路线也还看不清。\n必要输入：目标目的地、当前前沿和未能精确表达的未定事项。\n技能自带流程：建立索引地图与决定任务，声明依赖，逐次认领、解决和记录；新发现再进入前沿。；例子：最小请求：/wayfinder 我想建设资料检索平台，但尚不清楚数据治理和部署约束。\n预期产物：已解决的决定、链接索引和可交给规格阶段的清晰路线。。中文情境为教学组织，不声称实际执行。",
+              "id": "explanation-example",
+              "result": "covered"
+            },
+            {
+              "basis": "边界和误区：默认产出决定而非直接完成项目；一般一次会话只解决一个决定任务，研究任务例外；不把所有大型已明确任务都当迷雾。。不把阅读、建议或生成页面当成已运行与已掌握。",
+              "id": "boundary-misconception",
+              "result": "covered"
+            },
+            {
+              "basis": "已核对 p-wayfinder 的题目、参考与判定标准与本概念一致。",
+              "id": "task-criteria",
+              "result": "covered"
+            },
+            {
+              "basis": "来源以固定提交链接及行范围定位：上游 wayfinder 入口原文。支持模板的完整运行、其他宿主和外部链接不属于本材料已验证范围。",
+              "id": "sources-gaps",
+              "result": "covered"
+            }
+          ],
+          "gaps": [],
+          "id": "wayfinder",
+          "role": "core",
+          "supplements": []
+        },
+        {
+          "dimensions": [
+            {
+              "basis": "本概念以“implement”支持入口选择、输入与边界解释；对应作者讲解已与 上游 implement 入口原文 核对。",
+              "id": "goal-coverage",
+              "result": "covered"
+            },
+            {
+              "basis": "先交代技能/入口、项目上下文与用户决定；涉及固定版本 49dd158 的条件，不把未知安装或学习基础当成已确认。",
+              "id": "prerequisite",
+              "result": "covered"
+            },
+            {
+              "basis": "讲解：场景：已有一张明确任务或一份范围清楚的规格。\n必要输入：规格或任务；明确引用；已确认的测试接口位置。\n技能自带流程：读取任务并报告题名，在可用接口位置用 tdd 实现；常跑类型和相关测试，结束跑全量，调用 code-review 后提交当前分支。；例子：最小请求：/implement 实现这张已经确认的任务：<任务引用>。\n预期产物：已实现、验证、审查并提交的本段工作。。中文情境为教学组织，不声称实际执行。",
+              "id": "explanation-example",
+              "result": "covered"
+            },
+            {
+              "basis": "边界和误区：不是替需求澄清；原文要求审查和提交，真实操作仍要满足当前会话授权与仓库要求。。不把阅读、建议或生成页面当成已运行与已掌握。",
+              "id": "boundary-misconception",
+              "result": "covered"
+            },
+            {
+              "basis": "已核对 p-implement 的题目、参考与判定标准与本概念一致。",
+              "id": "task-criteria",
+              "result": "covered"
+            },
+            {
+              "basis": "来源以固定提交链接及行范围定位：上游 implement 入口原文。支持模板的完整运行、其他宿主和外部链接不属于本材料已验证范围。",
+              "id": "sources-gaps",
+              "result": "covered"
+            }
+          ],
+          "gaps": [],
+          "id": "implement",
+          "role": "core",
+          "supplements": []
+        },
+        {
+          "dimensions": [
+            {
+              "basis": "本概念以“implement-spec”支持入口选择、输入与边界解释；对应作者讲解已与 上游 implement-spec 入口原文 核对。",
+              "id": "goal-coverage",
+              "result": "covered"
+            },
+            {
+              "basis": "先交代技能/入口、项目上下文与用户决定；涉及固定版本 49dd158 的条件，不把未知安装或学习基础当成已确认。",
+              "id": "prerequisite",
+              "result": "covered"
+            },
+            {
+              "basis": "讲解：场景：规格已有任务图，想让就绪任务并行推进后集成。\n必要输入：规格、关联任务及其阻塞关系、任务追踪配置。\n技能自带流程：建立集成分支，工作树实现者在就绪前沿推进，完成后合并；更新前沿；全部完成后审查集成分支并清理。；例子：最小请求：/implement-spec 按这份规格及其任务图实施。\n预期产物：落在单一集成分支上的整份规格，以及按追踪规则解决的任务。。中文情境为教学组织，不声称实际执行。",
+              "id": "explanation-example",
+              "result": "covered"
+            },
+            {
+              "basis": "边界和误区：不是把任意任务同时发出去；有阻塞边、有分支同步与合并；草稿 PR 以追踪规则或用户要求为条件。。不把阅读、建议或生成页面当成已运行与已掌握。",
+              "id": "boundary-misconception",
+              "result": "covered"
+            },
+            {
+              "basis": "已核对 p-implement-spec 的题目、参考与判定标准与本概念一致。",
+              "id": "task-criteria",
+              "result": "covered"
+            },
+            {
+              "basis": "来源以固定提交链接及行范围定位：上游 implement-spec 入口原文。支持模板的完整运行、其他宿主和外部链接不属于本材料已验证范围。",
+              "id": "sources-gaps",
+              "result": "covered"
+            }
+          ],
+          "gaps": [],
+          "id": "implement-spec",
+          "role": "core",
+          "supplements": []
+        },
+        {
+          "dimensions": [
+            {
+              "basis": "本概念以“tdd”支持入口选择、输入与边界解释；对应作者讲解已与 上游 tdd 入口原文 核对。",
+              "id": "goal-coverage",
+              "result": "covered"
+            },
+            {
+              "basis": "先交代技能/入口、项目上下文与用户决定；涉及固定版本 49dd158 的条件，不把未知安装或学习基础当成已确认。",
+              "id": "prerequisite",
+              "result": "covered"
+            },
+            {
+              "basis": "讲解：场景：接口行为明确，想先用测试固定该行为再实现。\n必要输入：公开行为及与用户预先确认的测试接口位置。\n技能自带流程：写独立预期的失败测试，再写最少实现使其通过；一次一个纵向切片，通过公开接口观察行为。；例子：最小请求：/tdd 在已确认的检索接口位置，先实现一个“能按标题找到资料”的行为。\n预期产物：与公开行为相符、能在实现重构后继续成立的测试和代码。。中文情境为教学组织，不声称实际执行。",
+              "id": "explanation-example",
+              "result": "covered"
+            },
+            {
+              "basis": "边界和误区：当前入口原文把重构放到 review 阶段，不放进红绿实现循环；不能从 README 的一般描述推成循环内强制重构。。不把阅读、建议或生成页面当成已运行与已掌握。",
+              "id": "boundary-misconception",
+              "result": "covered"
+            },
+            {
+              "basis": "已核对 p-tdd 的题目、参考与判定标准与本概念一致。",
+              "id": "task-criteria",
+              "result": "covered"
+            },
+            {
+              "basis": "来源以固定提交链接及行范围定位：上游 tdd 入口原文。支持模板的完整运行、其他宿主和外部链接不属于本材料已验证范围。",
+              "id": "sources-gaps",
+              "result": "covered"
+            }
+          ],
+          "gaps": [],
+          "id": "tdd",
+          "role": "core",
+          "supplements": []
+        },
+        {
+          "dimensions": [
+            {
+              "basis": "本概念以“prototype”支持入口选择、输入与边界解释；对应作者讲解已与 上游 prototype 入口原文 核对。",
+              "id": "goal-coverage",
+              "result": "covered"
+            },
+            {
+              "basis": "先交代技能/入口、项目上下文与用户决定；涉及固定版本 49dd158 的条件，不把未知安装或学习基础当成已确认。",
+              "id": "prerequisite",
+              "result": "covered"
+            },
+            {
+              "basis": "讲解：场景：纸面讨论无法判断状态规则或界面形式是否合适。\n必要输入：具体设计问题和相关项目上下文。\n技能自带流程：逻辑问题走单文件 HTML；界面问题走多个差异显著的方案；显露状态，简单运行，再把得到的决定与原型证据保存。；例子：最小请求：/prototype 用一个小原型检查筛选条件切换后，选中资料的状态是否合理。\n预期产物：可运行的试验原型、所回答的问题及判定结果。。中文情境为教学组织，不声称实际执行。",
+              "id": "explanation-example",
+              "result": "covered"
+            },
+            {
+              "basis": "边界和误区：不是生产实现；默认内存状态，不先做完整架构、测试与持久化；throwaway 不表示销毁证据。。不把阅读、建议或生成页面当成已运行与已掌握。",
+              "id": "boundary-misconception",
+              "result": "covered"
+            },
+            {
+              "basis": "已核对 p-prototype 的题目、参考与判定标准与本概念一致。",
+              "id": "task-criteria",
+              "result": "covered"
+            },
+            {
+              "basis": "来源以固定提交链接及行范围定位：上游 prototype 入口原文。支持模板的完整运行、其他宿主和外部链接不属于本材料已验证范围。",
+              "id": "sources-gaps",
+              "result": "covered"
+            }
+          ],
+          "gaps": [],
+          "id": "skill-prototype",
+          "role": "core",
+          "supplements": []
+        },
+        {
+          "dimensions": [
+            {
+              "basis": "本概念以“research”支持入口选择、输入与边界解释；对应作者讲解已与 上游 research 入口原文 核对。",
+              "id": "goal-coverage",
+              "result": "covered"
+            },
+            {
+              "basis": "先交代技能/入口、项目上下文与用户决定；涉及固定版本 49dd158 的条件，不把未知安装或学习基础当成已确认。",
+              "id": "prerequisite",
+              "result": "covered"
+            },
+            {
+              "basis": "讲解：场景：决策依赖外部文档事实，当前没有核对依据。\n必要输入：待调查问题、所需原始来源与项目记录位置。\n技能自带流程：后台研究以官方文档、源码和规范等一手资料为依据，逐项回到来源并写入引用报告。；例子：最小请求：/research 核对这个检索服务的官方接口限制并记录依据。\n预期产物：有来源的 Markdown 研究记录。。中文情境为教学组织，不声称实际执行。",
+              "id": "explanation-example",
+              "result": "covered"
+            },
+            {
+              "basis": "边界和误区：不是凭模型记忆下结论，也不把二手报道当规则来源。。不把阅读、建议或生成页面当成已运行与已掌握。",
+              "id": "boundary-misconception",
+              "result": "covered"
+            },
+            {
+              "basis": "已核对 p-research 的题目、参考与判定标准与本概念一致。",
+              "id": "task-criteria",
+              "result": "covered"
+            },
+            {
+              "basis": "来源以固定提交链接及行范围定位：上游 research 入口原文。支持模板的完整运行、其他宿主和外部链接不属于本材料已验证范围。",
+              "id": "sources-gaps",
+              "result": "covered"
+            }
+          ],
+          "gaps": [],
+          "id": "research",
+          "role": "core",
+          "supplements": []
+        },
+        {
+          "dimensions": [
+            {
+              "basis": "本概念以“wizard”支持入口选择、输入与边界解释；对应作者讲解已与 上游 wizard 入口原文 核对。",
+              "id": "goal-coverage",
+              "result": "covered"
+            },
+            {
+              "basis": "先交代技能/入口、项目上下文与用户决定；涉及固定版本 49dd158 的条件，不把未知安装或学习基础当成已确认。",
+              "id": "prerequisite",
+              "result": "covered"
+            },
+            {
+              "basis": "讲解：场景：有 Agent 无法代劳的账号或仪表盘操作。\n必要输入：人工步骤、每步需产生的值、去向、是否为秘密，以及真实操作路径。\n技能自带流程：先核对仓库需求和确认阶段；复用随包模板，只编写阶段；静态检查脚本及字段去向后交给人运行。；例子：最小请求：/wizard 为只有我能操作的服务账号配置步骤生成向导。\n预期产物：阶段明确、隐藏秘密输入、确认重要操作的 bash 引导脚本。。中文情境为教学组织，不声称实际执行。",
+              "id": "explanation-example",
+              "result": "covered"
+            },
+            {
+              "basis": "边界和误区：不为 Agent 自己能完成的步骤开向导；不凭空编造仪表盘路径；不自行端到端运行阻塞人工输入的脚本。。不把阅读、建议或生成页面当成已运行与已掌握。",
+              "id": "boundary-misconception",
+              "result": "covered"
+            },
+            {
+              "basis": "已核对 p-wizard 的题目、参考与判定标准与本概念一致。",
+              "id": "task-criteria",
+              "result": "covered"
+            },
+            {
+              "basis": "来源以固定提交链接及行范围定位：上游 wizard 入口原文。支持模板的完整运行、其他宿主和外部链接不属于本材料已验证范围。",
+              "id": "sources-gaps",
+              "result": "covered"
+            }
+          ],
+          "gaps": [],
+          "id": "wizard",
+          "role": "core",
+          "supplements": []
+        },
+        {
+          "dimensions": [
+            {
+              "basis": "本概念以“diagnosing-bugs”支持入口选择、输入与边界解释；对应作者讲解已与 上游 diagnosing-bugs 入口原文 核对。",
+              "id": "goal-coverage",
+              "result": "covered"
+            },
+            {
+              "basis": "先交代技能/入口、项目上下文与用户决定；涉及固定版本 49dd158 的条件，不把未知安装或学习基础当成已确认。",
+              "id": "prerequisite",
+              "result": "covered"
+            },
+            {
+              "basis": "讲解：场景：遇到难复现的错误、偶发故障或性能回退。\n必要输入：用户症状、复现条件与可访问环境。\n技能自带流程：建立能对该症状变红的紧反馈命令，复现并最小化，列可证伪假设，逐变量取证，修复并做回归与清理。；例子：最小请求：/diagnosing-bugs 资料上传偶发卡住，先建立可重复检查这个症状的反馈。\n预期产物：复现信号、被支持的原因、修复与回归证据。。中文情境为教学组织，不声称实际执行。",
+              "id": "explanation-example",
+              "result": "covered"
+            },
+            {
+              "basis": "边界和误区：反馈环没有建立前不跳到猜原因；敏感输出先脱敏；无有效测试接口位置应如实报告。。不把阅读、建议或生成页面当成已运行与已掌握。",
+              "id": "boundary-misconception",
+              "result": "covered"
+            },
+            {
+              "basis": "已核对 p-diagnosing-bugs 的题目、参考与判定标准与本概念一致。",
+              "id": "task-criteria",
+              "result": "covered"
+            },
+            {
+              "basis": "来源以固定提交链接及行范围定位：上游 diagnosing-bugs 入口原文。支持模板的完整运行、其他宿主和外部链接不属于本材料已验证范围。",
+              "id": "sources-gaps",
+              "result": "covered"
+            }
+          ],
+          "gaps": [],
+          "id": "diagnosing-bugs",
+          "role": "core",
+          "supplements": []
+        },
+        {
+          "dimensions": [
+            {
+              "basis": "本概念以“triage”支持入口选择、输入与边界解释；对应作者讲解已与 上游 triage 入口原文 核对。",
+              "id": "goal-coverage",
+              "result": "covered"
+            },
+            {
+              "basis": "先交代技能/入口、项目上下文与用户决定；涉及固定版本 49dd158 的条件，不把未知安装或学习基础当成已确认。",
+              "id": "prerequisite",
+              "result": "covered"
+            },
+            {
+              "basis": "讲解：场景：有外部错误报告或功能请求，需要判断如何处理。\n必要输入：完整问题与评论、角色标签映射、项目事实；PR 在配置允许时纳入。\n技能自带流程：核对重复实现和已有拒绝，向维护者推荐分类与状态，验证报告，需要时澄清，再形成任务简报或其他处理结果。；例子：最小请求：/triage 看看有哪些外来报告需要维护者处理。\n预期产物：类别、单一状态、已核对事实、简报或缺信息记录。。中文情境为教学组织，不声称实际执行。",
+              "id": "explanation-example",
+              "result": "covered"
+            },
+            {
+              "basis": "边界和误区：to-tickets 产出的任务已经 ready-for-agent，不应再分诊；外发 AI 分诊记录有原文声明要求，真实外发仍需授权。。不把阅读、建议或生成页面当成已运行与已掌握。",
+              "id": "boundary-misconception",
+              "result": "covered"
+            },
+            {
+              "basis": "已核对 p-triage 的题目、参考与判定标准与本概念一致。",
+              "id": "task-criteria",
+              "result": "covered"
+            },
+            {
+              "basis": "来源以固定提交链接及行范围定位：上游 triage 入口原文。支持模板的完整运行、其他宿主和外部链接不属于本材料已验证范围。",
+              "id": "sources-gaps",
+              "result": "covered"
+            }
+          ],
+          "gaps": [],
+          "id": "triage",
+          "role": "core",
+          "supplements": []
+        },
+        {
+          "dimensions": [
+            {
+              "basis": "本概念以“code-review”支持入口选择、输入与边界解释；对应作者讲解已与 上游 code-review 入口原文 核对。",
+              "id": "goal-coverage",
+              "result": "covered"
+            },
+            {
+              "basis": "先交代技能/入口、项目上下文与用户决定；涉及固定版本 49dd158 的条件，不把未知安装或学习基础当成已确认。",
+              "id": "prerequisite",
+              "result": "covered"
+            },
+            {
+              "basis": "讲解：场景：要判断分支或 PR 自某个固定基点以来的改动。\n必要输入：可解析且非空的固定点差异、规格来源、仓库编码标准。\n技能自带流程：固定基点，找需求与标准，两个独立审查分别检查 Standards 和 Spec，再并列报告。；例子：最小请求：/code-review 审查这条分支自 <固定基点> 以来的改动，规格在 <规格引用>。\n预期产物：分开的规范与需求发现、各轴严重问题。。中文情境为教学组织，不声称实际执行。",
+              "id": "explanation-example",
+              "result": "covered"
+            },
+            {
+              "basis": "边界和误区：规范通过不代表需求通过；不能用相互抵消的综合评分掩盖一轴失败；当前来源缺规格时明确说明该轴跳过。。不把阅读、建议或生成页面当成已运行与已掌握。",
+              "id": "boundary-misconception",
+              "result": "covered"
+            },
+            {
+              "basis": "已核对 p-code-review 的题目、参考与判定标准与本概念一致。",
+              "id": "task-criteria",
+              "result": "covered"
+            },
+            {
+              "basis": "来源以固定提交链接及行范围定位：上游 code-review 入口原文。支持模板的完整运行、其他宿主和外部链接不属于本材料已验证范围。",
+              "id": "sources-gaps",
+              "result": "covered"
+            }
+          ],
+          "gaps": [],
+          "id": "code-review",
+          "role": "core",
+          "supplements": []
+        },
+        {
+          "dimensions": [
+            {
+              "basis": "本概念以“codebase-design”支持入口选择、输入与边界解释；对应作者讲解已与 上游 codebase-design 入口原文 核对。",
+              "id": "goal-coverage",
+              "result": "covered"
+            },
+            {
+              "basis": "先交代技能/入口、项目上下文与用户决定；涉及固定版本 49dd158 的条件，不把未知安装或学习基础当成已确认。",
+              "id": "prerequisite",
+              "result": "covered"
+            },
+            {
+              "basis": "讲解：场景：接口太复杂，理解一个行为要跳很多文件，或测试越过接口。\n必要输入：模块的调用方、接口知识负担、行为与实际变化点。\n技能自带流程：用 module、interface、depth、seam、adapter 等共享词汇设计形状；按删除测试、接口即测试面等原则核对。；例子：最小请求：/codebase-design 检查资料检索模块的接口是否把太多内部细节交给调用者。\n预期产物：更清晰的模块接口、位置与可测性判断。。中文情境为教学组织，不声称实际执行。",
+              "id": "explanation-example",
+              "result": "covered"
+            },
+            {
+              "basis": "边界和误区：深度不是代码行数比；一个适配器不自动构成真实变化位置；接口包含调用者必须知道的约束与错误模式。。不把阅读、建议或生成页面当成已运行与已掌握。",
+              "id": "boundary-misconception",
+              "result": "covered"
+            },
+            {
+              "basis": "已核对 p-codebase-design 的题目、参考与判定标准与本概念一致。",
+              "id": "task-criteria",
+              "result": "covered"
+            },
+            {
+              "basis": "来源以固定提交链接及行范围定位：上游 codebase-design 入口原文。支持模板的完整运行、其他宿主和外部链接不属于本材料已验证范围。",
+              "id": "sources-gaps",
+              "result": "covered"
+            }
+          ],
+          "gaps": [],
+          "id": "codebase-design",
+          "role": "core",
+          "supplements": []
+        },
+        {
+          "dimensions": [
+            {
+              "basis": "本概念以“improve-codebase-architecture”支持入口选择、输入与边界解释；对应作者讲解已与 上游 improve-codebase-architecture 入口原文 核对。",
+              "id": "goal-coverage",
+              "result": "covered"
+            },
+            {
+              "basis": "先交代技能/入口、项目上下文与用户决定；涉及固定版本 49dd158 的条件，不把未知安装或学习基础当成已确认。",
+              "id": "prerequisite",
+              "result": "covered"
+            },
+            {
+              "basis": "讲解：场景：常改区域难理解、难测试，希望寻找改善机会。\n必要输入：指定痛点或近期提交热点、领域术语、相关 ADR。\n技能自带流程：按范围探索，结合 codebase-design 提出候选，生成含前后图的 HTML 报告；用户选择后再逐项讨论设计。；例子：最小请求：/improve-codebase-architecture 重点检查近期反复修改的检索流程。\n预期产物：候选报告、推荐强度和选中后的设计讨论。。中文情境为教学组织，不声称实际执行。",
+              "id": "explanation-example",
+              "result": "covered"
+            },
+            {
+              "basis": "边界和误区：调查候选不等于自动重构；报告阶段不先提出具体新接口；默认 HTML 放系统临时目录。。不把阅读、建议或生成页面当成已运行与已掌握。",
+              "id": "boundary-misconception",
+              "result": "covered"
+            },
+            {
+              "basis": "已核对 p-improve-codebase-architecture 的题目、参考与判定标准与本概念一致。",
+              "id": "task-criteria",
+              "result": "covered"
+            },
+            {
+              "basis": "来源以固定提交链接及行范围定位：上游 improve-codebase-architecture 入口原文。支持模板的完整运行、其他宿主和外部链接不属于本材料已验证范围。",
+              "id": "sources-gaps",
+              "result": "covered"
+            }
+          ],
+          "gaps": [],
+          "id": "improve-codebase-architecture",
+          "role": "core",
+          "supplements": []
+        },
+        {
+          "dimensions": [
+            {
+              "basis": "本概念以“pr”支持入口选择、输入与边界解释；对应作者讲解已与 上游 pr 入口原文 核对。",
+              "id": "goal-coverage",
+              "result": "covered"
+            },
+            {
+              "basis": "先交代技能/入口、项目上下文与用户决定；涉及固定版本 49dd158 的条件，不把未知安装或学习基础当成已确认。",
+              "id": "prerequisite",
+              "result": "covered"
+            },
+            {
+              "basis": "讲解：场景：要写一份让审阅者快速理解的 PR 描述。\n必要输入：最终变更、前后证据、合并可逆性与影响范围。\n技能自带流程：选最小图、树或差异表达核心变化；展示 Before/After，再说明单向或双向门与影响范围。；例子：最小请求：/pr 为这份最终变更写 PR 描述，依据实际前后测试结果。\n预期产物：Summary、Evidence、Merge Danger 三部分描述。。中文情境为教学组织，不声称实际执行。",
+              "id": "explanation-example",
+              "result": "covered"
+            },
+            {
+              "basis": "边界和误区：不是把聊天历史全贴入正文；没有真实执行证据时不补造截图或通过结果。。不把阅读、建议或生成页面当成已运行与已掌握。",
+              "id": "boundary-misconception",
+              "result": "covered"
+            },
+            {
+              "basis": "已核对 p-pr 的题目、参考与判定标准与本概念一致。",
+              "id": "task-criteria",
+              "result": "covered"
+            },
+            {
+              "basis": "来源以固定提交链接及行范围定位：上游 pr 入口原文。支持模板的完整运行、其他宿主和外部链接不属于本材料已验证范围。",
+              "id": "sources-gaps",
+              "result": "covered"
+            }
+          ],
+          "gaps": [],
+          "id": "pr",
+          "role": "core",
+          "supplements": []
+        },
+        {
+          "dimensions": [
+            {
+              "basis": "本概念以“retro”支持入口选择、输入与边界解释；对应作者讲解已与 上游 retro 入口原文 核对。",
+              "id": "goal-coverage",
+              "result": "covered"
+            },
+            {
+              "basis": "先交代技能/入口、项目上下文与用户决定；涉及固定版本 49dd158 的条件，不把未知安装或学习基础当成已确认。",
+              "id": "prerequisite",
+              "result": "covered"
+            },
+            {
+              "basis": "讲解：场景：一轮开发结束，想减少相同错误再次发生。\n必要输入：当前或指定会话的一手记录、现有检查与指令。\n技能自带流程：读取实际过程，按导航、自动检查、标准、工具等类别找候选并按严重程度呈现；机械错误优先形成确定性检查。；例子：最小请求：/retro 回顾这轮检索功能开发，找能改善下轮工作的环境问题。\n预期产物：环境改善建议及其证据和优先级。。中文情境为教学组织，不声称实际执行。",
+              "id": "explanation-example",
+              "result": "covered"
+            },
+            {
+              "basis": "边界和误区：不是重新实现本轮功能，也不把可自动检验的机械规则全写成口头标准。。不把阅读、建议或生成页面当成已运行与已掌握。",
+              "id": "boundary-misconception",
+              "result": "covered"
+            },
+            {
+              "basis": "已核对 p-retro 的题目、参考与判定标准与本概念一致。",
+              "id": "task-criteria",
+              "result": "covered"
+            },
+            {
+              "basis": "来源以固定提交链接及行范围定位：上游 retro 入口原文。支持模板的完整运行、其他宿主和外部链接不属于本材料已验证范围。",
+              "id": "sources-gaps",
+              "result": "covered"
+            }
+          ],
+          "gaps": [],
+          "id": "retro",
+          "role": "core",
+          "supplements": []
+        },
+        {
+          "dimensions": [
+            {
+              "basis": "本概念以“handoff”支持入口选择、输入与边界解释；对应作者讲解已与 上游 handoff 入口原文 核对。",
+              "id": "goal-coverage",
+              "result": "covered"
+            },
+            {
+              "basis": "先交代技能/入口、项目上下文与用户决定；涉及固定版本 49dd158 的条件，不把未知安装或学习基础当成已确认。",
+              "id": "prerequisite",
+              "result": "covered"
+            },
+            {
+              "basis": "讲解：场景：要换宿主、目录、同事，或中途分出独立侧任务。\n必要输入：当前已知决定、未决问题、已有产物引用与下一会话用途。\n技能自带流程：在系统临时目录写脱敏摘要，引用已存在的规格、任务和决定，不重复复制它们；给下一会话建议技能。；例子：最小请求：/handoff 下一会话将在另一个目录继续核对部署。\n预期产物：可带到新环境的 Markdown 交接文档。。中文情境为教学组织，不声称实际执行。",
+              "id": "explanation-example",
+              "result": "covered"
+            },
+            {
+              "basis": "边界和误区：不写在当前仓库；保留一手材料的指针，摘要仍是有损二手材料。。不把阅读、建议或生成页面当成已运行与已掌握。",
+              "id": "boundary-misconception",
+              "result": "covered"
+            },
+            {
+              "basis": "已核对 p-handoff 的题目、参考与判定标准与本概念一致。",
+              "id": "task-criteria",
+              "result": "covered"
+            },
+            {
+              "basis": "来源以固定提交链接及行范围定位：上游 handoff 入口原文。支持模板的完整运行、其他宿主和外部链接不属于本材料已验证范围。",
+              "id": "sources-gaps",
+              "result": "covered"
+            }
+          ],
+          "gaps": [],
+          "id": "handoff",
+          "role": "core",
+          "supplements": []
+        },
+        {
+          "dimensions": [
+            {
+              "basis": "本概念以“teach”支持入口选择、输入与边界解释；对应作者讲解已与 上游 teach 入口原文 核对。",
+              "id": "goal-coverage",
+              "result": "covered"
+            },
+            {
+              "basis": "先交代技能/入口、项目上下文与用户决定；涉及固定版本 49dd158 的条件，不把未知安装或学习基础当成已确认。",
+              "id": "prerequisite",
+              "result": "covered"
+            },
+            {
+              "basis": "讲解：场景：要围绕真实学习目的持续学习一个主题。\n必要输入：学习任务的目的、可信资源，以及已有学习记录。\n技能自带流程：维护 MISSION、资源、课程 HTML、速查、学习记录与复用组件；围绕合适难度和紧反馈设计短课程。；例子：最小请求：/teach 我想学怎样为资料检索建立有效反馈，请先核对我的学习目标。\n预期产物：可持续的学习工作区与一系列聚焦课程。。中文情境为教学组织，不声称实际执行。",
+              "id": "explanation-example",
+              "result": "covered"
+            },
+            {
+              "basis": "边界和误区：不把当下流利感当长期保持；未知基础不能凭空写成已掌握。本包学习 teach 原文规则，不执行上游课程来替你制造历史。。不把阅读、建议或生成页面当成已运行与已掌握。",
+              "id": "boundary-misconception",
+              "result": "covered"
+            },
+            {
+              "basis": "已核对 p-teach 的题目、参考与判定标准与本概念一致。",
+              "id": "task-criteria",
+              "result": "covered"
+            },
+            {
+              "basis": "来源以固定提交链接及行范围定位：上游 teach 入口原文。支持模板的完整运行、其他宿主和外部链接不属于本材料已验证范围。",
+              "id": "sources-gaps",
+              "result": "covered"
+            }
+          ],
+          "gaps": [],
+          "id": "teach",
+          "role": "core",
+          "supplements": []
+        },
+        {
+          "dimensions": [
+            {
+              "basis": "本概念以“to-questionnaire”支持入口选择、输入与边界解释；对应作者讲解已与 上游 to-questionnaire 入口原文 核对。",
+              "id": "goal-coverage",
+              "result": "covered"
+            },
+            {
+              "basis": "先交代技能/入口、项目上下文与用户决定；涉及固定版本 49dd158 的条件，不把未知安装或学习基础当成已确认。",
+              "id": "prerequisite",
+              "result": "covered"
+            },
+            {
+              "basis": "讲解：场景：决定依赖别人掌握的事实，自己无法回答。\n必要输入：收件人的角色和关系、需要从对方得到的具体事实或决定。\n技能自带流程：先澄清发送对象和需要收回什么，再围绕信息差生成有答题空位的 Markdown 问卷。；例子：最小请求：/to-questionnaire 我需要运营同事确认资料权限，帮我准备问卷。\n预期产物：可异步填写或会议中使用的发现问卷。。中文情境为教学组织，不声称实际执行。",
+              "id": "explanation-example",
+              "result": "covered"
+            },
+            {
+              "basis": "边界和误区：访谈发送需求，不反复逼发送者回答他并不知道的主题事实。。不把阅读、建议或生成页面当成已运行与已掌握。",
+              "id": "boundary-misconception",
+              "result": "covered"
+            },
+            {
+              "basis": "已核对 p-to-questionnaire 的题目、参考与判定标准与本概念一致。",
+              "id": "task-criteria",
+              "result": "covered"
+            },
+            {
+              "basis": "来源以固定提交链接及行范围定位：上游 to-questionnaire 入口原文。支持模板的完整运行、其他宿主和外部链接不属于本材料已验证范围。",
+              "id": "sources-gaps",
+              "result": "covered"
+            }
+          ],
+          "gaps": [],
+          "id": "to-questionnaire",
+          "role": "core",
+          "supplements": []
+        },
+        {
+          "dimensions": [
+            {
+              "basis": "本概念以“wait-what”支持入口选择、输入与边界解释；对应作者讲解已与 上游 wait-what 入口原文 核对。",
+              "id": "goal-coverage",
+              "result": "covered"
+            },
+            {
+              "basis": "先交代技能/入口、项目上下文与用户决定；涉及固定版本 49dd158 的条件，不把未知安装或学习基础当成已确认。",
+              "id": "prerequisite",
+              "result": "covered"
+            },
+            {
+              "basis": "讲解：场景：Agent 的上一条说明跳了上下文，自己跟不上。\n必要输入：没理解的上一条信息及项目术语。\n技能自带流程：补少量背景，用简化语言和已有领域词汇重新表达。；例子：最小请求：/wait-what 上一条关于检索索引的解释我没跟上，请重讲。\n预期产物：能接上当前讨论的重新解释。。中文情境为教学组织，不声称实际执行。",
+              "id": "explanation-example",
+              "result": "covered"
+            },
+            {
+              "basis": "边界和误区：不是继续堆术语，也不凭未确认的背景替用户做决定。。不把阅读、建议或生成页面当成已运行与已掌握。",
+              "id": "boundary-misconception",
+              "result": "covered"
+            },
+            {
+              "basis": "已核对 p-wait-what 的题目、参考与判定标准与本概念一致。",
+              "id": "task-criteria",
+              "result": "covered"
+            },
+            {
+              "basis": "来源以固定提交链接及行范围定位：上游 wait-what 入口原文。支持模板的完整运行、其他宿主和外部链接不属于本材料已验证范围。",
+              "id": "sources-gaps",
+              "result": "covered"
+            }
+          ],
+          "gaps": [],
+          "id": "wait-what",
+          "role": "core",
+          "supplements": []
+        },
+        {
+          "dimensions": [
+            {
+              "basis": "本概念以“writing-for-agents”支持入口选择、输入与边界解释；对应作者讲解已与 上游 writing-for-agents 入口原文 核对。",
+              "id": "goal-coverage",
+              "result": "covered"
+            },
+            {
+              "basis": "先交代技能/入口、项目上下文与用户决定；涉及固定版本 49dd158 的条件，不把未知安装或学习基础当成已确认。",
+              "id": "prerequisite",
+              "result": "covered"
+            },
+            {
+              "basis": "讲解：场景：技能或 Agent 指令太长、入口含糊、必要规则藏得太深。\n必要输入：实际目标文档、触发分支、步骤与参考的使用条件。\n技能自带流程：区分上下文和人类认知成本，精炼条件指针，按层级披露引用，明确每步完成条件并保持规则单一来源。；例子：最小请求：/writing-for-agents 改善这份 Agent 指令的触发与完成条件。\n预期产物：更可预测的步骤、指针与参考结构。。中文情境为教学组织，不声称实际执行。",
+              "id": "explanation-example",
+              "result": "covered"
+            },
+            {
+              "basis": "边界和误区：写技能还需读取 SKILL-MECHANICS；条件指针的触发措辞比单纯移文件重要；用户入口不能互相自动触发。。不把阅读、建议或生成页面当成已运行与已掌握。",
+              "id": "boundary-misconception",
+              "result": "covered"
+            },
+            {
+              "basis": "已核对 p-writing-for-agents 的题目、参考与判定标准与本概念一致。",
+              "id": "task-criteria",
+              "result": "covered"
+            },
+            {
+              "basis": "来源以固定提交链接及行范围定位：上游 writing-for-agents 入口原文。支持模板的完整运行、其他宿主和外部链接不属于本材料已验证范围。",
+              "id": "sources-gaps",
+              "result": "covered"
+            }
+          ],
+          "gaps": [],
+          "id": "writing-for-agents",
+          "role": "core",
+          "supplements": []
+        },
+        {
+          "id": "chief-of-staff",
+          "role": "structural"
+        },
+        {
+          "id": "claude-handoff",
+          "role": "structural"
+        },
+        {
+          "id": "loop-me",
+          "role": "structural"
+        },
+        {
+          "id": "setup-ts-deep-modules",
+          "role": "structural"
+        },
+        {
+          "id": "writing-beats",
+          "role": "structural"
+        },
+        {
+          "id": "writing-fragments",
+          "role": "structural"
+        },
+        {
+          "id": "writing-shape",
+          "role": "structural"
+        },
+        {
+          "id": "git-guardrails-claude-code",
+          "role": "structural"
+        },
+        {
+          "id": "migrate-to-shoehorn",
+          "role": "structural"
+        },
+        {
+          "id": "scaffold-exercises",
+          "role": "structural"
+        },
+        {
+          "id": "setup-pre-commit",
+          "role": "structural"
+        }
+      ],
+      "id": "g-1",
+      "outcome": "能为工程与生产力场景选择正式技能，解释必要输入、技能自带流程、用户决定与产物边界。",
+      "scope": {
+        "concepts": {
+          "alignment": "ceaea71848fea862168c8e7cb333fbe8046901bb6bf97f68599a6eae302551a9",
+          "appendix": "e8c60655855af5e8c0aa7aab97d4dd2191ee044cbf529f37a0e8adae26435882",
+          "ask-matt": "6e2fb6a358967f90afc9389fdd72947b588dd8170767694a0d7bfbcb86837180",
+          "chief-of-staff": "abea09480efb2c00b31b9608796b93840bce1c2f39f387084e75c3a691a389a2",
+          "claude-handoff": "c46ace2143b2b8bf8272f1ced5104741df3faf7f390be5d99248d7a02cd9e1ee",
+          "code-review": "a031822f7d4503f63439d473093f9bb4dab13c8389d9cd1ad6eb4dccd239d11e",
+          "codebase-design": "7a833c9ed60e9f30f9bcec050e86833f051dbab29814a025b902f0393f515c8e",
+          "continuity": "c4f29f719d9dfe33d6086dc32a07815677c6135d1e7bb487233f5426cff13acb",
+          "diagnosing-bugs": "d63948932f197bcf951d6ccee0f1d4ed7e7aab361cf42376754e475f61c355c8",
+          "domain-modeling": "bef0de582178b57ecf1b7360b3c46da34ce5366143ac229a97034f52ffab8101",
+          "execution": "2c31f312ecf2aa4bfa01460b409e91e36b2101fa7d72815b75749bdd49d2bd5e",
+          "foundation": "529587fdffd763a6a5357fc114102f966e38f7333acf6d566c02c5cc003cc27e",
+          "git-guardrails-claude-code": "58516a7d3d3b7d30f21f7dbbe67d4432d9c622fe213b199bc1803811f226f165",
+          "grill-me": "bce699ed98c03da8a0134b77e3df7cd59b68a2e1d82bce014878a71bce90d3ad",
+          "grill-with-docs": "718fbfa9650ffd7408a1befb55a3d41d13c557b83e429dd654ed1dcc88458c10",
+          "grilling": "d2baecc5e7ea984fec0e9ac595b5291171d6637bfc8ff8a8a3162365bcabd0a6",
+          "handoff": "2a9544d87ee6f7a5053f702dfb557faeef6cc3b03d920473c5938a2524deb182",
+          "implement": "3a38e4e6d7b67fcc9806b3a3c86226b7b4f1be1f1567e16f29c849f181f050ba",
+          "implement-spec": "90c18d7e7143faa5dae9d92655fac79fc184b0187657bd1bfe0c599c09f58302",
+          "improve-codebase-architecture": "d3b94b1ef84d254839c7ee4ab548343eda35e670051210f9a754a58883efdd16",
+          "invocation": "2f0aa6593b6f569bce6974e142e0d02051e12b0cbf78dda08ee3177753d4aaa5",
+          "loop-me": "27cf64917884261727c65cbbd59e140e56ff5f6946b0b8d3d0c31d7201172c40",
+          "migrate-to-shoehorn": "5257821a26f483d493dfe63e85da6199b780a8e3f94c8fd01b47e37410531021",
+          "planning": "430ed43e746d82487abe0f970c8aa8fe5c9537b275b46e43058643f5041b32f4",
+          "pr": "20558a8d17e8500d9e237de9d04098c883366c3eae679b0de75b95e23d9e88e1",
+          "quality": "c5a4d60b62239b3f278d206e55c0085e227b243d1515bf4481b4e6d6917aa65b",
+          "research": "6bec6f203a4a31d889617a75337a85865e44dbb6b2a3cf19ad28caaf1d50edd2",
+          "retro": "c3668d76dbcdf8206088f9c154722754b4abc82a5796f7747a38091f266f07e1",
+          "scaffold-exercises": "f1794c4ae5e8319130ede8baa039898eac59097dd5f1ece2d4abc173753decf0",
+          "setup-matt-pocock-skills": "02e7960ed1402b0dfef21669e78bcf89900a01f7591815927ed33b193a0cdef6",
+          "setup-pre-commit": "7cf127b502ca812b67c2e909d578654ebb7ac32b222679a0866f97d9b395ebbf",
+          "setup-ts-deep-modules": "6b18e6e30729de8d869af5dda88be05b7d656b27ea63660c1d04ace23a909ed9",
+          "skill-prototype": "fc12478c18f658a1819d43353670463fe219ac46829468b2161b6d73e6b3bb85",
+          "skills": "fd76508b500909dcb49c7d9f61341f32ad07393955a7c77f4d236cd7f7371c1c",
+          "tdd": "7ae7a77582c2dc7d032f75e946c27ef02b702370c37883b2ce6e29cb0866e1e7",
+          "teach": "583a2905265fa7ddc3dbe909c4a73acc3b9a375787ab6dd0cc6cef4df269d017",
+          "to-questionnaire": "669358e2fe84b892c66f98c8c962b0a4bb1537d30b96e8bda5fb44e4a7f44b6b",
+          "to-spec": "78ffef7d0d4ee7d8e064aec167af89c4e7668b0b62f5dd7480891a31956f200b",
+          "to-tickets": "b1db16122b6ae0fc1f37cf12a495b29ecd1268131ec95cf2f8158d8327abf712",
+          "triage": "6de8a2d7c4e0b82b447eb846ddb94cd346a6a02616630f739e194698f845a960",
+          "wait-what": "ac6cf34d156995d2c8a6744ec8bb37610c436f665ee5375d7d1cbe1f94eea9ed",
+          "wayfinder": "9f5bd25c9a592cc19045441b3ece45d447323110e87e40842320be2b6c6a932a",
+          "wizard": "1bc77ca15baca7a063cdbb37329e19583d97ae93579f13e0462f4020027d613a",
+          "writing-beats": "7829b53cadca67e4302c7ea53c779b48eddf143eb65d9894bc0ece55a1a0ce01",
+          "writing-for-agents": "ba41bc5d2c13a7e4e951a3f9ea77c68adcfa5ab1ce01f3b4a0e1657c60e75835",
+          "writing-fragments": "14cf7b6c57c4e4f2307c9953740764aa0f5fb20831285c6d6cd1cfab44ac79f2",
+          "writing-shape": "4b706e8bd925652236c844a258c6dd124520556493bdf4ac6c75a8385471a205"
+        },
+        "goalFingerprint": "1fa6209182b41a1faf82732c82fbb761ddc190084e5118c3bf2527a86ed3cff8",
+        "modelFingerprint": "44432e2fbbcb8520f25f150f1e53fbd93aa34f329e11f6e3a69f6fd28ac2f8fc",
+        "prompts": {
+          "p-ask-matt": "8828ce1353787b8eefbce100c5be167a2a21094cb98042634435a83ae0f21fc5",
+          "p-chief-of-staff": "5ef0b132adcca2d54943bf7ae6e49d02610d913dfcc358ec63006763ffaf53f3",
+          "p-claude-handoff": "10df64f762222a995abc71f4c63c05e7658ead77df05050b0eadac82e89ea8d3",
+          "p-code-review": "3a7567cde5382cc5e826f3668a07bcc6eb5ea6907e89f1fd7f4f2a5fd9eb923d",
+          "p-codebase-design": "a6184959fed86dec1bd995bce3d50ec827dcf4f2baa59605d171553d9986e02e",
+          "p-diagnosing-bugs": "55331dab239f9941eba1e1aad429dae91626c45bb2e8335c4cade877197cf3bf",
+          "p-domain-modeling": "5c74aa046fa84de9aefd42d7895d902d1b440d19bd9e37fc2f2e34c704ac8673",
+          "p-git-guardrails-claude-code": "cb7c2a8149a79128384f638e44207b875130369abedc7563f33ede2d330450f1",
+          "p-grill-me": "f1379251953fcac721df2f6b38e0d8b78af8a12770f25e4ae9cac88572859d32",
+          "p-grill-with-docs": "70385fb4936a3c15607a19ddea034134baafe6ec4309c1ad3030768bd63ffd98",
+          "p-grilling": "b6b7ee1bcc64e248b94bb6c0d0b236a058c7f30f28bc49e9e1c9d6cf07905808",
+          "p-handoff": "0c97522d4ff028119f3c62d56a618ea46213e4a914e7c1371de479ca8a2858a7",
+          "p-implement": "68967d9396a71f924bdcefeb1cb817324a61277bc3aa84e589aecc96be8cf18a",
+          "p-implement-spec": "7edad7793468af53512018a2cc5d19c7dec08657e0c0352a419431035d014fe4",
+          "p-improve-codebase-architecture": "3fbe0e5a3b5510ecce0cb552cf4bd9054863fdfa988219fb2ae5a1d82f49e687",
+          "p-invocation": "13b57559d64e043331e5c6bb368698f3f07a26bd2fa07d1a4175e8c14b975c14",
+          "p-loop-me": "3480d7257ca1f591b7994657d5c5829f3836ad18a70ed5e3c39cc334cd998a40",
+          "p-migrate-to-shoehorn": "984a042e2a931ae1c58c6d241d85fad6a9692dc53f64c044d45613fe7cbaa54f",
+          "p-pr": "828f140cfcadea26cde985fc40c2171f6129878b50a39f3ccf7c6be3c77ebf58",
+          "p-prototype": "324d02607c7c234169117190bf9552d9b45b5fc2e1444f608f2a8b0d3d19136f",
+          "p-research": "320282eb2d3bcebd0eca610a80ee52992f8b5c0b76a6baefa4b4c2413ab22e7d",
+          "p-retro": "096b6261e9454b506cd14e2d939811523315220c62933e185741dbcf26a549d8",
+          "p-scaffold-exercises": "ee0a7b8f657fc42ee2ada3a9790e1ce85371d6d70eb209c4a575ffc3396ed731",
+          "p-setup-matt-pocock-skills": "35034ad8a55c9ced88513252cc10978235344e66d47b6fae0fa4a2af5a807175",
+          "p-setup-pre-commit": "78e17bc937c032061fa6d760903e5fd6f12f52eb8f013dae2ff55cb413fb571f",
+          "p-setup-ts-deep-modules": "c01e3af8eba74a1e7d10463c2d6d2a7d44e62ce552e9f71b2245b1bd722ee1f8",
+          "p-tdd": "3b5f5fce32438e24efe3822e68025a22417a55eecc7739683c595d961b479f97",
+          "p-teach": "644f99ffe3ac13bc71f0cf19e644b61ee27bead4b50ac4145dbd095d7a8ac5c2",
+          "p-to-questionnaire": "c5ee46edda3109c8bf25a609008f6cbbce920938779fa3eb5185a7a928e96133",
+          "p-to-spec": "92a61e8eb4d7ed108c63055fbff226268af027bc8c33b4dc16c2b2a1427458be",
+          "p-to-tickets": "0eb3682191c93f954fbb0e968e75203cebcdcbe103614b91408726fbebc9b887",
+          "p-triage": "cb1233ae30ed90fd7893c859af6251d0a6ad73c2daa393bf8bbd191d55e47e01",
+          "p-wait-what": "c14194cc8c66894e905fa412d843e23bde0f883c77ff3e5c10f8ac25d1e7538c",
+          "p-wayfinder": "e6cafb3d12dea7dd7dfcef8dd66829778bacb098d596a1571b93bd097fbf7ea6",
+          "p-wizard": "731138338ed9d06b59ea6e6e9d4b422a397f8d2a2f7276e0bb2f281c5765f2fa",
+          "p-writing-beats": "1cd562ab20f050ae59fca1728d01f1648f47120a535a8161afc42d6de93f486e",
+          "p-writing-for-agents": "8c12f0f5e04accdb32c6a01b0e37ce1d789b076c1545ee4a82c8e0f5f919c07f",
+          "p-writing-fragments": "99416695adfe2c822a35574326517d49f99fe2d3c1b90c48dab661a0aaf116cb",
+          "p-writing-shape": "f144afc6b8c63bd56c9cb080ea999f3af53907dd86314fff92947b5e50ff108b"
+        }
+      }
+    }
+  ],
+  "materialMap": {
+    "sources": [
+      {
+        "checked": [
+          {
+            "basis": "逐项核对定位、所需输入、自带步骤、用户决定、输出与限制；教学次序与示范假设另行说明。",
+            "range": "skills/engineering/ask-matt/SKILL.md 入口全文 1–97 行",
+            "readAt": "2026-10-13T07:04:09.618Z"
+          }
+        ],
+        "gaps": [],
+        "goalScope": [
+          {
+            "conceptId": "ask-matt",
+            "range": "skills/engineering/ask-matt/SKILL.md 1–97 行"
+          }
+        ],
+        "sourceId": "src-ask-matt",
+        "sourceSnapshot": {
+          "kind": "primary-source",
+          "note": "固定提交 49dd158d1076134a641b33efb035946536778336；skills/engineering/ask-matt/SKILL.md，第 1–97 行。中文说明与练习由 Forge 编写。",
+          "title": "上游 ask-matt 入口原文",
+          "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/ask-matt/SKILL.md"
+        },
+        "structure": [
+          "用途与身份",
+          "输入与流程",
+          "输出、用户决定与边界",
+          "必要引用"
+        ],
+        "unread": [
+          "未作为本课程操作依据的支持模板实现细节与外部链接"
+        ],
+        "version": "49dd158d1076134a641b33efb035946536778336"
+      },
+      {
+        "checked": [
+          {
+            "basis": "逐项核对定位、所需输入、自带步骤、用户决定、输出与限制；教学次序与示范假设另行说明。",
+            "range": "skills/engineering/setup-matt-pocock-skills/SKILL.md 入口全文 1–118 行",
+            "readAt": "2026-10-13T07:04:09.619Z"
+          }
+        ],
+        "gaps": [],
+        "goalScope": [
+          {
+            "conceptId": "setup-matt-pocock-skills",
+            "range": "skills/engineering/setup-matt-pocock-skills/SKILL.md 1–118 行"
+          }
+        ],
+        "sourceId": "src-setup-matt-pocock-skills",
+        "sourceSnapshot": {
+          "kind": "primary-source",
+          "note": "固定提交 49dd158d1076134a641b33efb035946536778336；skills/engineering/setup-matt-pocock-skills/SKILL.md，第 1–118 行。中文说明与练习由 Forge 编写。",
+          "title": "上游 setup-matt-pocock-skills 入口原文",
+          "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/setup-matt-pocock-skills/SKILL.md"
+        },
+        "structure": [
+          "用途与身份",
+          "输入与流程",
+          "输出、用户决定与边界",
+          "必要引用"
+        ],
+        "unread": [
+          "未作为本课程操作依据的支持模板实现细节与外部链接"
+        ],
+        "version": "49dd158d1076134a641b33efb035946536778336"
+      },
+      {
+        "checked": [
+          {
+            "basis": "逐项核对定位、所需输入、自带步骤、用户决定、输出与限制；教学次序与示范假设另行说明。",
+            "range": "skills/engineering/grill-with-docs/SKILL.md 入口全文 1–7 行",
+            "readAt": "2026-10-13T07:04:09.619Z"
+          }
+        ],
+        "gaps": [],
+        "goalScope": [
+          {
+            "conceptId": "grill-with-docs",
+            "range": "skills/engineering/grill-with-docs/SKILL.md 1–7 行"
+          }
+        ],
+        "sourceId": "src-grill-with-docs",
+        "sourceSnapshot": {
+          "kind": "primary-source",
+          "note": "固定提交 49dd158d1076134a641b33efb035946536778336；skills/engineering/grill-with-docs/SKILL.md，第 1–7 行。中文说明与练习由 Forge 编写。",
+          "title": "上游 grill-with-docs 入口原文",
+          "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/grill-with-docs/SKILL.md"
+        },
+        "structure": [
+          "用途与身份",
+          "输入与流程",
+          "输出、用户决定与边界",
+          "必要引用"
+        ],
+        "unread": [
+          "未作为本课程操作依据的支持模板实现细节与外部链接"
+        ],
+        "version": "49dd158d1076134a641b33efb035946536778336"
+      },
+      {
+        "checked": [
+          {
+            "basis": "逐项核对定位、所需输入、自带步骤、用户决定、输出与限制；教学次序与示范假设另行说明。",
+            "range": "skills/productivity/grill-me/SKILL.md 入口全文 1–7 行",
+            "readAt": "2026-10-13T07:04:09.619Z"
+          }
+        ],
+        "gaps": [],
+        "goalScope": [
+          {
+            "conceptId": "grill-me",
+            "range": "skills/productivity/grill-me/SKILL.md 1–7 行"
+          }
+        ],
+        "sourceId": "src-grill-me",
+        "sourceSnapshot": {
+          "kind": "primary-source",
+          "note": "固定提交 49dd158d1076134a641b33efb035946536778336；skills/productivity/grill-me/SKILL.md，第 1–7 行。中文说明与练习由 Forge 编写。",
+          "title": "上游 grill-me 入口原文",
+          "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/productivity/grill-me/SKILL.md"
+        },
+        "structure": [
+          "用途与身份",
+          "输入与流程",
+          "输出、用户决定与边界",
+          "必要引用"
+        ],
+        "unread": [
+          "未作为本课程操作依据的支持模板实现细节与外部链接"
+        ],
+        "version": "49dd158d1076134a641b33efb035946536778336"
+      },
+      {
+        "checked": [
+          {
+            "basis": "逐项核对定位、所需输入、自带步骤、用户决定、输出与限制；教学次序与示范假设另行说明。",
+            "range": "skills/productivity/grilling/SKILL.md 入口全文 1–30 行",
+            "readAt": "2026-10-13T07:04:09.620Z"
+          }
+        ],
+        "gaps": [],
+        "goalScope": [
+          {
+            "conceptId": "grilling",
+            "range": "skills/productivity/grilling/SKILL.md 1–30 行"
+          }
+        ],
+        "sourceId": "src-grilling",
+        "sourceSnapshot": {
+          "kind": "primary-source",
+          "note": "固定提交 49dd158d1076134a641b33efb035946536778336；skills/productivity/grilling/SKILL.md，第 1–30 行。中文说明与练习由 Forge 编写。",
+          "title": "上游 grilling 入口原文",
+          "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/productivity/grilling/SKILL.md"
+        },
+        "structure": [
+          "用途与身份",
+          "输入与流程",
+          "输出、用户决定与边界",
+          "必要引用"
+        ],
+        "unread": [
+          "未作为本课程操作依据的支持模板实现细节与外部链接"
+        ],
+        "version": "49dd158d1076134a641b33efb035946536778336"
+      },
+      {
+        "checked": [
+          {
+            "basis": "逐项核对定位、所需输入、自带步骤、用户决定、输出与限制；教学次序与示范假设另行说明。",
+            "range": "skills/engineering/domain-modeling/SKILL.md 入口全文 1–74 行",
+            "readAt": "2026-10-13T07:04:09.620Z"
+          }
+        ],
+        "gaps": [],
+        "goalScope": [
+          {
+            "conceptId": "domain-modeling",
+            "range": "skills/engineering/domain-modeling/SKILL.md 1–74 行"
+          }
+        ],
+        "sourceId": "src-domain-modeling",
+        "sourceSnapshot": {
+          "kind": "primary-source",
+          "note": "固定提交 49dd158d1076134a641b33efb035946536778336；skills/engineering/domain-modeling/SKILL.md，第 1–74 行。中文说明与练习由 Forge 编写。",
+          "title": "上游 domain-modeling 入口原文",
+          "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/domain-modeling/SKILL.md"
+        },
+        "structure": [
+          "用途与身份",
+          "输入与流程",
+          "输出、用户决定与边界",
+          "必要引用"
+        ],
+        "unread": [
+          "未作为本课程操作依据的支持模板实现细节与外部链接"
+        ],
+        "version": "49dd158d1076134a641b33efb035946536778336"
+      },
+      {
+        "checked": [
+          {
+            "basis": "逐项核对定位、所需输入、自带步骤、用户决定、输出与限制；教学次序与示范假设另行说明。",
+            "range": "skills/engineering/to-spec/SKILL.md 入口全文 1–75 行",
+            "readAt": "2026-10-13T07:04:09.620Z"
+          }
+        ],
+        "gaps": [],
+        "goalScope": [
+          {
+            "conceptId": "to-spec",
+            "range": "skills/engineering/to-spec/SKILL.md 1–75 行"
+          }
+        ],
+        "sourceId": "src-to-spec",
+        "sourceSnapshot": {
+          "kind": "primary-source",
+          "note": "固定提交 49dd158d1076134a641b33efb035946536778336；skills/engineering/to-spec/SKILL.md，第 1–75 行。中文说明与练习由 Forge 编写。",
+          "title": "上游 to-spec 入口原文",
+          "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/to-spec/SKILL.md"
+        },
+        "structure": [
+          "用途与身份",
+          "输入与流程",
+          "输出、用户决定与边界",
+          "必要引用"
+        ],
+        "unread": [
+          "未作为本课程操作依据的支持模板实现细节与外部链接"
+        ],
+        "version": "49dd158d1076134a641b33efb035946536778336"
+      },
+      {
+        "checked": [
+          {
+            "basis": "逐项核对定位、所需输入、自带步骤、用户决定、输出与限制；教学次序与示范假设另行说明。",
+            "range": "skills/engineering/to-tickets/SKILL.md 入口全文 1–105 行",
+            "readAt": "2026-10-13T07:04:09.620Z"
+          }
+        ],
+        "gaps": [],
+        "goalScope": [
+          {
+            "conceptId": "to-tickets",
+            "range": "skills/engineering/to-tickets/SKILL.md 1–105 行"
+          }
+        ],
+        "sourceId": "src-to-tickets",
+        "sourceSnapshot": {
+          "kind": "primary-source",
+          "note": "固定提交 49dd158d1076134a641b33efb035946536778336；skills/engineering/to-tickets/SKILL.md，第 1–105 行。中文说明与练习由 Forge 编写。",
+          "title": "上游 to-tickets 入口原文",
+          "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/to-tickets/SKILL.md"
+        },
+        "structure": [
+          "用途与身份",
+          "输入与流程",
+          "输出、用户决定与边界",
+          "必要引用"
+        ],
+        "unread": [
+          "未作为本课程操作依据的支持模板实现细节与外部链接"
+        ],
+        "version": "49dd158d1076134a641b33efb035946536778336"
+      },
+      {
+        "checked": [
+          {
+            "basis": "逐项核对定位、所需输入、自带步骤、用户决定、输出与限制；教学次序与示范假设另行说明。",
+            "range": "skills/engineering/wayfinder/SKILL.md 入口全文 1–128 行",
+            "readAt": "2026-10-13T07:04:09.620Z"
+          }
+        ],
+        "gaps": [],
+        "goalScope": [
+          {
+            "conceptId": "wayfinder",
+            "range": "skills/engineering/wayfinder/SKILL.md 1–128 行"
+          }
+        ],
+        "sourceId": "src-wayfinder",
+        "sourceSnapshot": {
+          "kind": "primary-source",
+          "note": "固定提交 49dd158d1076134a641b33efb035946536778336；skills/engineering/wayfinder/SKILL.md，第 1–128 行。中文说明与练习由 Forge 编写。",
+          "title": "上游 wayfinder 入口原文",
+          "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/wayfinder/SKILL.md"
+        },
+        "structure": [
+          "用途与身份",
+          "输入与流程",
+          "输出、用户决定与边界",
+          "必要引用"
+        ],
+        "unread": [
+          "未作为本课程操作依据的支持模板实现细节与外部链接"
+        ],
+        "version": "49dd158d1076134a641b33efb035946536778336"
+      },
+      {
+        "checked": [
+          {
+            "basis": "逐项核对定位、所需输入、自带步骤、用户决定、输出与限制；教学次序与示范假设另行说明。",
+            "range": "skills/engineering/implement/SKILL.md 入口全文 1–17 行",
+            "readAt": "2026-10-13T07:04:09.620Z"
+          }
+        ],
+        "gaps": [],
+        "goalScope": [
+          {
+            "conceptId": "implement",
+            "range": "skills/engineering/implement/SKILL.md 1–17 行"
+          }
+        ],
+        "sourceId": "src-implement",
+        "sourceSnapshot": {
+          "kind": "primary-source",
+          "note": "固定提交 49dd158d1076134a641b33efb035946536778336；skills/engineering/implement/SKILL.md，第 1–17 行。中文说明与练习由 Forge 编写。",
+          "title": "上游 implement 入口原文",
+          "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/implement/SKILL.md"
+        },
+        "structure": [
+          "用途与身份",
+          "输入与流程",
+          "输出、用户决定与边界",
+          "必要引用"
+        ],
+        "unread": [
+          "未作为本课程操作依据的支持模板实现细节与外部链接"
+        ],
+        "version": "49dd158d1076134a641b33efb035946536778336"
+      },
+      {
+        "checked": [
+          {
+            "basis": "逐项核对定位、所需输入、自带步骤、用户决定、输出与限制；教学次序与示范假设另行说明。",
+            "range": "skills/engineering/implement-spec/SKILL.md 入口全文 1–40 行",
+            "readAt": "2026-10-13T07:04:09.620Z"
+          }
+        ],
+        "gaps": [],
+        "goalScope": [
+          {
+            "conceptId": "implement-spec",
+            "range": "skills/engineering/implement-spec/SKILL.md 1–40 行"
+          }
+        ],
+        "sourceId": "src-implement-spec",
+        "sourceSnapshot": {
+          "kind": "primary-source",
+          "note": "固定提交 49dd158d1076134a641b33efb035946536778336；skills/engineering/implement-spec/SKILL.md，第 1–40 行。中文说明与练习由 Forge 编写。",
+          "title": "上游 implement-spec 入口原文",
+          "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/implement-spec/SKILL.md"
+        },
+        "structure": [
+          "用途与身份",
+          "输入与流程",
+          "输出、用户决定与边界",
+          "必要引用"
+        ],
+        "unread": [
+          "未作为本课程操作依据的支持模板实现细节与外部链接"
+        ],
+        "version": "49dd158d1076134a641b33efb035946536778336"
+      },
+      {
+        "checked": [
+          {
+            "basis": "逐项核对定位、所需输入、自带步骤、用户决定、输出与限制；教学次序与示范假设另行说明。",
+            "range": "skills/engineering/tdd/SKILL.md 入口全文 1–38 行",
+            "readAt": "2026-10-13T07:04:09.620Z"
+          }
+        ],
+        "gaps": [],
+        "goalScope": [
+          {
+            "conceptId": "tdd",
+            "range": "skills/engineering/tdd/SKILL.md 1–38 行"
+          }
+        ],
+        "sourceId": "src-tdd",
+        "sourceSnapshot": {
+          "kind": "primary-source",
+          "note": "固定提交 49dd158d1076134a641b33efb035946536778336；skills/engineering/tdd/SKILL.md，第 1–38 行。中文说明与练习由 Forge 编写。",
+          "title": "上游 tdd 入口原文",
+          "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/tdd/SKILL.md"
+        },
+        "structure": [
+          "用途与身份",
+          "输入与流程",
+          "输出、用户决定与边界",
+          "必要引用"
+        ],
+        "unread": [
+          "未作为本课程操作依据的支持模板实现细节与外部链接"
+        ],
+        "version": "49dd158d1076134a641b33efb035946536778336"
+      },
+      {
+        "checked": [
+          {
+            "basis": "逐项核对定位、所需输入、自带步骤、用户决定、输出与限制；教学次序与示范假设另行说明。",
+            "range": "skills/engineering/prototype/SKILL.md 入口全文 1–26 行",
+            "readAt": "2026-10-13T07:04:09.620Z"
+          }
+        ],
+        "gaps": [],
+        "goalScope": [
+          {
+            "conceptId": "skill-prototype",
+            "range": "skills/engineering/prototype/SKILL.md 1–26 行"
+          }
+        ],
+        "sourceId": "src-prototype",
+        "sourceSnapshot": {
+          "kind": "primary-source",
+          "note": "固定提交 49dd158d1076134a641b33efb035946536778336；skills/engineering/prototype/SKILL.md，第 1–26 行。中文说明与练习由 Forge 编写。",
+          "title": "上游 prototype 入口原文",
+          "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/prototype/SKILL.md"
+        },
+        "structure": [
+          "用途与身份",
+          "输入与流程",
+          "输出、用户决定与边界",
+          "必要引用"
+        ],
+        "unread": [
+          "未作为本课程操作依据的支持模板实现细节与外部链接"
+        ],
+        "version": "49dd158d1076134a641b33efb035946536778336"
+      },
+      {
+        "checked": [
+          {
+            "basis": "逐项核对定位、所需输入、自带步骤、用户决定、输出与限制；教学次序与示范假设另行说明。",
+            "range": "skills/engineering/research/SKILL.md 入口全文 1–12 行",
+            "readAt": "2026-10-13T07:04:09.620Z"
+          }
+        ],
+        "gaps": [],
+        "goalScope": [
+          {
+            "conceptId": "research",
+            "range": "skills/engineering/research/SKILL.md 1–12 行"
+          }
+        ],
+        "sourceId": "src-research",
+        "sourceSnapshot": {
+          "kind": "primary-source",
+          "note": "固定提交 49dd158d1076134a641b33efb035946536778336；skills/engineering/research/SKILL.md，第 1–12 行。中文说明与练习由 Forge 编写。",
+          "title": "上游 research 入口原文",
+          "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/research/SKILL.md"
+        },
+        "structure": [
+          "用途与身份",
+          "输入与流程",
+          "输出、用户决定与边界",
+          "必要引用"
+        ],
+        "unread": [
+          "未作为本课程操作依据的支持模板实现细节与外部链接"
+        ],
+        "version": "49dd158d1076134a641b33efb035946536778336"
+      },
+      {
+        "checked": [
+          {
+            "basis": "逐项核对定位、所需输入、自带步骤、用户决定、输出与限制；教学次序与示范假设另行说明。",
+            "range": "skills/engineering/wizard/SKILL.md 入口全文 1–44 行",
+            "readAt": "2026-10-13T07:04:09.620Z"
+          }
+        ],
+        "gaps": [],
+        "goalScope": [
+          {
+            "conceptId": "wizard",
+            "range": "skills/engineering/wizard/SKILL.md 1–44 行"
+          }
+        ],
+        "sourceId": "src-wizard",
+        "sourceSnapshot": {
+          "kind": "primary-source",
+          "note": "固定提交 49dd158d1076134a641b33efb035946536778336；skills/engineering/wizard/SKILL.md，第 1–44 行。中文说明与练习由 Forge 编写。",
+          "title": "上游 wizard 入口原文",
+          "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/wizard/SKILL.md"
+        },
+        "structure": [
+          "用途与身份",
+          "输入与流程",
+          "输出、用户决定与边界",
+          "必要引用"
+        ],
+        "unread": [
+          "未作为本课程操作依据的支持模板实现细节与外部链接"
+        ],
+        "version": "49dd158d1076134a641b33efb035946536778336"
+      },
+      {
+        "checked": [
+          {
+            "basis": "逐项核对定位、所需输入、自带步骤、用户决定、输出与限制；教学次序与示范假设另行说明。",
+            "range": "skills/engineering/diagnosing-bugs/SKILL.md 入口全文 1–138 行",
+            "readAt": "2026-10-13T07:04:09.620Z"
+          }
+        ],
+        "gaps": [],
+        "goalScope": [
+          {
+            "conceptId": "diagnosing-bugs",
+            "range": "skills/engineering/diagnosing-bugs/SKILL.md 1–138 行"
+          }
+        ],
+        "sourceId": "src-diagnosing-bugs",
+        "sourceSnapshot": {
+          "kind": "primary-source",
+          "note": "固定提交 49dd158d1076134a641b33efb035946536778336；skills/engineering/diagnosing-bugs/SKILL.md，第 1–138 行。中文说明与练习由 Forge 编写。",
+          "title": "上游 diagnosing-bugs 入口原文",
+          "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/diagnosing-bugs/SKILL.md"
+        },
+        "structure": [
+          "用途与身份",
+          "输入与流程",
+          "输出、用户决定与边界",
+          "必要引用"
+        ],
+        "unread": [
+          "未作为本课程操作依据的支持模板实现细节与外部链接"
+        ],
+        "version": "49dd158d1076134a641b33efb035946536778336"
+      },
+      {
+        "checked": [
+          {
+            "basis": "逐项核对定位、所需输入、自带步骤、用户决定、输出与限制；教学次序与示范假设另行说明。",
+            "range": "skills/engineering/triage/SKILL.md 入口全文 1–112 行",
+            "readAt": "2026-10-13T07:04:09.620Z"
+          }
+        ],
+        "gaps": [],
+        "goalScope": [
+          {
+            "conceptId": "triage",
+            "range": "skills/engineering/triage/SKILL.md 1–112 行"
+          }
+        ],
+        "sourceId": "src-triage",
+        "sourceSnapshot": {
+          "kind": "primary-source",
+          "note": "固定提交 49dd158d1076134a641b33efb035946536778336；skills/engineering/triage/SKILL.md，第 1–112 行。中文说明与练习由 Forge 编写。",
+          "title": "上游 triage 入口原文",
+          "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/triage/SKILL.md"
+        },
+        "structure": [
+          "用途与身份",
+          "输入与流程",
+          "输出、用户决定与边界",
+          "必要引用"
+        ],
+        "unread": [
+          "未作为本课程操作依据的支持模板实现细节与外部链接"
+        ],
+        "version": "49dd158d1076134a641b33efb035946536778336"
+      },
+      {
+        "checked": [
+          {
+            "basis": "逐项核对定位、所需输入、自带步骤、用户决定、输出与限制；教学次序与示范假设另行说明。",
+            "range": "skills/engineering/code-review/SKILL.md 入口全文 1–89 行",
+            "readAt": "2026-10-13T07:04:09.620Z"
+          }
+        ],
+        "gaps": [],
+        "goalScope": [
+          {
+            "conceptId": "code-review",
+            "range": "skills/engineering/code-review/SKILL.md 1–89 行"
+          }
+        ],
+        "sourceId": "src-code-review",
+        "sourceSnapshot": {
+          "kind": "primary-source",
+          "note": "固定提交 49dd158d1076134a641b33efb035946536778336；skills/engineering/code-review/SKILL.md，第 1–89 行。中文说明与练习由 Forge 编写。",
+          "title": "上游 code-review 入口原文",
+          "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/code-review/SKILL.md"
+        },
+        "structure": [
+          "用途与身份",
+          "输入与流程",
+          "输出、用户决定与边界",
+          "必要引用"
+        ],
+        "unread": [
+          "未作为本课程操作依据的支持模板实现细节与外部链接"
+        ],
+        "version": "49dd158d1076134a641b33efb035946536778336"
+      },
+      {
+        "checked": [
+          {
+            "basis": "逐项核对定位、所需输入、自带步骤、用户决定、输出与限制；教学次序与示范假设另行说明。",
+            "range": "skills/engineering/codebase-design/SKILL.md 入口全文 1–114 行",
+            "readAt": "2026-10-13T07:04:09.620Z"
+          }
+        ],
+        "gaps": [],
+        "goalScope": [
+          {
+            "conceptId": "codebase-design",
+            "range": "skills/engineering/codebase-design/SKILL.md 1–114 行"
+          }
+        ],
+        "sourceId": "src-codebase-design",
+        "sourceSnapshot": {
+          "kind": "primary-source",
+          "note": "固定提交 49dd158d1076134a641b33efb035946536778336；skills/engineering/codebase-design/SKILL.md，第 1–114 行。中文说明与练习由 Forge 编写。",
+          "title": "上游 codebase-design 入口原文",
+          "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/codebase-design/SKILL.md"
+        },
+        "structure": [
+          "用途与身份",
+          "输入与流程",
+          "输出、用户决定与边界",
+          "必要引用"
+        ],
+        "unread": [
+          "未作为本课程操作依据的支持模板实现细节与外部链接"
+        ],
+        "version": "49dd158d1076134a641b33efb035946536778336"
+      },
+      {
+        "checked": [
+          {
+            "basis": "逐项核对定位、所需输入、自带步骤、用户决定、输出与限制；教学次序与示范假设另行说明。",
+            "range": "skills/engineering/improve-codebase-architecture/SKILL.md 入口全文 1–71 行",
+            "readAt": "2026-10-13T07:04:09.620Z"
+          }
+        ],
+        "gaps": [],
+        "goalScope": [
+          {
+            "conceptId": "improve-codebase-architecture",
+            "range": "skills/engineering/improve-codebase-architecture/SKILL.md 1–71 行"
+          }
+        ],
+        "sourceId": "src-improve-codebase-architecture",
+        "sourceSnapshot": {
+          "kind": "primary-source",
+          "note": "固定提交 49dd158d1076134a641b33efb035946536778336；skills/engineering/improve-codebase-architecture/SKILL.md，第 1–71 行。中文说明与练习由 Forge 编写。",
+          "title": "上游 improve-codebase-architecture 入口原文",
+          "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/improve-codebase-architecture/SKILL.md"
+        },
+        "structure": [
+          "用途与身份",
+          "输入与流程",
+          "输出、用户决定与边界",
+          "必要引用"
+        ],
+        "unread": [
+          "未作为本课程操作依据的支持模板实现细节与外部链接"
+        ],
+        "version": "49dd158d1076134a641b33efb035946536778336"
+      },
+      {
+        "checked": [
+          {
+            "basis": "逐项核对定位、所需输入、自带步骤、用户决定、输出与限制；教学次序与示范假设另行说明。",
+            "range": "skills/engineering/pr/SKILL.md 入口全文 1–170 行",
+            "readAt": "2026-10-13T07:04:09.620Z"
+          }
+        ],
+        "gaps": [],
+        "goalScope": [
+          {
+            "conceptId": "pr",
+            "range": "skills/engineering/pr/SKILL.md 1–170 行"
+          }
+        ],
+        "sourceId": "src-pr",
+        "sourceSnapshot": {
+          "kind": "primary-source",
+          "note": "固定提交 49dd158d1076134a641b33efb035946536778336；skills/engineering/pr/SKILL.md，第 1–170 行。中文说明与练习由 Forge 编写。",
+          "title": "上游 pr 入口原文",
+          "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/pr/SKILL.md"
+        },
+        "structure": [
+          "用途与身份",
+          "输入与流程",
+          "输出、用户决定与边界",
+          "必要引用"
+        ],
+        "unread": [
+          "未作为本课程操作依据的支持模板实现细节与外部链接"
+        ],
+        "version": "49dd158d1076134a641b33efb035946536778336"
+      },
+      {
+        "checked": [
+          {
+            "basis": "逐项核对定位、所需输入、自带步骤、用户决定、输出与限制；教学次序与示范假设另行说明。",
+            "range": "skills/engineering/retro/SKILL.md 入口全文 1–44 行",
+            "readAt": "2026-10-13T07:04:09.620Z"
+          }
+        ],
+        "gaps": [],
+        "goalScope": [
+          {
+            "conceptId": "retro",
+            "range": "skills/engineering/retro/SKILL.md 1–44 行"
+          }
+        ],
+        "sourceId": "src-retro",
+        "sourceSnapshot": {
+          "kind": "primary-source",
+          "note": "固定提交 49dd158d1076134a641b33efb035946536778336；skills/engineering/retro/SKILL.md，第 1–44 行。中文说明与练习由 Forge 编写。",
+          "title": "上游 retro 入口原文",
+          "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/retro/SKILL.md"
+        },
+        "structure": [
+          "用途与身份",
+          "输入与流程",
+          "输出、用户决定与边界",
+          "必要引用"
+        ],
+        "unread": [
+          "未作为本课程操作依据的支持模板实现细节与外部链接"
+        ],
+        "version": "49dd158d1076134a641b33efb035946536778336"
+      },
+      {
+        "checked": [
+          {
+            "basis": "逐项核对定位、所需输入、自带步骤、用户决定、输出与限制；教学次序与示范假设另行说明。",
+            "range": "skills/productivity/handoff/SKILL.md 入口全文 1–16 行",
+            "readAt": "2026-10-13T07:04:09.620Z"
+          }
+        ],
+        "gaps": [],
+        "goalScope": [
+          {
+            "conceptId": "handoff",
+            "range": "skills/productivity/handoff/SKILL.md 1–16 行"
+          }
+        ],
+        "sourceId": "src-handoff",
+        "sourceSnapshot": {
+          "kind": "primary-source",
+          "note": "固定提交 49dd158d1076134a641b33efb035946536778336；skills/productivity/handoff/SKILL.md，第 1–16 行。中文说明与练习由 Forge 编写。",
+          "title": "上游 handoff 入口原文",
+          "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/productivity/handoff/SKILL.md"
+        },
+        "structure": [
+          "用途与身份",
+          "输入与流程",
+          "输出、用户决定与边界",
+          "必要引用"
+        ],
+        "unread": [
+          "未作为本课程操作依据的支持模板实现细节与外部链接"
+        ],
+        "version": "49dd158d1076134a641b33efb035946536778336"
+      },
+      {
+        "checked": [
+          {
+            "basis": "逐项核对定位、所需输入、自带步骤、用户决定、输出与限制；教学次序与示范假设另行说明。",
+            "range": "skills/productivity/teach/SKILL.md 入口全文 1–140 行",
+            "readAt": "2026-10-13T07:04:09.620Z"
+          }
+        ],
+        "gaps": [],
+        "goalScope": [
+          {
+            "conceptId": "teach",
+            "range": "skills/productivity/teach/SKILL.md 1–140 行"
+          }
+        ],
+        "sourceId": "src-teach",
+        "sourceSnapshot": {
+          "kind": "primary-source",
+          "note": "固定提交 49dd158d1076134a641b33efb035946536778336；skills/productivity/teach/SKILL.md，第 1–140 行。中文说明与练习由 Forge 编写。",
+          "title": "上游 teach 入口原文",
+          "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/productivity/teach/SKILL.md"
+        },
+        "structure": [
+          "用途与身份",
+          "输入与流程",
+          "输出、用户决定与边界",
+          "必要引用"
+        ],
+        "unread": [
+          "未作为本课程操作依据的支持模板实现细节与外部链接"
+        ],
+        "version": "49dd158d1076134a641b33efb035946536778336"
+      },
+      {
+        "checked": [
+          {
+            "basis": "逐项核对定位、所需输入、自带步骤、用户决定、输出与限制；教学次序与示范假设另行说明。",
+            "range": "skills/productivity/to-questionnaire/SKILL.md 入口全文 1–54 行",
+            "readAt": "2026-10-13T07:04:09.620Z"
+          }
+        ],
+        "gaps": [],
+        "goalScope": [
+          {
+            "conceptId": "to-questionnaire",
+            "range": "skills/productivity/to-questionnaire/SKILL.md 1–54 行"
+          }
+        ],
+        "sourceId": "src-to-questionnaire",
+        "sourceSnapshot": {
+          "kind": "primary-source",
+          "note": "固定提交 49dd158d1076134a641b33efb035946536778336；skills/productivity/to-questionnaire/SKILL.md，第 1–54 行。中文说明与练习由 Forge 编写。",
+          "title": "上游 to-questionnaire 入口原文",
+          "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/productivity/to-questionnaire/SKILL.md"
+        },
+        "structure": [
+          "用途与身份",
+          "输入与流程",
+          "输出、用户决定与边界",
+          "必要引用"
+        ],
+        "unread": [
+          "未作为本课程操作依据的支持模板实现细节与外部链接"
+        ],
+        "version": "49dd158d1076134a641b33efb035946536778336"
+      },
+      {
+        "checked": [
+          {
+            "basis": "逐项核对定位、所需输入、自带步骤、用户决定、输出与限制；教学次序与示范假设另行说明。",
+            "range": "skills/productivity/wait-what/SKILL.md 入口全文 1–7 行",
+            "readAt": "2026-10-13T07:04:09.620Z"
+          }
+        ],
+        "gaps": [],
+        "goalScope": [
+          {
+            "conceptId": "wait-what",
+            "range": "skills/productivity/wait-what/SKILL.md 1–7 行"
+          }
+        ],
+        "sourceId": "src-wait-what",
+        "sourceSnapshot": {
+          "kind": "primary-source",
+          "note": "固定提交 49dd158d1076134a641b33efb035946536778336；skills/productivity/wait-what/SKILL.md，第 1–7 行。中文说明与练习由 Forge 编写。",
+          "title": "上游 wait-what 入口原文",
+          "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/productivity/wait-what/SKILL.md"
+        },
+        "structure": [
+          "用途与身份",
+          "输入与流程",
+          "输出、用户决定与边界",
+          "必要引用"
+        ],
+        "unread": [
+          "未作为本课程操作依据的支持模板实现细节与外部链接"
+        ],
+        "version": "49dd158d1076134a641b33efb035946536778336"
+      },
+      {
+        "checked": [
+          {
+            "basis": "逐项核对定位、所需输入、自带步骤、用户决定、输出与限制；教学次序与示范假设另行说明。",
+            "range": "skills/productivity/writing-for-agents/SKILL.md 入口全文 1–81 行",
+            "readAt": "2026-10-13T07:04:09.620Z"
+          }
+        ],
+        "gaps": [],
+        "goalScope": [
+          {
+            "conceptId": "writing-for-agents",
+            "range": "skills/productivity/writing-for-agents/SKILL.md 1–81 行"
+          }
+        ],
+        "sourceId": "src-writing-for-agents",
+        "sourceSnapshot": {
+          "kind": "primary-source",
+          "note": "固定提交 49dd158d1076134a641b33efb035946536778336；skills/productivity/writing-for-agents/SKILL.md，第 1–81 行。中文说明与练习由 Forge 编写。",
+          "title": "上游 writing-for-agents 入口原文",
+          "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/productivity/writing-for-agents/SKILL.md"
+        },
+        "structure": [
+          "用途与身份",
+          "输入与流程",
+          "输出、用户决定与边界",
+          "必要引用"
+        ],
+        "unread": [
+          "未作为本课程操作依据的支持模板实现细节与外部链接"
+        ],
+        "version": "49dd158d1076134a641b33efb035946536778336"
+      },
+      {
+        "checked": [
+          {
+            "basis": "逐项核对定位、所需输入、自带步骤、用户决定、输出与限制；教学次序与示范假设另行说明。",
+            "range": "skills/in-progress/chief-of-staff/SKILL.md 入口全文 1–45 行",
+            "readAt": "2026-10-13T07:04:09.620Z"
+          }
+        ],
+        "gaps": [],
+        "goalScope": [
+          {
+            "conceptId": "chief-of-staff",
+            "range": "skills/in-progress/chief-of-staff/SKILL.md 1–45 行"
+          }
+        ],
+        "sourceId": "src-chief-of-staff",
+        "sourceSnapshot": {
+          "kind": "primary-source",
+          "note": "固定提交 49dd158d1076134a641b33efb035946536778336；skills/in-progress/chief-of-staff/SKILL.md，第 1–45 行。中文说明与练习由 Forge 编写。",
+          "title": "上游 chief-of-staff 入口原文",
+          "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/in-progress/chief-of-staff/SKILL.md"
+        },
+        "structure": [
+          "用途与身份",
+          "输入与流程",
+          "输出、用户决定与边界",
+          "必要引用"
+        ],
+        "unread": [
+          "未作为本课程操作依据的支持模板实现细节与外部链接"
+        ],
+        "version": "49dd158d1076134a641b33efb035946536778336"
+      },
+      {
+        "checked": [
+          {
+            "basis": "逐项核对定位、所需输入、自带步骤、用户决定、输出与限制；教学次序与示范假设另行说明。",
+            "range": "skills/in-progress/claude-handoff/SKILL.md 入口全文 1–18 行",
+            "readAt": "2026-10-13T07:04:09.620Z"
+          }
+        ],
+        "gaps": [],
+        "goalScope": [
+          {
+            "conceptId": "claude-handoff",
+            "range": "skills/in-progress/claude-handoff/SKILL.md 1–18 行"
+          }
+        ],
+        "sourceId": "src-claude-handoff",
+        "sourceSnapshot": {
+          "kind": "primary-source",
+          "note": "固定提交 49dd158d1076134a641b33efb035946536778336；skills/in-progress/claude-handoff/SKILL.md，第 1–18 行。中文说明与练习由 Forge 编写。",
+          "title": "上游 claude-handoff 入口原文",
+          "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/in-progress/claude-handoff/SKILL.md"
+        },
+        "structure": [
+          "用途与身份",
+          "输入与流程",
+          "输出、用户决定与边界",
+          "必要引用"
+        ],
+        "unread": [
+          "未作为本课程操作依据的支持模板实现细节与外部链接"
+        ],
+        "version": "49dd158d1076134a641b33efb035946536778336"
+      },
+      {
+        "checked": [
+          {
+            "basis": "逐项核对定位、所需输入、自带步骤、用户决定、输出与限制；教学次序与示范假设另行说明。",
+            "range": "skills/in-progress/loop-me/SKILL.md 入口全文 1–32 行",
+            "readAt": "2026-10-13T07:04:09.620Z"
+          }
+        ],
+        "gaps": [],
+        "goalScope": [
+          {
+            "conceptId": "loop-me",
+            "range": "skills/in-progress/loop-me/SKILL.md 1–32 行"
+          }
+        ],
+        "sourceId": "src-loop-me",
+        "sourceSnapshot": {
+          "kind": "primary-source",
+          "note": "固定提交 49dd158d1076134a641b33efb035946536778336；skills/in-progress/loop-me/SKILL.md，第 1–32 行。中文说明与练习由 Forge 编写。",
+          "title": "上游 loop-me 入口原文",
+          "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/in-progress/loop-me/SKILL.md"
+        },
+        "structure": [
+          "用途与身份",
+          "输入与流程",
+          "输出、用户决定与边界",
+          "必要引用"
+        ],
+        "unread": [
+          "未作为本课程操作依据的支持模板实现细节与外部链接"
+        ],
+        "version": "49dd158d1076134a641b33efb035946536778336"
+      },
+      {
+        "checked": [
+          {
+            "basis": "逐项核对定位、所需输入、自带步骤、用户决定、输出与限制；教学次序与示范假设另行说明。",
+            "range": "skills/in-progress/setup-ts-deep-modules/SKILL.md 入口全文 1–102 行",
+            "readAt": "2026-10-13T07:04:09.620Z"
+          }
+        ],
+        "gaps": [],
+        "goalScope": [
+          {
+            "conceptId": "setup-ts-deep-modules",
+            "range": "skills/in-progress/setup-ts-deep-modules/SKILL.md 1–102 行"
+          }
+        ],
+        "sourceId": "src-setup-ts-deep-modules",
+        "sourceSnapshot": {
+          "kind": "primary-source",
+          "note": "固定提交 49dd158d1076134a641b33efb035946536778336；skills/in-progress/setup-ts-deep-modules/SKILL.md，第 1–102 行。中文说明与练习由 Forge 编写。",
+          "title": "上游 setup-ts-deep-modules 入口原文",
+          "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/in-progress/setup-ts-deep-modules/SKILL.md"
+        },
+        "structure": [
+          "用途与身份",
+          "输入与流程",
+          "输出、用户决定与边界",
+          "必要引用"
+        ],
+        "unread": [
+          "未作为本课程操作依据的支持模板实现细节与外部链接"
+        ],
+        "version": "49dd158d1076134a641b33efb035946536778336"
+      },
+      {
+        "checked": [
+          {
+            "basis": "逐项核对定位、所需输入、自带步骤、用户决定、输出与限制；教学次序与示范假设另行说明。",
+            "range": "skills/in-progress/writing-beats/SKILL.md 入口全文 1–67 行",
+            "readAt": "2026-10-13T07:04:09.620Z"
+          }
+        ],
+        "gaps": [],
+        "goalScope": [
+          {
+            "conceptId": "writing-beats",
+            "range": "skills/in-progress/writing-beats/SKILL.md 1–67 行"
+          }
+        ],
+        "sourceId": "src-writing-beats",
+        "sourceSnapshot": {
+          "kind": "primary-source",
+          "note": "固定提交 49dd158d1076134a641b33efb035946536778336；skills/in-progress/writing-beats/SKILL.md，第 1–67 行。中文说明与练习由 Forge 编写。",
+          "title": "上游 writing-beats 入口原文",
+          "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/in-progress/writing-beats/SKILL.md"
+        },
+        "structure": [
+          "用途与身份",
+          "输入与流程",
+          "输出、用户决定与边界",
+          "必要引用"
+        ],
+        "unread": [
+          "未作为本课程操作依据的支持模板实现细节与外部链接"
+        ],
+        "version": "49dd158d1076134a641b33efb035946536778336"
+      },
+      {
+        "checked": [
+          {
+            "basis": "逐项核对定位、所需输入、自带步骤、用户决定、输出与限制；教学次序与示范假设另行说明。",
+            "range": "skills/in-progress/writing-fragments/SKILL.md 入口全文 1–79 行",
+            "readAt": "2026-10-13T07:04:09.620Z"
+          }
+        ],
+        "gaps": [],
+        "goalScope": [
+          {
+            "conceptId": "writing-fragments",
+            "range": "skills/in-progress/writing-fragments/SKILL.md 1–79 行"
+          }
+        ],
+        "sourceId": "src-writing-fragments",
+        "sourceSnapshot": {
+          "kind": "primary-source",
+          "note": "固定提交 49dd158d1076134a641b33efb035946536778336；skills/in-progress/writing-fragments/SKILL.md，第 1–79 行。中文说明与练习由 Forge 编写。",
+          "title": "上游 writing-fragments 入口原文",
+          "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/in-progress/writing-fragments/SKILL.md"
+        },
+        "structure": [
+          "用途与身份",
+          "输入与流程",
+          "输出、用户决定与边界",
+          "必要引用"
+        ],
+        "unread": [
+          "未作为本课程操作依据的支持模板实现细节与外部链接"
+        ],
+        "version": "49dd158d1076134a641b33efb035946536778336"
+      },
+      {
+        "checked": [
+          {
+            "basis": "逐项核对定位、所需输入、自带步骤、用户决定、输出与限制；教学次序与示范假设另行说明。",
+            "range": "skills/in-progress/writing-shape/SKILL.md 入口全文 1–79 行",
+            "readAt": "2026-10-13T07:04:09.620Z"
+          }
+        ],
+        "gaps": [],
+        "goalScope": [
+          {
+            "conceptId": "writing-shape",
+            "range": "skills/in-progress/writing-shape/SKILL.md 1–79 行"
+          }
+        ],
+        "sourceId": "src-writing-shape",
+        "sourceSnapshot": {
+          "kind": "primary-source",
+          "note": "固定提交 49dd158d1076134a641b33efb035946536778336；skills/in-progress/writing-shape/SKILL.md，第 1–79 行。中文说明与练习由 Forge 编写。",
+          "title": "上游 writing-shape 入口原文",
+          "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/in-progress/writing-shape/SKILL.md"
+        },
+        "structure": [
+          "用途与身份",
+          "输入与流程",
+          "输出、用户决定与边界",
+          "必要引用"
+        ],
+        "unread": [
+          "未作为本课程操作依据的支持模板实现细节与外部链接"
+        ],
+        "version": "49dd158d1076134a641b33efb035946536778336"
+      },
+      {
+        "checked": [
+          {
+            "basis": "逐项核对定位、所需输入、自带步骤、用户决定、输出与限制；教学次序与示范假设另行说明。",
+            "range": "skills/misc/git-guardrails-claude-code/SKILL.md 入口全文 1–95 行",
+            "readAt": "2026-10-13T07:04:09.620Z"
+          }
+        ],
+        "gaps": [],
+        "goalScope": [
+          {
+            "conceptId": "git-guardrails-claude-code",
+            "range": "skills/misc/git-guardrails-claude-code/SKILL.md 1–95 行"
+          }
+        ],
+        "sourceId": "src-git-guardrails-claude-code",
+        "sourceSnapshot": {
+          "kind": "primary-source",
+          "note": "固定提交 49dd158d1076134a641b33efb035946536778336；skills/misc/git-guardrails-claude-code/SKILL.md，第 1–95 行。中文说明与练习由 Forge 编写。",
+          "title": "上游 git-guardrails-claude-code 入口原文",
+          "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/misc/git-guardrails-claude-code/SKILL.md"
+        },
+        "structure": [
+          "用途与身份",
+          "输入与流程",
+          "输出、用户决定与边界",
+          "必要引用"
+        ],
+        "unread": [
+          "未作为本课程操作依据的支持模板实现细节与外部链接"
+        ],
+        "version": "49dd158d1076134a641b33efb035946536778336"
+      },
+      {
+        "checked": [
+          {
+            "basis": "逐项核对定位、所需输入、自带步骤、用户决定、输出与限制；教学次序与示范假设另行说明。",
+            "range": "skills/misc/migrate-to-shoehorn/SKILL.md 入口全文 1–118 行",
+            "readAt": "2026-10-13T07:04:09.620Z"
+          }
+        ],
+        "gaps": [],
+        "goalScope": [
+          {
+            "conceptId": "migrate-to-shoehorn",
+            "range": "skills/misc/migrate-to-shoehorn/SKILL.md 1–118 行"
+          }
+        ],
+        "sourceId": "src-migrate-to-shoehorn",
+        "sourceSnapshot": {
+          "kind": "primary-source",
+          "note": "固定提交 49dd158d1076134a641b33efb035946536778336；skills/misc/migrate-to-shoehorn/SKILL.md，第 1–118 行。中文说明与练习由 Forge 编写。",
+          "title": "上游 migrate-to-shoehorn 入口原文",
+          "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/misc/migrate-to-shoehorn/SKILL.md"
+        },
+        "structure": [
+          "用途与身份",
+          "输入与流程",
+          "输出、用户决定与边界",
+          "必要引用"
+        ],
+        "unread": [
+          "未作为本课程操作依据的支持模板实现细节与外部链接"
+        ],
+        "version": "49dd158d1076134a641b33efb035946536778336"
+      },
+      {
+        "checked": [
+          {
+            "basis": "逐项核对定位、所需输入、自带步骤、用户决定、输出与限制；教学次序与示范假设另行说明。",
+            "range": "skills/misc/scaffold-exercises/SKILL.md 入口全文 1–106 行",
+            "readAt": "2026-10-13T07:04:09.620Z"
+          }
+        ],
+        "gaps": [],
+        "goalScope": [
+          {
+            "conceptId": "scaffold-exercises",
+            "range": "skills/misc/scaffold-exercises/SKILL.md 1–106 行"
+          }
+        ],
+        "sourceId": "src-scaffold-exercises",
+        "sourceSnapshot": {
+          "kind": "primary-source",
+          "note": "固定提交 49dd158d1076134a641b33efb035946536778336；skills/misc/scaffold-exercises/SKILL.md，第 1–106 行。中文说明与练习由 Forge 编写。",
+          "title": "上游 scaffold-exercises 入口原文",
+          "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/misc/scaffold-exercises/SKILL.md"
+        },
+        "structure": [
+          "用途与身份",
+          "输入与流程",
+          "输出、用户决定与边界",
+          "必要引用"
+        ],
+        "unread": [
+          "未作为本课程操作依据的支持模板实现细节与外部链接"
+        ],
+        "version": "49dd158d1076134a641b33efb035946536778336"
+      },
+      {
+        "checked": [
+          {
+            "basis": "逐项核对定位、所需输入、自带步骤、用户决定、输出与限制；教学次序与示范假设另行说明。",
+            "range": "skills/misc/setup-pre-commit/SKILL.md 入口全文 1–91 行",
+            "readAt": "2026-10-13T07:04:09.620Z"
+          }
+        ],
+        "gaps": [],
+        "goalScope": [
+          {
+            "conceptId": "setup-pre-commit",
+            "range": "skills/misc/setup-pre-commit/SKILL.md 1–91 行"
+          }
+        ],
+        "sourceId": "src-setup-pre-commit",
+        "sourceSnapshot": {
+          "kind": "primary-source",
+          "note": "固定提交 49dd158d1076134a641b33efb035946536778336；skills/misc/setup-pre-commit/SKILL.md，第 1–91 行。中文说明与练习由 Forge 编写。",
+          "title": "上游 setup-pre-commit 入口原文",
+          "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/misc/setup-pre-commit/SKILL.md"
+        },
+        "structure": [
+          "用途与身份",
+          "输入与流程",
+          "输出、用户决定与边界",
+          "必要引用"
+        ],
+        "unread": [
+          "未作为本课程操作依据的支持模板实现细节与外部链接"
+        ],
+        "version": "49dd158d1076134a641b33efb035946536778336"
+      },
+      {
+        "checked": [
+          {
+            "basis": "逐项核对定位、所需输入、自带步骤、用户决定、输出与限制；教学次序与示范假设另行说明。",
+            "range": "总体说明/调用机制/阶段边界的相关完整章节",
+            "readAt": "2026-10-13T07:04:09.620Z"
+          }
+        ],
+        "gaps": [],
+        "goalScope": [
+          {
+            "conceptId": "skills",
+            "range": "固定版本的对应章节"
+          },
+          {
+            "conceptId": "invocation",
+            "range": "固定版本的对应章节"
+          }
+        ],
+        "sourceId": "upstream-readme",
+        "sourceSnapshot": {
+          "kind": "primary-source",
+          "note": "固定提交 49dd158d1076134a641b33efb035946536778336；README.md。",
+          "title": "上游总体说明：用途、调用身份与安装选择",
+          "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/README.md"
+        },
+        "structure": [
+          "用途与身份",
+          "输入与流程",
+          "输出、用户决定与边界",
+          "必要引用"
+        ],
+        "unread": [
+          "未作为本课程操作依据的支持模板实现细节与外部链接"
+        ],
+        "version": "49dd158d1076134a641b33efb035946536778336"
+      },
+      {
+        "checked": [
+          {
+            "basis": "逐项核对定位、所需输入、自带步骤、用户决定、输出与限制；教学次序与示范假设另行说明。",
+            "range": "总体说明/调用机制/阶段边界的相关完整章节",
+            "readAt": "2026-10-13T07:04:09.620Z"
+          }
+        ],
+        "gaps": [],
+        "goalScope": [
+          {
+            "conceptId": "skills",
+            "range": "固定版本的对应章节"
+          }
+        ],
+        "sourceId": "upstream-scope",
+        "sourceSnapshot": {
+          "kind": "primary-source",
+          "note": "固定提交 49dd158d1076134a641b33efb035946536778336；SCOPE.md。",
+          "title": "上游范围：正式、试验、冻结与反馈边界",
+          "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/SCOPE.md"
+        },
+        "structure": [
+          "用途与身份",
+          "输入与流程",
+          "输出、用户决定与边界",
+          "必要引用"
+        ],
+        "unread": [
+          "未作为本课程操作依据的支持模板实现细节与外部链接"
+        ],
+        "version": "49dd158d1076134a641b33efb035946536778336"
+      },
+      {
+        "checked": [
+          {
+            "basis": "逐项核对定位、所需输入、自带步骤、用户决定、输出与限制；教学次序与示范假设另行说明。",
+            "range": "总体说明/调用机制/阶段边界的相关完整章节",
+            "readAt": "2026-10-13T07:04:09.620Z"
+          }
+        ],
+        "gaps": [],
+        "goalScope": [
+          {
+            "conceptId": "invocation",
+            "range": "固定版本的对应章节"
+          }
+        ],
+        "sourceId": "upstream-mechanics",
+        "sourceSnapshot": {
+          "kind": "primary-source",
+          "note": "固定提交 49dd158d1076134a641b33efb035946536778336；skills/productivity/writing-for-agents/SKILL-MECHANICS.md。",
+          "title": "调用机制：模型入口、用户入口与路由器",
+          "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/productivity/writing-for-agents/SKILL-MECHANICS.md"
+        },
+        "structure": [
+          "用途与身份",
+          "输入与流程",
+          "输出、用户决定与边界",
+          "必要引用"
+        ],
+        "unread": [
+          "未作为本课程操作依据的支持模板实现细节与外部链接"
+        ],
+        "version": "49dd158d1076134a641b33efb035946536778336"
+      },
+      {
+        "checked": [
+          {
+            "basis": "逐项核对定位、所需输入、自带步骤、用户决定、输出与限制；教学次序与示范假设另行说明。",
+            "range": "总体说明/调用机制/阶段边界的相关完整章节",
+            "readAt": "2026-10-13T07:04:09.620Z"
+          }
+        ],
+        "gaps": [],
+        "goalScope": [],
+        "sourceId": "phase-boundaries",
+        "sourceSnapshot": {
+          "kind": "primary-source",
+          "note": "固定提交 49dd158d1076134a641b33efb035946536778336；skills/engineering/ask-matt/PHASE-BOUNDARIES.md。",
+          "title": "阶段边界：继续、清空、交接、子任务与压缩",
+          "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/ask-matt/PHASE-BOUNDARIES.md"
+        },
+        "structure": [
+          "用途与身份",
+          "输入与流程",
+          "输出、用户决定与边界",
+          "必要引用"
+        ],
+        "unread": [
+          "未作为本课程操作依据的支持模板实现细节与外部链接"
+        ],
+        "version": "49dd158d1076134a641b33efb035946536778336"
+      }
+    ]
+  },
+  "modelFingerprint": "44432e2fbbcb8520f25f150f1e53fbd93aa34f329e11f6e3a69f6fd28ac2f8fc",
+  "modelId": "mattpocock-skills-overview",
+  "schemaVersion": 1,
+  "scope": {
+    "concepts": {
+      "alignment": "ceaea71848fea862168c8e7cb333fbe8046901bb6bf97f68599a6eae302551a9",
+      "appendix": "e8c60655855af5e8c0aa7aab97d4dd2191ee044cbf529f37a0e8adae26435882",
+      "ask-matt": "6e2fb6a358967f90afc9389fdd72947b588dd8170767694a0d7bfbcb86837180",
+      "chief-of-staff": "abea09480efb2c00b31b9608796b93840bce1c2f39f387084e75c3a691a389a2",
+      "claude-handoff": "c46ace2143b2b8bf8272f1ced5104741df3faf7f390be5d99248d7a02cd9e1ee",
+      "code-review": "a031822f7d4503f63439d473093f9bb4dab13c8389d9cd1ad6eb4dccd239d11e",
+      "codebase-design": "7a833c9ed60e9f30f9bcec050e86833f051dbab29814a025b902f0393f515c8e",
+      "continuity": "c4f29f719d9dfe33d6086dc32a07815677c6135d1e7bb487233f5426cff13acb",
+      "diagnosing-bugs": "d63948932f197bcf951d6ccee0f1d4ed7e7aab361cf42376754e475f61c355c8",
+      "domain-modeling": "bef0de582178b57ecf1b7360b3c46da34ce5366143ac229a97034f52ffab8101",
+      "execution": "2c31f312ecf2aa4bfa01460b409e91e36b2101fa7d72815b75749bdd49d2bd5e",
+      "foundation": "529587fdffd763a6a5357fc114102f966e38f7333acf6d566c02c5cc003cc27e",
+      "git-guardrails-claude-code": "58516a7d3d3b7d30f21f7dbbe67d4432d9c622fe213b199bc1803811f226f165",
+      "grill-me": "bce699ed98c03da8a0134b77e3df7cd59b68a2e1d82bce014878a71bce90d3ad",
+      "grill-with-docs": "718fbfa9650ffd7408a1befb55a3d41d13c557b83e429dd654ed1dcc88458c10",
+      "grilling": "d2baecc5e7ea984fec0e9ac595b5291171d6637bfc8ff8a8a3162365bcabd0a6",
+      "handoff": "2a9544d87ee6f7a5053f702dfb557faeef6cc3b03d920473c5938a2524deb182",
+      "implement": "3a38e4e6d7b67fcc9806b3a3c86226b7b4f1be1f1567e16f29c849f181f050ba",
+      "implement-spec": "90c18d7e7143faa5dae9d92655fac79fc184b0187657bd1bfe0c599c09f58302",
+      "improve-codebase-architecture": "d3b94b1ef84d254839c7ee4ab548343eda35e670051210f9a754a58883efdd16",
+      "invocation": "2f0aa6593b6f569bce6974e142e0d02051e12b0cbf78dda08ee3177753d4aaa5",
+      "loop-me": "27cf64917884261727c65cbbd59e140e56ff5f6946b0b8d3d0c31d7201172c40",
+      "migrate-to-shoehorn": "5257821a26f483d493dfe63e85da6199b780a8e3f94c8fd01b47e37410531021",
+      "planning": "430ed43e746d82487abe0f970c8aa8fe5c9537b275b46e43058643f5041b32f4",
+      "pr": "20558a8d17e8500d9e237de9d04098c883366c3eae679b0de75b95e23d9e88e1",
+      "quality": "c5a4d60b62239b3f278d206e55c0085e227b243d1515bf4481b4e6d6917aa65b",
+      "research": "6bec6f203a4a31d889617a75337a85865e44dbb6b2a3cf19ad28caaf1d50edd2",
+      "retro": "c3668d76dbcdf8206088f9c154722754b4abc82a5796f7747a38091f266f07e1",
+      "scaffold-exercises": "f1794c4ae5e8319130ede8baa039898eac59097dd5f1ece2d4abc173753decf0",
+      "setup-matt-pocock-skills": "02e7960ed1402b0dfef21669e78bcf89900a01f7591815927ed33b193a0cdef6",
+      "setup-pre-commit": "7cf127b502ca812b67c2e909d578654ebb7ac32b222679a0866f97d9b395ebbf",
+      "setup-ts-deep-modules": "6b18e6e30729de8d869af5dda88be05b7d656b27ea63660c1d04ace23a909ed9",
+      "skill-prototype": "fc12478c18f658a1819d43353670463fe219ac46829468b2161b6d73e6b3bb85",
+      "skills": "fd76508b500909dcb49c7d9f61341f32ad07393955a7c77f4d236cd7f7371c1c",
+      "tdd": "7ae7a77582c2dc7d032f75e946c27ef02b702370c37883b2ce6e29cb0866e1e7",
+      "teach": "583a2905265fa7ddc3dbe909c4a73acc3b9a375787ab6dd0cc6cef4df269d017",
+      "to-questionnaire": "669358e2fe84b892c66f98c8c962b0a4bb1537d30b96e8bda5fb44e4a7f44b6b",
+      "to-spec": "78ffef7d0d4ee7d8e064aec167af89c4e7668b0b62f5dd7480891a31956f200b",
+      "to-tickets": "b1db16122b6ae0fc1f37cf12a495b29ecd1268131ec95cf2f8158d8327abf712",
+      "triage": "6de8a2d7c4e0b82b447eb846ddb94cd346a6a02616630f739e194698f845a960",
+      "wait-what": "ac6cf34d156995d2c8a6744ec8bb37610c436f665ee5375d7d1cbe1f94eea9ed",
+      "wayfinder": "9f5bd25c9a592cc19045441b3ece45d447323110e87e40842320be2b6c6a932a",
+      "wizard": "1bc77ca15baca7a063cdbb37329e19583d97ae93579f13e0462f4020027d613a",
+      "writing-beats": "7829b53cadca67e4302c7ea53c779b48eddf143eb65d9894bc0ece55a1a0ce01",
+      "writing-for-agents": "ba41bc5d2c13a7e4e951a3f9ea77c68adcfa5ab1ce01f3b4a0e1657c60e75835",
+      "writing-fragments": "14cf7b6c57c4e4f2307c9953740764aa0f5fb20831285c6d6cd1cfab44ac79f2",
+      "writing-shape": "4b706e8bd925652236c844a258c6dd124520556493bdf4ac6c75a8385471a205"
+    },
+    "goalFingerprint": "1fa6209182b41a1faf82732c82fbb761ddc190084e5118c3bf2527a86ed3cff8",
+    "modelFingerprint": "44432e2fbbcb8520f25f150f1e53fbd93aa34f329e11f6e3a69f6fd28ac2f8fc",
+    "prompts": {
+      "p-ask-matt": "8828ce1353787b8eefbce100c5be167a2a21094cb98042634435a83ae0f21fc5",
+      "p-chief-of-staff": "5ef0b132adcca2d54943bf7ae6e49d02610d913dfcc358ec63006763ffaf53f3",
+      "p-claude-handoff": "10df64f762222a995abc71f4c63c05e7658ead77df05050b0eadac82e89ea8d3",
+      "p-code-review": "3a7567cde5382cc5e826f3668a07bcc6eb5ea6907e89f1fd7f4f2a5fd9eb923d",
+      "p-codebase-design": "a6184959fed86dec1bd995bce3d50ec827dcf4f2baa59605d171553d9986e02e",
+      "p-diagnosing-bugs": "55331dab239f9941eba1e1aad429dae91626c45bb2e8335c4cade877197cf3bf",
+      "p-domain-modeling": "5c74aa046fa84de9aefd42d7895d902d1b440d19bd9e37fc2f2e34c704ac8673",
+      "p-git-guardrails-claude-code": "cb7c2a8149a79128384f638e44207b875130369abedc7563f33ede2d330450f1",
+      "p-grill-me": "f1379251953fcac721df2f6b38e0d8b78af8a12770f25e4ae9cac88572859d32",
+      "p-grill-with-docs": "70385fb4936a3c15607a19ddea034134baafe6ec4309c1ad3030768bd63ffd98",
+      "p-grilling": "b6b7ee1bcc64e248b94bb6c0d0b236a058c7f30f28bc49e9e1c9d6cf07905808",
+      "p-handoff": "0c97522d4ff028119f3c62d56a618ea46213e4a914e7c1371de479ca8a2858a7",
+      "p-implement": "68967d9396a71f924bdcefeb1cb817324a61277bc3aa84e589aecc96be8cf18a",
+      "p-implement-spec": "7edad7793468af53512018a2cc5d19c7dec08657e0c0352a419431035d014fe4",
+      "p-improve-codebase-architecture": "3fbe0e5a3b5510ecce0cb552cf4bd9054863fdfa988219fb2ae5a1d82f49e687",
+      "p-invocation": "13b57559d64e043331e5c6bb368698f3f07a26bd2fa07d1a4175e8c14b975c14",
+      "p-loop-me": "3480d7257ca1f591b7994657d5c5829f3836ad18a70ed5e3c39cc334cd998a40",
+      "p-migrate-to-shoehorn": "984a042e2a931ae1c58c6d241d85fad6a9692dc53f64c044d45613fe7cbaa54f",
+      "p-pr": "828f140cfcadea26cde985fc40c2171f6129878b50a39f3ccf7c6be3c77ebf58",
+      "p-prototype": "324d02607c7c234169117190bf9552d9b45b5fc2e1444f608f2a8b0d3d19136f",
+      "p-research": "320282eb2d3bcebd0eca610a80ee52992f8b5c0b76a6baefa4b4c2413ab22e7d",
+      "p-retro": "096b6261e9454b506cd14e2d939811523315220c62933e185741dbcf26a549d8",
+      "p-scaffold-exercises": "ee0a7b8f657fc42ee2ada3a9790e1ce85371d6d70eb209c4a575ffc3396ed731",
+      "p-setup-matt-pocock-skills": "35034ad8a55c9ced88513252cc10978235344e66d47b6fae0fa4a2af5a807175",
+      "p-setup-pre-commit": "78e17bc937c032061fa6d760903e5fd6f12f52eb8f013dae2ff55cb413fb571f",
+      "p-setup-ts-deep-modules": "c01e3af8eba74a1e7d10463c2d6d2a7d44e62ce552e9f71b2245b1bd722ee1f8",
+      "p-tdd": "3b5f5fce32438e24efe3822e68025a22417a55eecc7739683c595d961b479f97",
+      "p-teach": "644f99ffe3ac13bc71f0cf19e644b61ee27bead4b50ac4145dbd095d7a8ac5c2",
+      "p-to-questionnaire": "c5ee46edda3109c8bf25a609008f6cbbce920938779fa3eb5185a7a928e96133",
+      "p-to-spec": "92a61e8eb4d7ed108c63055fbff226268af027bc8c33b4dc16c2b2a1427458be",
+      "p-to-tickets": "0eb3682191c93f954fbb0e968e75203cebcdcbe103614b91408726fbebc9b887",
+      "p-triage": "cb1233ae30ed90fd7893c859af6251d0a6ad73c2daa393bf8bbd191d55e47e01",
+      "p-wait-what": "c14194cc8c66894e905fa412d843e23bde0f883c77ff3e5c10f8ac25d1e7538c",
+      "p-wayfinder": "e6cafb3d12dea7dd7dfcef8dd66829778bacb098d596a1571b93bd097fbf7ea6",
+      "p-wizard": "731138338ed9d06b59ea6e6e9d4b422a397f8d2a2f7276e0bb2f281c5765f2fa",
+      "p-writing-beats": "1cd562ab20f050ae59fca1728d01f1648f47120a535a8161afc42d6de93f486e",
+      "p-writing-for-agents": "8c12f0f5e04accdb32c6a01b0e37ce1d789b076c1545ee4a82c8e0f5f919c07f",
+      "p-writing-fragments": "99416695adfe2c822a35574326517d49f99fe2d3c1b90c48dab661a0aaf116cb",
+      "p-writing-shape": "f144afc6b8c63bd56c9cb080ea999f3af53907dd86314fff92947b5e50ff108b"
+    }
+  }
+}

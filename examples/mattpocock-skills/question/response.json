@@ -1,0 +1,13 @@
+{
+  "kind": "single-turn-source-rule-response",
+  "topic": "学习 mattpocock/skills",
+  "host": "Codex CLI",
+  "scope": "explicit public Forge source rules, read-only, one response; not installed-skill discovery",
+  "inputKind": "synthetic-explanation",
+  "upstreamCommit": "49dd158d1076134a641b33efb035946536778336",
+  "request": "/forge-question 请通过一个问题检查我对 mattpocock/skills 的演示解释：“ask-matt 建议 to-spec、to-tickets 和 implement-spec 后，会自动调用它们；模型入口只能由模型使用。”先检查最关键的缺口，等待回答。",
+  "response": "【追问假设】你从“ask-matt 建议了这些入口”推到“它会自动调用它们”，这一步隐含了什么关于调用发起权的前提？\n\n本问只检查“建议如何变成执行”的推理，等待你的回答；“模型入口只能由模型使用”暂未检查。本次只读，未建立档案。",
+  "skillSha256": "72128dddcb43b82eee64d788d44b326ad42935e7ee54837f0062d4e336b67de9",
+  "exitCode": 0,
+  "disclosure": "当前实际单次响应；解释是演示输入，不模拟真人后续回答，不证明安装发现、持续教学或掌握。"
+}

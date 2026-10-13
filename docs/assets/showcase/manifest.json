@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 1,
+  "designDate": "2026-10-13",
+  "kind": "ai-generated-showcase-assets",
+  "brand": {
+    "name": "Forge",
+    "tagline": "Make sense. Keep going.",
+    "positioning": "帮你学新知识、整理资料、检查答案，并保存进度。",
+    "brandColor": "#3F6B4F"
+  },
+  "definitionSources": [
+    {
+      "path": "skill/forge/SKILL.md",
+      "bytes": 7072,
+      "sha256": "38dd83df100b1f5f3190d68e09c3ff5afcfba2541812c70dce56bc37019debbc",
+      "generationInputSha256BeforeLf": "bea52dcd30953f31a5394e46f70d23f731c3061a4d401a53a1d4fbbf6168f1da"
+    },
+    {
+      "path": "skill/forge/agents/openai.yaml",
+      "bytes": 361,
+      "sha256": "da47a18aa3f617f555b63524123d8282f2e829de8fc8a62223f3a0ef81ee1c5a"
+    },
+    {
+      "path": ".claude-plugin/plugin.json",
+      "bytes": 576,
+      "sha256": "d13c29c575b3aca9c0aff2a3089a60875216a2e93dc3d45bcacbe6fc15be615e"
+    }
+  ],
+  "actualCaptureManifest": "docs/assets/cases/manifest.json",
+  "promptFile": {
+    "path": "docs/assets/showcase/PROMPTS.md",
+    "bytes": 11256,
+    "sha256": "4da6c93607477108cc27e9ea9ba41c708f4b1705ec300f81f331c439a1d8f46f",
+    "generationInputSha256BeforeLf": "ae9bba2b6cd976d395a0a346123f364d453110715c376028d46b1a0a5409e7b0"
+  },
+  "records": [
+    {
+      "path": "docs/assets/showcase/forge-hero.png",
+      "bytes": 1886575,
+      "sha256": "0d6576761410c0ade08184c010b2406e98fa010048fd6ca8e0c69e161d13570b",
+      "width": 1672,
+      "height": 940,
+      "purpose": "README 开场定位",
+      "kind": "ai-showcase-composite",
+      "tool": "built-in image_gen",
+      "iterations": 2,
+      "prompts": "docs/assets/showcase/PROMPTS.md",
+      "references": [
+        {
+          "path": "docs/assets/cases/mp-hub.png",
+          "bytes": 93706,
+          "sha256": "ec8d4799078065fa38f82e9de0aabaaeab9299bb93510d374e9a21ddf1b22217",
+          "source": "examples/mattpocock-skills/index.html",
+          "sourceSha256": "b3b21e38193bd691e191071327fb2c888dca2ef0f42fd273e77c97c22615fb3a",
+          "kind": "actual-browser-capture"
+        },
+        {
+          "path": "docs/assets/cases/mp-map-workflow.png",
+          "bytes": 68778,
+          "sha256": "df2c441ad329620cd7b47ec698cc4fbad69c61b40136e0f3bbf12bd8df7aa295",
+          "source": "examples/mattpocock-skills/workflow/map.svg",
+          "sourceSha256": "4669e4508af667c1052d8ded588fc6e4c99a68e80788774937892adad5dfd277",
+          "kind": "actual-browser-capture"
+        },
+        {
+          "path": "docs/assets/cases/mp-review.png",
+          "bytes": 72822,
+          "sha256": "d131fba4f6d39a3c84fa90cd819332a30e2cfb0c84951418967258d9fefb2fb9",
+          "source": "examples/mattpocock-skills/tool-demo/index.html",
+          "sourceSha256": "4771a63d15b9c65ac3a4c7878e1f94ce2a69efda5d7a48438637bdc7f25a6f1e",
+          "kind": "actual-browser-capture"
+        },
+        {
+          "path": "docs/assets/cases/mp-resume.png",
+          "bytes": 55585,
+          "sha256": "381ad9ff98b8e5f388fed9aa3b01f8f99b7cca8949f15a180c7f3741fcc53122",
+          "source": "examples/mattpocock-skills/tool-demo/index.html",
+          "sourceSha256": "4771a63d15b9c65ac3a4c7878e1f94ce2a69efda5d7a48438637bdc7f25a6f1e",
+          "kind": "actual-browser-capture"
+        }
+      ],
+      "disclosure": "以实际图片为参考的视觉合成和重绘，不是未经修改的截图，不证明真人掌握或安装发现。"
+    },
+    {
+      "path": "docs/assets/showcase/forge-learning-flow.png",
+      "bytes": 2208022,
+      "sha256": "6542b2783d1042be10d9e60fae5b44b4d4ae40813e780c3d4dbb4913299c8508",
+      "width": 1672,
+      "height": 941,
+      "purpose": "README 会得到什么",
+      "kind": "ai-showcase-composite",
+      "tool": "built-in image_gen",
+      "iterations": 2,
+      "prompts": "docs/assets/showcase/PROMPTS.md",
+      "references": [
+        {
+          "path": "docs/assets/cases/mp-review.png",
+          "bytes": 72822,
+          "sha256": "d131fba4f6d39a3c84fa90cd819332a30e2cfb0c84951418967258d9fefb2fb9",
+          "source": "examples/mattpocock-skills/tool-demo/index.html",
+          "sourceSha256": "4771a63d15b9c65ac3a4c7878e1f94ce2a69efda5d7a48438637bdc7f25a6f1e",
+          "kind": "actual-browser-capture"
+        },
+        {
+          "path": "docs/assets/cases/mp-resume.png",
+          "bytes": 55585,
+          "sha256": "381ad9ff98b8e5f388fed9aa3b01f8f99b7cca8949f15a180c7f3741fcc53122",
+          "source": "examples/mattpocock-skills/tool-demo/index.html",
+          "sourceSha256": "4771a63d15b9c65ac3a4c7878e1f94ce2a69efda5d7a48438637bdc7f25a6f1e",
+          "kind": "actual-browser-capture"
+        }
+      ],
+      "disclosure": "以实际图片为参考的视觉合成和重绘，不是未经修改的截图，不证明真人掌握或安装发现。",
+      "characterEdit": {
+        "kind": "character-replacement",
+        "sourceImageSha256": "bc43a9c2fa7e2eabbc51b113b3785de6ad4be893b21b8c7fb94fe81ed7f14d9c",
+        "reference": {
+          "kind": "user-provided-character-reference",
+          "sha256": "04a5edd9d36eee3ef93101857799ff9cbc0e955774ca0c96ce6ccb7255c04de9",
+          "bytes": 2160383,
+          "width": 1297,
+          "height": 1213,
+          "rawImageDistributed": false,
+          "description": "用户提供的插画人物形象：黑色卷发、黑框眼镜、蓝色外套和白色内搭。"
+        },
+        "promptSection": "学习流程图的人物替换",
+        "scope": "只替换右上角人物，保留学习姿态、主要文字和四步布局；仍按 AI 展示合成理解。"
+      }
+    },
+    {
+      "path": "docs/assets/showcase/forge-case-study.png",
+      "bytes": 1773437,
+      "sha256": "febc4521c3d3d63a20502a9c664badac9e0678e599bd8d2a0ddaae47d307d1de",
+      "width": 1672,
+      "height": 941,
+      "purpose": "README 完整示例",
+      "kind": "ai-showcase-composite",
+      "tool": "built-in image_gen",
+      "iterations": 1,
+      "prompts": "docs/assets/showcase/PROMPTS.md",
+      "references": [
+        {
+          "path": "docs/assets/cases/mp-hub.png",
+          "bytes": 93706,
+          "sha256": "ec8d4799078065fa38f82e9de0aabaaeab9299bb93510d374e9a21ddf1b22217",
+          "source": "examples/mattpocock-skills/index.html",
+          "sourceSha256": "b3b21e38193bd691e191071327fb2c888dca2ef0f42fd273e77c97c22615fb3a",
+          "kind": "actual-browser-capture"
+        },
+        {
+          "path": "docs/assets/cases/mp-map-workflow.png",
+          "bytes": 68778,
+          "sha256": "df2c441ad329620cd7b47ec698cc4fbad69c61b40136e0f3bbf12bd8df7aa295",
+          "source": "examples/mattpocock-skills/workflow/map.svg",
+          "sourceSha256": "4669e4508af667c1052d8ded588fc6e4c99a68e80788774937892adad5dfd277",
+          "kind": "actual-browser-capture"
+        },
+        {
+          "path": "docs/assets/cases/mp-comparison.png",
+          "bytes": 65508,
+          "sha256": "4f96c4ccc8c0efa020d0dc935b28f63628b62b4f84f348f5fe44858a5bf9defb",
+          "source": "examples/mattpocock-skills/comparisons/index.html",
+          "sourceSha256": "f156abe93949bc3bc9ea64e2f3ff9c889e69206975b3ed32b0ec3e4b98dee3aa",
+          "kind": "actual-browser-capture",
+          "captureSourceSha256": "3077cd78e033dfda68e14525d1a94125d77a8912adbd2e798fd09623bb9b5cde"
+        }
+      ],
+      "disclosure": "以实际图片为参考的视觉合成和重绘，不是未经修改的截图，不证明真人掌握或安装发现。"
+    }
+  ],
+  "visualReview": {
+    "reviewer": "authoring-agent",
+    "status": "passed",
+    "checks": [
+      "名称和口号与当前定义一致",
+      "中文定位准确",
+      "案例数量与材料一致",
+      "演示记录标明示例来源",
+      "生成展示图标明 AI 合成",
+      "未显示虚构掌握结论"
+    ],
+    "targetedCorrection": "主视觉第四张卡片由资料目录改为真实暂停与恢复报告；其他内容保留。"
+  },
+  "sourceCanonicalizationNote": "Publication text uses LF and clean formatting whitespace. Original capture/generation hashes are retained; no image or learning content changed."
+}

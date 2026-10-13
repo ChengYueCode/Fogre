@@ -1,7 +1,7 @@
 {
   "name": "forge-skills",
   "version": "0.1.0",
-  "description": "Forge 中文学习技能：完整学习旅程与五个独立能力入口。",
+  "description": "Forge — Make sense. Keep going. 帮你学新知识、整理资料、检查理解和答案、安排复习，并保存进度供下次继续。",
   "author": { "name": "ChengYueCode" },
   "homepage": "https://github.com/ChengYueCode/Fogre",
   "repository": "https://github.com/ChengYueCode/Fogre",

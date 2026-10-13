@@ -1,0 +1,3658 @@
+{
+  "appState": {
+    "gridSize": null,
+    "viewBackgroundColor": "#faf2f1"
+  },
+  "customData": {
+    "ember": {
+      "generatedAt": "deterministic",
+      "modelFingerprint": "c9626f5b6bf80ef6fb2856f42c09b8918bea697f001f8fabe2fcf3a5b156ff1d",
+      "modelId": "mattpocock-skills-comparisons"
+    }
+  },
+  "elements": [
+    {
+      "angle": 0,
+      "backgroundColor": "transparent",
+      "baseline": 0,
+      "boundElements": null,
+      "containerId": null,
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": null,
+            "containerId": null,
+            "fillStyle": "solid",
+            "fontFamily": 5,
+            "fontSize": 24,
+            "groupIds": [],
+            "height": 34,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "originalText": "学习 mattpocock/skills：容易选错的入口",
+            "roughness": 1,
+            "roundness": null,
+            "strokeColor": "#472a2b",
+            "strokeStyle": "solid",
+            "strokeWidth": 1,
+            "text": "学习 mattpocock/skills：容易选错的入口",
+            "textAlign": "left",
+            "type": "text",
+            "verticalAlign": "top",
+            "width": 481.91999999999996,
+            "x": 0,
+            "y": -116
+          },
+          "builtFingerprint": "c9626f5b6bf80ef6fb2856f42c09b8918bea697f001f8fabe2fcf3a5b156ff1d",
+          "builtRevision": 0,
+          "generated": true,
+          "kind": "title",
+          "modelId": "mattpocock-skills-comparisons"
+        }
+      },
+      "fillStyle": "solid",
+      "fontFamily": 5,
+      "fontSize": 24,
+      "frameId": null,
+      "groupIds": [],
+      "height": 34,
+      "id": "t-scene-title",
+      "isDeleted": false,
+      "lineHeight": 1.25,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "originalText": "学习 mattpocock/skills：容易选错的入口",
+      "roughness": 1,
+      "roundness": null,
+      "seed": 765904910,
+      "strokeColor": "#472a2b",
+      "strokeStyle": "solid",
+      "strokeWidth": 1,
+      "text": "学习 mattpocock/skills：容易选错的入口",
+      "textAlign": "left",
+      "type": "text",
+      "updated": 1,
+      "version": 1,
+      "versionNonce": 626197,
+      "verticalAlign": "top",
+      "width": 481.91999999999996,
+      "x": 0,
+      "y": -116
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "transparent",
+      "baseline": 0,
+      "boundElements": null,
+      "containerId": null,
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": null,
+            "containerId": null,
+            "fillStyle": "solid",
+            "fontFamily": 5,
+            "fontSize": 15,
+            "groupIds": [],
+            "height": 24,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "originalText": "目标：能区分五组相似入口，并在来源摘要与入口细则冲突时回到具体原文。",
+            "roughness": 1,
+            "roundness": null,
+            "strokeColor": "#7b5557",
+            "strokeStyle": "solid",
+            "strokeWidth": 1,
+            "text": "目标：能区分五组相似入口，并在来源摘要与入口细则冲突时回到具体原文。",
+            "textAlign": "left",
+            "type": "text",
+            "verticalAlign": "top",
+            "width": 530,
+            "x": 0,
+            "y": -74
+          },
+          "builtFingerprint": "c9626f5b6bf80ef6fb2856f42c09b8918bea697f001f8fabe2fcf3a5b156ff1d",
+          "builtRevision": 0,
+          "generated": true,
+          "kind": "goal",
+          "modelId": "mattpocock-skills-comparisons"
+        }
+      },
+      "fillStyle": "solid",
+      "fontFamily": 5,
+      "fontSize": 15,
+      "frameId": null,
+      "groupIds": [],
+      "height": 24,
+      "id": "t-scene-goal",
+      "isDeleted": false,
+      "lineHeight": 1.25,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "originalText": "目标：能区分五组相似入口，并在来源摘要与入口细则冲突时回到具体原文。",
+      "roughness": 1,
+      "roundness": null,
+      "seed": 351922590,
+      "strokeColor": "#7b5557",
+      "strokeStyle": "solid",
+      "strokeWidth": 1,
+      "text": "目标：能区分五组相似入口，并在来源摘要与入口细则冲突时回到具体原文。",
+      "textAlign": "left",
+      "type": "text",
+      "updated": 1,
+      "version": 1,
+      "versionNonce": 932635,
+      "verticalAlign": "top",
+      "width": 530,
+      "x": 0,
+      "y": -74
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "#f3d7d4",
+      "boundElements": [
+        {
+          "id": "t-choose",
+          "type": "text"
+        },
+        {
+          "id": "e-parent-pair-1",
+          "type": "arrow"
+        },
+        {
+          "id": "e-parent-pair-2",
+          "type": "arrow"
+        },
+        {
+          "id": "e-parent-pair-3",
+          "type": "arrow"
+        },
+        {
+          "id": "e-parent-pair-4",
+          "type": "arrow"
+        },
+        {
+          "id": "e-parent-pair-5",
+          "type": "arrow"
+        },
+        {
+          "id": "e-parent-source-priority",
+          "type": "arrow"
+        }
+      ],
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "#f3d7d4",
+            "boundElements": [
+              {
+                "id": "t-choose",
+                "type": "text"
+              },
+              {
+                "id": "e-parent-pair-1",
+                "type": "arrow"
+              },
+              {
+                "id": "e-parent-pair-2",
+                "type": "arrow"
+              },
+              {
+                "id": "e-parent-pair-3",
+                "type": "arrow"
+              },
+              {
+                "id": "e-parent-pair-4",
+                "type": "arrow"
+              },
+              {
+                "id": "e-parent-pair-5",
+                "type": "arrow"
+              },
+              {
+                "id": "e-parent-source-priority",
+                "type": "arrow"
+              }
+            ],
+            "fillStyle": "solid",
+            "groupIds": [
+              "g-choose"
+            ],
+            "height": 55,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "roughness": 1,
+            "roundness": {
+              "type": 3,
+              "value": 12
+            },
+            "strokeColor": "#a13f48",
+            "strokeStyle": "solid",
+            "strokeWidth": 2,
+            "type": "rectangle",
+            "width": 152,
+            "x": 626,
+            "y": 0
+          },
+          "builtFingerprint": "c9626f5b6bf80ef6fb2856f42c09b8918bea697f001f8fabe2fcf3a5b156ff1d",
+          "builtRevision": 0,
+          "conceptId": "choose",
+          "generated": true,
+          "kind": "node",
+          "modelId": "mattpocock-skills-comparisons"
+        }
+      },
+      "fillStyle": "solid",
+      "frameId": null,
+      "groupIds": [
+        "g-choose"
+      ],
+      "height": 55,
+      "id": "c-choose",
+      "isDeleted": false,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "roughness": 1,
+      "roundness": {
+        "type": 3,
+        "value": 12
+      },
+      "seed": 1592934559,
+      "strokeColor": "#a13f48",
+      "strokeStyle": "solid",
+      "strokeWidth": 2,
+      "type": "rectangle",
+      "updated": 1,
+      "version": 1,
+      "versionNonce": 501807,
+      "width": 152,
+      "x": 626,
+      "y": 0
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "transparent",
+      "baseline": 0,
+      "boundElements": null,
+      "containerId": "c-choose",
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": null,
+            "containerId": "c-choose",
+            "fillStyle": "solid",
+            "fontFamily": 5,
+            "fontSize": 17,
+            "groupIds": [
+              "g-choose"
+            ],
+            "height": 25,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "originalText": "按差异选择",
+            "roughness": 1,
+            "roundness": null,
+            "strokeColor": "#472a2b",
+            "strokeStyle": "solid",
+            "strokeWidth": 1,
+            "text": "按差异选择",
+            "textAlign": "center",
+            "type": "text",
+            "verticalAlign": "middle",
+            "width": 128,
+            "x": 638,
+            "y": 15
+          },
+          "builtFingerprint": "c9626f5b6bf80ef6fb2856f42c09b8918bea697f001f8fabe2fcf3a5b156ff1d",
+          "builtRevision": 0,
+          "conceptId": "choose",
+          "generated": true,
+          "kind": "node-text",
+          "modelId": "mattpocock-skills-comparisons"
+        }
+      },
+      "fillStyle": "solid",
+      "fontFamily": 5,
+      "fontSize": 17,
+      "frameId": null,
+      "groupIds": [
+        "g-choose"
+      ],
+      "height": 25,
+      "id": "t-choose",
+      "isDeleted": false,
+      "lineHeight": 1.25,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "originalText": "按差异选择",
+      "roughness": 1,
+      "roundness": null,
+      "seed": 1529362169,
+      "strokeColor": "#472a2b",
+      "strokeStyle": "solid",
+      "strokeWidth": 1,
+      "text": "按差异选择",
+      "textAlign": "center",
+      "type": "text",
+      "updated": 1,
+      "version": 1,
+      "versionNonce": 969773,
+      "verticalAlign": "middle",
+      "width": 128,
+      "x": 638,
+      "y": 15
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "transparent",
+      "baseline": 0,
+      "boundElements": null,
+      "containerId": null,
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": null,
+            "containerId": null,
+            "fillStyle": "solid",
+            "fontFamily": 5,
+            "fontSize": 11,
+            "groupIds": [
+              "g-choose"
+            ],
+            "height": 18,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "originalText": "难度 1",
+            "roughness": 1,
+            "roundness": null,
+            "strokeColor": "#7b5557",
+            "strokeStyle": "solid",
+            "strokeWidth": 1,
+            "text": "难度 1",
+            "textAlign": "right",
+            "type": "text",
+            "verticalAlign": "top",
+            "width": 54,
+            "x": 716,
+            "y": 4
+          },
+          "builtFingerprint": "c9626f5b6bf80ef6fb2856f42c09b8918bea697f001f8fabe2fcf3a5b156ff1d",
+          "builtRevision": 0,
+          "conceptId": "choose",
+          "generated": true,
+          "kind": "difficulty",
+          "modelId": "mattpocock-skills-comparisons"
+        }
+      },
+      "fillStyle": "solid",
+      "fontFamily": 5,
+      "fontSize": 11,
+      "frameId": null,
+      "groupIds": [
+        "g-choose"
+      ],
+      "height": 18,
+      "id": "d-choose",
+      "isDeleted": false,
+      "lineHeight": 1.25,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "originalText": "难度 1",
+      "roughness": 1,
+      "roundness": null,
+      "seed": 2069994095,
+      "strokeColor": "#7b5557",
+      "strokeStyle": "solid",
+      "strokeWidth": 1,
+      "text": "难度 1",
+      "textAlign": "right",
+      "type": "text",
+      "updated": 1,
+      "version": 1,
+      "versionNonce": 571347,
+      "verticalAlign": "top",
+      "width": 54,
+      "x": 716,
+      "y": 4
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "#faece9",
+      "boundElements": [
+        {
+          "id": "t-pair-1",
+          "type": "text"
+        },
+        {
+          "id": "e-parent-pair-1",
+          "type": "arrow"
+        }
+      ],
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "#faece9",
+            "boundElements": [
+              {
+                "id": "t-pair-1",
+                "type": "text"
+              },
+              {
+                "id": "e-parent-pair-1",
+                "type": "arrow"
+              }
+            ],
+            "fillStyle": "solid",
+            "groupIds": [
+              "g-pair-1"
+            ],
+            "height": 55,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "roughness": 1,
+            "roundness": {
+              "type": 3,
+              "value": 12
+            },
+            "strokeColor": "#a13f48",
+            "strokeStyle": "solid",
+            "strokeWidth": 2,
+            "type": "rectangle",
+            "width": 216,
+            "x": 0,
+            "y": 147
+          },
+          "builtFingerprint": "c9626f5b6bf80ef6fb2856f42c09b8918bea697f001f8fabe2fcf3a5b156ff1d",
+          "builtRevision": 0,
+          "conceptId": "pair-1",
+          "generated": true,
+          "kind": "node",
+          "modelId": "mattpocock-skills-comparisons"
+        }
+      },
+      "fillStyle": "solid",
+      "frameId": null,
+      "groupIds": [
+        "g-pair-1"
+      ],
+      "height": 55,
+      "id": "c-pair-1",
+      "isDeleted": false,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "roughness": 1,
+      "roundness": {
+        "type": 3,
+        "value": 12
+      },
+      "seed": 308334559,
+      "strokeColor": "#a13f48",
+      "strokeStyle": "solid",
+      "strokeWidth": 2,
+      "type": "rectangle",
+      "updated": 1,
+      "version": 1,
+      "versionNonce": 40585,
+      "width": 216,
+      "x": 0,
+      "y": 147
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "transparent",
+      "baseline": 0,
+      "boundElements": null,
+      "containerId": "c-pair-1",
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": null,
+            "containerId": "c-pair-1",
+            "fillStyle": "solid",
+            "fontFamily": 5,
+            "fontSize": 17,
+            "groupIds": [
+              "g-pair-1"
+            ],
+            "height": 25,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "originalText": "项目访谈与无状态访谈",
+            "roughness": 1,
+            "roundness": null,
+            "strokeColor": "#472a2b",
+            "strokeStyle": "solid",
+            "strokeWidth": 1,
+            "text": "项目访谈与无状态访谈",
+            "textAlign": "center",
+            "type": "text",
+            "verticalAlign": "middle",
+            "width": 192,
+            "x": 12,
+            "y": 162
+          },
+          "builtFingerprint": "c9626f5b6bf80ef6fb2856f42c09b8918bea697f001f8fabe2fcf3a5b156ff1d",
+          "builtRevision": 0,
+          "conceptId": "pair-1",
+          "generated": true,
+          "kind": "node-text",
+          "modelId": "mattpocock-skills-comparisons"
+        }
+      },
+      "fillStyle": "solid",
+      "fontFamily": 5,
+      "fontSize": 17,
+      "frameId": null,
+      "groupIds": [
+        "g-pair-1"
+      ],
+      "height": 25,
+      "id": "t-pair-1",
+      "isDeleted": false,
+      "lineHeight": 1.25,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "originalText": "项目访谈与无状态访谈",
+      "roughness": 1,
+      "roundness": null,
+      "seed": 362916402,
+      "strokeColor": "#472a2b",
+      "strokeStyle": "solid",
+      "strokeWidth": 1,
+      "text": "项目访谈与无状态访谈",
+      "textAlign": "center",
+      "type": "text",
+      "updated": 1,
+      "version": 1,
+      "versionNonce": 784832,
+      "verticalAlign": "middle",
+      "width": 192,
+      "x": 12,
+      "y": 162
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "transparent",
+      "baseline": 0,
+      "boundElements": null,
+      "containerId": null,
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": null,
+            "containerId": null,
+            "fillStyle": "solid",
+            "fontFamily": 5,
+            "fontSize": 11,
+            "groupIds": [
+              "g-pair-1"
+            ],
+            "height": 18,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "originalText": "难度 2",
+            "roughness": 1,
+            "roundness": null,
+            "strokeColor": "#7b5557",
+            "strokeStyle": "solid",
+            "strokeWidth": 1,
+            "text": "难度 2",
+            "textAlign": "right",
+            "type": "text",
+            "verticalAlign": "top",
+            "width": 54,
+            "x": 154,
+            "y": 151
+          },
+          "builtFingerprint": "c9626f5b6bf80ef6fb2856f42c09b8918bea697f001f8fabe2fcf3a5b156ff1d",
+          "builtRevision": 0,
+          "conceptId": "pair-1",
+          "generated": true,
+          "kind": "difficulty",
+          "modelId": "mattpocock-skills-comparisons"
+        }
+      },
+      "fillStyle": "solid",
+      "fontFamily": 5,
+      "fontSize": 11,
+      "frameId": null,
+      "groupIds": [
+        "g-pair-1"
+      ],
+      "height": 18,
+      "id": "d-pair-1",
+      "isDeleted": false,
+      "lineHeight": 1.25,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "originalText": "难度 2",
+      "roughness": 1,
+      "roundness": null,
+      "seed": 829245809,
+      "strokeColor": "#7b5557",
+      "strokeStyle": "solid",
+      "strokeWidth": 1,
+      "text": "难度 2",
+      "textAlign": "right",
+      "type": "text",
+      "updated": 1,
+      "version": 1,
+      "versionNonce": 435658,
+      "verticalAlign": "top",
+      "width": 54,
+      "x": 154,
+      "y": 151
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "transparent",
+      "boundElements": null,
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": null,
+            "endArrowhead": "arrow",
+            "endBinding": {
+              "elementId": "c-pair-1",
+              "fixedPoint": [
+                1,
+                0.5
+              ],
+              "focus": 0,
+              "gap": 4
+            },
+            "fillStyle": "solid",
+            "groupIds": [],
+            "height": 147,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "points": [
+              [
+                0,
+                0
+              ],
+              [
+                -410,
+                147
+              ]
+            ],
+            "roughness": 1,
+            "roundness": {
+              "type": 2
+            },
+            "startArrowhead": null,
+            "startBinding": {
+              "elementId": "c-choose",
+              "fixedPoint": [
+                0,
+                0.5
+              ],
+              "focus": 0,
+              "gap": 4
+            },
+            "strokeColor": "#7b5557",
+            "strokeStyle": "solid",
+            "strokeWidth": 2,
+            "type": "arrow",
+            "width": 410,
+            "x": 626,
+            "y": 27.5
+          },
+          "builtFingerprint": "c9626f5b6bf80ef6fb2856f42c09b8918bea697f001f8fabe2fcf3a5b156ff1d",
+          "builtRevision": 0,
+          "conceptId": "pair-1",
+          "generated": true,
+          "kind": "parent-edge",
+          "modelId": "mattpocock-skills-comparisons"
+        }
+      },
+      "endArrowhead": "arrow",
+      "endBinding": {
+        "elementId": "c-pair-1",
+        "fixedPoint": [
+          1,
+          0.5
+        ],
+        "focus": 0,
+        "gap": 4
+      },
+      "fillStyle": "solid",
+      "frameId": null,
+      "groupIds": [],
+      "height": 147,
+      "id": "e-parent-pair-1",
+      "isDeleted": false,
+      "lastCommittedPoint": null,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          -410,
+          147
+        ]
+      ],
+      "roughness": 1,
+      "roundness": {
+        "type": 2
+      },
+      "seed": 205704637,
+      "startArrowhead": null,
+      "startBinding": {
+        "elementId": "c-choose",
+        "fixedPoint": [
+          0,
+          0.5
+        ],
+        "focus": 0,
+        "gap": 4
+      },
+      "strokeColor": "#7b5557",
+      "strokeStyle": "solid",
+      "strokeWidth": 2,
+      "type": "arrow",
+      "updated": 1,
+      "version": 1,
+      "versionNonce": 103194,
+      "width": 410,
+      "x": 626,
+      "y": 27.5
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "#faece9",
+      "boundElements": [
+        {
+          "id": "t-pair-2",
+          "type": "text"
+        },
+        {
+          "id": "e-parent-pair-2",
+          "type": "arrow"
+        }
+      ],
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "#faece9",
+            "boundElements": [
+              {
+                "id": "t-pair-2",
+                "type": "text"
+              },
+              {
+                "id": "e-parent-pair-2",
+                "type": "arrow"
+              }
+            ],
+            "fillStyle": "solid",
+            "groupIds": [
+              "g-pair-2"
+            ],
+            "height": 55,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "roughness": 1,
+            "roundness": {
+              "type": 3,
+              "value": 12
+            },
+            "strokeColor": "#a13f48",
+            "strokeStyle": "solid",
+            "strokeWidth": 2,
+            "type": "rectangle",
+            "width": 199,
+            "x": 258,
+            "y": 147
+          },
+          "builtFingerprint": "c9626f5b6bf80ef6fb2856f42c09b8918bea697f001f8fabe2fcf3a5b156ff1d",
+          "builtRevision": 0,
+          "conceptId": "pair-2",
+          "generated": true,
+          "kind": "node",
+          "modelId": "mattpocock-skills-comparisons"
+        }
+      },
+      "fillStyle": "solid",
+      "frameId": null,
+      "groupIds": [
+        "g-pair-2"
+      ],
+      "height": 55,
+      "id": "c-pair-2",
+      "isDeleted": false,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "roughness": 1,
+      "roundness": {
+        "type": 3,
+        "value": 12
+      },
+      "seed": 1895628901,
+      "strokeColor": "#a13f48",
+      "strokeStyle": "solid",
+      "strokeWidth": 2,
+      "type": "rectangle",
+      "updated": 1,
+      "version": 1,
+      "versionNonce": 356050,
+      "width": 199,
+      "x": 258,
+      "y": 147
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "transparent",
+      "baseline": 0,
+      "boundElements": null,
+      "containerId": "c-pair-2",
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": null,
+            "containerId": "c-pair-2",
+            "fillStyle": "solid",
+            "fontFamily": 5,
+            "fontSize": 17,
+            "groupIds": [
+              "g-pair-2"
+            ],
+            "height": 25,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "originalText": "综合规格与拆解任务",
+            "roughness": 1,
+            "roundness": null,
+            "strokeColor": "#472a2b",
+            "strokeStyle": "solid",
+            "strokeWidth": 1,
+            "text": "综合规格与拆解任务",
+            "textAlign": "center",
+            "type": "text",
+            "verticalAlign": "middle",
+            "width": 175,
+            "x": 270,
+            "y": 162
+          },
+          "builtFingerprint": "c9626f5b6bf80ef6fb2856f42c09b8918bea697f001f8fabe2fcf3a5b156ff1d",
+          "builtRevision": 0,
+          "conceptId": "pair-2",
+          "generated": true,
+          "kind": "node-text",
+          "modelId": "mattpocock-skills-comparisons"
+        }
+      },
+      "fillStyle": "solid",
+      "fontFamily": 5,
+      "fontSize": 17,
+      "frameId": null,
+      "groupIds": [
+        "g-pair-2"
+      ],
+      "height": 25,
+      "id": "t-pair-2",
+      "isDeleted": false,
+      "lineHeight": 1.25,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "originalText": "综合规格与拆解任务",
+      "roughness": 1,
+      "roundness": null,
+      "seed": 803793612,
+      "strokeColor": "#472a2b",
+      "strokeStyle": "solid",
+      "strokeWidth": 1,
+      "text": "综合规格与拆解任务",
+      "textAlign": "center",
+      "type": "text",
+      "updated": 1,
+      "version": 1,
+      "versionNonce": 871108,
+      "verticalAlign": "middle",
+      "width": 175,
+      "x": 270,
+      "y": 162
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "transparent",
+      "baseline": 0,
+      "boundElements": null,
+      "containerId": null,
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": null,
+            "containerId": null,
+            "fillStyle": "solid",
+            "fontFamily": 5,
+            "fontSize": 11,
+            "groupIds": [
+              "g-pair-2"
+            ],
+            "height": 18,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "originalText": "难度 2",
+            "roughness": 1,
+            "roundness": null,
+            "strokeColor": "#7b5557",
+            "strokeStyle": "solid",
+            "strokeWidth": 1,
+            "text": "难度 2",
+            "textAlign": "right",
+            "type": "text",
+            "verticalAlign": "top",
+            "width": 54,
+            "x": 395,
+            "y": 151
+          },
+          "builtFingerprint": "c9626f5b6bf80ef6fb2856f42c09b8918bea697f001f8fabe2fcf3a5b156ff1d",
+          "builtRevision": 0,
+          "conceptId": "pair-2",
+          "generated": true,
+          "kind": "difficulty",
+          "modelId": "mattpocock-skills-comparisons"
+        }
+      },
+      "fillStyle": "solid",
+      "fontFamily": 5,
+      "fontSize": 11,
+      "frameId": null,
+      "groupIds": [
+        "g-pair-2"
+      ],
+      "height": 18,
+      "id": "d-pair-2",
+      "isDeleted": false,
+      "lineHeight": 1.25,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "originalText": "难度 2",
+      "roughness": 1,
+      "roundness": null,
+      "seed": 1106541533,
+      "strokeColor": "#7b5557",
+      "strokeStyle": "solid",
+      "strokeWidth": 1,
+      "text": "难度 2",
+      "textAlign": "right",
+      "type": "text",
+      "updated": 1,
+      "version": 1,
+      "versionNonce": 880585,
+      "verticalAlign": "top",
+      "width": 54,
+      "x": 395,
+      "y": 151
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "transparent",
+      "boundElements": null,
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": null,
+            "endArrowhead": "arrow",
+            "endBinding": {
+              "elementId": "c-pair-2",
+              "fixedPoint": [
+                1,
+                0.5
+              ],
+              "focus": 0,
+              "gap": 4
+            },
+            "fillStyle": "solid",
+            "groupIds": [],
+            "height": 147,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "points": [
+              [
+                0,
+                0
+              ],
+              [
+                -169,
+                147
+              ]
+            ],
+            "roughness": 1,
+            "roundness": {
+              "type": 2
+            },
+            "startArrowhead": null,
+            "startBinding": {
+              "elementId": "c-choose",
+              "fixedPoint": [
+                0,
+                0.5
+              ],
+              "focus": 0,
+              "gap": 4
+            },
+            "strokeColor": "#7b5557",
+            "strokeStyle": "solid",
+            "strokeWidth": 2,
+            "type": "arrow",
+            "width": 169,
+            "x": 626,
+            "y": 27.5
+          },
+          "builtFingerprint": "c9626f5b6bf80ef6fb2856f42c09b8918bea697f001f8fabe2fcf3a5b156ff1d",
+          "builtRevision": 0,
+          "conceptId": "pair-2",
+          "generated": true,
+          "kind": "parent-edge",
+          "modelId": "mattpocock-skills-comparisons"
+        }
+      },
+      "endArrowhead": "arrow",
+      "endBinding": {
+        "elementId": "c-pair-2",
+        "fixedPoint": [
+          1,
+          0.5
+        ],
+        "focus": 0,
+        "gap": 4
+      },
+      "fillStyle": "solid",
+      "frameId": null,
+      "groupIds": [],
+      "height": 147,
+      "id": "e-parent-pair-2",
+      "isDeleted": false,
+      "lastCommittedPoint": null,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          -169,
+          147
+        ]
+      ],
+      "roughness": 1,
+      "roundness": {
+        "type": 2
+      },
+      "seed": 1622570061,
+      "startArrowhead": null,
+      "startBinding": {
+        "elementId": "c-choose",
+        "fixedPoint": [
+          0,
+          0.5
+        ],
+        "focus": 0,
+        "gap": 4
+      },
+      "strokeColor": "#7b5557",
+      "strokeStyle": "solid",
+      "strokeWidth": 2,
+      "type": "arrow",
+      "updated": 1,
+      "version": 1,
+      "versionNonce": 746839,
+      "width": 169,
+      "x": 626,
+      "y": 27.5
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "#faece9",
+      "boundElements": [
+        {
+          "id": "t-pair-3",
+          "type": "text"
+        },
+        {
+          "id": "e-parent-pair-3",
+          "type": "arrow"
+        }
+      ],
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "#faece9",
+            "boundElements": [
+              {
+                "id": "t-pair-3",
+                "type": "text"
+              },
+              {
+                "id": "e-parent-pair-3",
+                "type": "arrow"
+              }
+            ],
+            "fillStyle": "solid",
+            "groupIds": [
+              "g-pair-3"
+            ],
+            "height": 55,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "roughness": 1,
+            "roundness": {
+              "type": 3,
+              "value": 12
+            },
+            "strokeColor": "#a13f48",
+            "strokeStyle": "solid",
+            "strokeWidth": 2,
+            "type": "rectangle",
+            "width": 216,
+            "x": 499,
+            "y": 147
+          },
+          "builtFingerprint": "c9626f5b6bf80ef6fb2856f42c09b8918bea697f001f8fabe2fcf3a5b156ff1d",
+          "builtRevision": 0,
+          "conceptId": "pair-3",
+          "generated": true,
+          "kind": "node",
+          "modelId": "mattpocock-skills-comparisons"
+        }
+      },
+      "fillStyle": "solid",
+      "frameId": null,
+      "groupIds": [
+        "g-pair-3"
+      ],
+      "height": 55,
+      "id": "c-pair-3",
+      "isDeleted": false,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "roughness": 1,
+      "roundness": {
+        "type": 3,
+        "value": 12
+      },
+      "seed": 278413878,
+      "strokeColor": "#a13f48",
+      "strokeStyle": "solid",
+      "strokeWidth": 2,
+      "type": "rectangle",
+      "updated": 1,
+      "version": 1,
+      "versionNonce": 603788,
+      "width": 216,
+      "x": 499,
+      "y": 147
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "transparent",
+      "baseline": 0,
+      "boundElements": null,
+      "containerId": "c-pair-3",
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": null,
+            "containerId": "c-pair-3",
+            "fillStyle": "solid",
+            "fontFamily": 5,
+            "fontSize": 17,
+            "groupIds": [
+              "g-pair-3"
+            ],
+            "height": 25,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "originalText": "一段工作与整份任务图",
+            "roughness": 1,
+            "roundness": null,
+            "strokeColor": "#472a2b",
+            "strokeStyle": "solid",
+            "strokeWidth": 1,
+            "text": "一段工作与整份任务图",
+            "textAlign": "center",
+            "type": "text",
+            "verticalAlign": "middle",
+            "width": 192,
+            "x": 511,
+            "y": 162
+          },
+          "builtFingerprint": "c9626f5b6bf80ef6fb2856f42c09b8918bea697f001f8fabe2fcf3a5b156ff1d",
+          "builtRevision": 0,
+          "conceptId": "pair-3",
+          "generated": true,
+          "kind": "node-text",
+          "modelId": "mattpocock-skills-comparisons"
+        }
+      },
+      "fillStyle": "solid",
+      "fontFamily": 5,
+      "fontSize": 17,
+      "frameId": null,
+      "groupIds": [
+        "g-pair-3"
+      ],
+      "height": 25,
+      "id": "t-pair-3",
+      "isDeleted": false,
+      "lineHeight": 1.25,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "originalText": "一段工作与整份任务图",
+      "roughness": 1,
+      "roundness": null,
+      "seed": 887353724,
+      "strokeColor": "#472a2b",
+      "strokeStyle": "solid",
+      "strokeWidth": 1,
+      "text": "一段工作与整份任务图",
+      "textAlign": "center",
+      "type": "text",
+      "updated": 1,
+      "version": 1,
+      "versionNonce": 308712,
+      "verticalAlign": "middle",
+      "width": 192,
+      "x": 511,
+      "y": 162
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "transparent",
+      "baseline": 0,
+      "boundElements": null,
+      "containerId": null,
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": null,
+            "containerId": null,
+            "fillStyle": "solid",
+            "fontFamily": 5,
+            "fontSize": 11,
+            "groupIds": [
+              "g-pair-3"
+            ],
+            "height": 18,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "originalText": "难度 2",
+            "roughness": 1,
+            "roundness": null,
+            "strokeColor": "#7b5557",
+            "strokeStyle": "solid",
+            "strokeWidth": 1,
+            "text": "难度 2",
+            "textAlign": "right",
+            "type": "text",
+            "verticalAlign": "top",
+            "width": 54,
+            "x": 653,
+            "y": 151
+          },
+          "builtFingerprint": "c9626f5b6bf80ef6fb2856f42c09b8918bea697f001f8fabe2fcf3a5b156ff1d",
+          "builtRevision": 0,
+          "conceptId": "pair-3",
+          "generated": true,
+          "kind": "difficulty",
+          "modelId": "mattpocock-skills-comparisons"
+        }
+      },
+      "fillStyle": "solid",
+      "fontFamily": 5,
+      "fontSize": 11,
+      "frameId": null,
+      "groupIds": [
+        "g-pair-3"
+      ],
+      "height": 18,
+      "id": "d-pair-3",
+      "isDeleted": false,
+      "lineHeight": 1.25,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "originalText": "难度 2",
+      "roughness": 1,
+      "roundness": null,
+      "seed": 1871942391,
+      "strokeColor": "#7b5557",
+      "strokeStyle": "solid",
+      "strokeWidth": 1,
+      "text": "难度 2",
+      "textAlign": "right",
+      "type": "text",
+      "updated": 1,
+      "version": 1,
+      "versionNonce": 587754,
+      "verticalAlign": "top",
+      "width": 54,
+      "x": 653,
+      "y": 151
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "transparent",
+      "boundElements": null,
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": null,
+            "endArrowhead": "arrow",
+            "endBinding": {
+              "elementId": "c-pair-3",
+              "fixedPoint": [
+                0.5,
+                0
+              ],
+              "focus": 0,
+              "gap": 4
+            },
+            "fillStyle": "solid",
+            "groupIds": [],
+            "height": 92,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "points": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                46
+              ],
+              [
+                -95,
+                46
+              ],
+              [
+                -95,
+                92
+              ]
+            ],
+            "roughness": 1,
+            "roundness": {
+              "type": 2
+            },
+            "startArrowhead": null,
+            "startBinding": {
+              "elementId": "c-choose",
+              "fixedPoint": [
+                0.5,
+                1
+              ],
+              "focus": 0,
+              "gap": 4
+            },
+            "strokeColor": "#7b5557",
+            "strokeStyle": "solid",
+            "strokeWidth": 2,
+            "type": "arrow",
+            "width": 95,
+            "x": 702,
+            "y": 55
+          },
+          "builtFingerprint": "c9626f5b6bf80ef6fb2856f42c09b8918bea697f001f8fabe2fcf3a5b156ff1d",
+          "builtRevision": 0,
+          "conceptId": "pair-3",
+          "generated": true,
+          "kind": "parent-edge",
+          "modelId": "mattpocock-skills-comparisons"
+        }
+      },
+      "endArrowhead": "arrow",
+      "endBinding": {
+        "elementId": "c-pair-3",
+        "fixedPoint": [
+          0.5,
+          0
+        ],
+        "focus": 0,
+        "gap": 4
+      },
+      "fillStyle": "solid",
+      "frameId": null,
+      "groupIds": [],
+      "height": 92,
+      "id": "e-parent-pair-3",
+      "isDeleted": false,
+      "lastCommittedPoint": null,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          46
+        ],
+        [
+          -95,
+          46
+        ],
+        [
+          -95,
+          92
+        ]
+      ],
+      "roughness": 1,
+      "roundness": {
+        "type": 2
+      },
+      "seed": 1709328858,
+      "startArrowhead": null,
+      "startBinding": {
+        "elementId": "c-choose",
+        "fixedPoint": [
+          0.5,
+          1
+        ],
+        "focus": 0,
+        "gap": 4
+      },
+      "strokeColor": "#7b5557",
+      "strokeStyle": "solid",
+      "strokeWidth": 2,
+      "type": "arrow",
+      "updated": 1,
+      "version": 1,
+      "versionNonce": 466573,
+      "width": 95,
+      "x": 702,
+      "y": 55
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "#faece9",
+      "boundElements": [
+        {
+          "id": "t-pair-4",
+          "type": "text"
+        },
+        {
+          "id": "e-parent-pair-4",
+          "type": "arrow"
+        }
+      ],
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "#faece9",
+            "boundElements": [
+              {
+                "id": "t-pair-4",
+                "type": "text"
+              },
+              {
+                "id": "e-parent-pair-4",
+                "type": "arrow"
+              }
+            ],
+            "fillStyle": "solid",
+            "groupIds": [
+              "g-pair-4"
+            ],
+            "height": 55,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "roughness": 1,
+            "roundness": {
+              "type": 3,
+              "value": 12
+            },
+            "strokeColor": "#a13f48",
+            "strokeStyle": "solid",
+            "strokeWidth": 2,
+            "type": "rectangle",
+            "width": 199,
+            "x": 757,
+            "y": 147
+          },
+          "builtFingerprint": "c9626f5b6bf80ef6fb2856f42c09b8918bea697f001f8fabe2fcf3a5b156ff1d",
+          "builtRevision": 0,
+          "conceptId": "pair-4",
+          "generated": true,
+          "kind": "node",
+          "modelId": "mattpocock-skills-comparisons"
+        }
+      },
+      "fillStyle": "solid",
+      "frameId": null,
+      "groupIds": [
+        "g-pair-4"
+      ],
+      "height": 55,
+      "id": "c-pair-4",
+      "isDeleted": false,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "roughness": 1,
+      "roundness": {
+        "type": 3,
+        "value": 12
+      },
+      "seed": 1078101035,
+      "strokeColor": "#a13f48",
+      "strokeStyle": "solid",
+      "strokeWidth": 2,
+      "type": "rectangle",
+      "updated": 1,
+      "version": 1,
+      "versionNonce": 342163,
+      "width": 199,
+      "x": 757,
+      "y": 147
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "transparent",
+      "baseline": 0,
+      "boundElements": null,
+      "containerId": "c-pair-4",
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": null,
+            "containerId": "c-pair-4",
+            "fillStyle": "solid",
+            "fontFamily": 5,
+            "fontSize": 17,
+            "groupIds": [
+              "g-pair-4"
+            ],
+            "height": 25,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "originalText": "症状诊断与结构调查",
+            "roughness": 1,
+            "roundness": null,
+            "strokeColor": "#472a2b",
+            "strokeStyle": "solid",
+            "strokeWidth": 1,
+            "text": "症状诊断与结构调查",
+            "textAlign": "center",
+            "type": "text",
+            "verticalAlign": "middle",
+            "width": 175,
+            "x": 769,
+            "y": 162
+          },
+          "builtFingerprint": "c9626f5b6bf80ef6fb2856f42c09b8918bea697f001f8fabe2fcf3a5b156ff1d",
+          "builtRevision": 0,
+          "conceptId": "pair-4",
+          "generated": true,
+          "kind": "node-text",
+          "modelId": "mattpocock-skills-comparisons"
+        }
+      },
+      "fillStyle": "solid",
+      "fontFamily": 5,
+      "fontSize": 17,
+      "frameId": null,
+      "groupIds": [
+        "g-pair-4"
+      ],
+      "height": 25,
+      "id": "t-pair-4",
+      "isDeleted": false,
+      "lineHeight": 1.25,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "originalText": "症状诊断与结构调查",
+      "roughness": 1,
+      "roundness": null,
+      "seed": 1930239674,
+      "strokeColor": "#472a2b",
+      "strokeStyle": "solid",
+      "strokeWidth": 1,
+      "text": "症状诊断与结构调查",
+      "textAlign": "center",
+      "type": "text",
+      "updated": 1,
+      "version": 1,
+      "versionNonce": 297838,
+      "verticalAlign": "middle",
+      "width": 175,
+      "x": 769,
+      "y": 162
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "transparent",
+      "baseline": 0,
+      "boundElements": null,
+      "containerId": null,
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": null,
+            "containerId": null,
+            "fillStyle": "solid",
+            "fontFamily": 5,
+            "fontSize": 11,
+            "groupIds": [
+              "g-pair-4"
+            ],
+            "height": 18,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "originalText": "难度 2",
+            "roughness": 1,
+            "roundness": null,
+            "strokeColor": "#7b5557",
+            "strokeStyle": "solid",
+            "strokeWidth": 1,
+            "text": "难度 2",
+            "textAlign": "right",
+            "type": "text",
+            "verticalAlign": "top",
+            "width": 54,
+            "x": 894,
+            "y": 151
+          },
+          "builtFingerprint": "c9626f5b6bf80ef6fb2856f42c09b8918bea697f001f8fabe2fcf3a5b156ff1d",
+          "builtRevision": 0,
+          "conceptId": "pair-4",
+          "generated": true,
+          "kind": "difficulty",
+          "modelId": "mattpocock-skills-comparisons"
+        }
+      },
+      "fillStyle": "solid",
+      "fontFamily": 5,
+      "fontSize": 11,
+      "frameId": null,
+      "groupIds": [
+        "g-pair-4"
+      ],
+      "height": 18,
+      "id": "d-pair-4",
+      "isDeleted": false,
+      "lineHeight": 1.25,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "originalText": "难度 2",
+      "roughness": 1,
+      "roundness": null,
+      "seed": 408435298,
+      "strokeColor": "#7b5557",
+      "strokeStyle": "solid",
+      "strokeWidth": 1,
+      "text": "难度 2",
+      "textAlign": "right",
+      "type": "text",
+      "updated": 1,
+      "version": 1,
+      "versionNonce": 714471,
+      "verticalAlign": "top",
+      "width": 54,
+      "x": 894,
+      "y": 151
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "transparent",
+      "boundElements": null,
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": null,
+            "endArrowhead": "arrow",
+            "endBinding": {
+              "elementId": "c-pair-4",
+              "fixedPoint": [
+                0,
+                0.5
+              ],
+              "focus": 0,
+              "gap": 4
+            },
+            "fillStyle": "solid",
+            "groupIds": [],
+            "height": 147,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "points": [
+              [
+                0,
+                0
+              ],
+              [
+                -21,
+                147
+              ]
+            ],
+            "roughness": 1,
+            "roundness": {
+              "type": 2
+            },
+            "startArrowhead": null,
+            "startBinding": {
+              "elementId": "c-choose",
+              "fixedPoint": [
+                1,
+                0.5
+              ],
+              "focus": 0,
+              "gap": 4
+            },
+            "strokeColor": "#7b5557",
+            "strokeStyle": "solid",
+            "strokeWidth": 2,
+            "type": "arrow",
+            "width": 21,
+            "x": 778,
+            "y": 27.5
+          },
+          "builtFingerprint": "c9626f5b6bf80ef6fb2856f42c09b8918bea697f001f8fabe2fcf3a5b156ff1d",
+          "builtRevision": 0,
+          "conceptId": "pair-4",
+          "generated": true,
+          "kind": "parent-edge",
+          "modelId": "mattpocock-skills-comparisons"
+        }
+      },
+      "endArrowhead": "arrow",
+      "endBinding": {
+        "elementId": "c-pair-4",
+        "fixedPoint": [
+          0,
+          0.5
+        ],
+        "focus": 0,
+        "gap": 4
+      },
+      "fillStyle": "solid",
+      "frameId": null,
+      "groupIds": [],
+      "height": 147,
+      "id": "e-parent-pair-4",
+      "isDeleted": false,
+      "lastCommittedPoint": null,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          -21,
+          147
+        ]
+      ],
+      "roughness": 1,
+      "roundness": {
+        "type": 2
+      },
+      "seed": 398118606,
+      "startArrowhead": null,
+      "startBinding": {
+        "elementId": "c-choose",
+        "fixedPoint": [
+          1,
+          0.5
+        ],
+        "focus": 0,
+        "gap": 4
+      },
+      "strokeColor": "#7b5557",
+      "strokeStyle": "solid",
+      "strokeWidth": 2,
+      "type": "arrow",
+      "updated": 1,
+      "version": 1,
+      "versionNonce": 631182,
+      "width": 21,
+      "x": 778,
+      "y": 27.5
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "#faece9",
+      "boundElements": [
+        {
+          "id": "t-pair-5",
+          "type": "text"
+        },
+        {
+          "id": "e-parent-pair-5",
+          "type": "arrow"
+        }
+      ],
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "#faece9",
+            "boundElements": [
+              {
+                "id": "t-pair-5",
+                "type": "text"
+              },
+              {
+                "id": "e-parent-pair-5",
+                "type": "arrow"
+              }
+            ],
+            "fillStyle": "solid",
+            "groupIds": [
+              "g-pair-5"
+            ],
+            "height": 55,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "roughness": 1,
+            "roundness": {
+              "type": 3,
+              "value": 12
+            },
+            "strokeColor": "#a13f48",
+            "strokeStyle": "solid",
+            "strokeWidth": 2,
+            "type": "rectangle",
+            "width": 199,
+            "x": 998,
+            "y": 147
+          },
+          "builtFingerprint": "c9626f5b6bf80ef6fb2856f42c09b8918bea697f001f8fabe2fcf3a5b156ff1d",
+          "builtRevision": 0,
+          "conceptId": "pair-5",
+          "generated": true,
+          "kind": "node",
+          "modelId": "mattpocock-skills-comparisons"
+        }
+      },
+      "fillStyle": "solid",
+      "frameId": null,
+      "groupIds": [
+        "g-pair-5"
+      ],
+      "height": 55,
+      "id": "c-pair-5",
+      "isDeleted": false,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "roughness": 1,
+      "roundness": {
+        "type": 3,
+        "value": 12
+      },
+      "seed": 1778707128,
+      "strokeColor": "#a13f48",
+      "strokeStyle": "solid",
+      "strokeWidth": 2,
+      "type": "rectangle",
+      "updated": 1,
+      "version": 1,
+      "versionNonce": 416387,
+      "width": 199,
+      "x": 998,
+      "y": 147
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "transparent",
+      "baseline": 0,
+      "boundElements": null,
+      "containerId": "c-pair-5",
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": null,
+            "containerId": "c-pair-5",
+            "fillStyle": "solid",
+            "fontFamily": 5,
+            "fontSize": 17,
+            "groupIds": [
+              "g-pair-5"
+            ],
+            "height": 25,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "originalText": "工作交接与持续学习",
+            "roughness": 1,
+            "roundness": null,
+            "strokeColor": "#472a2b",
+            "strokeStyle": "solid",
+            "strokeWidth": 1,
+            "text": "工作交接与持续学习",
+            "textAlign": "center",
+            "type": "text",
+            "verticalAlign": "middle",
+            "width": 175,
+            "x": 1010,
+            "y": 162
+          },
+          "builtFingerprint": "c9626f5b6bf80ef6fb2856f42c09b8918bea697f001f8fabe2fcf3a5b156ff1d",
+          "builtRevision": 0,
+          "conceptId": "pair-5",
+          "generated": true,
+          "kind": "node-text",
+          "modelId": "mattpocock-skills-comparisons"
+        }
+      },
+      "fillStyle": "solid",
+      "fontFamily": 5,
+      "fontSize": 17,
+      "frameId": null,
+      "groupIds": [
+        "g-pair-5"
+      ],
+      "height": 25,
+      "id": "t-pair-5",
+      "isDeleted": false,
+      "lineHeight": 1.25,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "originalText": "工作交接与持续学习",
+      "roughness": 1,
+      "roundness": null,
+      "seed": 163209130,
+      "strokeColor": "#472a2b",
+      "strokeStyle": "solid",
+      "strokeWidth": 1,
+      "text": "工作交接与持续学习",
+      "textAlign": "center",
+      "type": "text",
+      "updated": 1,
+      "version": 1,
+      "versionNonce": 801048,
+      "verticalAlign": "middle",
+      "width": 175,
+      "x": 1010,
+      "y": 162
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "transparent",
+      "baseline": 0,
+      "boundElements": null,
+      "containerId": null,
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": null,
+            "containerId": null,
+            "fillStyle": "solid",
+            "fontFamily": 5,
+            "fontSize": 11,
+            "groupIds": [
+              "g-pair-5"
+            ],
+            "height": 18,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "originalText": "难度 2",
+            "roughness": 1,
+            "roundness": null,
+            "strokeColor": "#7b5557",
+            "strokeStyle": "solid",
+            "strokeWidth": 1,
+            "text": "难度 2",
+            "textAlign": "right",
+            "type": "text",
+            "verticalAlign": "top",
+            "width": 54,
+            "x": 1135,
+            "y": 151
+          },
+          "builtFingerprint": "c9626f5b6bf80ef6fb2856f42c09b8918bea697f001f8fabe2fcf3a5b156ff1d",
+          "builtRevision": 0,
+          "conceptId": "pair-5",
+          "generated": true,
+          "kind": "difficulty",
+          "modelId": "mattpocock-skills-comparisons"
+        }
+      },
+      "fillStyle": "solid",
+      "fontFamily": 5,
+      "fontSize": 11,
+      "frameId": null,
+      "groupIds": [
+        "g-pair-5"
+      ],
+      "height": 18,
+      "id": "d-pair-5",
+      "isDeleted": false,
+      "lineHeight": 1.25,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "originalText": "难度 2",
+      "roughness": 1,
+      "roundness": null,
+      "seed": 1393471717,
+      "strokeColor": "#7b5557",
+      "strokeStyle": "solid",
+      "strokeWidth": 1,
+      "text": "难度 2",
+      "textAlign": "right",
+      "type": "text",
+      "updated": 1,
+      "version": 1,
+      "versionNonce": 641263,
+      "verticalAlign": "top",
+      "width": 54,
+      "x": 1135,
+      "y": 151
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "transparent",
+      "boundElements": null,
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": null,
+            "endArrowhead": "arrow",
+            "endBinding": {
+              "elementId": "c-pair-5",
+              "fixedPoint": [
+                0,
+                0.5
+              ],
+              "focus": 0,
+              "gap": 4
+            },
+            "fillStyle": "solid",
+            "groupIds": [],
+            "height": 147,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "points": [
+              [
+                0,
+                0
+              ],
+              [
+                220,
+                147
+              ]
+            ],
+            "roughness": 1,
+            "roundness": {
+              "type": 2
+            },
+            "startArrowhead": null,
+            "startBinding": {
+              "elementId": "c-choose",
+              "fixedPoint": [
+                1,
+                0.5
+              ],
+              "focus": 0,
+              "gap": 4
+            },
+            "strokeColor": "#7b5557",
+            "strokeStyle": "solid",
+            "strokeWidth": 2,
+            "type": "arrow",
+            "width": 220,
+            "x": 778,
+            "y": 27.5
+          },
+          "builtFingerprint": "c9626f5b6bf80ef6fb2856f42c09b8918bea697f001f8fabe2fcf3a5b156ff1d",
+          "builtRevision": 0,
+          "conceptId": "pair-5",
+          "generated": true,
+          "kind": "parent-edge",
+          "modelId": "mattpocock-skills-comparisons"
+        }
+      },
+      "endArrowhead": "arrow",
+      "endBinding": {
+        "elementId": "c-pair-5",
+        "fixedPoint": [
+          0,
+          0.5
+        ],
+        "focus": 0,
+        "gap": 4
+      },
+      "fillStyle": "solid",
+      "frameId": null,
+      "groupIds": [],
+      "height": 147,
+      "id": "e-parent-pair-5",
+      "isDeleted": false,
+      "lastCommittedPoint": null,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          220,
+          147
+        ]
+      ],
+      "roughness": 1,
+      "roundness": {
+        "type": 2
+      },
+      "seed": 852655758,
+      "startArrowhead": null,
+      "startBinding": {
+        "elementId": "c-choose",
+        "fixedPoint": [
+          1,
+          0.5
+        ],
+        "focus": 0,
+        "gap": 4
+      },
+      "strokeColor": "#7b5557",
+      "strokeStyle": "solid",
+      "strokeWidth": 2,
+      "type": "arrow",
+      "updated": 1,
+      "version": 1,
+      "versionNonce": 519103,
+      "width": 220,
+      "x": 778,
+      "y": 27.5
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "#faece9",
+      "boundElements": [
+        {
+          "id": "t-source-priority",
+          "type": "text"
+        },
+        {
+          "id": "e-parent-source-priority",
+          "type": "arrow"
+        }
+      ],
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "#faece9",
+            "boundElements": [
+              {
+                "id": "t-source-priority",
+                "type": "text"
+              },
+              {
+                "id": "e-parent-source-priority",
+                "type": "arrow"
+              }
+            ],
+            "fillStyle": "solid",
+            "groupIds": [
+              "g-source-priority"
+            ],
+            "height": 55,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "roughness": 1,
+            "roundness": {
+              "type": 3,
+              "value": 12
+            },
+            "strokeColor": "#a13f48",
+            "strokeStyle": "solid",
+            "strokeWidth": 2,
+            "type": "rectangle",
+            "width": 165,
+            "x": 1239,
+            "y": 147
+          },
+          "builtFingerprint": "c9626f5b6bf80ef6fb2856f42c09b8918bea697f001f8fabe2fcf3a5b156ff1d",
+          "builtRevision": 0,
+          "conceptId": "source-priority",
+          "generated": true,
+          "kind": "node",
+          "modelId": "mattpocock-skills-comparisons"
+        }
+      },
+      "fillStyle": "solid",
+      "frameId": null,
+      "groupIds": [
+        "g-source-priority"
+      ],
+      "height": 55,
+      "id": "c-source-priority",
+      "isDeleted": false,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "roughness": 1,
+      "roundness": {
+        "type": 3,
+        "value": 12
+      },
+      "seed": 1836359980,
+      "strokeColor": "#a13f48",
+      "strokeStyle": "solid",
+      "strokeWidth": 2,
+      "type": "rectangle",
+      "updated": 1,
+      "version": 1,
+      "versionNonce": 624463,
+      "width": 165,
+      "x": 1239,
+      "y": 147
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "transparent",
+      "baseline": 0,
+      "boundElements": null,
+      "containerId": "c-source-priority",
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": null,
+            "containerId": "c-source-priority",
+            "fillStyle": "solid",
+            "fontFamily": 5,
+            "fontSize": 17,
+            "groupIds": [
+              "g-source-priority"
+            ],
+            "height": 25,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "originalText": "摘要与入口细则",
+            "roughness": 1,
+            "roundness": null,
+            "strokeColor": "#472a2b",
+            "strokeStyle": "solid",
+            "strokeWidth": 1,
+            "text": "摘要与入口细则",
+            "textAlign": "center",
+            "type": "text",
+            "verticalAlign": "middle",
+            "width": 141,
+            "x": 1251,
+            "y": 162
+          },
+          "builtFingerprint": "c9626f5b6bf80ef6fb2856f42c09b8918bea697f001f8fabe2fcf3a5b156ff1d",
+          "builtRevision": 0,
+          "conceptId": "source-priority",
+          "generated": true,
+          "kind": "node-text",
+          "modelId": "mattpocock-skills-comparisons"
+        }
+      },
+      "fillStyle": "solid",
+      "fontFamily": 5,
+      "fontSize": 17,
+      "frameId": null,
+      "groupIds": [
+        "g-source-priority"
+      ],
+      "height": 25,
+      "id": "t-source-priority",
+      "isDeleted": false,
+      "lineHeight": 1.25,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "originalText": "摘要与入口细则",
+      "roughness": 1,
+      "roundness": null,
+      "seed": 342343992,
+      "strokeColor": "#472a2b",
+      "strokeStyle": "solid",
+      "strokeWidth": 1,
+      "text": "摘要与入口细则",
+      "textAlign": "center",
+      "type": "text",
+      "updated": 1,
+      "version": 1,
+      "versionNonce": 911086,
+      "verticalAlign": "middle",
+      "width": 141,
+      "x": 1251,
+      "y": 162
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "transparent",
+      "baseline": 0,
+      "boundElements": null,
+      "containerId": null,
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": null,
+            "containerId": null,
+            "fillStyle": "solid",
+            "fontFamily": 5,
+            "fontSize": 11,
+            "groupIds": [
+              "g-source-priority"
+            ],
+            "height": 18,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "originalText": "难度 2",
+            "roughness": 1,
+            "roundness": null,
+            "strokeColor": "#7b5557",
+            "strokeStyle": "solid",
+            "strokeWidth": 1,
+            "text": "难度 2",
+            "textAlign": "right",
+            "type": "text",
+            "verticalAlign": "top",
+            "width": 54,
+            "x": 1342,
+            "y": 151
+          },
+          "builtFingerprint": "c9626f5b6bf80ef6fb2856f42c09b8918bea697f001f8fabe2fcf3a5b156ff1d",
+          "builtRevision": 0,
+          "conceptId": "source-priority",
+          "generated": true,
+          "kind": "difficulty",
+          "modelId": "mattpocock-skills-comparisons"
+        }
+      },
+      "fillStyle": "solid",
+      "fontFamily": 5,
+      "fontSize": 11,
+      "frameId": null,
+      "groupIds": [
+        "g-source-priority"
+      ],
+      "height": 18,
+      "id": "d-source-priority",
+      "isDeleted": false,
+      "lineHeight": 1.25,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "originalText": "难度 2",
+      "roughness": 1,
+      "roundness": null,
+      "seed": 515461450,
+      "strokeColor": "#7b5557",
+      "strokeStyle": "solid",
+      "strokeWidth": 1,
+      "text": "难度 2",
+      "textAlign": "right",
+      "type": "text",
+      "updated": 1,
+      "version": 1,
+      "versionNonce": 909676,
+      "verticalAlign": "top",
+      "width": 54,
+      "x": 1342,
+      "y": 151
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "transparent",
+      "boundElements": null,
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": null,
+            "endArrowhead": "arrow",
+            "endBinding": {
+              "elementId": "c-source-priority",
+              "fixedPoint": [
+                0,
+                0.5
+              ],
+              "focus": 0,
+              "gap": 4
+            },
+            "fillStyle": "solid",
+            "groupIds": [],
+            "height": 147,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "points": [
+              [
+                0,
+                0
+              ],
+              [
+                461,
+                147
+              ]
+            ],
+            "roughness": 1,
+            "roundness": {
+              "type": 2
+            },
+            "startArrowhead": null,
+            "startBinding": {
+              "elementId": "c-choose",
+              "fixedPoint": [
+                1,
+                0.5
+              ],
+              "focus": 0,
+              "gap": 4
+            },
+            "strokeColor": "#7b5557",
+            "strokeStyle": "solid",
+            "strokeWidth": 2,
+            "type": "arrow",
+            "width": 461,
+            "x": 778,
+            "y": 27.5
+          },
+          "builtFingerprint": "c9626f5b6bf80ef6fb2856f42c09b8918bea697f001f8fabe2fcf3a5b156ff1d",
+          "builtRevision": 0,
+          "conceptId": "source-priority",
+          "generated": true,
+          "kind": "parent-edge",
+          "modelId": "mattpocock-skills-comparisons"
+        }
+      },
+      "endArrowhead": "arrow",
+      "endBinding": {
+        "elementId": "c-source-priority",
+        "fixedPoint": [
+          0,
+          0.5
+        ],
+        "focus": 0,
+        "gap": 4
+      },
+      "fillStyle": "solid",
+      "frameId": null,
+      "groupIds": [],
+      "height": 147,
+      "id": "e-parent-source-priority",
+      "isDeleted": false,
+      "lastCommittedPoint": null,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          461,
+          147
+        ]
+      ],
+      "roughness": 1,
+      "roundness": {
+        "type": 2
+      },
+      "seed": 1644889047,
+      "startArrowhead": null,
+      "startBinding": {
+        "elementId": "c-choose",
+        "fixedPoint": [
+          1,
+          0.5
+        ],
+        "focus": 0,
+        "gap": 4
+      },
+      "strokeColor": "#7b5557",
+      "strokeStyle": "solid",
+      "strokeWidth": 2,
+      "type": "arrow",
+      "updated": 1,
+      "version": 1,
+      "versionNonce": 102526,
+      "width": 461,
+      "x": 778,
+      "y": 27.5
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "transparent",
+      "baseline": 0,
+      "boundElements": null,
+      "containerId": null,
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": null,
+            "containerId": null,
+            "fillStyle": "solid",
+            "fontFamily": 5,
+            "fontSize": 14,
+            "groupIds": [],
+            "height": 20,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "originalText": "图例",
+            "roughness": 1,
+            "roundness": null,
+            "strokeColor": "#2f2923",
+            "strokeStyle": "solid",
+            "strokeWidth": 1,
+            "text": "图例",
+            "textAlign": "left",
+            "type": "text",
+            "verticalAlign": "middle",
+            "width": 60,
+            "x": 0,
+            "y": 244
+          },
+          "builtFingerprint": "c9626f5b6bf80ef6fb2856f42c09b8918bea697f001f8fabe2fcf3a5b156ff1d",
+          "builtRevision": 0,
+          "generated": true,
+          "kind": "legend",
+          "modelId": "mattpocock-skills-comparisons"
+        }
+      },
+      "fillStyle": "solid",
+      "fontFamily": 5,
+      "fontSize": 14,
+      "frameId": null,
+      "groupIds": [],
+      "height": 20,
+      "id": "t-legend",
+      "isDeleted": false,
+      "lineHeight": 1.25,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "originalText": "图例",
+      "roughness": 1,
+      "roundness": null,
+      "seed": 310174876,
+      "strokeColor": "#2f2923",
+      "strokeStyle": "solid",
+      "strokeWidth": 1,
+      "text": "图例",
+      "textAlign": "left",
+      "type": "text",
+      "updated": 1,
+      "version": 1,
+      "versionNonce": 701484,
+      "verticalAlign": "middle",
+      "width": 60,
+      "x": 0,
+      "y": 244
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "transparent",
+      "boundElements": null,
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": null,
+            "endArrowhead": "arrow",
+            "endBinding": null,
+            "fillStyle": "solid",
+            "groupIds": [],
+            "height": 0,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "points": [
+              [
+                0,
+                0
+              ],
+              [
+                46,
+                0
+              ]
+            ],
+            "roughness": 1,
+            "roundness": {
+              "type": 2
+            },
+            "startArrowhead": null,
+            "startBinding": null,
+            "strokeColor": "#7b5557",
+            "strokeStyle": "solid",
+            "strokeWidth": 2,
+            "type": "arrow",
+            "width": 46,
+            "x": 0,
+            "y": 272
+          },
+          "builtFingerprint": "c9626f5b6bf80ef6fb2856f42c09b8918bea697f001f8fabe2fcf3a5b156ff1d",
+          "builtRevision": 0,
+          "generated": true,
+          "kind": "legend-item",
+          "legendKey": "parent",
+          "modelId": "mattpocock-skills-comparisons"
+        }
+      },
+      "endArrowhead": "arrow",
+      "endBinding": null,
+      "fillStyle": "solid",
+      "frameId": null,
+      "groupIds": [],
+      "height": 0,
+      "id": "legend-parent",
+      "isDeleted": false,
+      "lastCommittedPoint": null,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          46,
+          0
+        ]
+      ],
+      "roughness": 1,
+      "roundness": {
+        "type": 2
+      },
+      "seed": 565536033,
+      "startArrowhead": null,
+      "startBinding": null,
+      "strokeColor": "#7b5557",
+      "strokeStyle": "solid",
+      "strokeWidth": 2,
+      "type": "arrow",
+      "updated": 1,
+      "version": 1,
+      "versionNonce": 685683,
+      "width": 46,
+      "x": 0,
+      "y": 272
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "transparent",
+      "baseline": 0,
+      "boundElements": null,
+      "containerId": null,
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": null,
+            "containerId": null,
+            "fillStyle": "solid",
+            "fontFamily": 5,
+            "fontSize": 13,
+            "groupIds": [],
+            "height": 20,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "originalText": "包含（父子层级）",
+            "roughness": 1,
+            "roundness": null,
+            "strokeColor": "#7b5557",
+            "strokeStyle": "solid",
+            "strokeWidth": 1,
+            "text": "包含（父子层级）",
+            "textAlign": "left",
+            "type": "text",
+            "verticalAlign": "middle",
+            "width": 120,
+            "x": 54,
+            "y": 262
+          },
+          "builtFingerprint": "c9626f5b6bf80ef6fb2856f42c09b8918bea697f001f8fabe2fcf3a5b156ff1d",
+          "builtRevision": 0,
+          "generated": true,
+          "kind": "legend-label",
+          "legendKey": "parent",
+          "modelId": "mattpocock-skills-comparisons"
+        }
+      },
+      "fillStyle": "solid",
+      "fontFamily": 5,
+      "fontSize": 13,
+      "frameId": null,
+      "groupIds": [],
+      "height": 20,
+      "id": "legend-label-parent",
+      "isDeleted": false,
+      "lineHeight": 1.25,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "originalText": "包含（父子层级）",
+      "roughness": 1,
+      "roundness": null,
+      "seed": 684916002,
+      "strokeColor": "#7b5557",
+      "strokeStyle": "solid",
+      "strokeWidth": 1,
+      "text": "包含（父子层级）",
+      "textAlign": "left",
+      "type": "text",
+      "updated": 1,
+      "version": 1,
+      "versionNonce": 132373,
+      "verticalAlign": "middle",
+      "width": 120,
+      "x": 54,
+      "y": 262
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "transparent",
+      "boundElements": null,
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": null,
+            "endArrowhead": "arrow",
+            "endBinding": null,
+            "fillStyle": "solid",
+            "groupIds": [],
+            "height": 0,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "points": [
+              [
+                0,
+                0
+              ],
+              [
+                46,
+                0
+              ]
+            ],
+            "roughness": 1,
+            "roundness": {
+              "type": 2
+            },
+            "startArrowhead": null,
+            "startBinding": null,
+            "strokeColor": "#2857a4",
+            "strokeStyle": "dashed",
+            "strokeWidth": 2,
+            "type": "arrow",
+            "width": 46,
+            "x": 208,
+            "y": 272
+          },
+          "builtFingerprint": "c9626f5b6bf80ef6fb2856f42c09b8918bea697f001f8fabe2fcf3a5b156ff1d",
+          "builtRevision": 0,
+          "generated": true,
+          "kind": "legend-item",
+          "legendKey": "prerequisite",
+          "modelId": "mattpocock-skills-comparisons"
+        }
+      },
+      "endArrowhead": "arrow",
+      "endBinding": null,
+      "fillStyle": "solid",
+      "frameId": null,
+      "groupIds": [],
+      "height": 0,
+      "id": "legend-prerequisite",
+      "isDeleted": false,
+      "lastCommittedPoint": null,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          46,
+          0
+        ]
+      ],
+      "roughness": 1,
+      "roundness": {
+        "type": 2
+      },
+      "seed": 786177452,
+      "startArrowhead": null,
+      "startBinding": null,
+      "strokeColor": "#2857a4",
+      "strokeStyle": "dashed",
+      "strokeWidth": 2,
+      "type": "arrow",
+      "updated": 1,
+      "version": 1,
+      "versionNonce": 850440,
+      "width": 46,
+      "x": 208,
+      "y": 272
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "transparent",
+      "baseline": 0,
+      "boundElements": null,
+      "containerId": null,
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": null,
+            "containerId": null,
+            "fillStyle": "solid",
+            "fontFamily": 5,
+            "fontSize": 13,
+            "groupIds": [],
+            "height": 20,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "originalText": "前置",
+            "roughness": 1,
+            "roundness": null,
+            "strokeColor": "#2857a4",
+            "strokeStyle": "solid",
+            "strokeWidth": 1,
+            "text": "前置",
+            "textAlign": "left",
+            "type": "text",
+            "verticalAlign": "middle",
+            "width": 90,
+            "x": 262,
+            "y": 262
+          },
+          "builtFingerprint": "c9626f5b6bf80ef6fb2856f42c09b8918bea697f001f8fabe2fcf3a5b156ff1d",
+          "builtRevision": 0,
+          "generated": true,
+          "kind": "legend-label",
+          "legendKey": "prerequisite",
+          "modelId": "mattpocock-skills-comparisons"
+        }
+      },
+      "fillStyle": "solid",
+      "fontFamily": 5,
+      "fontSize": 13,
+      "frameId": null,
+      "groupIds": [],
+      "height": 20,
+      "id": "legend-label-prerequisite",
+      "isDeleted": false,
+      "lineHeight": 1.25,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "originalText": "前置",
+      "roughness": 1,
+      "roundness": null,
+      "seed": 989171697,
+      "strokeColor": "#2857a4",
+      "strokeStyle": "solid",
+      "strokeWidth": 1,
+      "text": "前置",
+      "textAlign": "left",
+      "type": "text",
+      "updated": 1,
+      "version": 1,
+      "versionNonce": 266237,
+      "verticalAlign": "middle",
+      "width": 90,
+      "x": 262,
+      "y": 262
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "transparent",
+      "boundElements": null,
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": null,
+            "endArrowhead": "arrow",
+            "endBinding": null,
+            "fillStyle": "solid",
+            "groupIds": [],
+            "height": 0,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "points": [
+              [
+                0,
+                0
+              ],
+              [
+                46,
+                0
+              ]
+            ],
+            "roughness": 1,
+            "roundness": {
+              "type": 2
+            },
+            "startArrowhead": null,
+            "startBinding": null,
+            "strokeColor": "#805200",
+            "strokeStyle": "solid",
+            "strokeWidth": 2,
+            "type": "arrow",
+            "width": 46,
+            "x": 386,
+            "y": 272
+          },
+          "builtFingerprint": "c9626f5b6bf80ef6fb2856f42c09b8918bea697f001f8fabe2fcf3a5b156ff1d",
+          "builtRevision": 0,
+          "generated": true,
+          "kind": "legend-item",
+          "legendKey": "cause",
+          "modelId": "mattpocock-skills-comparisons"
+        }
+      },
+      "endArrowhead": "arrow",
+      "endBinding": null,
+      "fillStyle": "solid",
+      "frameId": null,
+      "groupIds": [],
+      "height": 0,
+      "id": "legend-cause",
+      "isDeleted": false,
+      "lastCommittedPoint": null,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          46,
+          0
+        ]
+      ],
+      "roughness": 1,
+      "roundness": {
+        "type": 2
+      },
+      "seed": 435084511,
+      "startArrowhead": null,
+      "startBinding": null,
+      "strokeColor": "#805200",
+      "strokeStyle": "solid",
+      "strokeWidth": 2,
+      "type": "arrow",
+      "updated": 1,
+      "version": 1,
+      "versionNonce": 919115,
+      "width": 46,
+      "x": 386,
+      "y": 272
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "transparent",
+      "baseline": 0,
+      "boundElements": null,
+      "containerId": null,
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": null,
+            "containerId": null,
+            "fillStyle": "solid",
+            "fontFamily": 5,
+            "fontSize": 13,
+            "groupIds": [],
+            "height": 20,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "originalText": "因果",
+            "roughness": 1,
+            "roundness": null,
+            "strokeColor": "#805200",
+            "strokeStyle": "solid",
+            "strokeWidth": 1,
+            "text": "因果",
+            "textAlign": "left",
+            "type": "text",
+            "verticalAlign": "middle",
+            "width": 90,
+            "x": 440,
+            "y": 262
+          },
+          "builtFingerprint": "c9626f5b6bf80ef6fb2856f42c09b8918bea697f001f8fabe2fcf3a5b156ff1d",
+          "builtRevision": 0,
+          "generated": true,
+          "kind": "legend-label",
+          "legendKey": "cause",
+          "modelId": "mattpocock-skills-comparisons"
+        }
+      },
+      "fillStyle": "solid",
+      "fontFamily": 5,
+      "fontSize": 13,
+      "frameId": null,
+      "groupIds": [],
+      "height": 20,
+      "id": "legend-label-cause",
+      "isDeleted": false,
+      "lineHeight": 1.25,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "originalText": "因果",
+      "roughness": 1,
+      "roundness": null,
+      "seed": 2130333102,
+      "strokeColor": "#805200",
+      "strokeStyle": "solid",
+      "strokeWidth": 1,
+      "text": "因果",
+      "textAlign": "left",
+      "type": "text",
+      "updated": 1,
+      "version": 1,
+      "versionNonce": 345651,
+      "verticalAlign": "middle",
+      "width": 90,
+      "x": 440,
+      "y": 262
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "transparent",
+      "boundElements": null,
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": null,
+            "endArrowhead": "arrow",
+            "endBinding": null,
+            "fillStyle": "solid",
+            "groupIds": [],
+            "height": 0,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "points": [
+              [
+                0,
+                0
+              ],
+              [
+                46,
+                0
+              ]
+            ],
+            "roughness": 1,
+            "roundness": {
+              "type": 2
+            },
+            "startArrowhead": null,
+            "startBinding": null,
+            "strokeColor": "#a13f48",
+            "strokeStyle": "dashed",
+            "strokeWidth": 2,
+            "type": "arrow",
+            "width": 46,
+            "x": 564,
+            "y": 272
+          },
+          "builtFingerprint": "c9626f5b6bf80ef6fb2856f42c09b8918bea697f001f8fabe2fcf3a5b156ff1d",
+          "builtRevision": 0,
+          "generated": true,
+          "kind": "legend-item",
+          "legendKey": "contrast",
+          "modelId": "mattpocock-skills-comparisons"
+        }
+      },
+      "endArrowhead": "arrow",
+      "endBinding": null,
+      "fillStyle": "solid",
+      "frameId": null,
+      "groupIds": [],
+      "height": 0,
+      "id": "legend-contrast",
+      "isDeleted": false,
+      "lastCommittedPoint": null,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          46,
+          0
+        ]
+      ],
+      "roughness": 1,
+      "roundness": {
+        "type": 2
+      },
+      "seed": 1852438198,
+      "startArrowhead": null,
+      "startBinding": null,
+      "strokeColor": "#a13f48",
+      "strokeStyle": "dashed",
+      "strokeWidth": 2,
+      "type": "arrow",
+      "updated": 1,
+      "version": 1,
+      "versionNonce": 944830,
+      "width": 46,
+      "x": 564,
+      "y": 272
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "transparent",
+      "baseline": 0,
+      "boundElements": null,
+      "containerId": null,
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": null,
+            "containerId": null,
+            "fillStyle": "solid",
+            "fontFamily": 5,
+            "fontSize": 13,
+            "groupIds": [],
+            "height": 20,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "originalText": "对比",
+            "roughness": 1,
+            "roundness": null,
+            "strokeColor": "#a13f48",
+            "strokeStyle": "solid",
+            "strokeWidth": 1,
+            "text": "对比",
+            "textAlign": "left",
+            "type": "text",
+            "verticalAlign": "middle",
+            "width": 90,
+            "x": 618,
+            "y": 262
+          },
+          "builtFingerprint": "c9626f5b6bf80ef6fb2856f42c09b8918bea697f001f8fabe2fcf3a5b156ff1d",
+          "builtRevision": 0,
+          "generated": true,
+          "kind": "legend-label",
+          "legendKey": "contrast",
+          "modelId": "mattpocock-skills-comparisons"
+        }
+      },
+      "fillStyle": "solid",
+      "fontFamily": 5,
+      "fontSize": 13,
+      "frameId": null,
+      "groupIds": [],
+      "height": 20,
+      "id": "legend-label-contrast",
+      "isDeleted": false,
+      "lineHeight": 1.25,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "originalText": "对比",
+      "roughness": 1,
+      "roundness": null,
+      "seed": 50664206,
+      "strokeColor": "#a13f48",
+      "strokeStyle": "solid",
+      "strokeWidth": 1,
+      "text": "对比",
+      "textAlign": "left",
+      "type": "text",
+      "updated": 1,
+      "version": 1,
+      "versionNonce": 109996,
+      "verticalAlign": "middle",
+      "width": 90,
+      "x": 618,
+      "y": 262
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "transparent",
+      "boundElements": null,
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": null,
+            "endArrowhead": "arrow",
+            "endBinding": null,
+            "fillStyle": "solid",
+            "groupIds": [],
+            "height": 0,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "points": [
+              [
+                0,
+                0
+              ],
+              [
+                46,
+                0
+              ]
+            ],
+            "roughness": 1,
+            "roundness": {
+              "type": 2
+            },
+            "startArrowhead": null,
+            "startBinding": null,
+            "strokeColor": "#236044",
+            "strokeStyle": "dotted",
+            "strokeWidth": 2,
+            "type": "arrow",
+            "width": 46,
+            "x": 742,
+            "y": 272
+          },
+          "builtFingerprint": "c9626f5b6bf80ef6fb2856f42c09b8918bea697f001f8fabe2fcf3a5b156ff1d",
+          "builtRevision": 0,
+          "generated": true,
+          "kind": "legend-item",
+          "legendKey": "application",
+          "modelId": "mattpocock-skills-comparisons"
+        }
+      },
+      "endArrowhead": "arrow",
+      "endBinding": null,
+      "fillStyle": "solid",
+      "frameId": null,
+      "groupIds": [],
+      "height": 0,
+      "id": "legend-application",
+      "isDeleted": false,
+      "lastCommittedPoint": null,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          46,
+          0
+        ]
+      ],
+      "roughness": 1,
+      "roundness": {
+        "type": 2
+      },
+      "seed": 1810765916,
+      "startArrowhead": null,
+      "startBinding": null,
+      "strokeColor": "#236044",
+      "strokeStyle": "dotted",
+      "strokeWidth": 2,
+      "type": "arrow",
+      "updated": 1,
+      "version": 1,
+      "versionNonce": 660021,
+      "width": 46,
+      "x": 742,
+      "y": 272
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "transparent",
+      "baseline": 0,
+      "boundElements": null,
+      "containerId": null,
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": null,
+            "containerId": null,
+            "fillStyle": "solid",
+            "fontFamily": 5,
+            "fontSize": 13,
+            "groupIds": [],
+            "height": 20,
+            "isDeleted": false,
+            "link": null,
+            "locked": false,
+            "opacity": 100,
+            "originalText": "应用",
+            "roughness": 1,
+            "roundness": null,
+            "strokeColor": "#236044",
+            "strokeStyle": "solid",
+            "strokeWidth": 1,
+            "text": "应用",
+            "textAlign": "left",
+            "type": "text",
+            "verticalAlign": "middle",
+            "width": 90,
+            "x": 796,
+            "y": 262
+          },
+          "builtFingerprint": "c9626f5b6bf80ef6fb2856f42c09b8918bea697f001f8fabe2fcf3a5b156ff1d",
+          "builtRevision": 0,
+          "generated": true,
+          "kind": "legend-label",
+          "legendKey": "application",
+          "modelId": "mattpocock-skills-comparisons"
+        }
+      },
+      "fillStyle": "solid",
+      "fontFamily": 5,
+      "fontSize": 13,
+      "frameId": null,
+      "groupIds": [],
+      "height": 20,
+      "id": "legend-label-application",
+      "isDeleted": false,
+      "lineHeight": 1.25,
+      "link": null,
+      "locked": false,
+      "opacity": 100,
+      "originalText": "应用",
+      "roughness": 1,
+      "roundness": null,
+      "seed": 324627632,
+      "strokeColor": "#236044",
+      "strokeStyle": "solid",
+      "strokeWidth": 1,
+      "text": "应用",
+      "textAlign": "left",
+      "type": "text",
+      "updated": 1,
+      "version": 1,
+      "versionNonce": 996804,
+      "verticalAlign": "middle",
+      "width": 90,
+      "x": 796,
+      "y": 262
+    },
+    {
+      "angle": 0,
+      "backgroundColor": "transparent",
+      "boundElements": [],
+      "customData": {
+        "ember": {
+          "base": {
+            "angle": 0,
+            "backgroundColor": "transparent",
+            "boundElements": [],
+            "fillStyle": "solid",
+            "groupIds": [],
+            "height": 1,
+            "isDeleted": false,
+            "link": null,
+            "locked": true,
+            "opacity": 0,
+            "roughness": 1,
+            "roundness": {
+              "type": 3,
+              "value": 0
+            },
+            "strokeColor": "#3b322a",
+            "strokeStyle": "solid",
+            "strokeWidth": 2,
+            "type": "rectangle",
+            "width": 1,
+            "x": 0,
+            "y": 0
+          },
+          "builtFingerprint": "c9626f5b6bf80ef6fb2856f42c09b8918bea697f001f8fabe2fcf3a5b156ff1d",
+          "builtRevision": 0,
+          "generated": true,
+          "generatedIds": [
+            "c-choose",
+            "c-pair-1",
+            "c-pair-2",
+            "c-pair-3",
+            "c-pair-4",
+            "c-pair-5",
+            "c-source-priority",
+            "d-choose",
+            "d-pair-1",
+            "d-pair-2",
+            "d-pair-3",
+            "d-pair-4",
+            "d-pair-5",
+            "d-source-priority",
+            "e-parent-pair-1",
+            "e-parent-pair-2",
+            "e-parent-pair-3",
+            "e-parent-pair-4",
+            "e-parent-pair-5",
+            "e-parent-source-priority",
+            "legend-application",
+            "legend-cause",
+            "legend-contrast",
+            "legend-label-application",
+            "legend-label-cause",
+            "legend-label-contrast",
+            "legend-label-parent",
+            "legend-label-prerequisite",
+            "legend-parent",
+            "legend-prerequisite",
+            "t-choose",
+            "t-legend",
+            "t-pair-1",
+            "t-pair-2",
+            "t-pair-3",
+            "t-pair-4",
+            "t-pair-5",
+            "t-scene-goal",
+            "t-scene-title",
+            "t-source-priority"
+          ],
+          "kind": "manifest",
+          "modelId": "mattpocock-skills-comparisons",
+          "presentationBackground": "#faf2f1",
+          "tombstones": []
+        }
+      },
+      "fillStyle": "solid",
+      "frameId": null,
+      "groupIds": [],
+      "height": 1,
+      "id": "ember-manifest",
+      "isDeleted": false,
+      "link": null,
+      "locked": true,
+      "opacity": 0,
+      "roughness": 1,
+      "roundness": {
+        "type": 3,
+        "value": 0
+      },
+      "seed": 874954428,
+      "strokeColor": "#3b322a",
+      "strokeStyle": "solid",
+      "strokeWidth": 2,
+      "type": "rectangle",
+      "updated": 1,
+      "version": 1,
+      "versionNonce": 656844,
+      "width": 1,
+      "x": 0,
+      "y": 0
+    }
+  ],
+  "files": {},
+  "source": "ember skill (local deterministic exporter)",
+  "type": "excalidraw",
+  "version": 2
+}

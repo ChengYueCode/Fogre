@@ -77,7 +77,8 @@
     border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow);
   }
   .topbar-main { min-width: 240px; flex: 1 1 420px; }
-  .brand { font-size: 12px; letter-spacing: 0.14em; color: var(--green); text-transform: uppercase; font-weight: 700; }
+  .brand { display: flex; flex-wrap: wrap; gap: 4px 12px; align-items: baseline; font-size: 12px; letter-spacing: 0.06em; color: var(--green); font-weight: 700; }
+  .brand-tagline { font-weight: 400; letter-spacing: normal; color: var(--ink-soft); }
   #docTitle { font-size: clamp(19px, 2.4vw, 26px); margin: 2px 0 4px; }
   #docGoal { color: var(--ink-soft); max-width: 70ch; margin: 0; }
   .topbar-side { display: flex; flex-direction: column; gap: 8px; align-items: flex-end; }
@@ -265,7 +266,7 @@
 <div id="app" hidden>
   <header class="topbar">
     <div class="topbar-main">
-      <div class="brand">forge · 锻造</div>
+      <div class="brand">Forge <span class="brand-tagline">Make sense. Keep going.</span></div>
       <h1 id="docTitle"></h1>
       <p id="docGoal"></p>
     </div>
@@ -1182,7 +1183,7 @@
     if (action.type === 'note') return '笔记（' + conceptTitle(action.conceptId) + '）';
     if (action.type === 'title') return '标题修订（' + conceptTitle(action.conceptId) + '）';
     if (action.type === 'relation') return '关系修订（' + (relationLabel(action.relationId) || action.relationId) + '）';
-    if (action.type === 'question') return '自创问题'; 
+    if (action.type === 'question') return '自创问题';
     if (action.type === 'attempt') return '一次作答';
     if (action.type === 'correction') return '一处修正';
     if (action.type === 'import') return '导入状态';

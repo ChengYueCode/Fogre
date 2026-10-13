@@ -4,32 +4,24 @@
   "conceptEvidence": {},
   "conceptRevisions": {},
   "conflicts": [],
-  "createdAt": "2026-10-08T02:00:16.766Z",
+  "createdAt": "2026-10-13T07:04:12.265Z",
   "explanations": {},
   "interactionPositions": {},
   "learningRounds": {},
-  "migrations": [
-    {
-      "at": "2026-10-10T03:23:09.438Z",
-      "from": 1,
-      "to": 2,
-      "tool": "ember",
-      "warnings": []
-    }
-  ],
-  "modelFingerprint": "450957b77bfba5abdd50e5f4a516859cc8acc7b613871cfc205ddfc624a88143",
-  "modelId": "probability-basics",
-  "modelRevision": 2,
+  "migrations": [],
+  "modelFingerprint": "c9626f5b6bf80ef6fb2856f42c09b8918bea697f001f8fabe2fcf3a5b156ff1d",
+  "modelId": "mattpocock-skills-comparisons",
+  "modelRevision": 1,
   "orphans": [],
   "ownQuestions": {},
   "practiceSessions": {},
   "promptEvidence": {},
   "relationRevisions": {},
   "reviewRequests": {},
-  "revision": 1,
+  "revision": 0,
   "schedules": {},
   "schemaVersion": 2,
   "summaries": {},
   "teachingCorrections": {},
-  "updatedAt": "2026-10-11T02:14:51.795Z"
+  "updatedAt": "2026-10-13T07:04:12.265Z"
 }

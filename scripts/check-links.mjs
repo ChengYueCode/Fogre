@@ -23,7 +23,7 @@ export function extractLinks(markdown) {
   return links;
 }
 
-export function checkLinks(roots = ['skill', 'README.md', 'CONTRIBUTING.md', 'SECURITY.md', 'THIRD_PARTY.md', 'docs/installation.md', 'docs/github-introduction.md', 'docs/forge-methods.md', 'docs/skill-architecture.md', 'docs/skill-acceptance.md', 'docs/open-source.md', 'docs/release-checklist.md', 'docs/support.md', 'docs/agents', 'docs/adr', 'examples/probability/README.md']) {
+export function checkLinks(roots = ['skill', 'README.md', 'CONTRIBUTING.md', 'SECURITY.md', 'THIRD_PARTY.md', 'docs/installation.md', 'docs/github-introduction.md', 'docs/forge-methods.md', 'docs/skill-architecture.md', 'docs/skill-acceptance.md', 'docs/open-source.md', 'docs/release-checklist.md', 'docs/support.md', 'docs/visual-showcase.md', 'docs/assets/showcase', 'docs/agents', 'docs/adr', 'examples']) {
   const broken = [];
   let files = 0;
   let links = 0;
